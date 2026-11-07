@@ -6,6 +6,8 @@ Dashboard cards for Home Assistant in the Hauflo «Atelier» style: rooms, light
 
 [![Marketplace / HACS custom](https://img.shields.io/badge/Marketplace%20%2F%20HACS-plugin-41BDF5)](#install) [![Home Assistant 2026.9+](https://img.shields.io/badge/Home%20Assistant-2026.9%2B-18BCF2)](#install) [![Release](https://img.shields.io/github/v/release/Hauflo/hauflo-cards)](https://github.com/Hauflo/hauflo-cards/releases)
 
+<img src="https://raw.githubusercontent.com/Hauflo/hauflo-agent/main/docs/images/family.webp" width="840" alt="Three phone screens of the demo home: a room with lights, scenes and blinds; the air conditioner; alarms — Hauflo cards, light and dark.">
+
 ## Cards
 
 | | Group | Cards (`custom:…`) |

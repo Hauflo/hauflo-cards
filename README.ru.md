@@ -6,6 +6,8 @@
 
 [![Marketplace / HACS custom](https://img.shields.io/badge/Marketplace%20%2F%20HACS-plugin-41BDF5)](#установка) [![Home Assistant 2026.9+](https://img.shields.io/badge/Home%20Assistant-2026.9%2B-18BCF2)](#установка) [![Release](https://img.shields.io/github/v/release/Hauflo/hauflo-cards)](https://github.com/Hauflo/hauflo-cards/releases)
 
+<img src="https://raw.githubusercontent.com/Hauflo/hauflo-agent/main/docs/images/family.ru.webp" width="840" alt="Три экрана телефона в демо-доме: комната со светом, сценами и шторами; кондиционер; аварии — карточки Hauflo, светлая и тёмная тема.">
+
 ## Карточки
 
 | | Группа | Карточки (`custom:…`) |
