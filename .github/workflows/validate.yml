@@ -1,0 +1,26 @@
+name: Validate
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # One ES module (top-level await): it must parse, and its first line is the header the Hauflo agent reads.
+      - run: cp dist/hauflo-cards.js /tmp/hauflo-cards.mjs && node --check /tmp/hauflo-cards.mjs
+      - run: head -1 dist/hauflo-cards.js | grep -Eq '^// hauflo-cards \{"version":"[0-9]+\.[0-9]+\.[0-9]+","agent_min":"[0-9]+\.[0-9]+\.[0-9]+"\}$'
+  hacs:
+    # The HACS action validates public repositories only.
+    if: ${{ !github.event.repository.private }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hacs/action@main
+        with:
+          category: plugin
+          # Same owner decision as the agent: LICENSE is «source available», not an OSI licence.
+          ignore: license
