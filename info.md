@@ -1,4 +1,4 @@
-## Hauflo Cards 1.0.5
+## Hauflo Cards 1.0.6
 
 Dashboard cards in the Hauflo «Atelier» style: rooms, lights, blinds, climate, security, media and sensors — light and dark, phone and wall tablet. One file, nothing from the internet; English and Russian.
 
