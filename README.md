@@ -32,6 +32,6 @@ The [Hauflo agent](https://github.com/Hauflo/hauflo-agent) ships the same cards 
 
 ## Versions
 
-Version 1.0.1. Each release says which agent it needs at least (`agent_min`); a card configuration that worked keeps working in later versions.
+Version 1.0.3. Each release says which agent it needs at least (`agent_min`); a card configuration that worked keeps working in later versions.
 
 Licence: see [LICENSE](LICENSE). Font: Onest, SIL Open Font License 1.1.
