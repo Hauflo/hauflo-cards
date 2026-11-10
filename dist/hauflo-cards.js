@@ -1,7 +1,7 @@
-// hauflo-cards {"version":"1.0.3","agent_min":"0.28.0"}
-// Hauflo Cards 1.0.3 — https://github.com/Hauflo/hauflo-cards · one file: the cards, the icons, the theme's tokens, the
+// hauflo-cards {"version":"1.0.4","agent_min":"0.28.0"}
+// Hauflo Cards 1.0.4 — https://github.com/Hauflo/hauflo-cards · one file: the cards, the icons, the theme's tokens, the
 // Onest font (SIL OFL 1.1). Built by cards/build.mjs from the Hauflo agent's sources; do not edit.
-const HF_PACK = {"version":"1.0.3","agent_min":"0.28.0","theme":{"name":"Hauflo Atelier","about":"The one Hauflo theme: HA's theme variables (ha: common + dark + light, injected by theme.py into Home Assistant's themes) and the cards' design tokens (cards: --hf-<name>, declared by the cards on every card and on the page). Only Hauflo makes themes; a user picks light or dark.","notes":{"ha.common.ha-tab-indicator-color":"The tabs: no grey track, the active tab gets Hauflo's own mark (hauflo-cards.js).","ha.dark":"Graphite (dark) and paper (light): glass with an edge highlight, deep soft shadows, light as colour.","ha.dark.eh-mode":"Read by the v5 cards: a view set to a fixed theme wins over the phone's mode.","ha.dark.lovelace-background":"The warm glow low in the corner, fixed: the header bar and the page are one surface (designer review 25.10)."},"ha":{"common":{"ha-card-border-radius":"30px","ha-card-border-width":"0px","ha-badge-border-radius":"14px","ha-dialog-border-radius":"28px","ha-tile-border-radius":"24px","eh-radius":"30px","ha-font-family-body":"Onest, Inter, -apple-system, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif","ha-font-family-heading":"Onest, Inter, -apple-system, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif","ha-card-header-font-size":"18px","ha-view-sections-column-gap":"12px","ha-section-grid-row-gap":"12px","ha-section-grid-column-gap":"12px","ha-tab-indicator-color":"transparent","ha-tab-track-color":"transparent"},"dark":{"eh-mode":"dark","primary-color":"#5CE0B4","accent-color":"#5CE0B4","primary-background-color":"#08090A","lovelace-background":"radial-gradient(90% 55% at 100% 100%, #1a1712 0%, #08090A 60%) fixed","secondary-background-color":"#141517","card-background-color":"#141517","ha-card-background":"linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.03))","ha-card-box-shadow":"inset 0 1px 0 rgba(255,255,255,.10), inset 0 0 0 1px rgba(255,255,255,.05), 0 12px 24px rgba(0,0,0,.35), 0 40px 80px rgba(0,0,0,.45)","primary-text-color":"#F4F2EE","secondary-text-color":"rgba(244,242,238,.64)","disabled-text-color":"rgba(244,242,238,.55)","divider-color":"rgba(255,255,255,.08)","app-header-background-color":"#08090A","app-header-text-color":"#F4F2EE","app-header-border-bottom":"none","sidebar-background-color":"#08090A","sidebar-text-color":"#F4F2EE","sidebar-selected-icon-color":"#F4F2EE","sidebar-selected-text-color":"#F4F2EE","state-icon-color":"rgba(244,242,238,.64)","state-active-color":"#FFB25C","state-light-active-color":"#FFB25C","state-switch-active-color":"#5CE0B4","state-cover-active-color":"#8DC2FF","state-climate-heat-color":"#FFB25C","state-climate-cool-color":"#8DC2FF","state-climate-auto-color":"#5CE0B4","state-binary_sensor-active-color":"#FF5A5F","error-color":"#FF5A5F","warning-color":"#FFB25C","success-color":"#5CE0B4","info-color":"#8DC2FF","switch-checked-color":"#5CE0B4","switch-checked-button-color":"#08090A","switch-checked-track-color":"#5CE0B4","input-fill-color":"rgba(255,255,255,.06)","eh-ink":"#F4F2EE","eh-ink2":"rgba(244,242,238,.64)","eh-ink3":"rgba(244,242,238,.55)","eh-alert-text":"#FF5A5F","eh-amber-text":"#FFB25C","eh-mint-text":"#5CE0B4","eh-line-strong":"rgba(244,242,238,.40)","eh-hair":"rgba(255,255,255,.08)","eh-glass":"linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.03))","eh-edge":"inset 0 1px 0 rgba(255,255,255,.10), inset 0 0 0 1px rgba(255,255,255,.05)","eh-deep":"0 1px 1px rgba(0,0,0,.4), 0 12px 24px rgba(0,0,0,.35), 0 40px 80px rgba(0,0,0,.45)","eh-amber":"#FFB25C","eh-amber-glow":"rgba(255,160,70,.55)","eh-ice":"#8DC2FF","eh-ice-glow":"rgba(90,160,255,.45)","eh-alert":"#FF5A5F","eh-alert-glow":"rgba(255,70,80,.55)","eh-mint":"#5CE0B4","eh-fill-top-bright":"75%","eh-fill-bottom-deep":"55%","eh-dry":"#62D0DE","eh-fan":"#B4A4FF","eh-chart-now":"#5CE0B4","eh-track":"rgba(255,255,255,.08)"},"light":{"eh-mode":"light","primary-color":"#14946C","accent-color":"#14946C","primary-background-color":"#EFECE6","lovelace-background":"radial-gradient(90% 55% at 100% 100%, #F7EBDD 0%, #EFECE6 60%) fixed","secondary-background-color":"#E6E2DA","card-background-color":"#FBFAF8","ha-card-background":"linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72))","ha-card-box-shadow":"inset 0 1px 0 #fff, inset 0 0 0 1px rgba(18,18,18,.04), 0 10px 20px rgba(40,30,20,.06), 0 30px 60px rgba(40,30,20,.08)","primary-text-color":"#121212","secondary-text-color":"rgba(18,18,18,.64)","disabled-text-color":"rgba(18,18,18,.62)","divider-color":"rgba(18,18,18,.08)","app-header-background-color":"#EFECE6","app-header-text-color":"#121212","app-header-border-bottom":"none","sidebar-background-color":"#EFECE6","sidebar-text-color":"#121212","sidebar-selected-icon-color":"#121212","sidebar-selected-text-color":"#121212","state-icon-color":"rgba(18,18,18,.64)","state-active-color":"#E8901F","state-light-active-color":"#E8901F","state-switch-active-color":"#14946C","state-cover-active-color":"#3C82F0","state-climate-heat-color":"#E8901F","state-climate-cool-color":"#3C82F0","state-climate-auto-color":"#14946C","state-binary_sensor-active-color":"#E5383E","error-color":"#E5383E","warning-color":"#E8901F","success-color":"#14946C","info-color":"#3C82F0","switch-checked-color":"#14946C","switch-checked-button-color":"#FFFFFF","switch-checked-track-color":"#14946C","input-fill-color":"rgba(18,18,18,.05)","eh-ink":"#121212","eh-ink2":"rgba(18,18,18,.64)","eh-ink3":"rgba(18,18,18,.62)","eh-alert-text":"#B3261E","eh-amber-text":"#9A5B00","eh-mint-text":"#0B6B4D","eh-line-strong":"rgba(18,18,18,.42)","eh-hair":"rgba(18,18,18,.08)","eh-glass":"linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72))","eh-edge":"inset 0 1px 0 #fff, inset 0 0 0 1px rgba(18,18,18,.04)","eh-deep":"0 1px 1px rgba(40,30,20,.05), 0 10px 20px rgba(40,30,20,.06), 0 30px 60px rgba(40,30,20,.08)","eh-amber":"#E8901F","eh-amber-glow":"rgba(255,170,80,.55)","eh-ice":"#3C82F0","eh-ice-glow":"rgba(90,150,255,.35)","eh-alert":"#E5383E","eh-alert-glow":"rgba(255,80,80,.45)","eh-mint":"#14946C","eh-fill-top-bright":"50%","eh-fill-bottom-deep":"70%","eh-dry":"#1E97AA","eh-fan":"#7B61E0","eh-chart-now":"#14946C","eh-track":"rgba(18,18,18,.07)"}},"cards":{"track":"var(--eh-track,rgba(127,127,127,.12))","amber":"var(--eh-amber,#E8901F)","card-bg":"var(--card-background-color,#fff)","white":"#fff","head-dark-ink":"#F4F2EE","shade-35":"rgba(0,0,0,.35)","head-light-ink":"#121212","ice":"var(--eh-ice,#3C82F0)","amber-2":"var(--eh-amber,#FFB25C)","shade-42":"rgba(0,0,0,.42)","track-08":"var(--eh-track,rgba(127,127,127,.08))","ink":"var(--eh-ink,#1c1c1e)","dry":"var(--eh-dry,#2AA5B8)","fan":"var(--eh-fan,#8B74E8)","chart-now":"var(--eh-chart-now,#2FA67A)","track-14":"var(--eh-track,rgba(127,127,127,.14))","head-dark-ink2":"rgba(244,242,238,.64)","ice-2":"var(--eh-ice,#8DC2FF)","alert":"var(--eh-alert,#FF5A5F)","shade-25":"rgba(0,0,0,.25)","page-bg":"var(--primary-background-color,#fff)","head-dark-bg":"#08090A","head-light-bg":"#EFECE6","head-light-ink2":"rgba(18,18,18,.64)","shade-18":"rgba(0,0,0,.18)","error":"var(--error-color,#c62828)","charcoal":"#1F1E1C","shade-28":"rgba(0,0,0,.28)","glass":"var(--eh-glass,var(--ha-card-background,var(--card-background-color,#fff)))","shade-55":"rgba(0,0,0,.55)","shade-30":"rgba(0,0,0,.3)","shade-50":"rgba(0,0,0,.5)","live":"#ff3b30","mint-text":"var(--eh-mint-text,#1F7A57)","hair":"var(--eh-hair,var(--divider-color,rgba(127,127,127,.2)))","track-10":"var(--eh-track,rgba(127,127,127,.1))","alert-text":"var(--eh-alert-text,var(--eh-alert,#B3261E))","hair-35":"var(--eh-hair,var(--divider-color,rgba(127,127,127,.35)))","mint":"var(--eh-mint,#2FA67A)","card-bg-2":"var(--card-background-color,#141517)","text":"var(--primary-text-color,#F4F2EE)","primary":"var(--primary-color,#5CE0B4)","on-primary":"var(--text-primary-color,#08090A)","amber-glow":"var(--eh-amber-glow,rgba(255,160,70,.5))","ice-glow":"var(--eh-ice-glow,rgba(90,160,255,.42))","alert-glow":"var(--eh-alert-glow,rgba(255,70,80,.5))","mint-2":"var(--eh-mint,#5CE0B4)","grey-14":"rgba(127,127,127,.14)","divider":"var(--divider-color,rgba(127,127,127,.18))","on-accent":"#141414","toast-ok":"#5CE0B4","toast-bg":"#1d1d1f","toast-action":"#FFC070","shade-64":"rgba(0,0,0,.64)","shade-45":"rgba(0,0,0,.45)","white-20":"rgba(255,255,255,.2)","mint-glow-mixed":"rgba(92,224,180,.4)","view-bg":"var(--lovelace-background,var(--primary-background-color,#f4f4f4))","bg":"var(--eh-bg,var(--card-background-color,#fff))","shade-20":"rgba(0,0,0,.2)","glass-solid":"#fff","camera-bg":"#111","white-85":"rgba(255,255,255,.85)","white-08":"rgba(255,255,255,.08)","shade-12":"rgba(0,0,0,.12)","line-strong":"var(--eh-line-strong,rgba(127,127,127,.5))","mint-3":"var(--eh-mint,#2FB383)","ink3":"var(--eh-ink3,#757575)","line-strong-50":"var(--eh-line-strong,var(--divider-color,rgba(127,127,127,.5)))","alert-2":"var(--eh-alert,#E5484D)","shade-40":"rgba(0,0,0,.4)","white-70":"rgba(255,255,255,.7)","chip-ink":"#333","divider-35":"var(--divider-color,rgba(127,127,127,.35))","ha-card-bg":"var(--ha-card-background,var(--card-background-color,#fff))","page-bg-2":"var(--primary-background-color,#f4f2ee)","divider-30":"var(--divider-color,rgba(127,127,127,.3))","divider-25":"var(--divider-color,rgba(127,127,127,.25))","grey-12":"rgba(127,127,127,.12)","dusk-top":"rgba(40,20,0,.10)","dusk-bottom":"rgba(20,10,0,.16)","grey-15":"rgba(127,127,127,.15)","text-2":"var(--primary-text-color,#111)","grey-16":"rgba(127,127,127,.16)","alarm":"#FF5A5F","black":"#000","night-ink":"rgba(255,236,210,.74)","slider-ink":"#111","grey-10":"rgba(127,127,127,.1)","hue-spectrum":"linear-gradient(90deg,#f00,#ff0 17%,#0f0 33%,#0ff 50%,#00f 67%,#f0f 83%,#f00)","ct-spectrum":"linear-gradient(90deg,#ffb15a,#fff3e0 55%,#cfe3ff)","r-xs":"10px","r-sm":"14px","r-md":"18px","r-lg":"30px","pad":"16px","pad-title":"18px","card-w":"400px","pad-climate":"20px","icon-s":"16px","icon-m":"20px","icon-l":"28px","caps-ls":".14em","hit":"44px","row-gap":"8px","fill-top-bright":"var(--eh-fill-top-bright,50%)","fill-bottom-deep":"var(--eh-fill-bottom-deep,70%)"}},"fonts":{"onest-cyrillic":"data:font/woff2;base64,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","onest-latin":"data:font/woff2;base64,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"}};
+const HF_PACK = {"version":"1.0.4","agent_min":"0.28.0","theme":{"name":"Hauflo Atelier","about":"The one Hauflo theme: HA's theme variables (ha: common + dark + light, injected by theme.py into Home Assistant's themes) and the cards' design tokens (cards: --hf-<name>, declared by the cards on every card and on the page). Only Hauflo makes themes; a user picks light or dark.","notes":{"ha.common.ha-tab-indicator-color":"The tabs: no grey track, the active tab gets Hauflo's own mark (hauflo-cards.js).","ha.dark":"Graphite (dark) and paper (light): glass with an edge highlight, deep soft shadows, light as colour.","ha.dark.eh-mode":"Read by the v5 cards: a view set to a fixed theme wins over the phone's mode.","ha.dark.lovelace-background":"The warm glow low in the corner, fixed: the header bar and the page are one surface (designer review 25.10)."},"ha":{"common":{"ha-card-border-radius":"30px","ha-card-border-width":"0px","ha-badge-border-radius":"14px","ha-dialog-border-radius":"28px","ha-tile-border-radius":"24px","eh-radius":"30px","ha-font-family-body":"Onest, Inter, -apple-system, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif","ha-font-family-heading":"Onest, Inter, -apple-system, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif","ha-card-header-font-size":"18px","ha-view-sections-column-gap":"12px","ha-section-grid-row-gap":"12px","ha-section-grid-column-gap":"12px","ha-tab-indicator-color":"transparent","ha-tab-track-color":"transparent"},"dark":{"eh-mode":"dark","primary-color":"#5CE0B4","accent-color":"#5CE0B4","primary-background-color":"#08090A","lovelace-background":"radial-gradient(90% 55% at 100% 100%, #1a1712 0%, #08090A 60%) fixed","secondary-background-color":"#141517","card-background-color":"#141517","ha-card-background":"linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.03))","ha-card-box-shadow":"inset 0 1px 0 rgba(255,255,255,.10), inset 0 0 0 1px rgba(255,255,255,.05), 0 12px 24px rgba(0,0,0,.35), 0 40px 80px rgba(0,0,0,.45)","primary-text-color":"#F4F2EE","secondary-text-color":"rgba(244,242,238,.64)","disabled-text-color":"rgba(244,242,238,.55)","divider-color":"rgba(255,255,255,.08)","app-header-background-color":"#08090A","app-header-text-color":"#F4F2EE","app-header-border-bottom":"none","sidebar-background-color":"#08090A","sidebar-text-color":"#F4F2EE","sidebar-selected-icon-color":"#F4F2EE","sidebar-selected-text-color":"#F4F2EE","state-icon-color":"rgba(244,242,238,.64)","state-active-color":"#FFB25C","state-light-active-color":"#FFB25C","state-switch-active-color":"#5CE0B4","state-cover-active-color":"#8DC2FF","state-climate-heat-color":"#FFB25C","state-climate-cool-color":"#8DC2FF","state-climate-auto-color":"#5CE0B4","state-binary_sensor-active-color":"#FF5A5F","error-color":"#FF5A5F","warning-color":"#FFB25C","success-color":"#5CE0B4","info-color":"#8DC2FF","switch-checked-color":"#5CE0B4","switch-checked-button-color":"#08090A","switch-checked-track-color":"#5CE0B4","input-fill-color":"rgba(255,255,255,.06)","eh-ink":"#F4F2EE","eh-ink2":"rgba(244,242,238,.64)","eh-ink3":"rgba(244,242,238,.55)","eh-alert-text":"#FF5A5F","eh-amber-text":"#FFB25C","eh-mint-text":"#5CE0B4","eh-line-strong":"rgba(244,242,238,.40)","eh-hair":"rgba(255,255,255,.08)","eh-glass":"linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.03))","eh-edge":"inset 0 1px 0 rgba(255,255,255,.10), inset 0 0 0 1px rgba(255,255,255,.05)","eh-deep":"0 1px 1px rgba(0,0,0,.4), 0 12px 24px rgba(0,0,0,.35), 0 40px 80px rgba(0,0,0,.45)","eh-amber":"#FFB25C","eh-amber-glow":"rgba(255,160,70,.55)","eh-ice":"#8DC2FF","eh-ice-glow":"rgba(90,160,255,.45)","eh-alert":"#FF5A5F","eh-alert-glow":"rgba(255,70,80,.55)","eh-mint":"#5CE0B4","eh-fill-top-bright":"75%","eh-fill-bottom-deep":"55%","eh-dry":"#62D0DE","eh-fan":"#B4A4FF","eh-chart-now":"#5CE0B4","eh-track":"rgba(255,255,255,.08)"},"light":{"eh-mode":"light","primary-color":"#14946C","accent-color":"#14946C","primary-background-color":"#EFECE6","lovelace-background":"radial-gradient(90% 55% at 100% 100%, #F7EBDD 0%, #EFECE6 60%) fixed","secondary-background-color":"#E6E2DA","card-background-color":"#FBFAF8","ha-card-background":"linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72))","ha-card-box-shadow":"inset 0 1px 0 #fff, inset 0 0 0 1px rgba(18,18,18,.04), 0 10px 20px rgba(40,30,20,.06), 0 30px 60px rgba(40,30,20,.08)","primary-text-color":"#121212","secondary-text-color":"rgba(18,18,18,.64)","disabled-text-color":"rgba(18,18,18,.62)","divider-color":"rgba(18,18,18,.08)","app-header-background-color":"#EFECE6","app-header-text-color":"#121212","app-header-border-bottom":"none","sidebar-background-color":"#EFECE6","sidebar-text-color":"#121212","sidebar-selected-icon-color":"#121212","sidebar-selected-text-color":"#121212","state-icon-color":"rgba(18,18,18,.64)","state-active-color":"#E8901F","state-light-active-color":"#E8901F","state-switch-active-color":"#14946C","state-cover-active-color":"#3C82F0","state-climate-heat-color":"#E8901F","state-climate-cool-color":"#3C82F0","state-climate-auto-color":"#14946C","state-binary_sensor-active-color":"#E5383E","error-color":"#E5383E","warning-color":"#E8901F","success-color":"#14946C","info-color":"#3C82F0","switch-checked-color":"#14946C","switch-checked-button-color":"#FFFFFF","switch-checked-track-color":"#14946C","input-fill-color":"rgba(18,18,18,.05)","eh-ink":"#121212","eh-ink2":"rgba(18,18,18,.64)","eh-ink3":"rgba(18,18,18,.62)","eh-alert-text":"#B3261E","eh-amber-text":"#9A5B00","eh-mint-text":"#0B6B4D","eh-line-strong":"rgba(18,18,18,.42)","eh-hair":"rgba(18,18,18,.08)","eh-glass":"linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72))","eh-edge":"inset 0 1px 0 #fff, inset 0 0 0 1px rgba(18,18,18,.04)","eh-deep":"0 1px 1px rgba(40,30,20,.05), 0 10px 20px rgba(40,30,20,.06), 0 30px 60px rgba(40,30,20,.08)","eh-amber":"#E8901F","eh-amber-glow":"rgba(255,170,80,.55)","eh-ice":"#3C82F0","eh-ice-glow":"rgba(90,150,255,.35)","eh-alert":"#E5383E","eh-alert-glow":"rgba(255,80,80,.45)","eh-mint":"#14946C","eh-fill-top-bright":"50%","eh-fill-bottom-deep":"70%","eh-dry":"#1E97AA","eh-fan":"#7B61E0","eh-chart-now":"#14946C","eh-track":"rgba(18,18,18,.07)"}},"cards":{"track":"var(--eh-track,rgba(127,127,127,.12))","amber":"var(--eh-amber,#E8901F)","card-bg":"var(--card-background-color,#fff)","white":"#fff","head-dark-ink":"#F4F2EE","shade-35":"rgba(0,0,0,.35)","head-light-ink":"#121212","ice":"var(--eh-ice,#3C82F0)","amber-2":"var(--eh-amber,#FFB25C)","shade-42":"rgba(0,0,0,.42)","track-08":"var(--eh-track,rgba(127,127,127,.08))","ink":"var(--eh-ink,#1c1c1e)","dry":"var(--eh-dry,#2AA5B8)","fan":"var(--eh-fan,#8B74E8)","chart-now":"var(--eh-chart-now,#2FA67A)","track-14":"var(--eh-track,rgba(127,127,127,.14))","head-dark-ink2":"rgba(244,242,238,.64)","ice-2":"var(--eh-ice,#8DC2FF)","alert":"var(--eh-alert,#FF5A5F)","shade-25":"rgba(0,0,0,.25)","page-bg":"var(--primary-background-color,#fff)","head-dark-bg":"#08090A","head-light-bg":"#EFECE6","head-light-ink2":"rgba(18,18,18,.64)","shade-18":"rgba(0,0,0,.18)","error":"var(--error-color,#c62828)","charcoal":"#1F1E1C","shade-28":"rgba(0,0,0,.28)","glass":"var(--eh-glass,var(--ha-card-background,var(--card-background-color,#fff)))","shade-55":"rgba(0,0,0,.55)","shade-30":"rgba(0,0,0,.3)","shade-50":"rgba(0,0,0,.5)","live":"#ff3b30","mint-text":"var(--eh-mint-text,#1F7A57)","hair":"var(--eh-hair,var(--divider-color,rgba(127,127,127,.2)))","track-10":"var(--eh-track,rgba(127,127,127,.1))","alert-text":"var(--eh-alert-text,var(--eh-alert,#B3261E))","hair-35":"var(--eh-hair,var(--divider-color,rgba(127,127,127,.35)))","mint":"var(--eh-mint,#2FA67A)","card-bg-2":"var(--card-background-color,#141517)","text":"var(--primary-text-color,#F4F2EE)","primary":"var(--primary-color,#5CE0B4)","on-primary":"var(--text-primary-color,#08090A)","amber-glow":"var(--eh-amber-glow,rgba(255,160,70,.5))","ice-glow":"var(--eh-ice-glow,rgba(90,160,255,.42))","alert-glow":"var(--eh-alert-glow,rgba(255,70,80,.5))","mint-2":"var(--eh-mint,#5CE0B4)","grey-14":"rgba(127,127,127,.14)","divider":"var(--divider-color,rgba(127,127,127,.18))","on-accent":"#141414","toast-ok":"#5CE0B4","toast-bg":"#1d1d1f","toast-action":"#FFC070","shade-64":"rgba(0,0,0,.64)","shade-45":"rgba(0,0,0,.45)","white-20":"rgba(255,255,255,.2)","mint-glow-mixed":"rgba(92,224,180,.4)","view-bg":"var(--lovelace-background,var(--primary-background-color,#f4f4f4))","bg":"var(--eh-bg,var(--card-background-color,#fff))","shade-20":"rgba(0,0,0,.2)","glass-solid":"#fff","camera-bg":"#111","white-85":"rgba(255,255,255,.85)","white-08":"rgba(255,255,255,.08)","shade-12":"rgba(0,0,0,.12)","line-strong":"var(--eh-line-strong,rgba(127,127,127,.5))","mint-3":"var(--eh-mint,#2FB383)","ink3":"var(--eh-ink3,#757575)","line-strong-50":"var(--eh-line-strong,var(--divider-color,rgba(127,127,127,.5)))","alert-2":"var(--eh-alert,#E5484D)","shade-40":"rgba(0,0,0,.4)","white-70":"rgba(255,255,255,.7)","chip-ink":"#333","divider-35":"var(--divider-color,rgba(127,127,127,.35))","ha-card-bg":"var(--ha-card-background,var(--card-background-color,#fff))","page-bg-2":"var(--primary-background-color,#f4f2ee)","divider-30":"var(--divider-color,rgba(127,127,127,.3))","divider-25":"var(--divider-color,rgba(127,127,127,.25))","grey-12":"rgba(127,127,127,.12)","dusk-top":"rgba(40,20,0,.10)","dusk-bottom":"rgba(20,10,0,.16)","grey-15":"rgba(127,127,127,.15)","text-2":"var(--primary-text-color,#111)","grey-16":"rgba(127,127,127,.16)","alarm":"#FF5A5F","black":"#000","night-ink":"rgba(255,236,210,.74)","slider-ink":"#111","grey-10":"rgba(127,127,127,.1)","hue-spectrum":"linear-gradient(90deg,#f00,#ff0 17%,#0f0 33%,#0ff 50%,#00f 67%,#f0f 83%,#f00)","ct-spectrum":"linear-gradient(90deg,#ffb15a,#fff3e0 55%,#cfe3ff)","r-xs":"10px","r-sm":"14px","r-md":"18px","r-lg":"30px","pad":"16px","pad-title":"18px","card-w":"400px","pad-climate":"20px","icon-s":"16px","icon-m":"20px","icon-l":"28px","caps-ls":".14em","hit":"44px","row-gap":"8px","fill-top-bright":"var(--eh-fill-top-bright,50%)","fill-bottom-deep":"var(--eh-fill-bottom-deep,70%)"}},"fonts":{"onest-cyrillic":"data:font/woff2;base64,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","onest-latin":"data:font/woff2;base64,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"}};
 // Hauflo «Atelier» cards for Home Assistant (owner 2026-10-24) — served by the Hauflo agent.
 // Own cards only (no third-party code, nothing loaded from the internet): hauflo-hero, hauflo-room,
 // hauflo-scenes, hauflo-climate, hauflo-sliders, hauflo-alert. Plain web components; HA calls
@@ -234,7 +234,7 @@ const HF_DATA = typeof HF_PACK === "object" ? { theme: HF_PACK.theme } : !HF_FIR
 *{box-sizing:border-box}
 .glass{background:var(--eh-glass,var(--ha-card-background,var(--card-background-color)));box-shadow:var(--eh-edge,none),var(--eh-deep,var(--ha-card-box-shadow,none));border-radius:var(--eh-radius,var(--hf-r-lg));position:relative;overflow:hidden}
 .caps{font:500 11px/1.2 Onest,var(--ha-font-family-body),sans-serif;letter-spacing:var(--hf-caps-ls);text-transform:uppercase;color:var(--ink2)}
-.hfh{padding:var(--hf-pad);opacity:.6}.hfh p{font:400 13px/1.4 Onest,sans-serif;color:var(--ink2);margin:6px 0 0}
+.hfh{padding:var(--hf-pad);opacity:.6}.hfw{opacity:1;margin-bottom:12px}.hfw .caps{color:var(--alert)}.hfh p{font:400 13px/1.4 Onest,sans-serif;color:var(--ink2);margin:6px 0 0}
 .thin{font-weight:200;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
 .ns.ns{display:inline-grid;gap:0;margin:0;padding:0}.ns.ns>*{grid-area:1/1;display:inline;font:inherit;color:inherit;margin:0;padding:0}.ns.ns>.gh{visibility:hidden}
 ha-icon{--mdc-icon-size:var(--hf-icon-m);display:inline-flex}
@@ -454,9 +454,106 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
       .filter((a) => want.has(a.entity) && !a.noData && !seen.has(a.entity) && seen.add(a.entity))
       .sort((a, b) => Number(!!a.returned) - Number(!!b.returned) || Number(!!a.ackedBy) - Number(!!b.ackedBy) || Number(alarmCritical(h, b)) - Number(alarmCritical(h, a)) || String(a.since).localeCompare(String(b.since)));
   };
-  /** A danger to people or the house (water, smoke, gas, CO) — never accepted together with equipment faults. */
-  const DANGER = ["moisture", "smoke", "gas", "carbon_monoxide"];
-  const alarmCritical = (h, a) => a.critical === true || DANGER.includes(st(h, a.entity)?.attributes?.device_class);
+  // The signals canon (agent tuning.json → «signals», 0.32 п.5): what a sensor in its alarm state means for the house — its
+  // class's level (alarm / fault / none), severity, the life-safety ones, a classless one by the words of its name. Kept
+  // here literally (the agent serves this file as is); scripts/check-cards-logic.mjs compares it with tuning.json.
+  const SIGNALS = {"classes":{"binary_sensor.moisture":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.smoke":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.gas":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.carbon_monoxide":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.safety":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.heat":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.cold":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.tamper":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.vibration":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.problem":{"alarm":{"states":["on"]},"house":"fault","severity":"important"},"binary_sensor.battery":{"alarm":{"states":["on"]},"house":"none","severity":"info"},"binary_sensor.connectivity":{"alarm":{"states":["off"]},"house":"none","severity":"important"},"sensor.battery":{"alarm":{"below":20,"step":5},"house":"none","severity":"info"},"event.doorbell":{"house":"none","severity":"important"}},"lifeSafety":["binary_sensor.moisture","binary_sensor.smoke","binary_sensor.gas","binary_sensor.carbon_monoxide","classless.loud"],"watch":["binary_sensor.problem","binary_sensor.safety","binary_sensor.smoke","binary_sensor.gas","binary_sensor.moisture","binary_sensor.carbon_monoxide","binary_sensor.tamper","binary_sensor.heat","binary_sensor.battery","sensor.battery","event.doorbell"],"classless":{"domains":["binary_sensor"],"alarm":{"states":["on"]},"loudWords":"leak|flood|water|smoke|fire|(?<![a-z])gas|протеч|залив|вод[аы]|дым|пожар|(?<![а-я])газ|protech|zaliv|dym|(?<![a-z])co(?![a-z0-9])|угарн|ugarn","withLoudWords":{"house":"alarm","severity":"important"},"faultWords":"ошибк|авари|неисправ|угроз|fault|error|failure|alarm|warning|threat|oshibk|avari|neispr|ugroz","withWords":{"house":"fault","severity":"important"}},"undetermined":{"house":"none","severity":"info"},"unlisted":{"house":"none","severity":"important"}};
+  // The agent's own entities and the phones' are never watched (signals_agent.watch_skip_platforms).
+  const SIGNALS_SKIP = ["hauflo", "mobile_app"];
+  const SIG_LOUD = new RegExp(SIGNALS.classless.loudWords, "i");
+  const SIG_FAULT = new RegExp(SIGNALS.classless.faultWords, "i");
+  /** One signal by the canon, as the agent's signals.py reads it (base_of + alarm_of) with no choice of the site's:
+   * { key, house: alarm|fault|none, severity, problem (in its alarm state now), undetermined (classless, no words), life }. */
+  const signalOf = (s) => {
+    const id = s.entity_id;
+    const dom = id.split(".")[0];
+    const dc = typeof s.attributes?.device_class === "string" ? s.attributes.device_class.trim().toLowerCase() : "";
+    const cl = SIGNALS.classless;
+    let key = "unlisted";
+    let base = SIGNALS.unlisted;
+    if (dc) {
+      if (Object.hasOwn(SIGNALS.classes, `${dom}.${dc}`)) [key, base] = [`${dom}.${dc}`, SIGNALS.classes[`${dom}.${dc}`]];
+    } else if (cl.domains.includes(dom)) {
+      // HA's State.name: the friendly name, else the object id with spaces.
+      const name = s.attributes?.friendly_name || id.split(".")[1].replace(/_/g, " ");
+      [key, base] = SIG_LOUD.test(name) ? ["classless.loud", { alarm: cl.alarm, ...cl.withLoudWords }] : SIG_FAULT.test(name) ? ["classless.fault", { alarm: cl.alarm, ...cl.withWords }] : ["undetermined", { alarm: cl.alarm, ...SIGNALS.undetermined }];
+    }
+    const a = base.alarm;
+    const n = typeof s.state === "string" && s.state.trim() !== "" ? Number(s.state) : NaN;
+    const problem = !!a && !(a.none) && (Array.isArray(a.states) ? a.states.includes(s.state) : Number.isFinite(n) && ((a.below !== undefined && n < a.below) || (a.above !== undefined && n > a.above)));
+    return { key, house: base.house, severity: base.severity, problem, undetermined: key === "undetermined", life: SIGNALS.lifeSafety.includes(key) };
+  };
+  /** «Всё хорошо» of the house — ONE helper for the header, the alarm screen, the screensaver and the tiles (0.32 п.5).
+   * The agent's answer when it gives one (`_house` ok / fault / alarm / offline, `_faults` — what moves it, `_shelved` —
+   * «не решено», listed, never moving it: signals.py with the site's own choices); an older agent or none — the canon here,
+   * over what the agent watches by default (the canon's watch list) and the classless ones whose name says it. Hidden
+   * entities count only when the card lists them (`cfg.alarms`: the project's inputs are hidden from the client).
+   * The agent's level is the house's even with no fault listed (a site's choice the cards can't see); a fault of an entity
+   * HA's states don't have here is kept with the agent's `name` (acceptance 10.11 M-1).
+   * → { level, faults: [{ entity, name, house, severity, offline }], shelved: [ids], agent } */
+  const houseLevel = (hass, cfg) => {
+    const d = AGENT.data;
+    if (d && typeof d._house === "string" && Array.isArray(d._faults)) {
+      const faults = d._faults.filter((f) => f && typeof f.entity === "string").map((f) => ({ entity: f.entity, name: typeof f.name === "string" ? f.name : "", house: f.house === "alarm" ? "alarm" : "fault", severity: f.severity, offline: !!f.offline }));
+      return { level: ["ok", "fault", "alarm", "offline"].includes(d._house) ? d._house : "ok", faults, shelved: Array.isArray(d._shelved) ? d._shelved.filter((x) => typeof x === "string") : [], agent: true };
+    }
+    const listed = new Set(cfg?.alarms || []);
+    const faults = [];
+    const shelved = [];
+    for (const s of Object.values(hass?.states || {})) {
+      const id = s.entity_id;
+      if (!id.startsWith("binary_sensor.") && !id.startsWith("sensor.") && !id.startsWith("event.")) continue;
+      const e = hass.entities?.[id];
+      if ((e?.hidden && !listed.has(id)) || SIGNALS_SKIP.includes(e?.platform)) continue;
+      const g = signalOf(s);
+      if (!SIGNALS.watch.includes(g.key) && !g.key.startsWith("classless.") && g.key !== "undetermined") continue;
+      if (!g.problem) continue;
+      if (g.undetermined) {
+        if (g.problem) shelved.push(id);
+      } else if (g.house !== "none" && g.problem) faults.push({ entity: id, name: "", house: g.house, severity: g.severity, offline: false });
+    }
+    const level = faults.some((f) => f.house === "alarm") ? "alarm" : faults.length ? "fault" : "ok";
+    return { level, faults, shelved, agent: false };
+  };
+  const HOUSE_RANK = { ok: 0, offline: 1, fault: 2, alarm: 3 };
+  /** The house's state as said (the header, the house's alarm card, the screensaver — one decision, acceptance 10.11 M-1):
+   * houseLevel's faults minus `skip` (what is said apart: the rules' open alarms) split into alarms / faults / lost links,
+   * and the level — the worst of them and the agent's own `_house` (a site's choice the cards can't see; «offline» is its
+   * own state). `bare`: a level with nothing of it named here — said by the level's word alone.
+   * → { level, wet: [faults], problems: [faults], lost: [faults], bare } */
+  const houseHead = (hl, skip = []) => {
+    const f = hl ? hl.faults.filter((x) => !skip.includes(x.entity)) : [];
+    const wet = f.filter((x) => !x.offline && x.house === "alarm");
+    const problems = f.filter((x) => !x.offline && x.house !== "alarm");
+    const lost = f.filter((x) => x.offline);
+    const own = wet.length ? "alarm" : problems.length ? "fault" : lost.length ? "offline" : "ok";
+    const agent = hl?.agent && Object.hasOwn(HOUSE_RANK, hl.level) ? hl.level : "ok";
+    const level = HOUSE_RANK[agent] > HOUSE_RANK[own] ? agent : own;
+    return { level, wet, problems, lost, bare: level !== own };
+  };
+  /** A signal the canon watches and whose level moves the house (alarm / fault) — by its class, or a classless one by its
+   * name's words. A tile's red frame, the screensaver's list, a device's fault sensors in the editor all ask this. */
+  const signalWatched = (s) => {
+    const g = signalOf(s);
+    return (SIGNALS.watch.includes(g.key) || g.key.startsWith("classless.")) && g.house !== "none";
+  };
+  /** The signals that move «Всё хорошо» in this house: the canon's classes over HA's states (house ≠ none) and what the
+   * agent says moves it now (`_faults`: its site choices, an entity HA may not have here). `hidden` — HA's hidden ones too:
+   * the editors' «На „Всё хорошо“ влияют N сигналов» counts them (a project's alarm inputs are hidden from the client,
+   * acceptance 10.11 L-2); the «Что проверяется» sheet leaves them out, as the fallback houseLevel does. */
+  const houseSignals = (hass, hidden = false) => {
+    const ids = Object.values(hass?.states || {}).filter((s) => {
+      const id = s.entity_id;
+      if (!/^(binary_sensor|sensor|event)\./.test(id) || (!hidden && hass.entities?.[id]?.hidden) || SIGNALS_SKIP.includes(hass.entities?.[id]?.platform)) return false;
+      return signalWatched(s);
+    }).map((s) => s.entity_id);
+    const d = AGENT.data;
+    const agent = d && Array.isArray(d._faults) ? d._faults.map((f) => f?.entity).filter((x) => typeof x === "string") : [];
+    return [...new Set([...ids, ...agent])];
+  };
+  /** A danger to people or the house (the canon's life-safety signals: water, smoke, gas, CO, a classless «Протечка») —
+   * never accepted together with equipment faults. */
+  const alarmCritical = (h, a) => a.critical === true || (!!st(h, a.entity) && signalOf(st(h, a.entity)).life);
   const pluralAlarms = (n) => (n % 10 === 1 && n % 100 !== 11 ? "авария" : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? "аварии" : "аварий");
   /** The count of an alarm list, open and accepted told apart (client review, stage 10 round 2: «2 аварии» over a list of
    * accepted + open lines): «2 аварии · принято: 1»; all accepted: «Приняты · 3 аварии». */
@@ -1588,8 +1685,8 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
   };
   /** Before a card draws: its config's lists in the block's order (a copy; the config itself is left as it is). */
   const orderApply = (card) => {
-    const c = card._raw;
-    if (!c) return;
+    const raw = card._raw;
+    if (!raw) return;
     const key = orderKey(card);
     if (key) {
       ORDER.cards.add(card);
@@ -1597,9 +1694,16 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     }
     const list = key ? ORDER.data?.[key] : undefined;
     const sig = Array.isArray(list) && list.length ? list.join("\n") : "";
-    if (card._osig === sig && card._oraw === c) return;
+    // A row the integrator added (items) of an entity HA doesn't have is no row («Нет связи · N датчиков» over ids that
+    // never existed, acceptance 10.11 L-4): left out while it's missing, back as soon as HA has it.
+    const miss = (card._rowAdd || []).filter((id) => !card._hass?.states?.[id]);
+    const msig = miss.join("\n");
+    if (card._osig === sig && card._oraw === raw && card._omiss === msig) return;
     card._osig = sig;
-    card._oraw = c;
+    card._oraw = raw;
+    card._omiss = msig;
+    const lk = ROW_LIST[card.localName] || "entities";
+    const c = miss.length && Array.isArray(raw[lk]) ? { ...raw, [lk]: raw[lk].filter((x) => !miss.includes(typeof x === "string" ? x : x?.entity)) } : raw;
     if (!sig) {
       card._config = c;
       return;
@@ -2539,8 +2643,6 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       }),
     );
   };
-  /** Binary-sensor classes that mean «something is wrong» when on (HA: problem, safety, smoke, gas, CO, tamper, heat). */
-  const PROBLEM_CLASSES = ["problem", "safety", "smoke", "gas", "carbon_monoxide", "tamper", "heat"];
   const OPENING = ["window", "door", "garage_door", "opening"];
   const FAN = { auto: "Авто", on_low: "Тихо", on_high: "Сильно", auto_low: "Авто ↓", auto_high: "Авто ↑", low: "Тихо", medium: "Средне", middle: "Средне", mid: "Средне", high: "Сильно", top: "Макс", quiet: "Тихо", diffuse: "Мягко", focus: "Фокус", turbo: "Турбо" };
   /** climate.turn_off is there: the TURN_OFF feature (128) or «off» among its modes. */
@@ -2682,6 +2784,8 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
   );
   EN_RX.push([/^(.+): нет ответа от устройства$/, "$1: no response from the device"]);
   EN_RX.push([/^Авария: (\d+)$/, "Fault: $1"], [/^Неисправность: (.+)$/, "Problem: $1"], [/^Неисправностей: (\d+)$/, "Problems: $1"], [/^неисправность: (\d+)$/, "problem: $1"]);
+  // The house's level said by itself (houseHead: the agent's `_house` with nothing of it named here, acceptance 10.11 M-1).
+  Object.assign(EN, { "Неисправность": "Problem", "Нет связи с датчиками": "No link to the sensors" });
   Object.assign(EN, { "Включить всё": "Turn all on", "Выключить всё": "Turn all off", "Часы": "Hours", "Минуты": "Minutes", "Защита от замерзания": "Frost protection", "Авария": "Fault" });
   Object.assign(EN, { "Свет у меня": "My light", "Потеплее": "Warmer", "Моя комната ›": "My room ›" });
   EN_RX.push([/^задано (-?[\d.,]+°) · сейчас (-?[\d.,]+°)$/, "set $1 · now $2"], [/^вкл · (\d+) из (\d+)$/, "on · $1 of $2"]);
@@ -3054,6 +3158,77 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
 
   /** A card's entity list as the cards read it: a non-empty string, or an object with a string `entity`; the rest is dropped. */
   const entList = (list) => (Array.isArray(list) ? list.filter((e) => (typeof e === "string" ? e.trim() !== "" : !!e && typeof e === "object" && typeof e.entity === "string" && e.entity !== "")) : []);
+  // 0.32 п.6: the integrator's rows of a card (its editor's «Состав блока») — `items` (per row: a name, a second line, an
+  // icon, hidden, the block it goes in, what a tap / a hold does; a row of an entity the card doesn't pick by itself is
+  // added, even from another room), `auto` (false — only the rows of `items`, nothing picked by itself), `order` (entity
+  // ids first, in this order). Priority: the card's rows > HA's label `hauflo_role_*` > the registry. The agent's merge
+  // keeps them field by field (dashmerge USER_KEYS) and never reads them through the tunnel. None — the card as before.
+  const ROW_KEYS = ["entity", "name", "secondary", "icon", "icon_type", "hidden", "block", "tap_action", "hold_action", "double_tap_action"];
+  const ROW_BLOCKS = ["control", "readings", "diagnostics"];
+  const ENT_ID = /^[a-z_]+\.[a-z0-9_]+$/;
+  const ROWS_SEEN = new WeakMap();
+  /** The card's well-formed rows, id → row (setConfig says the rest). */
+  const rowItems = (cfg) => {
+    if (!cfg || typeof cfg !== "object") return new Map();
+    let m = ROWS_SEEN.get(cfg);
+    if (!m) ROWS_SEEN.set(cfg, (m = new Map((Array.isArray(cfg.items) ? cfg.items : []).filter((x) => x && typeof x === "object" && !Array.isArray(x) && typeof x.entity === "string" && ENT_ID.test(x.entity)).map((x) => [x.entity, x]))));
+    return m;
+  };
+  /** The entity ids of `order` (its class keys are hauflo-area's `areaClassOrder`). */
+  const rowOrder = (cfg) => (Array.isArray(cfg?.order) ? cfg.order : []).filter((x) => typeof x === "string" && ENT_ID.test(x));
+  const hasRows = (cfg) => rowItems(cfg).size > 0 || cfg?.auto === false || rowOrder(cfg).length > 0;
+  /** The ids a card shows: what it picks by itself (`auto`), the rows of `items` added, hidden ones out, `order` first.
+   * `labelHid(id)` — HA keeps it off the card (its «hidden» / label `hauflo_role_hidden`): a row of it comes back only by an
+   * explicit `hidden: false` (the editor's eye), never by a renamed row (acceptance 10.11 L-5). */
+  const applyRows = (cfg, auto, labelHid = () => false) => {
+    if (!hasRows(cfg)) return auto;
+    const it = rowItems(cfg);
+    const base = cfg.auto === false ? [] : auto;
+    const ids = [...base, ...[...it.keys()].filter((id) => !base.includes(id) && (it.get(id).hidden === false || !labelHid(id)))].filter((id) => it.get(id)?.hidden !== true);
+    const ord = rowOrder(cfg).filter((id) => ids.includes(id));
+    return [...ord, ...ids.filter((id) => !ord.includes(id))];
+  };
+  /** A row's own tap / hold (`tap_action` / `hold_action` of its item): done here, true — else the card's default. */
+  const rowAct = (card, id, key) => {
+    const a = rowItems(card?._raw || card?._config).get(id)?.[key];
+    if (!a || typeof a !== "object") return false;
+    runAction(card, a, id);
+    return true;
+  };
+  // The list each card draws its rows from (its rows over it); hauflo-area picks its own (members()).
+  const ROW_LIST = { "hauflo-alert": "alarms", "hauflo-leaks": "sensors", "hauflo-scenes": "scenes" };
+  // Lists of plain ids (a row there is shown or not, in its order; its name is the entity's).
+  const ROW_IDS_ONLY = ["alarms", "sensors"];
+  /** What the integrator's rows took out of a card, in words (its «Скрыто, потому что …» in edit mode). */
+  const rowsWhyMore = (cfg) => {
+    const hid = [...rowItems(cfg).values()].filter((o) => o.hidden === true).length;
+    return [cfg?.auto === false ? LL("авто выключено — только свои строки", "auto is off — own rows only") : "", hid ? LL(`скрыто здесь: ${hid}`, `hidden here: ${hid}`) : ""].filter(Boolean);
+  };
+  /** What is wrong with the card's YAML, said (RU, EN) instead of a blank card or an exception (personas §5 bug 1). */
+  const cfgProblems = (cfg) => {
+    const out = [];
+    for (const k of ["entities", "groups", "lamps", "alarms", "sensors", "valves", "scenes", "lights", "covers", "devices", "temperature", "humidity"]) {
+      const v = cfg[k];
+      if (v === undefined || v === null) continue;
+      if (!Array.isArray(v)) out.push([`«${k}» — не список`, `«${k}» is not a list`]);
+      else if (v.some((e) => !(typeof e === "string" ? e.trim() !== "" : !!e && typeof e === "object" && typeof e.entity === "string" && e.entity !== ""))) out.push([`«${k}»: строка без entity пропущена`, `«${k}»: a row with no entity skipped`]);
+    }
+    if (cfg.items !== undefined && cfg.items !== null) {
+      if (!Array.isArray(cfg.items)) out.push(["«items» — не список", "«items» is not a list"]);
+      else
+        cfg.items.forEach((x, i) => {
+          if (!x || typeof x !== "object" || Array.isArray(x) || typeof x.entity !== "string" || !ENT_ID.test(x.entity)) out.push([`«items» ${i + 1}: нужна entity (domain.object_id)`, `«items» ${i + 1}: an entity (domain.object_id) is needed`]);
+          else {
+            const bad = Object.keys(x).filter((k) => !ROW_KEYS.includes(k));
+            if (bad.length) out.push([`«items» ${x.entity}: неизвестные ключи ${bad.join(", ")}`, `«items» ${x.entity}: unknown keys ${bad.join(", ")}`]);
+            if (x.block !== undefined && !ROW_BLOCKS.includes(x.block)) out.push([`«items» ${x.entity}: block — ${ROW_BLOCKS.join(" / ")}`, `«items» ${x.entity}: block is ${ROW_BLOCKS.join(" / ")}`]);
+          }
+        });
+    }
+    if (cfg.auto !== undefined && typeof cfg.auto !== "boolean") out.push(["«auto» — true или false", "«auto» is true or false"]);
+    if (cfg.order !== undefined && cfg.order !== null && !Array.isArray(cfg.order)) out.push(["«order» — не список", "«order» is not a list"]);
+    return out;
+  };
   class EHCard extends HTMLElement {
     constructor() {
       super();
@@ -3082,11 +3257,40 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       // ONE normaliser for every entity list: `- null`, `- {name: x}` without `entity`, numbers are dropped, so no site below
       // meets a null (tester 10.11: «Cannot read properties of null» left a blank card). Nothing usable left = a message, not a blank.
       this._cfgBad = false;
-      for (const k of ["entities", "groups", "lamps"]) {
+      // What is wrong in it, said in edit mode and the editor (0.32 п.6 item 7) — the card still draws what is usable.
+      this._cfgWhy = cfgProblems(this._config);
+      for (const k of ["entities", "groups", "lamps", "alarms", "sensors", "valves", "scenes", "lights", "covers", "devices", "temperature", "humidity"]) {
+        const v = this._config[k];
+        if (v === null) delete this._config[k];
+        else if (v !== undefined && !Array.isArray(v)) (this._cfgBad = true), (this._config[k] = []);
         if (!Array.isArray(this._config[k])) continue;
         const list = entList(this._config[k]);
         if (!list.length && this._config[k].length) this._cfgBad = true;
         this._config[k] = list;
+      }
+      if (this._config.items !== undefined && !Array.isArray(this._config.items)) delete this._config.items;
+      // 0.32 п.6: the card's rows over its list (hauflo-area applies them to what it picks, in members()).
+      const lk = ROW_LIST[this.localName] || "entities";
+      this._rowAdd = [];
+      this._rowsOn = false;
+      if (this.localName !== "hauflo-area" && hasRows(this._config) && (Array.isArray(this._config[lk]) || this._config.auto === false || rowItems(this._config).size)) {
+        const it = rowItems(this._config);
+        const list = this._config[lk] || [];
+        const by = new Map(list.map((x) => [typeof x === "string" ? x : x.entity, x]));
+        // A row added over the card's own list: drawn only while HA has its entity (orderApply), else said (acceptance 10.11 L-4).
+        this._rowAdd = [...it.keys()].filter((id) => !by.has(id) && it.get(id).hidden !== true);
+        this._rowsOn = true;
+        this._config[lk] = applyRows(this._config, [...by.keys()]).map((id) => {
+          const was = by.get(id);
+          const o = it.get(id);
+          if (ROW_IDS_ONLY.includes(lk) || !o) return was ?? id;
+          // The row's name / icon over the list's own (a second line follows the name, as the cards' «·» names do).
+          const own = typeof was === "object" ? was : {};
+          const name = o.name || own.name;
+          const out = { ...own, entity: id, ...(o.icon ? { icon: o.icon } : {}) };
+          if (name || o.secondary) out.name = [name || nameOf(this._hass?.states?.[id], id), o.secondary].filter(Boolean).join(" · ");
+          return out;
+        });
       }
       this._raw = this._config; // as configured — the block's order is put over a copy (orderApply)
       this._sig = "";
@@ -3143,7 +3347,7 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       CARDS.add(this);
       // HA replaces a state object when it changes: comparing references is enough — no JSON of every
       // attribute on every hass update (HA core review 25.10). `_sig = ""` elsewhere forces a render.
-      const refs = [...this.watched(), ...famWatched(this)].map((id) => this._hass.states[id]);
+      const refs = [...this.watched(), ...famWatched(this), ...(this._rowAdd || [])].map((id) => this._hass.states[id]); // a row added over a missing entity: drawn when HA has it (L-4)
       const dark = !!this._hass.themes?.darkMode;
       if (this._sig && dark === this._dark && refs.length === this._refs?.length && refs.every((r, i) => r === this._refs[i])) return;
       const forced = !this._sig;
@@ -3156,11 +3360,20 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       this.toggleAttribute("fit", fixedRows(this._config) !== undefined && !this._config.panel);
       orderApply(this);
       this._hfHid = false;
+      this._hidWhy = "";
+      // Every row taken out by the integrator (hidden here / auto off): the card hides with the reason, never «nothing set
+      // up» or an empty frame (acceptance 10.11 M-2 sweep); the house's alarm card and a scenes card's own rows still draw.
+      const lk = ROW_LIST[this.localName] || "entities";
+      const gone = !!this._rowsOn && !(this._config[lk] || []).length && !this._config.all_alarms && !(Array.isArray(this._config.rows) && this._config.rows.length);
+      if (!gone && this._goneHid) this.hideCard(false);
+      this._goneHid = gone;
       let body;
       try {
         if (this._cfgBad) console.warn("hauflo-cards:", this.localName, "no valid entity in the list (an entity_id or {entity: ...} is needed)");
         body = this._cfgBad
           ? `<div class="glass d"><p class="empty">${LL("Эта карточка не настроена. Сообщите сервису.", "This card isn't set up. Please contact your service.")}</p></div>`
+          : gone
+          ? ((this._hidWhy = `${LL("Скрыто, потому что", "Hidden because")} ${LL("в карточке не осталось строк", "the card has no rows left")}${rowsWhyMore(this._raw).map((x) => ` · ${x}`).join("")}.`), this.hideCard(true), "")
           : this.render();
       } catch (err) {
         console.error("hauflo-cards:", this.localName, err);
@@ -3168,7 +3381,11 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       }
       // HA's edit mode (preview): a card hidden for now stays visible to whoever edits — an empty grid slot said
       // nothing (п.70: the room's alert before «Сцены»); HA does the same for its cards hidden by conditions.
-      if (this._hfHid && this._hfPreview && !body) body = `<div class="glass hfh"><span class="caps">${this.hiddenName() || ""}</span><p>${LL("Скрыто, пока нечего показать", "Hidden while there's nothing to show")}</p></div>`;
+      if (this._hfHid && this._hfPreview && !body) body = `<div class="glass hfh"><span class="caps">${this.hiddenName() || ""}</span><p>${this._hfHid && this._hidWhy ? esc(this._hidWhy) : LL("Скрыто, пока нечего показать", "Hidden while there's nothing to show")}</p></div>`;
+      // What is wrong in the card's YAML (item 7), said to whoever edits it — above what the card still draws.
+      // A row of an entity HA doesn't have (acceptance 10.11 L-4): not drawn (orderApply / the room's states), said here.
+      const why = [...(this._cfgWhy || []), ...[...rowItems(this._raw).values()].filter((o) => o.hidden !== true && !this._hass.states[o.entity]).map((o) => [`«items» ${o.entity}: такой сущности нет в Home Assistant — строка не показана`, `«items» ${o.entity}: Home Assistant has no such entity — the row isn't shown`])];
+      if (this._hfPreview && why.length) body = `<div class="glass hfh hfw"><span class="caps">${LL("Ошибки в настройке карточки", "Problems in the card's settings")}</span>${why.map((w) => `<p>${esc(LL(...w))}</p>`).join("")}</div>${body}`;
       const html = `<style>${TZ(CSS + (this.css ? this.css() : ""))}</style>${TZ(body, false)}`;
       // A state update that changes nothing on the card (a thermostat repeating its reading) leaves it alone.
       // A forced render (after a drag, a tab) always goes: the DOM may have been changed by hand.
@@ -3426,19 +3643,36 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       const topAn = top && topS ? alarmName(h, topS, top.entity) : null;
       const topRoom = top ? c.rooms?.[top.entity] || (topAn?.tech ? areaName(h, top.entity) : "") : "";
       const topName = top ? `${topAn ? topAn.name : top.entity}${topRoom ? ` · ${topRoom}` : ""}` : "";
-      // A leak of any integration's sensor (Zigbee, Aqara…, or one in the card's list whose rule is off or missing) with no open alarm is no «Всё хорошо» either (item 9).
-      const wetOther = this.home() || c.all_alarms ? Object.values(h.states).filter((x) => x.entity_id.startsWith("binary_sensor.") && x.attributes?.device_class === "moisture" && x.state === "on" && (!h.entities?.[x.entity_id]?.hidden || (c.alarms || []).includes(x.entity_id)) && !alarms.includes(x.entity_id)) : [];
-      // A problem-class sensor that is on (the floor's «Ошибка тёплого пола», a boiler's fault…) that no alarm rule watches is no
-      // «Всё хорошо» either (stage 10 round 3): shown by the canon's warning look, never as an alarm of the rules (not ours to invent).
-      // The project's own inputs are hidden from the client as service entities, so hidden ones count when the card lists them.
-      const problemOn = this.home() || c.all_alarms ? Object.values(h.states).filter((x) => x.entity_id.startsWith("binary_sensor.") && PROBLEM_CLASSES.includes(x.attributes?.device_class) && x.state === "on" && (!h.entities?.[x.entity_id]?.hidden || (c.alarms || []).includes(x.entity_id)) && !alarms.includes(x.entity_id)) : [];
+      // «Всё хорошо» by the one calculator (houseLevel, 0.32 п.5: the agent's `_house`, else the signals canon): a signal of
+      // any integration (Zigbee, Aqara…, or one in the card's list whose rule is off or missing) whose policy says «авария»
+      // and no alarm rule holds open is red (a leak says «Протечка» and what to do, item 9); one that says «неисправность»
+      // (the floor's «Ошибка тёплого пола», a boiler's fault…) — the canon's warning look, never an alarm of the rules (stage
+      // 10 round 3); «не решено» never moves it.
+      // The level by itself (the agent's `_house` with no fault named here) and a fault of an entity HA's states don't have
+      // (named by the agent) are said too (acceptance 10.11 M-1); «offline» is its own amber state.
+      const hl = this.home() || c.all_alarms ? houseLevel(h, c) : null;
+      const hh = houseHead(hl, alarms);
+      const wetOther = hh.wet;
+      const problemOn = hh.problems;
+      const lostSig = hh.lost.filter((f) => !deafOnly.includes(f.entity));
+      const lostN = deafOnly.length + lostSig.length;
+      const fName = (f) => (st(h, f.entity) ? alarmName(h, st(h, f.entity), f.entity).name : f.name || f.entity);
+      const fRoom = (f) => areaName(h, f.entity) || "";
       const quiet = (txt, dot = "var(--ink2)", want = false, link = want && !!AUTO.servicePath()) => `<div class="hl2"${link ? ' role="link" tabindex="0" data-svc' : ""}><span class="dot" style="background:${dot}"></span>${txt}${link ? `<span aria-hidden="true">&nbsp;›</span>` : ""}</div>`;
+      // A classless sensor whose name says «протечка» is a leak too; another alarm says what to do by its class.
+      const w0 = st(h, wetOther[0]?.entity);
+      const wetLeak = !!w0 && (w0.attributes?.device_class === "moisture" || signalOf(w0).key === "classless.loud");
+      const wetTodo = w0 ? (wetLeak ? TODO.moisture : TODO[w0.attributes?.device_class] || "") : "";
       const headline = !alarms.length && !loud.length && wetOther.length
-        ? `<div class="hl bad"><span class="dot" style="background:var(--alert);box-shadow:0 0 12px var(--alert)"></span>Протечка: ${esc(alarmName(h, wetOther[0], wetOther[0].entity_id).name)}${areaName(h, wetOther[0].entity_id) ? ` · ${esc(areaName(h, wetOther[0].entity_id))}` : ""}</div><div class="todo2">${esc(TODO.moisture)}</div>`
+        ? `<div class="hl bad"><span class="dot" style="background:var(--alert);box-shadow:0 0 12px var(--alert)"></span>${wetLeak ? "Протечка" : "Авария"}: ${esc(fName(wetOther[0]))}${fRoom(wetOther[0]) ? ` · ${esc(fRoom(wetOther[0]))}` : ""}</div>${wetTodo ? `<div class="todo2">${esc(wetTodo)}</div>` : ""}`
+        : ok && hh.level === "alarm"
+        ? `<div class="hl bad"><span class="dot" style="background:var(--alert);box-shadow:0 0 12px var(--alert)"></span>${LL("Авария", "Alarm")}</div><div class="todo2">${esc(alarmTodo(undefined, !!svc?.phone, false))}</div>`
         : ok && problemOn.length
-        ? `<div class="hl bad" style="color:var(--amberT)"><span class="dot" style="background:var(--amber);box-shadow:0 0 12px var(--amber)"></span>${esc(problemOn.length === 1 ? `Неисправность: ${alarmName(h, problemOn[0], problemOn[0].entity_id).name}` : `Неисправностей: ${problemOn.length}`)}</div>`
-        : ok && deafOnly.length
-        ? `<div class="hl"><span class="dot" style="background:var(--amber);box-shadow:0 0 12px var(--amberGlow)"></span>Нет связи · ${deafOnly.length} ${sensorsWord(deafOnly.length)}</div>${otherOff.length ? quiet(`Нет связи · ${otherOff.length} ${devWord(otherOff.length)}`, "var(--amber)", true) : ""}`
+        ? `<div class="hl bad" style="color:var(--amberT)"><span class="dot" style="background:var(--amber);box-shadow:0 0 12px var(--amber)"></span>${esc(problemOn.length === 1 ? `Неисправность: ${fName(problemOn[0])}` : `Неисправностей: ${problemOn.length}`)}</div>`
+        : ok && hh.level === "fault"
+        ? `<div class="hl bad" style="color:var(--amberT)"><span class="dot" style="background:var(--amber);box-shadow:0 0 12px var(--amber)"></span>Неисправность</div>`
+        : ok && (lostN || hh.level === "offline")
+        ? `<div class="hl"><span class="dot" style="background:var(--amber);box-shadow:0 0 12px var(--amberGlow)"></span>${lostN ? `Нет связи · ${lostN} ${sensorsWord(lostN)}` : "Нет связи с датчиками"}</div>${otherOff.length ? quiet(`Нет связи · ${otherOff.length} ${devWord(otherOff.length)}`, "var(--amber)", true) : ""}`
         : ok
         ? `<div class="hl good"><span class="dot" style="background:var(--mint);box-shadow:0 0 12px var(--mint)"></span>Всё хорошо</div>${
             otherOff.length
@@ -3462,8 +3696,10 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       this._chk = {
         alarms: c.alarms || [], open: openList.map((a) => a.entity), deaf,
         loud: loud.map((x) => x.entity_id), sirens: Object.keys(h.states).filter((id) => id.startsWith("siren.") || id.startsWith("alarm_control_panel.")),
-        other: this.home() || c.all_alarms ? Object.values(h.states).filter((x) => x.entity_id.startsWith("binary_sensor.") && x.attributes?.device_class === "moisture" && !h.entities?.[x.entity_id]?.hidden && !(c.alarms || []).includes(x.entity_id)).map((x) => x.entity_id) : null,
-        wet: wetOther.map((x) => x.entity_id), problems: problemOn.map((x) => x.entity_id), devices: c.devices || [], off: otherOff, climates, waiting, lights: lightIds, lightsDeaf: canReport.filter(longNd),
+        other: hl ? houseSignals(h).filter((id) => !(c.alarms || []).includes(id)) : null,
+        wet: wetOther.map((x) => x.entity), problems: problemOn.map((x) => x.entity), lost: lostSig.map((x) => x.entity), level: hh.level, bare: hh.bare,
+        names: Object.fromEntries([...wetOther, ...problemOn, ...lostSig].map((f) => [f.entity, fName(f)])),
+        devices: c.devices || [], off: otherOff, climates, waiting, lights: lightIds, lightsDeaf: canReport.filter(longNd),
       };
       if (this._chkDraw) this._chkDraw();
       // Working only in part: said on the chip too, amber outline (final review 28.10).
@@ -3475,7 +3711,7 @@ ${headline.replace(/<div class="hl( [a-z]+)?"/, (m) => `${m} role="button" tabin
 ${hum !== undefined ? `<div><span class="caps">Влажность</span><b>${fmt(hum)}\u00a0%</b></div>` : ""}
 ${lightIds.length ? `<div><span class="caps">Свет</span><b>${lightsUnknown ? (lightsFresh ? "Обновляется…" : "Нет данных") : litRooms ? `${lamps} ${lamps % 10 === 1 && lamps % 100 !== 11 ? "лампа" : [2, 3, 4].includes(lamps % 10) && ![12, 13, 14].includes(lamps % 100) ? "лампы" : "ламп"} в ${litRooms} ${litRooms === 1 ? "комнате" : "комнатах"}${outerOn.length ? ` · ${esc(nameOf(st(h, outerOn[0]), outerOn[0]))}${outerOn.length > 1 ? ` +${outerOn.length - 1}` : ""}` : ""}` : outerOn.length ? `Включён: ${esc(nameOf(st(h, outerOn[0]), outerOn[0]))}${outerOn.length > 1 ? ` +${outerOn.length - 1}` : ""}` : lightsDeaf ? (lightsFresh ? "Выключен · обновляется…" : `Выключен · ${lightsDeaf} без данных`) : "Выключен"}</b></div>` : ""}
 ${ok && !offline.length && waiting.length && waiting.length < climates.length ? `<div><span class="caps">Климат</span><b>${waiting.length} из ${climates.length} без данных</b></div>` : ""}
-${(c.alarms || []).length && ok ? `<div><span class="caps">Датчики</span><b>${deaf.length ? `<span class="dot" style="background:var(--ink2)"></span>${deaf.length} ${sensorsWord(deaf.length)} без связи` : wetOther.length + problemOn.length ? `<span class="dot" style="background:var(--amber)"></span>неисправность: ${wetOther.length + problemOn.length}` : "в норме"}</b></div>` : ""}</div></div>`;
+${(c.alarms || []).length && ok ? `<div><span class="caps">Датчики</span><b>${lostN ? `<span class="dot" style="background:var(--ink2)"></span>${lostN} ${sensorsWord(lostN)} без связи` : wetOther.length + problemOn.length ? `<span class="dot" style="background:var(--amber)"></span>неисправность: ${wetOther.length + problemOn.length}` : "в норме"}</b></div>` : ""}</div></div>`;
     }
     getGridOptions() {
       return { columns: 12, rows: "auto" };
@@ -3486,7 +3722,7 @@ ${(c.alarms || []).length && ok ? `<div><span class="caps">Датчики</span>
   const openChecks = (card) =>
     sceneSheet(card, ({ sr, draw, close }) => {
       const h = () => card._hass;
-      const nm = (id) => `<span data-own>${esc(alarmName(h(), st(h(), id), id).name)}</span>`;
+      const nm = (id) => `<span data-own>${esc(card._chk?.names?.[id] || alarmName(h(), st(h(), id), id).name)}</span>`;
       const few = (ids) => (ids.length ? `<div class="n">${ids.slice(0, 5).map(nm).join(", ")}${ids.length > 5 ? ` ${LL("и ещё", "and")} ${ids.length - 5}` : ""}</div>` : "");
       const row = (bad, title, value, ids = []) => `<div class="ck"><span class="dt ${bad === null ? "na" : bad ? "bad" : "ok"}"></span><div><div class="t2">${esc(title)}</div><div class="n">${esc(value)}</div>${few(ids)}</div></div>`;
       const paint = () => {
@@ -3498,9 +3734,9 @@ ${(c.alarms || []).length && ok ? `<div><span class="caps">Датчики</span>
 <div class="n">${LL("Заголовок решается по этим проверкам сверху вниз: первая с проблемой — и есть заголовок.", "The headline comes from these checks, top to bottom: the first one with a problem is the headline.")}</div>
 ${row(k.open.length ? true : !k.alarms.length ? null : false, LL("Аварийные датчики", "Alarm sensors"), !k.alarms.length ? LL("не заданы — сообщите сервису", "not set — please contact your service") : k.open.length ? `${LL("авария", "alarm")}: ${k.open.length} ${LL("из", "of")} ${k.alarms.length}` : `${LL("в норме", "all clear")} · ${n(k.alarms, "шт.", "in total")}`, k.open)}
 ${row(k.loud.length ? true : !k.sirens.length ? null : false, LL("Сирены и охрана", "Sirens and security"), !k.sirens.length ? LL("нет", "none") : k.loud.length ? `${LL("звучит", "sounding")}: ${k.loud.length} ${LL("из", "of")} ${k.sirens.length}` : `${LL("тихо", "quiet")} · ${n(k.sirens, "шт. (все siren.* и alarm_control_panel.*)", "in total (every siren.* and alarm_control_panel.*)")}`, k.loud)}
-${k.other ? row(k.wet.length ? true : !k.other.length ? null : false, LL("Протечка — другие датчики", "Leaks — other sensors"), !k.other.length ? LL("нет", "none") : k.wet.length ? `${LL("мокро", "wet")}: ${k.wet.length} ${LL("из", "of")} ${k.other.length}` : `${LL("сухо", "dry")} · ${n(k.other, "шт. (влага, не в аварийных)", "in total (moisture, not alarm sensors)")}`, k.wet) : ""}
-${row(k.problems.length ? true : null, LL("Неисправности — другие датчики", "Faults — other sensors"), k.problems.length ? `${LL("включены", "on")}: ${k.problems.length}` : LL("нет", "none"), k.problems)}
-${row(k.deaf.length ? true : !k.alarms.length ? null : false, LL("Связь с аварийными датчиками", "Alarm sensors' link"), !k.alarms.length ? "—" : k.deaf.length ? `${LL("без связи", "no link")}: ${k.deaf.length}` : LL("все на связи", "all linked"), k.deaf)}
+${k.other ? row(k.wet.length || (k.bare && k.level === "alarm") ? true : !k.other.length ? null : false, LL("Аварии — другие датчики", "Alarms — other sensors"), !k.other.length ? LL("нет", "none") : k.wet.length ? `${LL("авария", "alarm")}: ${k.wet.length} ${LL("из", "of")} ${k.other.length}` : `${LL("в норме", "all clear")} · ${n(k.other, "шт. (протечка, дым, газ, неисправности — не в аварийных)", "in total (leak, smoke, gas, faults — not alarm sensors)")}`, k.wet) : ""}
+${row(k.problems.length || (k.bare && k.level === "fault") ? true : null, LL("Неисправности — другие датчики", "Faults — other sensors"), k.problems.length ? `${LL("включены", "on")}: ${k.problems.length}` : k.bare && k.level === "fault" ? LL("есть — по данным сервиса", "yes — by the service's data") : LL("нет", "none"), k.problems)}
+${row(k.deaf.length + k.lost.length || (k.bare && k.level === "offline") ? true : !k.alarms.length && !k.lost.length ? null : false, LL("Связь с аварийными датчиками", "Alarm sensors' link"), k.deaf.length + k.lost.length ? `${LL("без связи", "no link")}: ${k.deaf.length + k.lost.length}` : k.bare && k.level === "offline" ? LL("нет связи — по данным сервиса", "no link — by the service's data") : !k.alarms.length ? "—" : LL("все на связи", "all linked"), [...k.deaf, ...k.lost])}
 ${row(k.off.length ? true : !k.devices.length ? null : false, LL("Устройства на связи", "Devices linked"), !k.devices.length ? "—" : k.off.length ? `${LL("без связи", "no link")}: ${k.off.length} ${LL("из", "of")} ${k.devices.length}` : `${LL("все на связи", "all linked")} · ${k.devices.length}`, k.off)}
 ${row(k.waiting.length ? true : !k.climates.length ? null : false, LL("Термостаты", "Thermostats"), !k.climates.length ? "—" : k.waiting.length ? `${LL("уставка не получена", "no setpoint yet")}: ${k.waiting.length} ${LL("из", "of")} ${k.climates.length}` : `${LL("в норме", "fine")} · ${k.climates.length}`, k.waiting)}
 ${row(k.lightsDeaf.length ? true : !k.lights.length ? null : false, LL("Свет", "Lights"), !k.lights.length ? "—" : k.lightsDeaf.length ? `${LL("молчат дольше 10 мин", "silent over 10 min")}: ${k.lightsDeaf.length} ${LL("из", "of")} ${k.lights.length}` : `${LL("на связи", "linked")} · ${k.lights.length}`, k.lightsDeaf)}
@@ -4770,17 +5006,31 @@ h2{font:300 30px/1.1 Onest,sans-serif;letter-spacing:-.03em;margin:14px 0 0}
         setTimeout(() => AGENT.cards.forEach((x) => x.localName === "hauflo-hero" && ((x._sig = ""), x._update())), 0);
       }
       if (!on.length) {
-        const deaf = (c.alarms || []).filter((id) => nd(st(h, id))).length;
+        const deafIds = (c.alarms || []).filter((id) => nd(st(h, id)));
+        // No rule's alarm open is no «Аварий нет» while the house says otherwise (houseHead, acceptance 10.11 M-1): the
+        // house's card (`all_alarms`) by the house's level, a room's by the faults of its own sensors.
+        const hh = houseHead(houseLevel(h, c));
+        const mine = (f) => !!c.all_alarms || (c.alarms || []).includes(f.entity);
+        const bad = [...hh.wet, ...hh.problems].filter(mine);
+        const lost = hh.lost.filter((f) => mine(f) && !deafIds.includes(f.entity));
+        const deaf = deafIds.length + lost.length;
+        const lvl = c.all_alarms && hh.bare ? hh.level : "";
+        const fName = (f) => (st(h, f.entity) ? alarmName(h, st(h, f.entity), f.entity).name : f.name || f.entity);
+        const red = bad.some((f) => f.house === "alarm") || lvl === "alarm";
         // A room's / floor's alert card is there only while there's something to say — the card decides by the
         // agent's alarms, not HA's «state on» (a link rule's alarm is «off»).
         // Hidden the HA way (hideCard): `display:none` alone left HA's grid slot and its row gap — the next block in the
         // column started 12 px below the other columns' first blocks (owner 03.11: «верхние блоки разной высоты»).
-        if (c.hide_ok && !deaf) {
+        if (c.hide_ok && !deaf && !bad.length && !lvl) {
           this.hideCard(true);
           return "";
         }
         this.hideCard(false);
-        return `<div class="glass a" style="min-height:0;padding:var(--hf-pad)"><div class="ok"><ha-icon icon="hauflo:shield" style="color:var(--ink2)"></ha-icon>${deaf ? `Нет связи · ${deaf} ${sensorsWord(deaf)}` : "Аварий нет"}</div></div>`;
+        const say = bad.length
+          ? bad.length === 1 ? `${bad[0].house === "alarm" ? "Авария" : "Неисправность"}: ${fName(bad[0])}` : red ? `${bad.length} ${pluralAlarms(bad.length)}` : `Неисправностей: ${bad.length}`
+          : lvl === "alarm" ? LL("Авария", "Alarm") : lvl === "fault" ? "Неисправность" : deaf ? `Нет связи · ${deaf} ${sensorsWord(deaf)}` : lvl === "offline" ? "Нет связи с датчиками" : "Аварий нет";
+        const tone = red ? "var(--alert)" : bad.length || lvl ? "var(--amber)" : "var(--ink2)";
+        return `<div class="glass a" style="min-height:0;padding:var(--hf-pad)"><div class="ok"><ha-icon icon="hauflo:shield" style="color:${tone}"></ha-icon>${esc(say)}</div></div>`;
       }
       this.hideCard(false);
       const s = on[0];
@@ -5567,9 +5817,9 @@ ${hidden ? `<button class="more" data-more="1">${coversFolded ? `Каждая о
    * from the keyboard; a press on a control inside the row stays that control's. */
   const bindInfo = (card, root) =>
     root.querySelectorAll("[data-info]").forEach((el) => {
-      longPress(el, () => openTile(card, el.dataset.info));
-      el.addEventListener("click", (ev) => !GST.lp && ownPress(ev, el) && moreInfo(card, el.dataset.info));
-      el.addEventListener("keydown", (ev) => (ev.key === "Enter" || ev.key === " ") && ownPress(ev, el) && (ev.preventDefault(), moreInfo(card, el.dataset.info)));
+      longPress(el, () => rowAct(card, el.dataset.info, "hold_action") || openTile(card, el.dataset.info));
+      el.addEventListener("click", (ev) => !GST.lp && ownPress(ev, el) && (rowAct(card, el.dataset.info, "tap_action") || moreInfo(card, el.dataset.info)));
+      el.addEventListener("keydown", (ev) => (ev.key === "Enter" || ev.key === " ") && ownPress(ev, el) && (ev.preventDefault(), rowAct(card, el.dataset.info, "tap_action") || moreInfo(card, el.dataset.info)));
     });
   /** A reading / player / camera / weather row: a tap — HA's history (more-info), a hold — our sheet (openTile), on every
    * card alike (item 5, 04.11: a hold never opens HA's more-info). `id`: the entity or a function giving it at the time. */
@@ -6288,7 +6538,9 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
         // «Ошибка тёплого пола» without a device class is a fault, not «вкл» (persona round 3: «всё в норме» during it).
         // «Угроза протечки» / «Warning» without a class: a warning (amber), not an alarm and not «вкл» (п.63 sweep).
         if (!dc && WARN_NAME.test(s.attributes.friendly_name || s.entity_id)) return s.state === "on" ? [LL("внимание", "warning"), "warn"] : ["в норме", "ok"];
-        const faulty = ["problem", "smoke", "gas", "moisture", "safety", "carbon_monoxide", "heat", "tamper"].includes(dc) || (!dc && /ошибк|авари|неисправ|протечк|утечк|перегрев|fault|error|alarm|leak|failure/i.test(s.attributes.friendly_name || s.entity_id));
+        // The word «авария»: a watched signal of the canon (class or classless words), or a classless name that says a fault
+        // the canon leaves undetermined («Перегрев»…) — the word only, the house's level stays the canon's (houseLevel).
+        const faulty = signalWatched(s) || (!dc && /ошибк|авари|неисправ|протечк|утечк|перегрев|fault|error|alarm|leak|failure/i.test(s.attributes.friendly_name || s.entity_id));
         if (faulty) return s.state === "on" ? ["авария", "fault"] : ["в норме", "ok"];
         if (dc === "connectivity") return s.state === "on" ? ["на связи", "ok"] : ["нет связи", "fault"];
         // Windows and doors say «открыто/закрыто», not «вкл» with a green dot (integrator run 16).
@@ -6323,13 +6575,18 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
       const rows = (this._config.entities || []).map((e) => (typeof e === "string" ? { entity: e } : e)).map((e) => ({ ...e, s: st(this._hass, e.entity) })).filter((e) => e.s);
       this.hideCard(!rows.length);
       if (!rows.length) return "";
-      const faults = rows.filter((e) => this.word(e.s)[1] === "fault").length;
-      const nolink = rows.filter((e) => this.word(e.s)[1] === "nolink").length;
-      const warns = rows.filter((e) => this.word(e.s)[1] === "warn").length;
+      // A row the agent says moves the house (its site's choices, houseLevel) is «авария» here too, whatever the canon's word
+      // (acceptance 10.11 M-1 sweep: one decision for the header, the alarm card and this one).
+      const hl = houseLevel(this._hass);
+      const af = hl.agent ? new Set(hl.faults.filter((f) => !f.offline).map((f) => f.entity)) : null;
+      const word = (s) => (af?.has(s.entity_id) && !["fault", "nolink"].includes(this.word(s)[1]) ? ["авария", "fault"] : this.word(s));
+      const faults = rows.filter((e) => word(e.s)[1] === "fault").length;
+      const nolink = rows.filter((e) => word(e.s)[1] === "nolink").length;
+      const warns = rows.filter((e) => word(e.s)[1] === "warn").length;
       return `<div class="glass d"><div class="hd"><span class="caps">${blockTitle(this, "Инженерные системы")}</span><span class="sum"><i class="${faults ? "fault" : warns || nolink ? "warn" : "ok"}"></i>${faults ? `аварий: ${faults}` : nolink ? `без связи: ${nolink}` : warns ? `внимание: ${warns}` : "всё в норме"}</span></div>
 <div class="grid">${rows
         .map((e) => {
-          const [w, k] = this.word(e.s);
+          const [w, k] = word(e.s);
           return `<div class="r ${k}" data-e="${esc(e.entity)}"><i></i><div class="tx"><div class="nm">${esc(e.name || nameOf(e.s, e.entity))}</div>${roomLine(this._hass, e.entity, e.name || nameOf(e.s, e.entity))}<div class="w">${esc(w)}</div></div></div>`;
         })
         .join("")}</div></div>`;
@@ -6414,6 +6671,11 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
     diag: ["sensor", "binary_sensor"],
   };
   /** The role a label gives `id` ("" — none, or one its domain can't be): the entity's own label first, then its device's. */
+  /** HA keeps the entity off a room's cards: its own «hidden», or Hauflo's label `hauflo_role_hidden`. */
+  const labelHid = (h, id) => {
+    const e = h?.entities?.[id];
+    return !!e && (!!e.hidden || roleOf(h, id) === "hidden");
+  };
   const roleOf = (h, id) => {
     const e = h?.entities?.[id];
     const dom = id.split(".")[0];
@@ -6814,8 +7076,9 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
     }
     return out;
   };
-  /** A state tile in alarm (the red frame): a leak, smoke, gas, CO, safety, a problem, a tamper — on. */
-  const TILE_ALARM = ["moisture", "smoke", "gas", "carbon_monoxide", "safety", "problem", "tamper"];
+  /** A state tile in alarm (the red frame): a watched signal of the canon (leak, smoke, gas, CO, safety, a problem, a
+   * tamper, heat — or a classless one by its words) in its alarm state now. */
+  const tileAlarm = (s) => !!s && signalWatched(s) && signalOf(s).problem;
   /** The open view of the dashboard (HA's lovelace panel): its title is not said again over a card. */
   const curView = () => {
     const views = lovelacePanel()?.lovelace?.config?.views || [];
@@ -6903,7 +7166,7 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
       const others = !!this._config.others;
       const owned = others ? ownedOnDashboard(this) : null;
       if (others && OWNED.wait) return [];
-      if (this._memo && this._memo.ents === h.entities && this._memo.devs === h.devices && this._memo.area === area && this._memo.owned === owned) return this._memo.ids;
+      if (this._memo && this._memo.ents === h.entities && this._memo.devs === h.devices && this._memo.area === area && this._memo.owned === owned) return applyRows(this._config, this._memo.ids, (id) => labelHid(h, id));
       const mine = (id) => { const e = h.entities?.[id]; return !e || ["knx", "hauflo"].includes(e.platform) || owned.has(id) || /^(hauflo|easyha)_/.test(String(h.states[id]?.attributes?.id || "")); };
       // A group of only Hauflo's / KNX members (the room's «Свет в комнате», stage 8) is not another integration's device.
       const groupOfMine = (e) => { const m = e.platform === "group" ? h.states[e.entity_id]?.attributes?.entity_id : null; return Array.isArray(m) && m.length > 0 && m.every(mine); };
@@ -6913,7 +7176,43 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
         .map((e) => e.entity_id)
         .sort((a, b) => this.label(a).localeCompare(this.label(b), undefined, { numeric: true, sensitivity: "base" }));
       this._memo = { ents: h.entities, devs: h.devices, area, owned, ids };
-      return ids;
+      return applyRows(this._config, ids, (id) => labelHid(h, id));
+    }
+    /** The room's entities HA's label `hauflo_role_hidden` (or HA's own «hidden») keeps off it — the editor lists them,
+     * an eye puts one back (a row of `items` wins over the label). */
+    labelHidden() {
+      const h = this._hass;
+      const dev = this._config.device;
+      const area = this._config.area;
+      if (!h || (!area && !dev)) return [];
+      return Object.values(h.entities || {})
+        .filter((e) => !e.disabled_by && this.shown(e) && (e.hidden || roleOf(h, e.entity_id) === "hidden") && (dev ? e.device_id === dev : e.area_id ? e.area_id === area : !!e.device_id && h.devices?.[e.device_id]?.area_id === area))
+        .map((e) => e.entity_id);
+    }
+    /** Why the card is hidden now, in words (item 8): what is empty, and what the integrator's choices took out. */
+    whyHidden(part, others) {
+      const it = rowItems(this._config);
+      const lab = this.labelHidden().filter((id) => it.get(id)?.hidden !== false).length;
+      const blk = part ? LL(...AREA_BLOCK[part]) : "";
+      const head = others
+        ? LL("в комнате нет устройств других интеграций (свои Hauflo показывает сам)", "the room has no other integrations' devices (Hauflo shows its own itself)")
+        : blk
+          ? LL(`в блоке «${blk}» нечего показать`, `nothing to show in «${blk}»`)
+          : LL("в комнате нечего показать", "nothing to show in the room");
+      const more = [...rowsWhyMore(this._config), lab ? LL(`скрыто меткой Home Assistant: ${lab}`, `hidden by a Home Assistant label: ${lab}`) : ""].filter(Boolean);
+      return `${LL("Скрыто, потому что", "Hidden because")} ${head}${more.length ? ` · ${more.join(" · ")}` : ""}.`;
+    }
+    /** What the card picks by itself, its rows not applied (the editor's «Состав блока» starts from it). */
+    autoMembers() {
+      const was = this._config;
+      this._config = { ...was, items: undefined, auto: undefined, order: (Array.isArray(was.order) ? was.order : []).filter((k) => !ENT_ID.test(String(k))) };
+      try {
+        this._memo = null;
+        return this.members();
+      } finally {
+        this._config = was;
+        this._memo = null;
+      }
     }
     /** The rule of what a device card shows (item 35): not hidden, not disabled, never a config entity; a diagnostic one
      * only if it is the sensor's battery or link (those the family needs to see); the rest of the diagnostics are noise. */
@@ -6931,7 +7230,15 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
     /** The name without what the page already says: the room's name and the device's («Котельная Дом Родителей
      * МГ28_Газовый котёл _ошибка» → «Газовый котёл ошибка»). */
     label(id) {
+      // The integrator's row (0.32 п.6) over the room's own wording: its name, its second line after «·».
+      const o = rowItems(this._config).get(id);
+      if (o?.name || o?.secondary) return [o.name || this._uniq?.get(id) || this.ownLabel(id), o.secondary].filter(Boolean).join(" · ");
       return this._uniq?.get(id) || this.ownLabel(id);
+    }
+    /** The row's own icon (0.32 п.6), else "" — the tile's own. */
+    rowIcon(id) {
+      const o = rowItems(this._config).get(id);
+      return typeof o?.icon === "string" ? o.icon : "";
     }
     /** `label` before the room's alike controls are told apart. */
     ownLabel(id) {
@@ -6991,13 +7298,21 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
       if (d === "sensor") return diag || dc === "battery" || (dc === "voltage" && !!this._battDevs?.has(this._hass.entities?.[id]?.device_id)) || (num(s.state) === undefined && !nd(s) && FAULT_NAME.test(`${dc} ${nm}`));
       return false;
     }
-    /** Which block an entity goes in. */
+    /** Which block an entity goes in: the integrator's row (`block`, 0.32 п.6) over the label and the domain — a row of
+     * a reading put in «Управление» is a device pill there, anything in «Диагностика» a check. */
     kind(id) {
+      const ob = rowItems(this._config).get(id)?.block;
+      const k = this.autoKind(id);
+      if (!ob || !Object.hasOwn(AREA_PARTS, ob) || AREA_PARTS[ob].includes(k)) return k;
+      return ob === "diagnostics" ? "checks" : ob === "readings" ? (/^(binary_sensor|event)\./.test(id) ? "status" : "values") : "devices";
+    }
+    autoKind(id) {
       const s = this._hass.states[id];
       const d = id.split(".")[0];
       const role = roleOf(this._hass, id);
       // A role never makes what opens the house a one-tap row (red team 3: «covers» on a gate — a dead switch button).
-      if (role) return ROLE_KIND[role] === "switches" && AREA_GUARDED(s) ? "security" : ROLE_KIND[role];
+      // «hidden» is no kind: a row put back over that label (0.32 п.6) takes its domain's.
+      if (role && role !== "hidden") return ROLE_KIND[role] === "switches" && AREA_GUARDED(s) ? "security" : ROLE_KIND[role];
       if (d === "climate" || d === "water_heater") return "climate";
       if (this.isCheck(id)) return "checks";
       if (d === "binary_sensor") return "status";
@@ -7033,7 +7348,7 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
       const a = h.states[id]?.attributes || {};
       const nm = `${a.friendly_name || ""} ${this.label(id)}`;
       if (d === "switch" && (a.device_class === "outlet" || AREA_SOCKET_NAME.test(nm))) return "sockets";
-      if ((d === "switch" || d === "input_boolean") && (AREA_LIGHT_ICON.test(a.icon || h.entities?.[id]?.icon || "") || AREA_LIGHT_NAME.test(nm))) return "lights";
+      if ((d === "switch" || d === "input_boolean") && (AREA_LIGHT_ICON.test(this.rowIcon(id) || a.icon || h.entities?.[id]?.icon || "") || AREA_LIGHT_NAME.test(nm))) return "lights";
       return "devices";
     }
     /** 399-36: «Компактно» (one row each) — the person's choice for every such card (Настройки → Вид), else the card's. */
@@ -7124,7 +7439,7 @@ ${RULE_CSS}`;
           : "";
       // The mode's colour on ± and the mode chip, softer at target; grey only off / no link (owner 29.10).
       const tn = wh || nd(s) ? "" : climateTone(s, nowC);
-      return `<div class="cl${heating ? " heat" : ""}${off ? " off" : ""}${tn ? ` m-${tn} toned${toneCalm(tn, nowC) ? " calm" : ""}` : ""}" data-info="${esc(id)}">${lean ? `<ha-icon icon="${esc(a.icon || (wh ? "hauflo:boiler" : "hauflo:thermo"))}"></ha-icon>` : ""}<div class="ccn" role="button" tabindex="0"><span class="zn">${esc(this.label(id))}</span><span class="cs">${sub}</span></div>
+      return `<div class="cl${heating ? " heat" : ""}${off ? " off" : ""}${tn ? ` m-${tn} toned${toneCalm(tn, nowC) ? " calm" : ""}` : ""}" data-info="${esc(id)}">${lean ? `<ha-icon icon="${esc(this.rowIcon(id) || a.icon || (wh ? "hauflo:boiler" : "hauflo:thermo"))}"></ha-icon>` : ""}<div class="ccn" role="button" tabindex="0"><span class="zn">${esc(this.label(id))}</span><span class="cs">${sub}</span></div>
 <div class="cct thin">${big}<span class="tgc">${tgtTxt && cur !== undefined ? `Сейчас ${fmt(cur, 1)}°` : ""}</span></div>
 <div class="pm"><button data-e="${esc(id)}" data-d="${-step}" aria-label="Холоднее на ${fmt(step, step % 1 ? 1 : 0)}°"${can ? "" : " disabled"}>−</button><button data-e="${esc(id)}" data-d="${step}" aria-label="Теплее на ${fmt(step, step % 1 ? 1 : 0)}°"${can ? "" : " disabled"}>+</button></div></div>${chips}`;
     }
@@ -7134,7 +7449,7 @@ ${RULE_CSS}`;
       const v = num(s.state);
       const dc = s.attributes.device_class;
       const wx = id.startsWith("weather.") ? WEATHER[s.state] : undefined;
-      const icon = s.attributes.icon || wx?.[1] || SENSOR_ICON[dc] || AREA_ICON.sensor;
+      const icon = this.rowIcon(id) || s.attributes.icon || wx?.[1] || SENSOR_ICON[dc] || AREA_ICON.sensor;
       const unit = unitOf(s);
       const digits = v === undefined ? 0 : Math.abs(v) < 10 && v % 1 ? (Math.abs(v * 10) % 1 ? 2 : 1) : v % 1 ? 1 : 0;
       const val = nd(s) ? `<span class="vv">—</span>` : v === undefined ? `<span class="vt">${esc(wx ? [wx[0], num(s.attributes.temperature) !== undefined ? `${fmt(num(s.attributes.temperature))}°` : ""].filter(Boolean).join(" · ") : haState(s))}</span>` : `<span class="vv thin">${fmt(v, Math.min(digits, 2))}${unit ? `<small>${esc(unit)}</small>` : ""}</span>`;
@@ -7147,25 +7462,25 @@ ${RULE_CSS}`;
       const a = s.attributes;
       if (d === "select" || d === "input_select") {
         const opts = a.options || [];
-        return `<div class="v" data-info="${esc(id)}"><span class="vh"><ha-icon icon="${esc(a.icon || AREA_ICON[d])}"></ha-icon><span class="vn">${esc(this.label(id))}</span></span><select data-sel="${esc(id)}"${nd(s) ? " disabled" : ""}>${opts.map((o) => `<option value="${esc(o)}"${o === s.state ? " selected" : ""}>${esc(o)}</option>`).join("")}</select></div>`;
+        return `<div class="v" data-info="${esc(id)}"><span class="vh"><ha-icon icon="${esc(this.rowIcon(id) || a.icon || AREA_ICON[d])}"></ha-icon><span class="vn">${esc(this.label(id))}</span></span><select data-sel="${esc(id)}"${nd(s) ? " disabled" : ""}>${opts.map((o) => `<option value="${esc(o)}"${o === s.state ? " selected" : ""}>${esc(o)}</option>`).join("")}</select></div>`;
       }
       const v = num(s.state);
       const step = num(a.step) || 1;
       const min = num(a.min);
       const max = num(a.max);
       const dg = String(step).includes(".") ? String(step).split(".")[1].length : 0;
-      return `<div class="v" data-info="${esc(id)}"><span class="vh"><ha-icon icon="${esc(a.icon || AREA_ICON[d])}"></ha-icon><span class="vn">${esc(this.label(id))}</span></span><div class="set"><button data-num="${esc(id)}" data-d="${-step}" aria-label="−"${v === undefined || (min !== undefined && v <= min) ? " disabled" : ""}>−</button><span class="vv thin">${v === undefined ? "—" : fmt(v, dg)}${unitOf(s) ? `<small>${esc(unitOf(s))}</small>` : ""}</span><button data-num="${esc(id)}" data-d="${step}" aria-label="+"${v === undefined || (max !== undefined && v >= max) ? " disabled" : ""}>+</button></div></div>`;
+      return `<div class="v" data-info="${esc(id)}"><span class="vh"><ha-icon icon="${esc(this.rowIcon(id) || a.icon || AREA_ICON[d])}"></ha-icon><span class="vn">${esc(this.label(id))}</span></span><div class="set"><button data-num="${esc(id)}" data-d="${-step}" aria-label="−"${v === undefined || (min !== undefined && v <= min) ? " disabled" : ""}>−</button><span class="vv thin">${v === undefined ? "—" : fmt(v, dg)}${unitOf(s) ? `<small>${esc(unitOf(s))}</small>` : ""}</span><button data-num="${esc(id)}" data-d="${step}" aria-label="+"${v === undefined || (max !== undefined && v >= max) ? " disabled" : ""}>+</button></div></div>`;
     }
     /** On / off (a switch, a lamp, a fan, a humidifier) — or a blind's open / stop / close. */
     toggleRow(id) {
       const s = this._hass.states[id];
       const d = id.split(".")[0];
       const [w] = this.word(s);
-      const icon = s.attributes.icon || AREA_ICON[d] || "mdi:circle-medium";
+      const icon = this.rowIcon(id) || s.attributes.icon || AREA_ICON[d] || "mdi:circle-medium";
       if (d === "cover") {
         const f = s.attributes.supported_features || 0;
         const b = (svc, ic, label) => `<button data-cover="${esc(id)}" data-svc="${svc}" aria-label="${label}"${nd(s) ? " disabled" : ""}><ha-icon icon="${ic}"></ha-icon></button>`;
-        return `<div class="tg${s.state === "open" ? " on" : ""}" data-info="${esc(id)}"><ha-icon icon="${esc(s.attributes.icon || coverIcon({ entity: id, s }))}"></ha-icon><div class="tx"><div class="nm">${esc(this.label(id))}</div><div class="w">${esc(w)}</div></div><div class="cv">${f & 1 ? b("open_cover", coverBtnIcon(s, "open_cover"), "Открыть") : ""}${f & 8 ? b("stop_cover", "mdi:stop", "Стоп") : ""}${f & 2 ? b("close_cover", coverBtnIcon(s, "close_cover"), "Закрыть") : ""}</div></div>`;
+        return `<div class="tg${s.state === "open" ? " on" : ""}" data-info="${esc(id)}"><ha-icon icon="${esc(this.rowIcon(id) || s.attributes.icon || coverIcon({ entity: id, s }))}"></ha-icon><div class="tx"><div class="nm">${esc(this.label(id))}</div><div class="w">${esc(w)}</div></div><div class="cv">${f & 1 ? b("open_cover", coverBtnIcon(s, "open_cover"), "Открыть") : ""}${f & 8 ? b("stop_cover", "mdi:stop", "Стоп") : ""}${f & 2 ? b("close_cover", coverBtnIcon(s, "close_cover"), "Закрыть") : ""}</div></div>`;
       }
       const on = s.state === "on";
       const br = on && d === "light" && num(s.attributes.brightness) !== undefined ? ` · ${Math.round(num(s.attributes.brightness) / 2.55)}\u00a0%` : "";
@@ -7203,7 +7518,7 @@ ${RULE_CSS}`;
       const playing = s.state === "playing";
       const pic = a.entity_picture;
       const w = nd(s) ? LL("нет связи", "offline") : off ? LL("выключен", "off") : [a.media_title || (playing ? LL("играет", "playing") : LL("пауза", "paused")), a.media_artist || a.media_album_name || a.app_name || ""].filter(Boolean).join(" · ");
-      return `<div class="tg${playing ? " on" : ""}" data-info="${esc(id)}">${pic && !off ? `<span class="art" style="background-image:url('${cssUrl(pic)}')"></span>` : `<ha-icon icon="${esc(a.icon || "hauflo:speaker")}"></ha-icon>`}<div class="tx"><div class="nm">${esc(this.label(id))}</div><div class="w">${esc(w)}</div></div><button class="pp" data-pp="${esc(id)}" aria-label="${esc(off ? LL("Включить", "Turn on") : playing ? LL("Пауза", "Pause") : LL("Играть", "Play"))}"${nd(s) ? " disabled" : ""}><ha-icon icon="${off ? "hauflo:power" : playing ? "hauflo:pause" : "hauflo:play"}"></ha-icon></button></div>`;
+      return `<div class="tg${playing ? " on" : ""}" data-info="${esc(id)}">${pic && !off ? `<span class="art" style="background-image:url('${cssUrl(pic)}')"></span>` : `<ha-icon icon="${esc(this.rowIcon(id) || a.icon || "hauflo:speaker")}"></ha-icon>`}<div class="tx"><div class="nm">${esc(this.label(id))}</div><div class="w">${esc(w)}</div></div><button class="pp" data-pp="${esc(id)}" aria-label="${esc(off ? LL("Включить", "Turn on") : playing ? LL("Пауза", "Pause") : LL("Играть", "Play"))}"${nd(s) ? " disabled" : ""}><ha-icon icon="${off ? "hauflo:power" : playing ? "hauflo:pause" : "hauflo:play"}"></ha-icon></button></div>`;
     }
     /** The short name of a tile (п.63.8): `tileName` by its class, told apart from the room's alike ones in render. */
     shortName(id) {
@@ -7213,6 +7528,8 @@ ${RULE_CSS}`;
       return tileName(this.label(id), h.states[id]?.attributes?.device_class, [h.areas?.[this._config.area]?.name, dv?.name_by_user, dv?.name, dv?.manufacturer, dv?.model, e?.platform]);
     }
     tileLabel(id) {
+      const o = rowItems(this._config).get(id);
+      if (o?.name || o?.secondary) return this.label(id);
       return this._names?.get(id) || this.shortName(id);
     }
     /** The device's battery and link in a tile's head (п.63.8): a battery to its level — amber with its % when low (always
@@ -7264,14 +7581,14 @@ ${RULE_CSS}`;
       const tone = m.tone ? m.tone(s) : "";
       const un = m.stamp ? s.state === "unavailable" : nd(s);
       const on = !tone && !un && (m.on ? m.on(s) : s.state === "on");
-      const icon = s.attributes.icon || (m.icon === "hauflo:info" ? SENSOR_ICON[s.attributes.device_class] || AREA_ICON[d] : "") || m.icon;
+      const icon = this.rowIcon(id) || s.attributes.icon || (m.icon === "hauflo:info" ? SENSOR_ICON[s.attributes.device_class] || AREA_ICON[d] : "") || m.icon;
       return `<div class="tg${on ? " on" : ""}${tone ? ` ${tone}` : ""}${un ? " un" : ""}" data-info="${esc(id)}" role="button" tabindex="0"><ha-icon icon="${esc(icon)}"></ha-icon><div class="tx"><div class="nm">${esc(this.label(id))}</div><div class="w">${esc(un ? LL("нет связи", "offline") : m.word(s, this.label(id)))}</div></div></div>`;
     }
     statusTile(id) {
       const s = this._hass.states[id];
       const [w, k] = this.word(s);
-      const icon = s.attributes.icon || SENSOR_ICON[s.attributes.device_class] || (id.startsWith("event.") ? AREA_ICON.event : AREA_ICON.sensor);
-      const alarm = k === "fault" && s.state === "on" && TILE_ALARM.includes(s.attributes.device_class);
+      const icon = this.rowIcon(id) || s.attributes.icon || SENSOR_ICON[s.attributes.device_class] || (id.startsWith("event.") ? AREA_ICON.event : AREA_ICON.sensor);
+      const alarm = k === "fault" && tileAlarm(s);
       return `<div class="v st ${k}${alarm ? " alarm" : ""}${nd(s) ? " nolink" : ""}" data-info="${esc(id)}" role="button" tabindex="0"><span class="vh"><ha-icon icon="${esc(icon)}"></ha-icon><span class="vx">${ruleBadge(this, id, "rbell-mark")}${this.marks(id)}<span class="vn">${esc(this.tileLabel(id))}</span></span></span><span class="vt"><i></i>${esc(w)}</span></div>`;
     }
     chip(id, name) {
@@ -7307,6 +7624,7 @@ ${RULE_CSS}`;
     render() {
       const h = this._hass;
       HOUSE.get(this); // the agent's protected list (AREA_GUARDED): asked once a page, the card drawn again when it comes
+      this._hidWhy = "";
       // `block` (п.63): this card is one of the room's three — «Управление», «Показания», «Диагностика»; none — all of it.
       const part = Object.hasOwn(AREA_PARTS, this._config.block || "") ? this._config.block : "";
       const all = orderIds(this, this.members()).filter((id) => h.states[id]);
@@ -7319,6 +7637,15 @@ ${RULE_CSS}`;
       // Under Hauflo's own items: nothing of other integrations — no card at all; «Показания» / «Диагностика» of an empty
       // room say nothing (the «Управление» card says what there is to say).
       if (!all.length && (this._config.others || (part && part !== "control"))) {
+        this._hidWhy = this.whyHidden(part, this._config.others);
+        this.hideCard(true);
+        return "";
+      }
+      // Everything taken out by the integrator (rows hidden here, auto off, HA's label): hidden with the reason, never the
+      // «set the device's area» onboarding — the room isn't empty, it was emptied (acceptance 10.11 M-2).
+      const it = rowItems(this._config);
+      if (!all.length && (this._config.auto === false || [...it.values()].some((o) => o.hidden === true) || this.labelHidden().some((id) => it.get(id)?.hidden !== false))) {
+        this._hidWhy = this.whyHidden(part, false);
         this.hideCard(true);
         return "";
       }
@@ -7395,9 +7722,11 @@ ${RULE_CSS}`;
       const keys = part ? AREA_PARTS[part] : null;
       const ids = keys ? vis.filter((id) => keys.includes(this.kind(id))) : vis;
       if (!ids.length) {
+        this._hidWhy = this.whyHidden(part, false);
         this.hideCard(true);
         return "";
       }
+      this._hidWhy = "";
       this.hideCard(false);
       const owned = ownedOnDashboard(this);
       this._owned = owned;
@@ -7417,7 +7746,7 @@ ${RULE_CSS}`;
       const bodies = (b, key) => ({
         settings: b.settings.length ? `<div class="vals sets">${b.settings.map((id) => this.settingTile(id)).join("")}</div>` : "",
         buttons: b.buttons.length
-          ? `<div class="btns hfrow">${b.buttons.map((id) => `<button data-press="${esc(id)}" data-ask="${esc(LL(`${this.label(id)} — ещё раз`, `${this.label(id)} — tap again`))}"><ha-icon icon="${esc(h.states[id].attributes.icon || "hauflo:play")}"></ha-icon><span>${esc(this.label(id))}</span></button>`).join("")}</div>`
+          ? `<div class="btns hfrow">${b.buttons.map((id) => `<button data-press="${esc(id)}" data-ask="${esc(LL(`${this.label(id)} — ещё раз`, `${this.label(id)} — tap again`))}"><ha-icon icon="${esc(this.rowIcon(id) || h.states[id].attributes.icon || "hauflo:play")}"></ha-icon><span>${esc(this.label(id))}</span></button>`).join("")}</div>`
           : "",
         other: b.other.length
           ? `<div class="grid">${b.other
@@ -7425,7 +7754,7 @@ ${RULE_CSS}`;
                 const s = h.states[id];
                 const [w, k] = this.word(s);
                 const d = id.split(".")[0];
-                return `<div class="r ${k}" data-info="${esc(id)}" role="button" tabindex="0"><ha-icon icon="${esc(s.attributes.icon || AREA_ICON[d] || "mdi:circle-medium")}"></ha-icon><div class="tx"><div class="nm">${esc(this.label(id))}</div><div class="w">${esc(w)}</div></div></div>`;
+                return `<div class="r ${k}" data-info="${esc(id)}" role="button" tabindex="0"><ha-icon icon="${esc(this.rowIcon(id) || s.attributes.icon || AREA_ICON[d] || "mdi:circle-medium")}"></ha-icon><div class="tx"><div class="nm">${esc(this.label(id))}</div><div class="w">${esc(w)}</div></div></div>`;
               })
               .join("")}</div>`
           : "",
@@ -7454,7 +7783,7 @@ ${RULE_CSS}`;
         const e = AREA_EMBED[cls];
         if (e && large) {
           const ok = list.filter((id) => !AREA_GUARDED(h.states[id]));
-          const items = ok.map((id) => ({ entity: id, name: this.label(id), ...(cls === "lights" && !id.startsWith("light.") ? { icon: h.states[id].attributes.icon || "hauflo:bulb" } : {}) }));
+          const items = ok.map((id) => ({ entity: id, name: this.label(id), ...(this.rowIcon(id) ? { icon: this.rowIcon(id) } : cls === "lights" && !id.startsWith("light.") ? { icon: h.states[id].attributes.icon || "hauflo:bulb" } : {}) }));
           return ok.length ? emb(e[0], `${cls}:${ok.join(",")}`, { entities: items, title: LL(...AREA_CLASS[cls]), block: e[1], ...lang }, true) : "";
         }
         if (e) return `${cap(cls)}${compact ? this.masterRow(cls, list) : ""}<div class="vals tgs">${list.map((id) => this.toggleRow(id)).join("")}</div>`;
@@ -7475,7 +7804,7 @@ ${RULE_CSS}`;
           const dc = h.states[id].attributes.device_class;
           const st = this.kind(id) === "status";
           const r = AREA_READ_ORDER.indexOf(dc);
-          return (st ? (TILE_ALARM.includes(dc) ? 0 : 1) : 2) * 1000 + (r < 0 ? 999 : r);
+          return (st ? (signalWatched(h.states[id]) ? 0 : 1) : 2) * 1000 + (r < 0 ? 999 : r);
         };
         const sorted = ORDER.data?.[orderKey(this)] ? list : [...list].sort((a, b) => rank(a) - rank(b));
         return `<div class="vals">${sorted.map((id) => (this.kind(id) === "status" ? this.statusTile(id) : this.valueTile(id))).join("")}</div>`;
@@ -7966,7 +8295,7 @@ ${!vs.length && ss.length ? `<div class="hint" data-own>${LL("Кран не на
     person: { icon: "hauflo:user", word: (s) => (s.state === "home" ? "дома" : s.state === "not_home" ? "не дома" : haState(s)), tap: null, on: (s) => s.state === "home" },
     input_boolean: { icon: "hauflo:switch", word: (s) => (s.state === "on" ? "вкл" : "выкл"), tap: ["input_boolean", "toggle"] },
     button: { icon: "mdi:gesture-tap-button", word: (s, name = "") => (/звон|bell/i.test(name) ? "позвонить" : /калит|ворот|двер|замок|gate|door/i.test(name) ? "открыть" : "нажать"), tap: ["button", "press"], on: () => false, action: true },
-    binary_sensor: { icon: "hauflo:info", word: (s) => (OPENING.includes(s.attributes.device_class) ? (s.state === "on" ? "открыто" : "закрыто") : s.state === "on" ? "сработал" : "в норме"), tap: null, tone: (s) => (s.state === "on" && ["moisture", "smoke", "gas", "problem", "safety", "carbon_monoxide"].includes(s.attributes.device_class) ? "alarm" : ""), on: (s) => s.state === "on" && !["moisture", "smoke", "gas", "problem", "safety", "carbon_monoxide"].includes(s.attributes.device_class) },
+    binary_sensor: { icon: "hauflo:info", word: (s) => (OPENING.includes(s.attributes.device_class) ? (s.state === "on" ? "открыто" : "закрыто") : s.state === "on" ? "сработал" : "в норме"), tap: null, tone: (s) => (tileAlarm(s) ? "alarm" : ""), on: (s) => s.state === "on" && !signalWatched(s) },
     number: { icon: "hauflo:info", word: (s) => (num(s.state) === undefined ? "нет данных" : `${fmt(num(s.state), num(s.state) % 1 ? 1 : 0)} ${unitOf(s) || (num(s.attributes.max) === 100 && num(s.attributes.min) === 0 ? "%" : "")}`.trim()), tap: null, on: () => false },
     // An event (a doorbell press, a button, a motion event — HA's event entity): when it last fired, its class's icon; a tap — HA's
     // dialog (its history). `stamp`: «unknown» = never fired, not offline.
@@ -8347,6 +8676,242 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
     }
   }
 
+  // --- hauflo-insights (0.32 п.9): the house's diagnosis for the integrator — what each detector learns about each entity
+  // (GET /api/hauflo/insights: learning N/M → its norm → a deviation since …), grouped by the canon's sections (the agent
+  // sends them). The domain's words (detectors, stages, units, reasons, sections) are HA's own translations of the agent
+  // (strings.json selector.insight_*), the card's own words LL(). «Это норма» / «Снова следить» — HA admins only.
+  /** One page for the whole house (the agent's tuning insight.states_limit_max); a 400 (an older agent) — its own page. */
+  const INSIGHT_PAGE = 500;
+  /** Until the agent says its tick (tickS): asked again this often. */
+  const INSIGHT_TICK_S = 60;
+  /** Within a section: what needs a look first. */
+  const INSIGHT_STAGES = ["deviation", "learning", "ready", "normal", "excluded"];
+  /** The card's own canon (tuning.json insight.card, check-cards-logic): the agent's tickS held within tick_min_s..tick_max_s,
+   * an answer awaited timeout_s at most, a 403 asked again every denied_every_ticks ticks (the integrator may open it to all). */
+  const INSIGHT_CARD = { tick_min_s: 10, tick_max_s: 3600, timeout_s: 20, denied_every_ticks: 5 };
+  /** `hide_ok`: these stages say nothing to act on («Отмечено как норма» stays — its «Снова следить» is on the card only). */
+  const INSIGHT_OK = ["ready"];
+  const INSIGHT_ICON = { climate: "mdi:thermostat", energy: "mdi:lightning-bolt-outline", water: "mdi:water-outline", air: "mdi:weather-windy", link: "mdi:access-point-network", system: "mdi:server-outline", pairs: "mdi:link-variant", other: "mdi:dots-horizontal-circle-outline" };
+  const INSIGHT_TONE = { deviation: "bad", learning: "lrn", ready: "ok", normal: "nrm", excluded: "off" };
+  /** HA's translations of the agent's selector words, per language (one call a page). */
+  const INS_TR = {};
+  const insWords = (h, lang) => {
+    if (INS_TR[lang] || !h?.callWS) return INS_TR[lang]?.p;
+    const box = (INS_TR[lang] = { res: {}, p: null });
+    box.p = h
+      .callWS({ type: "frontend/get_translations", language: lang, category: "selector", integration: ["hauflo"] })
+      .then((r) => (box.res = r?.resources || {}))
+      .catch(() => (box.res = {}));
+    return box.p;
+  };
+  /** A word of the agent's selector `sel` (insight_kind / insight_stage / insight_unit / insight_reason / insight_section). */
+  const insWord = (sel, key) => (key == null || key === "" ? "" : INS_TR[LANG]?.res?.[`component.hauflo.selector.${sel}.options.${key}`] || String(key).replace(/_/g, " "));
+  /** The house's diagnosis, one fetch for every card on the page; re-asked on the agent's tick. */
+  const INS = {
+    data: null, at: 0, wait: null, err: "", cards: new Set(),
+    set() {
+      for (const c of this.cards) {
+        c._sig = "";
+        c._update();
+      }
+    },
+    tick() {
+      return insTick(this.data?.tickS) * 1000;
+    },
+    async fetch(h, force = false) {
+      // Refused: no agent here (gone / old) — not asked again on this page; not this user's (403) — every
+      // denied_every_ticks ticks (the integrator may open it to all), not a 403 a minute.
+      const every = this.err === "denied" ? INSIGHT_CARD.denied_every_ticks : 1;
+      if (this.wait || !h?.callApi || (!force && (Date.now() - this.at < this.tick() * every || ["gone", "old"].includes(this.err)))) return this.wait;
+      // A call that never answers: «Нет ответа» after timeout_s, not «Загружаю…» for ever.
+      const get = (lim) =>
+        new Promise((ok, no) => {
+          const t = setTimeout(() => no({ timeout: true }), INSIGHT_CARD.timeout_s * 1000);
+          h.callApi("GET", `hauflo/insights${lim ? `?limit=${lim}` : ""}`).then(ok, no).finally(() => clearTimeout(t));
+        });
+      this.wait = get(INSIGHT_PAGE)
+        .catch((e) => (e?.status_code === 400 ? get(0) : Promise.reject(e)))
+        .then((d) => (insAnswerOk(d) ? d : Promise.reject({ bad: true })))
+        .then(
+          (d) => ((this.data = d), (this.err = "")),
+          (e) => {
+            // 403: this user may not read it (HA's admins, or everyone when the integrator chose «всем»); 409: the agent starts.
+            this.err = e?.status_code === 403 ? "denied" : e?.status_code === 409 ? "starting" : agentErr(e, h) || "net";
+            if (this.err === "denied" || this.err === "gone" || this.err === "old") this.data = null;
+          },
+        )
+        .finally(() => {
+          this.at = Date.now();
+          this.wait = null;
+          this.set();
+        });
+      return this.wait;
+    },
+  };
+  /** The agent's tick in seconds, within the card's canon; none / garbage — the card's own. */
+  const insTick = (s) => (Number.isFinite(Number(s)) && Number(s) > 0 ? Math.min(Math.max(Number(s), INSIGHT_CARD.tick_min_s), INSIGHT_CARD.tick_max_s) : INSIGHT_TICK_S);
+  /** An answer of the agent's: an object with a list of rows (anything else is a fault, never «still learning»). */
+  const insAnswerOk = (d) => !!d && typeof d === "object" && !Array.isArray(d) && Array.isArray(d.items);
+  /** «Показаны N из M»: shown of the card's rows; the agent's page cut (total > items) adds the rest — exactly without
+   * a filter, «M+» with one (the rest's sections / stages unknown). "" when everything is shown. */
+  const insMore = (d, c, shown, all) => {
+    const cut = Math.max(0, (Number.isFinite(Number(d?.total)) ? Number(d.total) : 0) - (Array.isArray(d?.items) ? d.items.length : 0));
+    const filtered = (Array.isArray(c.sections) && c.sections.length > 0) || !!c.stage || !!c.hide_ok;
+    if (shown >= all && !cut) return "";
+    const of = `${filtered ? all : all + cut}${filtered && cut ? "+" : ""}`;
+    return LL(`Показаны ${shown} из ${of}`, `Showing ${shown} of ${of}`);
+  };
+  const insWhen = (iso) => {
+    const d = new Date(iso);
+    return Number.isFinite(d.getTime()) ? d.toLocaleString(LANG === "ru" ? "ru-RU" : "en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "";
+  };
+  const insNum = (v) => (Number.isFinite(Number(v)) ? fmt(Number(v), Math.abs(Number(v)) < 10 && !Number.isInteger(Number(v)) ? 1 : 0) : "");
+  /** A row's stage, its line and its progress (0..1, learning only). */
+  const insStage = (r) => {
+    // No stage the card knows: still learning (never «Норма известна» unsaid).
+    const stage = INSIGHT_STAGES.find((s) => r[s] && typeof r[s] === "object") || "learning";
+    const v = r[stage] || {};
+    const unit = (u) => (u ? ` ${insWord("insight_unit", u)}` : "");
+    let line = "";
+    let pr = null;
+    if (stage === "learning") {
+      const parts = [];
+      if (Number(v.need) > 0) parts.push(`${LL("эпизодов", "episodes")} ${Number(v.have) || 0}/${Number(v.need)}`);
+      if (Number(v.needH) > 0) parts.push(`${LL("часов", "hours")} ${insNum(Math.min(Number(v.hours) || 0, Number(v.needH)))}/${Number(v.needH)}`);
+      line = parts.join(" · ");
+      const ps = [Number(v.need) > 0 ? (Number(v.have) || 0) / Number(v.need) : 1, Number(v.needH) > 0 ? (Number(v.hours) || 0) / Number(v.needH) : 1];
+      pr = Number(v.need) > 0 || Number(v.needH) > 0 ? Math.max(0, Math.min(1, Math.min(...ps))) : null;
+    } else if (stage === "ready") line = v.norm != null && insNum(v.norm) !== "" ? `${LL("норма", "norm")} ≈ ${insNum(v.norm)}${unit(v.unit || r.unit)}` : "";
+    else if (stage === "deviation") line = [insWhen(v.since) ? `${LL("с", "since")} ${insWhen(v.since)}` : "", v.was != null && insNum(v.was) !== "" ? `${LL("норма", "norm")} ${insNum(v.was)}` : "", v.now != null && insNum(v.now) !== "" ? `${LL("сейчас", "now")} ${insNum(v.now)}` : ""].filter(Boolean).join(" · ");
+    else if (stage === "normal") line = [v.by, v.at ? insWhen(v.at) : ""].filter(Boolean).join(", ");
+    else if (stage === "excluded") line = insWord("insight_reason", v.reason);
+    return { stage, line, pr, left: stage === "learning" && Number(v.needH) > 0 ? Math.max(0, Number(v.needH) - (Number(v.hours) || 0)) : null };
+  };
+  /** The card's rows of the agent's answer: its sections, the stage filter, hide_ok, in the canon's order. */
+  const insRows = (d, c) => {
+    const order = Array.isArray(d?.sectionOrder) ? d.sectionOrder : [];
+    const only = Array.isArray(c.sections) && c.sections.length ? new Set(c.sections) : null;
+    const stages = c.stage ? new Set([].concat(c.stage)) : null;
+    const rows = (Array.isArray(d?.items) ? d.items : [])
+      .filter((r) => r && typeof r === "object" && r.kind && r.entityId)
+      .map((r) => ({ ...r, sec: r.section || d?.sections?.[r.kind] || "other", ...insStage(r) }))
+      .filter((r) => (!only || only.has(r.sec)) && (!stages || stages.has(r.stage)) && !(c.hide_ok && INSIGHT_OK.includes(r.stage)));
+    const rank = (s) => (order.includes(s) ? order.indexOf(s) : order.length);
+    rows.sort((a, b) => rank(a.sec) - rank(b.sec) || INSIGHT_STAGES.indexOf(a.stage) - INSIGHT_STAGES.indexOf(b.stage) || String(a.name || a.entityId).localeCompare(String(b.name || b.entityId)) || String(a.kind).localeCompare(String(b.kind)));
+    return rows;
+  };
+  class Insights extends EHCard {
+    connectedCallback() {
+      super.connectedCallback?.();
+      clearInterval(this._tick);
+      // Looked at every tick_min_s: INS.fetch asks only when the agent's tick (or a 403's) is due.
+      this._tick = setInterval(() => this._hass && INS.fetch(this._hass), INSIGHT_CARD.tick_min_s * 1000);
+    }
+    disconnectedCallback() {
+      clearInterval(this._tick);
+      INS.cards.delete(this);
+    }
+    css() {
+      return `.d{padding:var(--hf-pad)}.hd{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.sum{font:400 13px Onest,sans-serif;color:var(--ink2)}
+.sec{margin-top:14px}.sh{display:flex;align-items:center;gap:8px;margin-bottom:6px}.sh ha-icon{--mdc-icon-size:var(--hf-icon-s);color:var(--ink2)}.sh .n{font:400 12px Onest,sans-serif;color:var(--ink3)}
+.lst{display:grid;gap:6px}.r{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:var(--hf-r-md);box-shadow:inset 0 0 0 1px var(--hair);min-width:0}
+.r .tx{flex:1;min-width:0}.r .nm{font:500 13px/1.25 Onest,sans-serif;overflow-wrap:anywhere}.r .rm{font:400 11px/1.3 Onest,sans-serif;color:var(--ink3)}
+.r .st{display:flex;align-items:center;flex-wrap:wrap;gap:2px 6px;font:500 12px/1.3 Onest,sans-serif;margin-top:4px}.r .st>span:first-of-type{white-space:nowrap}.r .st i{width:8px;height:8px;border-radius:4px;flex:0 0 auto}.r .ln{font:400 12px/1.35 Onest,sans-serif;color:var(--ink2)}
+.bad .st{color:var(--alertT)}.bad .st i{background:var(--alert);box-shadow:0 0 8px var(--alertGlow)}.r.bad{box-shadow:none;background:color-mix(in srgb,var(--alert) 12%,transparent)}
+.lrn .st{color:var(--amberT)}.lrn .st i{background:var(--amber)}.ok .st{color:var(--mintT)}.ok .st i{background:var(--mint)}.nrm .st{color:var(--ink2)}.nrm .st i{background:transparent;box-shadow:inset 0 0 0 1.5px var(--mint)}
+.off{opacity:.65}.off .st{color:var(--ink3)}.off .st i{background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink3)}
+.pg{height:4px;border-radius:2px;background:var(--track);margin-top:6px;overflow:hidden}.pg>b{display:block;height:100%;background:var(--amber);border-radius:2px}
+.r button{height:var(--hf-hit);padding:0 14px;border-radius:var(--hf-r-sm);font:500 13px Onest,sans-serif;box-shadow:inset 0 0 0 1px var(--line);color:var(--ink);white-space:nowrap;flex:0 0 auto}.r button[disabled]{opacity:.5}
+.cmp .r{padding:6px 10px}.cmp .r .st{margin-top:2px}.cmp .lst{gap:4px}
+.empty{font:400 14px/1.45 Onest,sans-serif;color:var(--ink2);margin:10px 0 0}.more{font:400 12px Onest,sans-serif;color:var(--ink3);margin-top:10px}
+@container (max-width:420px){.r{flex-wrap:wrap}.r button{flex:1 1 100%}}`;
+    }
+    render() {
+      const h = this._hass;
+      const c = this._config;
+      INS.cards.add(this);
+      INS.fetch(h);
+      if (!INS_TR[LANG]) insWords(h, LANG)?.then(() => INS.set());
+      const title = esc(c.title || LL("Диагностика", "Diagnostics"));
+      const frame = (body, sum = "") => `<div class="glass d${c.compact ? " cmp" : ""}"><div class="hd"><span class="caps" data-own>${title}</span>${sum ? `<span class="sum" data-own>${esc(sum)}</span>` : ""}</div>${body}</div>`;
+      const say = (t) => frame(`<p class="empty" data-own>${esc(t)}</p>`);
+      if (INS.err === "denied") return say(LL("Только для администраторов", "Only for administrators"));
+      if (INS.err === "gone" || INS.err === "old") return say(LL("Диагностика появится после обновления Hauflo в Home Assistant", "Diagnostics will appear after Hauflo is updated in Home Assistant"));
+      if (!INS.data) return say(INS.err === "starting" ? LL("Hauflo запускается…", "Hauflo is starting…") : INS.err ? LL("Нет ответа от Hauflo. Попробуем ещё раз позже.", "No answer from Hauflo. Trying again later.") : LL("Загружаю…", "Loading…"));
+      const all = insRows(INS.data, c);
+      if (!all.length)
+        return say(
+          !(INS.data.items || []).length
+            ? LL("Пока учится — нормы появятся, когда приборы поработают", "Still learning — norms will appear once the devices have run for a while")
+            : c.hide_ok
+              ? LL("Отклонений нет — всё в норме", "No deviations — all is normal")
+              : LL("Здесь пока ничего нет", "Nothing here yet"),
+        );
+      const limit = Number(c.limit) > 0 ? Math.floor(Number(c.limit)) : all.length;
+      const rows = all.slice(0, limit);
+      const learning = all.filter((r) => r.stage === "learning");
+      // Everything still learning: when the first norm comes (the nearest row's observation hours left).
+      const left = learning.length === all.length && !c.stage ? learning.map((r) => r.left).filter((x) => x != null) : [];
+      this._soon = left.length && Math.min(...left) > 0 ? Math.ceil(Math.min(...left)) : null;
+      const cnt = (s) => all.filter((r) => r.stage === s).length;
+      const sum = INSIGHT_STAGES.filter((s) => cnt(s)).map((s) => `${insWord("insight_stage", s)}: ${cnt(s)}`).join(" · ");
+      const admin = h?.user?.is_admin === true && INS.data.canEdit !== false;
+      const btn = (r) => {
+        if (!admin) return "";
+        const act = r.stage === "deviation" ? "normal" : r.stage === "normal" ? "follow" : "";
+        if (!act) return "";
+        const busy = this._busyKey === r.key;
+        return `<button data-ins="${esc(act)}" data-ent="${esc(r.entityId)}" data-kind="${esc(r.kind)}"${busy ? " disabled" : ""}><span data-own>${act === "normal" ? LL("Это норма", "This is normal") : LL("Снова следить", "Watch again")}</span></button>`;
+      };
+      const row = (r) => {
+        const name = r.name || r.entityId;
+        const sub = [r.area, insWord("insight_kind", r.kind)].filter(Boolean).join(" · ");
+        return `<div class="r ${INSIGHT_TONE[r.stage] || ""}" data-own><div class="tx"><div class="nm">${esc(name)}</div>${sub ? `<div class="rm">${esc(sub)}</div>` : ""}<div class="st"><i></i><span>${esc(insWord("insight_stage", r.stage))}</span>${r.line && (!c.compact || r.stage === "deviation") ? `<span class="ln">· ${esc(r.line)}</span>` : ""}</div>${r.pr != null && !c.compact ? `<div class="pg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(r.pr * 100)}"><b style="width:${Math.round(r.pr * 100)}%"></b></div>` : ""}</div>${btn(r)}</div>`;
+      };
+      const secs = [];
+      for (const r of rows) {
+        const last = secs[secs.length - 1];
+        if (last && last.sec === r.sec) last.rows.push(r);
+        else secs.push({ sec: r.sec, rows: [r] });
+      }
+      const n = (s) => all.filter((r) => r.sec === s).length;
+      const body = secs
+        .map((s) => `<div class="sec"><div class="sh"><ha-icon icon="${esc(INSIGHT_ICON[s.sec] || INSIGHT_ICON.other)}"></ha-icon><span class="caps" data-own>${esc(insWord("insight_section", s.sec))}</span><span class="n">${n(s.sec)}</span></div><div class="lst">${s.rows.map(row).join("")}</div></div>`)
+        .join("");
+      const more = insMore(INS.data, c, rows.length, all.length) ? `<div class="more" data-own>${esc(insMore(INS.data, c, rows.length, all.length))}</div>` : "";
+      const soon = this._soon != null ? `<p class="empty" data-own>${esc(LL(`Пока учится — нормы появятся примерно через ${this._soon} ч`, `Still learning — norms will appear in about ${this._soon} h`))}</p>` : "";
+      const fail = this._postErr ? `<p class="empty" data-own>${esc(this._postErr)}</p>` : "";
+      return frame(`${soon}${fail}${body}${more}`, sum);
+    }
+    bind() {
+      this.shadowRoot.querySelectorAll("button[data-ins]").forEach((b) =>
+        b.addEventListener("click", async (ev) => {
+          ev.stopPropagation();
+          const { ins: action, ent: entity, kind } = b.dataset;
+          this._busyKey = `${kind}|${entity}`;
+          this._postErr = "";
+          b.disabled = true;
+          haptic(this);
+          try {
+            await this._hass.callApi("POST", "hauflo/insights", { entity, kind, action });
+          } catch (e) {
+            this._postErr = e?.status_code === 403 ? LL("Только для администраторов", "Only for administrators") : LL("Не получилось сохранить. Попробуйте ещё раз.", "Couldn't save. Please try again.");
+          }
+          this._busyKey = null;
+          await INS.fetch(this._hass, true);
+          this._sig = "";
+          this._update();
+        }),
+      );
+    }
+    getCardSize() {
+      return 6;
+    }
+    getGridOptions() {
+      return { columns: "full", rows: "auto" };
+    }
+  }
+
   const cards = [
     ["hauflo-hero", Hero, "Hauflo · Главная", "Температура, свет и охрана одной цифрой"],
     ["hauflo-room", Room, "Hauflo · Комната", "Комната светится своим состоянием; тап — её страница, удержание — свет"],
@@ -8368,6 +8933,7 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
     ["hauflo-area", Area, "Hauflo · Комната из Home Assistant", "Всё, что Home Assistant отнёс к комнате, — в стиле Hauflo"],
     ["hauflo-leaks", Leaks, "Hauflo · Защита от протечек", "Датчики протечки и кран любой интеграции: всё в порядке или где протечка"],
     ["hauflo-devices", Devices, "Hauflo · Устройства", "Вентиляторы, клапаны, замки, пылесосы, бойлеры…"],
+    ["hauflo-insights", Insights, "Hauflo · Диагностика", "Что Hauflo изучает о приборах: нормы, отклонения, «это норма»"],
   ];
   // --- a dashboard with a fixed light or dark Atelier theme: HA paints only the view, the header follows here
   // (owner 2026-10-25: «Вилла Юг · тёмная» had a light header).
@@ -11532,18 +12098,26 @@ ${askHtml || (res ? `<div class="ask done"><p class="res" data-res role="status"
       const hass = document.querySelector("home-assistant")?.hass;
       const st = hass?.states || {};
       const w = Object.values(st).find((x) => x.entity_id.startsWith("weather.") && x.entity_id.includes("forecast")) || Object.values(st).find((x) => x.entity_id.startsWith("weather."));
-      const alarms = Object.values(st).filter((x) => x.entity_id.startsWith("binary_sensor.") && x.state === "on" && ["moisture", "smoke", "gas", "carbon_monoxide", "safety", "problem"].includes(x.attributes.device_class));
       // «Ошибка тёплого пола 1 · Гостиная» — the room from HA's registry (integrator run 25.10: two identical names).
       const roomOf = (id) => {
         const e = hass?.entities?.[id];
         const area = e?.area_id || (e?.device_id && hass?.devices?.[e.device_id]?.area_id);
         return area ? hass?.areas?.[area]?.name : "";
       };
+      // What moves the house now (houseHead: the agent's answer, else the canon) — the same decision as the header's: the
+      // faults by name (the agent's name for an entity HA's states don't have), else the level's word (acceptance 10.11 M-1).
+      const hh = houseHead(hass ? houseLevel(hass) : null);
+      const bad = [...hh.wet, ...hh.problems];
+      const sayFault = (f) => (st[f.entity] ? (st[f.entity].attributes.friendly_name || f.entity) + (roomOf(f.entity) ? ` (${roomOf(f.entity)})` : "") : f.name || f.entity);
+      const line = bad.length
+        ? bad.map(sayFault).slice(0, 3).join(" · ")
+        : hh.level === "alarm" ? LL("Авария", "Alarm") : hh.level === "fault" ? LL("Неисправность", "Problem") : hh.level === "offline" ? (hh.lost.length ? LL(`Нет связи · ${hh.lost.length} ${sensorsWord(hh.lost.length)}`, `Offline · ${hh.lost.length} sensor${hh.lost.length === 1 ? "" : "s"}`) : LL("Нет связи с датчиками", "No link to the sensors")) : "";
+      const tone = hh.level === "alarm" ? "var(--hf-alarm)" : "var(--hf-amber)";
       const now = new Date();
       const m = now.getMinutes();
       face.innerHTML = `<div style="display:flex;flex-direction:column;align-items:center;transform:translate(${((m * 7) % 13) - 6}px,${((m * 11) % 13) - 6}px)"><div style="font:200 min(24vw,180px)/1 Onest,sans-serif;letter-spacing:-.05em;font-variant-numeric:tabular-nums">${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}</div>
 <div style="font:300 22px Onest,sans-serif;margin-top:18px;opacity:.6">${now.toLocaleDateString("ru-RU", { weekday: "long", day: "numeric", month: "long" })}${w && w.attributes.temperature !== undefined ? ` · ${Math.round(w.attributes.temperature)}° на улице` : ""}</div>
-${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:var(--hf-alarm)">● ${alarms.map((a) => esc((a.attributes.friendly_name || a.entity_id) + (roomOf(a.entity_id) ? ` (${roomOf(a.entity_id)})` : ""))).slice(0, 3).join(" · ")}</div>` : ""}</div>`;
+${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${tone}">● ${esc(line)}</div>` : ""}</div>`;
     };
     setInterval(() => {
       if (!face && Date.now() - last > idleMin * 60000) {
@@ -12195,10 +12769,37 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
     "hauflo-area": [{ name: "area", selector: { area: {} } }, { name: "device", selector: { device: {} } }, G(TXT("title"), SEL("block", [["control", "Управление", "Controls"], ["readings", "Показания", "Readings"], ["diagnostics", "Диагностика", "Diagnostics"]])), G(BOOL("compact"), BOOL("battery_percent"))],
     "hauflo-automations": [SEL("only", [["all", "Правила семьи и системы", "Family and system rules"], ["guest", "Только гостевой вид (правила клиента)", "Guest view only (the client's rules)"]])],
   };
-  const LABEL = {
-    ru: { sensors: "Датчики протечки", valves: "Кран (клапан)", area: "Комната в Home Assistant", device: "Или устройство целиком", label: "Подпись", name: "Название", title: "Заголовок", subtitle: "Подзаголовок", icon: "Иконка", icon_type: "Что слева", color: "Цвет, когда включено", layout: "Расположение", show_level: "Полоска уровня (яркость, положение)", controls: "Управление под плиткой (яркость, шторы, ±, плеер…)", primary_info: "Первая строка", secondary_info: "Вторая строка", tap_action: "Нажатие", hold_action: "Удержание", double_tap_action: "Двойное нажатие", path: "Открывать по нажатию", picture: "Фото комнаты (URL)", temperature: "Температура (термостаты, датчики)", humidity: "Влажность", lights: "Свет", alarms: "Аварийные датчики", devices: "Устройства (нет связи)", weather: "Погода", climate: "Термостат", covers: "Шторы", kind: "Вид", scenes: "Сцены", entity: "Объект", entities: "Объекты", days: "Дней прогноза", forecast: "Прогноз", pm25: "PM2.5", pm10: "PM10", co2: "CO₂", voc: "Летучие в-ва", hours: "Часов", locks: "Замки", openings: "Двери, окна, движение", refresh: "Обновлять кадр, с", chart: "График за сутки", hide_ok: "Прятать, когда всё в норме", battery_percent: "Заряд батареи в % всегда (не только когда садится)", compact: "Компактно (строкой)", only: "Что показывать", heat_setpoint: "Уставка нагрева (number)", cool_setpoint: "Уставка охлаждения (number)", scene_layout: "Где сцены", block: "Блок комнаты (пусто — всё)" },
-    en: { sensors: "Leak sensors", valves: "Valve", area: "Home Assistant area", device: "Or a whole device", label: "Label", name: "Name", title: "Title", subtitle: "Subtitle", icon: "Icon", icon_type: "On the left", color: "Color when on", layout: "Layout", show_level: "Level bar (brightness, position)", controls: "Controls under the tile (brightness, blinds, ±, player…)", primary_info: "First line", secondary_info: "Second line", tap_action: "Tap", hold_action: "Hold", double_tap_action: "Double tap", path: "Opens on tap", picture: "Room photo (URL)", temperature: "Temperature (thermostats, sensors)", humidity: "Humidity", lights: "Lights", alarms: "Alarm sensors", devices: "Devices (offline check)", weather: "Weather", climate: "Thermostat", covers: "Blinds", kind: "Kind", scenes: "Scenes", entity: "Entity", entities: "Entities", days: "Forecast days", forecast: "Forecast", pm25: "PM2.5", pm10: "PM10", co2: "CO₂", voc: "VOC", hours: "Hours", locks: "Locks", openings: "Doors, windows, motion", refresh: "Snapshot refresh, s", chart: "24 h chart", hide_ok: "Hide when all is OK", battery_percent: "Battery % always (not only when low)", compact: "Compact (one row)", only: "What to show", heat_setpoint: "Heating setpoint (number)", cool_setpoint: "Cooling setpoint (number)", scene_layout: "Where scenes go", block: "Room block (empty — all)" },
+  /** The cards whose rows the integrator composes («Состав блока», 0.32 п.6) and what each row of them can change:
+   * `name`/`secondary`/`icon` where the card draws them, `block` in a room, a tap / a hold where the card opens a row. */
+  const ROW_EDIT = {
+    "hauflo-area": ["name", "secondary", "icon", "block", "tap_action", "hold_action"],
+    "hauflo-lights": ["name", "secondary", "icon"],
+    "hauflo-covers": ["name", "secondary", "icon"],
+    "hauflo-sliders": ["name", "secondary", "icon"],
+    "hauflo-devices": ["name", "secondary", "icon"],
+    "hauflo-status": ["name", "secondary"],
+    "hauflo-scenes": ["name", "icon"],
+    "hauflo-leaks": ["tap_action", "hold_action"],
+    "hauflo-alert": [],
   };
+  for (const t of Object.keys(ROW_EDIT)) FORM[t] = [...FORM[t], BOOL("auto")];
+  const ROW_FIELD = { name: TXT("name"), secondary: TXT("secondary"), icon: ICON(), block: SEL("block", Object.entries(AREA_BLOCK).map(([k, [ru, en]]) => [k, ru, en])), tap_action: ACT("tap_action"), hold_action: ACT("hold_action") };
+  const COMP = {
+    ru: { head: "Состав блока", hint: "Строки, которые карточка показывает. Изменения сохраняются при следующем применении Hauflo.", add: "Добавить строку", up: "Выше", down: "Ниже", hide: "Скрыть", show: "Вернуть", drop: "Убрать", more: "Настроить строку", byLabel: "скрыто меткой Home Assistant", otherRoom: "из другой комнаты", renamed: "переименовано здесь", hidden: "скрыто здесь", added: "добавлено здесь", moved: "в блоке", empty: "Скрыто, потому что строк нет", errors: "Ошибки в настройке карточки", name: "Название", secondary: "Вторая строка", icon: "Иконка", block: "Блок", tap_action: "Нажатие", hold_action: "Удержание", entity: "Объект" },
+    en: { head: "Block rows", hint: "The rows the card shows. Changes are kept on Hauflo's next deploy.", add: "Add a row", up: "Up", down: "Down", hide: "Hide", show: "Show again", drop: "Remove", more: "Row settings", byLabel: "hidden by a Home Assistant label", otherRoom: "from another room", renamed: "renamed here", hidden: "hidden here", added: "added here", moved: "in block", empty: "Hidden because there are no rows", errors: "Problems in the card's settings", name: "Name", secondary: "Second line", icon: "Icon", block: "Block", tap_action: "Tap", hold_action: "Hold", entity: "Entity" },
+  };
+  const LABEL = {
+    ru: { auto: "Подбирать строки сами", sensors: "Датчики протечки", valves: "Кран (клапан)", area: "Комната в Home Assistant", device: "Или устройство целиком", label: "Подпись", name: "Название", title: "Заголовок", subtitle: "Подзаголовок", icon: "Иконка", icon_type: "Что слева", color: "Цвет, когда включено", layout: "Расположение", show_level: "Полоска уровня (яркость, положение)", controls: "Управление под плиткой (яркость, шторы, ±, плеер…)", primary_info: "Первая строка", secondary_info: "Вторая строка", tap_action: "Нажатие", hold_action: "Удержание", double_tap_action: "Двойное нажатие", path: "Открывать по нажатию", picture: "Фото комнаты (URL)", temperature: "Температура (термостаты, датчики)", humidity: "Влажность", lights: "Свет", alarms: "Аварийные датчики", devices: "Устройства (нет связи)", weather: "Погода", climate: "Термостат", covers: "Шторы", kind: "Вид", scenes: "Сцены", entity: "Объект", entities: "Объекты", days: "Дней прогноза", forecast: "Прогноз", pm25: "PM2.5", pm10: "PM10", co2: "CO₂", voc: "Летучие в-ва", hours: "Часов", locks: "Замки", openings: "Двери, окна, движение", refresh: "Обновлять кадр, с", chart: "График за сутки", hide_ok: "Прятать, когда всё в норме", battery_percent: "Заряд батареи в % всегда (не только когда садится)", compact: "Компактно (строкой)", only: "Что показывать", heat_setpoint: "Уставка нагрева (number)", cool_setpoint: "Уставка охлаждения (number)", scene_layout: "Где сцены", block: "Блок комнаты (пусто — всё)" },
+    en: { auto: "Pick the rows itself", sensors: "Leak sensors", valves: "Valve", area: "Home Assistant area", device: "Or a whole device", label: "Label", name: "Name", title: "Title", subtitle: "Subtitle", icon: "Icon", icon_type: "On the left", color: "Color when on", layout: "Layout", show_level: "Level bar (brightness, position)", controls: "Controls under the tile (brightness, blinds, ±, player…)", primary_info: "First line", secondary_info: "Second line", tap_action: "Tap", hold_action: "Hold", double_tap_action: "Double tap", path: "Opens on tap", picture: "Room photo (URL)", temperature: "Temperature (thermostats, sensors)", humidity: "Humidity", lights: "Lights", alarms: "Alarm sensors", devices: "Devices (offline check)", weather: "Weather", climate: "Thermostat", covers: "Blinds", kind: "Kind", scenes: "Scenes", entity: "Entity", entities: "Entities", days: "Forecast days", forecast: "Forecast", pm25: "PM2.5", pm10: "PM10", co2: "CO₂", voc: "VOC", hours: "Hours", locks: "Locks", openings: "Doors, windows, motion", refresh: "Snapshot refresh, s", chart: "24 h chart", hide_ok: "Hide when all is OK", battery_percent: "Battery % always (not only when low)", compact: "Compact (one row)", only: "What to show", heat_setpoint: "Heating setpoint (number)", cool_setpoint: "Cooling setpoint (number)", scene_layout: "Where scenes go", block: "Room block (empty — all)" },
+  };
+  // hauflo-insights (0.32 п.9): no entity — the agent's diagnosis; the editor picks its sections, a stage, how many rows.
+  const INSIGHT_SECTION_OPT = [["climate", "Климат", "Climate"], ["energy", "Энергия", "Energy"], ["water", "Вода", "Water"], ["air", "Воздух", "Air"], ["link", "Связь и питание", "Link and power"], ["system", "Система", "System"], ["pairs", "Пары", "Pairs"], ["other", "Прочее", "Other"]];
+  const INSIGHT_STAGE_OPT = [["deviation", "Отклонение", "Deviation"], ["learning", "Изучаю", "Learning"], ["ready", "Норма известна", "Norm known"], ["normal", "Отмечено как норма", "Marked as normal"], ["excluded", "Не наблюдаю", "Not watched"]];
+  STUB["hauflo-insights"] = () => ({});
+  PICK["hauflo-insights"] = [["Hauflo · Диагностика", "Что Hauflo изучает о приборах: обучение, нормы, отклонения; «Это норма» — администраторам"], ["Hauflo · Diagnostics", "What Hauflo learns about the devices: learning, norms, deviations; “This is normal” for admins"]];
+  FORM["hauflo-insights"] = [TXT("title"), { name: "sections", selector: { select: { multiple: true, mode: "list", options: INSIGHT_SECTION_OPT } } }, G(SEL("stage", INSIGHT_STAGE_OPT), NUM("limit", 1, INSIGHT_PAGE)), G(BOOL("hide_ok"), BOOL("compact"))];
+  Object.assign(LABEL.ru, { sections: "Разделы (пусто — все)", stage: "Только стадия", limit: "Не больше строк" });
+  Object.assign(LABEL.en, { sections: "Sections (empty — all)", stage: "Only the stage", limit: "At most rows" });
   const idOf = (x) => (typeof x === "string" ? x : x?.entity);
   /** Per tile (cards with an `entities` list): its name, what its value means (scale) and its own fault sensors — picked by
    * name under the card's form, never typed as entity ids (owner 03.11). */
@@ -12246,7 +12847,6 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
   };
   const SCALE_OPT = [["auto", "Как в Home Assistant", "As Home Assistant"], ["percent", "Проценты от диапазона", "Percent of the range"], ["speeds", "Скорости 1…N", "Speeds 1…N"], ["table", "Своя таблица значений", "Own value table"]];
   const ROW_FORM = (id, row) => [
-    TXT("name"),
     ...(SCALE_DOMS.includes(domainOf(id)) ? [SEL("scale", SCALE_OPT), ...(row.scale === "speeds" ? [NUM("speeds", 1, 100)] : []), ...(row.scale === "table" ? [TXT("values")] : [])] : []),
     E("alarms", "binary_sensor", true),
   ];
@@ -12254,13 +12854,12 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
     ru: { name: "Название на плитке", scale: "Что значит значение", speeds: "Сколько скоростей", values: "Значение=слово через запятую (0=Выкл, 10=1, 23=2)", alarms: "Аварии этой плитки — красная рамка" },
     en: { name: "Name on the tile", scale: "What the value means", speeds: "Number of speeds", values: "Value=word, comma separated (0=Off, 10=1, 23=2)", alarms: "This tile's faults — red frame" },
   };
-  const FAULT_CLASSES = ["problem", "safety", "smoke", "gas", "carbon_monoxide", "moisture", "heat", "cold"];
   /** The device's own fault sensors (same HA device, a fault class) — offered by a button, never added by themselves. */
   const deviceFaults = (hass, id) => {
     const dev = hass.entities?.[id]?.device_id;
     if (!dev) return [];
     return Object.values(hass.entities)
-      .filter((x) => x.device_id === dev && x.entity_id.startsWith("binary_sensor.") && FAULT_CLASSES.includes(hass.states[x.entity_id]?.attributes?.device_class))
+      .filter((x) => x.device_id === dev && x.entity_id.startsWith("binary_sensor.") && !!hass.states[x.entity_id] && signalOf(hass.states[x.entity_id]).house !== "none" && !!hass.states[x.entity_id].attributes?.device_class)
       .map((x) => x.entity_id);
   };
   const short = (v) => String(+Number(v).toFixed(3));
@@ -12297,6 +12896,7 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
     "hauflo-camera": { refresh: 10 },
     "hauflo-acs": { kind: "ac" },
   };
+  for (const t of Object.keys(ROW_EDIT)) DEFAULTS[t] = { ...DEFAULTS[t], auto: true };
   const localize = (schema, lang) =>
     schema.map((s) =>
       s.type === "grid"
@@ -12305,6 +12905,21 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
           ? { ...s, selector: { select: { ...s.selector.select, options: s.selector.select.options.map((o) => (Array.isArray(o) ? { value: o[0], label: lang === "ru" ? o[1] : o[2] } : o)) } } }
           : s,
     );
+  /** The editors that say what moves «Всё хорошо» (the status / area cards show the house's signals). */
+  const SIGNAL_EDITORS = ["hauflo-status", "hauflo-area"];
+  // The editor's own notes (Hauflo's dashboard, the house's signals): one class over the theme's tokens, not inline styles
+  // (acceptance 10.11 L-8). A <style> child of the editor reaches its tree wherever HA puts it (its dialog's shadow root).
+  const ED_CSS = `.hf-ed-note{display:block;margin:0 0 var(--hf-pad);padding:var(--hf-row-gap) var(--hf-r-sm);border-radius:var(--hf-r-sm);background:var(--hf-grey-10);font-size:13px;line-height:1.45;color:var(--secondary-text-color);text-decoration:none}
+.hf-ed-note[data-signals]{margin:var(--hf-pad) 0 0}a.hf-ed-note:hover{color:var(--primary-text-color)}a.hf-ed-note b{color:var(--primary-color);font-weight:500}`;
+  // Hauflo's app (cards.json documentationURL too): the house's own server (its link entity's `server`), else by language.
+  const HAUFLO_APP = { ru: "https://app.hauflo.ru/", en: "https://app.hauflo.com/" };
+  /** Where the integrator sets the house's signals up: the app of the server this house is linked to. The cards know no
+   * project id (the agent's link has none), so the app's root — the integrator's objects list — not the project's page. */
+  const appUrl = (hass) => {
+    SELF.agent(hass);
+    const s = SELF.id ? hass?.states?.[SELF.id]?.attributes?.server : "";
+    return typeof s === "string" && /^[a-z0-9][a-z0-9.-]*$/i.test(s) ? `https://${s}/` : HAUFLO_APP[userLang(hass) === "ru" ? "ru" : "en"];
+  };
   class Editor extends HTMLElement {
     setConfig(config) {
       this._config = config;
@@ -12317,6 +12932,11 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
     _render() {
       const schema = FORM[this.tag];
       if (!this._hass || !this._config || !schema) return;
+      if (!this._edCss) {
+        this._edCss = document.createElement("style");
+        this._edCss.textContent = ED_CSS;
+        this.prepend(this._edCss);
+      }
       // ha-form is HA's lazy part: a built-in card's editor brings it in.
       if (!customElements.get("ha-form")) {
         if (!this._waiting) {
@@ -12330,14 +12950,14 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
       // On a dashboard Hauflo made: what a change here means (owner 28.10: «не понял, почему карточки не редактируются»).
       if (!this._note && /^\/hauflo-/.test(location.pathname)) {
         this._note = document.createElement("div");
-        this._note.style.cssText = "margin:0 0 16px;padding:10px 14px;border-radius:12px;background:var(--hf-grey-10);font-size:13px;line-height:1.45;color:var(--secondary-text-color)";
+        this._note.className = "hf-ed-note";
         this._note.textContent =
           userLang(this._hass) === "ru"
             ? "Свои карточки можно добавлять — Hauflo сохранит их при следующем применении. Названия блоков — «Настройки → Вид» на панели."
             : "You can add your own cards — Hauflo keeps them on the next deploy. Block titles — «Settings → View» on the dashboard.";
         // 399-36: a room of other integrations' devices — large by default, one row each by choice (here or for the whole house).
         if (this.tag === "hauflo-area") this._note.textContent += userLang(this._hass) === "ru" ? " Крупно или строкой — «Компактно» здесь или для всего дома в «Настройки → Вид»." : " Large or one row — «Compact» here, or for the whole house in «Settings → View».";
-        this.prepend(this._note);
+        this._edCss.after(this._note);
         this._noteBase = this._note.textContent;
       }
       // A house name for this block wins over the «Заголовок» here — said, or a changed title looks ignored.
@@ -12365,6 +12985,13 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
               next[s.name] = val.map((id) => was.get(id) ?? (s.name === "scenes" ? { entity: id } : id));
             } else next[s.name] = val;
           }
+          if (ROW_EDIT[this.tag] && next.auto === true) delete next.auto;
+          if (ROW_EDIT[this.tag] && next.auto === false && this._config.auto !== false) {
+            const vis = this._comp().vis;
+            const it = new Map((Array.isArray(next.items) ? next.items : []).filter((x) => x && typeof x === "object" && typeof x.entity === "string").map((x) => [x.entity, x]));
+            next.items = [...(Array.isArray(next.items) ? next.items : []), ...vis.filter((id) => !it.has(id)).map((entity) => ({ entity }))];
+            next.order = [...(Array.isArray(next.order) ? next.order : []).filter((k) => !ENT_ID.test(String(k))), ...vis];
+          }
           this._config = next;
           this.dispatchEvent(new CustomEvent("config-changed", { detail: { config: next }, bubbles: true, composed: true }));
         });
@@ -12378,6 +13005,244 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
       this._renderPicks(fields.filter(iconSel), data);
       if (ROW_CARDS.includes(this.tag)) this._renderRows();
       if (this.tag === "hauflo-entity") this._renderKind();
+      if (SIGNAL_EDITORS.includes(this.tag)) this._renderSignals();
+      if (ROW_EDIT[this.tag]) this._renderComp();
+    }
+    /** The card's rows as the card draws them (0.32 п.6): what it picks by itself (`auto` — a room's members of this block
+     * by the same members() / kind as its render, a list card's own list), its rows over them (`vis`, in order), and what
+     * isn't shown but can be put back — hidden here, by HA's label (a room), or moved to another block. */
+    _comp() {
+      const c = this._config;
+      const h = this._hass;
+      const it = rowItems(c);
+      if (this.tag !== "hauflo-area") {
+        const lk = ROW_LIST[this.tag] || "entities";
+        const auto = (Array.isArray(c[lk]) ? c[lk] : []).map(idOf).filter((x) => typeof x === "string" && x);
+        const vis = applyRows(c, auto);
+        const hidden = [...it.values()].filter((o) => o.hidden === true).map((o) => o.entity);
+        return { auto, vis, hidden, byLabel: [], moved: [], area: null };
+      }
+      const pr = (this._probe = this._probe || document.createElement("hauflo-area"));
+      pr._config = { ...c, items: undefined, auto: undefined };
+      pr._hass = h;
+      pr._memo = null;
+      const part = Object.hasOwn(AREA_PARTS, c.block || "") ? c.block : "";
+      const blockOf = (id) => {
+        const ob = it.get(id)?.block;
+        if (ob && Object.hasOwn(AREA_PARTS, ob)) return ob;
+        const k = pr.autoKind(id);
+        return Object.keys(AREA_PARTS).find((b) => AREA_PARTS[b].includes(k)) || "control";
+      };
+      const here = (id) => !part || blockOf(id) === part;
+      const autoAll = h ? pr.autoMembers().filter((id) => h.states[id]) : [];
+      const auto = autoAll.filter((id) => !part || AREA_PARTS[part].includes(pr.autoKind(id)));
+      const vis = applyRows(c, autoAll, (id) => labelHid(h, id)).filter((id) => h.states[id] && here(id));
+      const hidden = [...it.values()].filter((o) => o.hidden === true && h.states[o.entity] && here(o.entity)).map((o) => o.entity);
+      // Kept off by HA's label until the eye puts it back (`hidden: false`); a row renamed here stays under the label.
+      const byLabel = pr.labelHidden().filter((id) => typeof it.get(id)?.hidden !== "boolean" && h.states[id] && (!part || AREA_PARTS[part].includes(pr.autoKind(id))));
+      const moved = auto.filter((id) => !here(id));
+      return { auto, vis, hidden, byLabel, moved, area: c.area || "", part, pr };
+    }
+    /** Writes the rows (only what differs from what the card picks by itself) and draws again. */
+    _rowsWrite(fn) {
+      const c = this._config;
+      const { auto } = this._comp();
+      const raw = Array.isArray(c.items) ? c.items : [];
+      const bad = raw.filter((x) => !x || typeof x !== "object" || typeof x.entity !== "string" || !ENT_ID.test(x.entity));
+      const it = new Map(raw.filter((x) => !bad.includes(x)).map((x) => [x.entity, { ...x }]));
+      let order = (Array.isArray(c.order) ? c.order : []).filter((k) => ENT_ID.test(String(k)));
+      const keep = (Array.isArray(c.order) ? c.order : []).filter((k) => !ENT_ID.test(String(k)));
+      order = fn(it, order) || order;
+      for (const [id, o] of it) {
+        for (const k of Object.keys(o)) if (o[k] === undefined || o[k] === "" || o[k] === null || (typeof o[k] === "object" && !Object.keys(o[k]).length)) delete o[k];
+        // `hidden: false` is kept only where it means something: over HA's label (acceptance 10.11 L-5).
+        if (o.hidden === false && (this.tag !== "hauflo-area" || !labelHid(this._hass, id))) delete o.hidden;
+        if (Object.keys(o).length === 1 && c.auto !== false && auto.includes(id)) it.delete(id);
+      }
+      const next = { ...c };
+      const items = [...it.values(), ...bad];
+      if (items.length) next.items = items;
+      else delete next.items;
+      const ord = [...keep, ...order];
+      if (ord.length) next.order = ord;
+      else delete next.order;
+      this._config = next;
+      this.dispatchEvent(new CustomEvent("config-changed", { detail: { config: next }, bubbles: true, composed: true }));
+      this._render();
+    }
+    /** «Состав блока»: one row editor for every card with rows (0.32 п.6) — each row's name and entity, ↑↓, the eye (hide /
+     * put back), «⋯» its own settings; «+» adds an entity (another room's too). Each row says where it comes from. */
+    _renderComp() {
+      const lang = userLang(this._hass);
+      const w = COMP[lang] || COMP.en;
+      const h = this._hass;
+      const c = this._config;
+      const it = rowItems(c);
+      const k = this._comp();
+      const areaOf = (id) => {
+        const e = h.entities?.[id];
+        return e?.area_id || h.devices?.[e?.device_id]?.area_id || "";
+      };
+      if (!this._compBox) {
+        const box = (this._compBox = document.createElement("div"));
+        box.dataset.comp = "";
+        box.style.cssText = "margin-top:20px;display:flex;flex-direction:column;gap:6px";
+        box.innerHTML = `<div data-ch style="font-weight:500"></div><div data-hint style="font-size:12px;color:var(--secondary-text-color);margin-bottom:4px"></div><div data-err style="display:none;font-size:13px;color:var(--error-color);margin-bottom:4px"></div><div data-list style="display:flex;flex-direction:column;gap:6px"></div><div data-empty style="display:none;font-size:13px;color:var(--secondary-text-color)"></div>`;
+        const add = (this._compAdd = document.createElement("ha-form"));
+        add.computeLabel = () => (COMP[userLang(this._hass)] || COMP.en).add;
+        add.addEventListener("value-changed", (ev) => {
+          ev.stopPropagation();
+          const id = ev.detail.value?.entity;
+          if (!id || !ENT_ID.test(id)) return;
+          add.data = {};
+          const cur = this._comp();
+          this._rowsWrite((m) => {
+            const o = m.get(id) || { entity: id };
+            o.hidden = false;
+            // A row added to a block of a room goes in that block, whatever its kind.
+            if (this.tag === "hauflo-area" && cur.part && cur.pr && !AREA_PARTS[cur.part].includes(cur.pr.autoKind(id))) o.block = cur.part;
+            m.set(id, o);
+          });
+        });
+        box.appendChild(add);
+        this._compMap = new Map();
+        box.addEventListener("click", (ev) => {
+          const b = ev.target.closest("button[data-a]");
+          const row = b?.closest("[data-row]");
+          if (!row) return;
+          const id = row.dataset.row;
+          const a = b.dataset.a;
+          if (a === "more") {
+            this._compOpen = this._compOpen === id ? "" : id;
+            return this._renderComp();
+          }
+          const cur = this._comp();
+          this._rowsWrite((m, order) => {
+            const o = m.get(id) || { entity: id };
+            if (a === "hide") return (o.hidden = true), m.set(id, o), undefined;
+            if (a === "show") return (o.hidden = false), m.set(id, o), undefined;
+            if (a === "drop") return m.delete(id), order.filter((x) => x !== id);
+            const vis = [...cur.vis];
+            const i = vis.indexOf(id);
+            const j = a === "up" ? i - 1 : i + 1;
+            if (i < 0 || j < 0 || j >= vis.length) return undefined;
+            [vis[i], vis[j]] = [vis[j], vis[i]];
+            return [...order.filter((x) => !vis.includes(x)), ...vis];
+          });
+        });
+        this._form.after(box);
+        if (this._sig) this._sig.after(box);
+      }
+      const box = this._compBox;
+      box.querySelector("[data-ch]").textContent = w.head;
+      box.querySelector("[data-hint]").textContent = w.hint;
+      const errs = cfgProblems(c);
+      const eb = box.querySelector("[data-err]");
+      eb.style.display = errs.length ? "" : "none";
+      eb.textContent = errs.length ? `${w.errors}: ${errs.map((x) => x[lang === "ru" ? 0 : 1]).join("; ")}` : "";
+      const fields = ROW_EDIT[this.tag];
+      const lk = ROW_LIST[this.tag] || "entities";
+      const dom = flat(FORM[this.tag]).find((x) => x.name === lk && x.selector?.entity)?.selector.entity.domain;
+      this._compAdd.hass = h;
+      this._compAdd.schema = [{ name: "entity", selector: { entity: dom ? { domain: dom } : {} } }];
+      this._compAdd.data = this._compAdd.data || {};
+      const rows = [
+        ...k.vis.map((id) => [id, "vis"]),
+        ...k.hidden.filter((id) => !k.vis.includes(id)).map((id) => [id, "hidden"]),
+        ...k.byLabel.map((id) => [id, "label"]),
+        ...k.moved.filter((id) => !k.vis.includes(id) && !k.hidden.includes(id)).map((id) => [id, "moved"]),
+      ];
+      const list = box.querySelector("[data-list]");
+      const ids = rows.map(([id]) => id);
+      for (const [id, el] of this._compMap) if (!ids.includes(id)) (el.remove(), this._compMap.delete(id));
+      const empty = box.querySelector("[data-empty]");
+      empty.style.display = k.vis.length ? "none" : "";
+      empty.textContent = k.vis.length ? "" : this.tag === "hauflo-area" && k.pr ? ((k.pr._config = c), k.pr.whyHidden(k.part, c.others)) : w.empty;
+      const btn = (a, icon, title, off = false) => `<button type="button" data-a="${a}" title="${esc(title)}" aria-label="${esc(title)}"${off ? " disabled" : ""} style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;border:0;border-radius:8px;background:none;color:var(--primary-text-color);cursor:pointer;${off ? "opacity:.3;cursor:default;" : ""}"><ha-icon icon="${icon}" style="--mdc-icon-size:20px"></ha-icon></button>`;
+      rows.forEach(([id, how], i) => {
+        const s = h.states[id];
+        const o = it.get(id) || {};
+        let el = this._compMap.get(id);
+        if (!el) {
+          el = document.createElement("div");
+          el.dataset.row = id;
+          el.style.cssText = "border:1px solid var(--divider-color);border-radius:12px;padding:6px 6px 6px 12px";
+          el.innerHTML = `<div style="display:flex;align-items:center;gap:6px"><div style="flex:1;min-width:0"><div data-n style="font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></div><div data-sub style="font-size:12px;color:var(--secondary-text-color);overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></div></div><div data-b style="display:flex"></div></div><div data-f style="padding:8px 6px 4px 0"></div>`;
+          this._compMap.set(id, el);
+        }
+        if (list.children[i] !== el) list.insertBefore(el, list.children[i] || null);
+        const vi = k.vis.indexOf(id);
+        const added = !k.auto.includes(id) && how === "vis";
+        const tags = [
+          how === "label" ? w.byLabel : "",
+          how === "hidden" ? w.hidden : "",
+          how === "moved" ? `${w.moved} «${(AREA_BLOCK[o.block] || [o.block])[lang === "ru" ? 0 : 1] ?? o.block}»` : "",
+          k.area && areaOf(id) && areaOf(id) !== k.area ? w.otherRoom : added ? w.added : "",
+          o.name || o.secondary ? w.renamed : "",
+        ].filter(Boolean);
+        const nm = [o.name || nameOf(s, id), o.secondary].filter(Boolean).join(" · ");
+        el.style.opacity = how === "vis" ? "" : ".6";
+        el.querySelector("[data-n]").textContent = nm;
+        el.querySelector("[data-sub]").textContent = [id, ...tags].join(" · ");
+        const can = fields.length > 0 && how !== "label";
+        const bkey = `${how}|${vi}|${k.vis.length}|${added}|${can}|${lang}`;
+        const bb = el.querySelector("[data-b]");
+        if (bb.dataset.k !== bkey) {
+          bb.dataset.k = bkey;
+          bb.innerHTML =
+            how === "vis"
+              ? `${btn("up", "mdi:arrow-up", w.up, vi <= 0)}${btn("down", "mdi:arrow-down", w.down, vi >= k.vis.length - 1)}${added ? btn("drop", "mdi:close", w.drop) : btn("hide", "mdi:eye-outline", w.hide)}${can ? btn("more", "mdi:dots-horizontal", w.more) : ""}`
+              : how === "moved"
+                ? ""
+                : `${btn("show", "mdi:eye-off-outline", w.show)}`;
+        }
+        const fb = el.querySelector("[data-f]");
+        const open = this._compOpen === id && can && how === "vis";
+        fb.style.display = open ? "" : "none";
+        if (open) {
+          let f = fb.querySelector("ha-form");
+          if (!f) {
+            f = document.createElement("ha-form");
+            f.computeLabel = (x) => (COMP[userLang(this._hass)] || COMP.en)[x.name] || x.name;
+            f.addEventListener("value-changed", (ev) => {
+              ev.stopPropagation();
+              const v = ev.detail.value || {};
+              this._rowsWrite((m) => {
+                const was = m.get(id) || { entity: id };
+                const one = { ...was };
+                for (const n of ROW_EDIT[this.tag]) one[n] = v[n];
+                m.set(id, one);
+              });
+            });
+            fb.appendChild(f);
+          }
+          f.hass = h;
+          f.schema = localize(fields.map((n) => ROW_FIELD[n]), lang);
+          f.data = Object.fromEntries(fields.map((n) => [n, o[n]]).filter(([, v]) => v !== undefined));
+        } else fb.querySelector("ha-form")?.remove();
+      });
+    }
+    /** «На „Всё хорошо“ влияют N сигналов» (0.32 п.5): what moves the house's state is chosen in Hauflo, not on a card —
+     * said where an integrator looks for it (a status / area card), a link to Hauflo's app with the way on in words (the
+     * cards know no project id). N — every signal the house watches, hidden ones and the agent's list included (L-2). */
+    _renderSignals() {
+      const ru = userLang(this._hass) === "ru";
+      const n = houseSignals(this._hass, true).length;
+      const word = ru ? (n % 10 === 1 && n % 100 !== 11 ? "сигнал" : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? "сигнала" : "сигналов") : n === 1 ? "signal" : "signals";
+      const text = ru
+        ? `На «Всё хорошо» ${n % 10 === 1 && n % 100 !== 11 ? "влияет" : "влияют"} ${n} ${word} дома. Настроить в Hauflo: объект → Аварии → «Сигналы дома».`
+        : `${n} house ${word} ${n === 1 ? "affects" : "affect"} «All good». Set them up in Hauflo: site → Alarms → «House signals».`;
+      if (!this._sig) {
+        this._sig = document.createElement("a");
+        this._sig.dataset.signals = "";
+        this._sig.className = "hf-ed-note";
+        this._sig.target = "_blank";
+        this._sig.rel = "noopener noreferrer";
+        this._form.after(this._sig);
+      }
+      const url = appUrl(this._hass);
+      if (this._sig.href !== url) this._sig.href = url;
+      if (this._sig.textContent !== text) this._sig.textContent = text;
     }
     /** The kind pickers (iconSel) above the form: one icon per kind, the picked one framed, its word by the heading. */
     _renderPicks(sels, data) {
@@ -12532,7 +13397,7 @@ ${alarms.length ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;co
       },
       preview: true,
       get documentationURL() {
-        return uiLang() === "ru" ? "https://app.hauflo.ru/help/cards" : "https://app.hauflo.com/help/cards";
+        return `${HAUFLO_APP[uiLang() === "ru" ? "ru" : "en"]}help/cards`;
       },
     });
   };
