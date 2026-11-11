@@ -1,7 +1,7 @@
-// hauflo-cards {"version":"1.0.6","agent_min":"0.28.0"}
-// Hauflo Cards 1.0.6 — https://github.com/Hauflo/hauflo-cards · one file: the cards, the icons, the theme's tokens, the
+// hauflo-cards {"version":"1.0.7","agent_min":"0.28.0"}
+// Hauflo Cards 1.0.7 — https://github.com/Hauflo/hauflo-cards · one file: the cards, the icons, the theme's tokens, the
 // Onest font (SIL OFL 1.1). Built by cards/build.mjs from the Hauflo agent's sources; do not edit.
-const HF_PACK = {"version":"1.0.6","agent_min":"0.28.0","theme":{"name":"Hauflo Atelier","about":"The one Hauflo theme: HA's theme variables (ha: common + dark + light, injected by theme.py into Home Assistant's themes) and the cards' design tokens (cards: --hf-<name>, declared by the cards on every card and on the page). Only Hauflo makes themes; a user picks light or dark.","notes":{"ha.common.ha-tab-indicator-color":"The tabs: no grey track, the active tab gets Hauflo's own mark (hauflo-cards.js).","ha.dark":"Graphite (dark) and paper (light): glass with an edge highlight, deep soft shadows, light as colour.","ha.dark.eh-mode":"Read by the v5 cards: a view set to a fixed theme wins over the phone's mode.","ha.dark.lovelace-background":"The warm glow low in the corner, fixed: the header bar and the page are one surface (designer review 25.10)."},"ha":{"common":{"ha-card-border-radius":"30px","ha-card-border-width":"0px","ha-badge-border-radius":"14px","ha-dialog-border-radius":"28px","ha-tile-border-radius":"24px","eh-radius":"30px","ha-font-family-body":"Onest, Inter, -apple-system, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif","ha-font-family-heading":"Onest, Inter, -apple-system, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif","ha-card-header-font-size":"18px","ha-view-sections-column-gap":"12px","ha-section-grid-row-gap":"12px","ha-section-grid-column-gap":"12px","ha-tab-indicator-color":"transparent","ha-tab-track-color":"transparent"},"dark":{"eh-mode":"dark","primary-color":"#5CE0B4","accent-color":"#5CE0B4","primary-background-color":"#08090A","lovelace-background":"radial-gradient(90% 55% at 100% 100%, #1a1712 0%, #08090A 60%) fixed","secondary-background-color":"#141517","card-background-color":"#141517","ha-card-background":"linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.03))","ha-card-box-shadow":"inset 0 1px 0 rgba(255,255,255,.10), inset 0 0 0 1px rgba(255,255,255,.05), 0 12px 24px rgba(0,0,0,.35), 0 40px 80px rgba(0,0,0,.45)","primary-text-color":"#F4F2EE","secondary-text-color":"rgba(244,242,238,.64)","disabled-text-color":"rgba(244,242,238,.55)","divider-color":"rgba(255,255,255,.08)","app-header-background-color":"#08090A","app-header-text-color":"#F4F2EE","app-header-border-bottom":"none","sidebar-background-color":"#08090A","sidebar-text-color":"#F4F2EE","sidebar-selected-icon-color":"#F4F2EE","sidebar-selected-text-color":"#F4F2EE","state-icon-color":"rgba(244,242,238,.64)","state-active-color":"#FFB25C","state-light-active-color":"#FFB25C","state-switch-active-color":"#5CE0B4","state-cover-active-color":"#8DC2FF","state-climate-heat-color":"#FFB25C","state-climate-cool-color":"#8DC2FF","state-climate-auto-color":"#5CE0B4","state-binary_sensor-active-color":"#FF5A5F","error-color":"#FF5A5F","warning-color":"#FFB25C","success-color":"#5CE0B4","info-color":"#8DC2FF","switch-checked-color":"#5CE0B4","switch-checked-button-color":"#08090A","switch-checked-track-color":"#5CE0B4","input-fill-color":"rgba(255,255,255,.06)","eh-ink":"#F4F2EE","eh-ink2":"rgba(244,242,238,.64)","eh-ink3":"rgba(244,242,238,.55)","eh-alert-text":"#FF5A5F","eh-amber-text":"#FFB25C","eh-mint-text":"#5CE0B4","eh-line-strong":"rgba(244,242,238,.40)","eh-hair":"rgba(255,255,255,.08)","eh-glass":"linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.03))","eh-edge":"inset 0 1px 0 rgba(255,255,255,.10), inset 0 0 0 1px rgba(255,255,255,.05)","eh-deep":"0 1px 1px rgba(0,0,0,.4), 0 12px 24px rgba(0,0,0,.35), 0 40px 80px rgba(0,0,0,.45)","eh-amber":"#FFB25C","eh-amber-glow":"rgba(255,160,70,.55)","eh-ice":"#8DC2FF","eh-ice-glow":"rgba(90,160,255,.45)","eh-alert":"#FF5A5F","eh-alert-glow":"rgba(255,70,80,.55)","eh-mint":"#5CE0B4","eh-fill-top-bright":"75%","eh-fill-bottom-deep":"55%","eh-dry":"#62D0DE","eh-fan":"#B4A4FF","eh-chart-now":"#5CE0B4","eh-track":"rgba(255,255,255,.08)"},"light":{"eh-mode":"light","primary-color":"#14946C","accent-color":"#14946C","primary-background-color":"#EFECE6","lovelace-background":"radial-gradient(90% 55% at 100% 100%, #F7EBDD 0%, #EFECE6 60%) fixed","secondary-background-color":"#E6E2DA","card-background-color":"#FBFAF8","ha-card-background":"linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72))","ha-card-box-shadow":"inset 0 1px 0 #fff, inset 0 0 0 1px rgba(18,18,18,.04), 0 10px 20px rgba(40,30,20,.06), 0 30px 60px rgba(40,30,20,.08)","primary-text-color":"#121212","secondary-text-color":"rgba(18,18,18,.64)","disabled-text-color":"rgba(18,18,18,.62)","divider-color":"rgba(18,18,18,.08)","app-header-background-color":"#EFECE6","app-header-text-color":"#121212","app-header-border-bottom":"none","sidebar-background-color":"#EFECE6","sidebar-text-color":"#121212","sidebar-selected-icon-color":"#121212","sidebar-selected-text-color":"#121212","state-icon-color":"rgba(18,18,18,.64)","state-active-color":"#E8901F","state-light-active-color":"#E8901F","state-switch-active-color":"#14946C","state-cover-active-color":"#3C82F0","state-climate-heat-color":"#E8901F","state-climate-cool-color":"#3C82F0","state-climate-auto-color":"#14946C","state-binary_sensor-active-color":"#E5383E","error-color":"#E5383E","warning-color":"#E8901F","success-color":"#14946C","info-color":"#3C82F0","switch-checked-color":"#14946C","switch-checked-button-color":"#FFFFFF","switch-checked-track-color":"#14946C","input-fill-color":"rgba(18,18,18,.05)","eh-ink":"#121212","eh-ink2":"rgba(18,18,18,.64)","eh-ink3":"rgba(18,18,18,.62)","eh-alert-text":"#B3261E","eh-amber-text":"#9A5B00","eh-mint-text":"#0B6B4D","eh-line-strong":"rgba(18,18,18,.42)","eh-hair":"rgba(18,18,18,.08)","eh-glass":"linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72))","eh-edge":"inset 0 1px 0 #fff, inset 0 0 0 1px rgba(18,18,18,.04)","eh-deep":"0 1px 1px rgba(40,30,20,.05), 0 10px 20px rgba(40,30,20,.06), 0 30px 60px rgba(40,30,20,.08)","eh-amber":"#E8901F","eh-amber-glow":"rgba(255,170,80,.55)","eh-ice":"#3C82F0","eh-ice-glow":"rgba(90,150,255,.35)","eh-alert":"#E5383E","eh-alert-glow":"rgba(255,80,80,.45)","eh-mint":"#14946C","eh-fill-top-bright":"50%","eh-fill-bottom-deep":"70%","eh-dry":"#1E97AA","eh-fan":"#7B61E0","eh-chart-now":"#14946C","eh-track":"rgba(18,18,18,.07)"}},"cards":{"track":"var(--eh-track,rgba(127,127,127,.12))","amber":"var(--eh-amber,#E8901F)","card-bg":"var(--card-background-color,#fff)","white":"#fff","head-dark-ink":"#F4F2EE","shade-35":"rgba(0,0,0,.35)","head-light-ink":"#121212","ice":"var(--eh-ice,#3C82F0)","amber-2":"var(--eh-amber,#FFB25C)","shade-42":"rgba(0,0,0,.42)","track-08":"var(--eh-track,rgba(127,127,127,.08))","ink":"var(--eh-ink,#1c1c1e)","dry":"var(--eh-dry,#2AA5B8)","fan":"var(--eh-fan,#8B74E8)","chart-now":"var(--eh-chart-now,#2FA67A)","track-14":"var(--eh-track,rgba(127,127,127,.14))","head-dark-ink2":"rgba(244,242,238,.64)","ice-2":"var(--eh-ice,#8DC2FF)","alert":"var(--eh-alert,#FF5A5F)","shade-25":"rgba(0,0,0,.25)","page-bg":"var(--primary-background-color,#fff)","head-dark-bg":"#08090A","head-light-bg":"#EFECE6","head-light-ink2":"rgba(18,18,18,.64)","shade-18":"rgba(0,0,0,.18)","error":"var(--error-color,#c62828)","charcoal":"#1F1E1C","shade-28":"rgba(0,0,0,.28)","glass":"var(--eh-glass,var(--ha-card-background,var(--card-background-color,#fff)))","shade-55":"rgba(0,0,0,.55)","shade-30":"rgba(0,0,0,.3)","shade-50":"rgba(0,0,0,.5)","live":"#ff3b30","mint-text":"var(--eh-mint-text,#1F7A57)","hair":"var(--eh-hair,var(--divider-color,rgba(127,127,127,.2)))","track-10":"var(--eh-track,rgba(127,127,127,.1))","alert-text":"var(--eh-alert-text,var(--eh-alert,#B3261E))","hair-35":"var(--eh-hair,var(--divider-color,rgba(127,127,127,.35)))","mint":"var(--eh-mint,#2FA67A)","card-bg-2":"var(--card-background-color,#141517)","text":"var(--primary-text-color,#F4F2EE)","primary":"var(--primary-color,#5CE0B4)","on-primary":"var(--text-primary-color,#08090A)","amber-glow":"var(--eh-amber-glow,rgba(255,160,70,.5))","ice-glow":"var(--eh-ice-glow,rgba(90,160,255,.42))","alert-glow":"var(--eh-alert-glow,rgba(255,70,80,.5))","mint-2":"var(--eh-mint,#5CE0B4)","grey-14":"rgba(127,127,127,.14)","divider":"var(--divider-color,rgba(127,127,127,.18))","on-accent":"#141414","toast-ok":"#5CE0B4","toast-bg":"#1d1d1f","toast-action":"#FFC070","shade-64":"rgba(0,0,0,.64)","shade-45":"rgba(0,0,0,.45)","white-20":"rgba(255,255,255,.2)","mint-glow-mixed":"rgba(92,224,180,.4)","view-bg":"var(--lovelace-background,var(--primary-background-color,#f4f4f4))","bg":"var(--eh-bg,var(--card-background-color,#fff))","shade-20":"rgba(0,0,0,.2)","glass-solid":"#fff","camera-bg":"#111","white-85":"rgba(255,255,255,.85)","white-08":"rgba(255,255,255,.08)","shade-12":"rgba(0,0,0,.12)","line-strong":"var(--eh-line-strong,rgba(127,127,127,.5))","mint-3":"var(--eh-mint,#2FB383)","ink3":"var(--eh-ink3,#757575)","line-strong-50":"var(--eh-line-strong,var(--divider-color,rgba(127,127,127,.5)))","alert-2":"var(--eh-alert,#E5484D)","shade-40":"rgba(0,0,0,.4)","white-70":"rgba(255,255,255,.7)","chip-ink":"#333","divider-35":"var(--divider-color,rgba(127,127,127,.35))","ha-card-bg":"var(--ha-card-background,var(--card-background-color,#fff))","page-bg-2":"var(--primary-background-color,#f4f2ee)","divider-30":"var(--divider-color,rgba(127,127,127,.3))","divider-25":"var(--divider-color,rgba(127,127,127,.25))","grey-12":"rgba(127,127,127,.12)","dusk-top":"rgba(40,20,0,.10)","dusk-bottom":"rgba(20,10,0,.16)","grey-15":"rgba(127,127,127,.15)","text-2":"var(--primary-text-color,#111)","grey-16":"rgba(127,127,127,.16)","alarm":"#FF5A5F","black":"#000","night-ink":"rgba(255,236,210,.74)","slider-ink":"#111","grey-10":"rgba(127,127,127,.1)","hue-spectrum":"linear-gradient(90deg,#f00,#ff0 17%,#0f0 33%,#0ff 50%,#00f 67%,#f0f 83%,#f00)","ct-spectrum":"linear-gradient(90deg,#ffb15a,#fff3e0 55%,#cfe3ff)","r-xs":"10px","r-sm":"14px","r-md":"18px","r-lg":"30px","pad":"16px","pad-title":"18px","card-w":"400px","pad-climate":"20px","icon-s":"16px","icon-m":"20px","icon-l":"28px","caps-ls":".14em","hit":"44px","row-gap":"8px","fill-top-bright":"var(--eh-fill-top-bright,50%)","fill-bottom-deep":"var(--eh-fill-bottom-deep,70%)"}},"fonts":{"onest-cyrillic":"data:font/woff2;base64,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","onest-latin":"data:font/woff2;base64,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"}};
+const HF_PACK = {"version":"1.0.7","agent_min":"0.28.0","theme":{"name":"Hauflo Atelier","about":"The one Hauflo theme: HA's theme variables (ha: common + dark + light, injected by theme.py into Home Assistant's themes) and the cards' design tokens (cards: --hf-<name>, declared by the cards on every card and on the page). Only Hauflo makes themes; a user picks light or dark.","notes":{"ha.common.ha-tab-indicator-color":"The tabs: no grey track, the active tab gets Hauflo's own mark (hauflo-cards.js).","ha.dark":"Graphite (dark) and paper (light): glass with an edge highlight, deep soft shadows, light as colour.","ha.dark.eh-mode":"Read by the v5 cards: a view set to a fixed theme wins over the phone's mode.","ha.dark.lovelace-background":"The warm glow low in the corner, fixed: the header bar and the page are one surface (designer review 25.10)."},"ha":{"common":{"ha-card-border-radius":"30px","ha-card-border-width":"0px","ha-badge-border-radius":"14px","ha-dialog-border-radius":"28px","ha-tile-border-radius":"24px","eh-radius":"30px","ha-font-family-body":"Onest, Inter, -apple-system, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif","ha-font-family-heading":"Onest, Inter, -apple-system, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif","ha-card-header-font-size":"18px","ha-view-sections-column-gap":"12px","ha-section-grid-row-gap":"12px","ha-section-grid-column-gap":"12px","ha-tab-indicator-color":"transparent","ha-tab-track-color":"transparent"},"dark":{"eh-mode":"dark","primary-color":"#5CE0B4","accent-color":"#5CE0B4","primary-background-color":"#08090A","lovelace-background":"radial-gradient(90% 55% at 100% 100%, #1a1712 0%, #08090A 60%) fixed","secondary-background-color":"#141517","card-background-color":"#141517","ha-card-background":"linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.03))","ha-card-box-shadow":"inset 0 1px 0 rgba(255,255,255,.10), inset 0 0 0 1px rgba(255,255,255,.05), 0 12px 24px rgba(0,0,0,.35), 0 40px 80px rgba(0,0,0,.45)","primary-text-color":"#F4F2EE","secondary-text-color":"rgba(244,242,238,.64)","disabled-text-color":"rgba(244,242,238,.55)","divider-color":"rgba(255,255,255,.08)","app-header-background-color":"#08090A","app-header-text-color":"#F4F2EE","app-header-border-bottom":"none","sidebar-background-color":"#08090A","sidebar-text-color":"#F4F2EE","sidebar-selected-icon-color":"#F4F2EE","sidebar-selected-text-color":"#F4F2EE","state-icon-color":"rgba(244,242,238,.64)","state-active-color":"#FFB25C","state-light-active-color":"#FFB25C","state-switch-active-color":"#5CE0B4","state-cover-active-color":"#8DC2FF","state-climate-heat-color":"#FFB25C","state-climate-cool-color":"#8DC2FF","state-climate-auto-color":"#5CE0B4","state-binary_sensor-active-color":"#FF5A5F","error-color":"#FF5A5F","warning-color":"#FFB25C","success-color":"#5CE0B4","info-color":"#8DC2FF","switch-checked-color":"#5CE0B4","switch-checked-button-color":"#08090A","switch-checked-track-color":"#5CE0B4","input-fill-color":"rgba(255,255,255,.06)","eh-ink":"#F4F2EE","eh-ink2":"rgba(244,242,238,.64)","eh-ink3":"rgba(244,242,238,.55)","eh-alert-text":"#FF5A5F","eh-amber-text":"#FFB25C","eh-mint-text":"#5CE0B4","eh-line-strong":"rgba(244,242,238,.40)","eh-hair":"rgba(255,255,255,.08)","eh-glass":"linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.03))","eh-edge":"inset 0 1px 0 rgba(255,255,255,.10), inset 0 0 0 1px rgba(255,255,255,.05)","eh-deep":"0 1px 1px rgba(0,0,0,.4), 0 12px 24px rgba(0,0,0,.35), 0 40px 80px rgba(0,0,0,.45)","eh-amber":"#FFB25C","eh-amber-glow":"rgba(255,160,70,.55)","eh-ice":"#8DC2FF","eh-ice-glow":"rgba(90,160,255,.45)","eh-alert":"#FF5A5F","eh-alert-glow":"rgba(255,70,80,.55)","eh-mint":"#5CE0B4","eh-fill-top-bright":"75%","eh-fill-bottom-deep":"55%","eh-dry":"#62D0DE","eh-fan":"#B4A4FF","eh-chart-now":"#5CE0B4","eh-track":"rgba(255,255,255,.08)"},"light":{"eh-mode":"light","primary-color":"#14946C","accent-color":"#14946C","primary-background-color":"#EFECE6","lovelace-background":"radial-gradient(90% 55% at 100% 100%, #F7EBDD 0%, #EFECE6 60%) fixed","secondary-background-color":"#E6E2DA","card-background-color":"#FBFAF8","ha-card-background":"linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72))","ha-card-box-shadow":"inset 0 1px 0 #fff, inset 0 0 0 1px rgba(18,18,18,.04), 0 10px 20px rgba(40,30,20,.06), 0 30px 60px rgba(40,30,20,.08)","primary-text-color":"#121212","secondary-text-color":"rgba(18,18,18,.64)","disabled-text-color":"rgba(18,18,18,.62)","divider-color":"rgba(18,18,18,.08)","app-header-background-color":"#EFECE6","app-header-text-color":"#121212","app-header-border-bottom":"none","sidebar-background-color":"#EFECE6","sidebar-text-color":"#121212","sidebar-selected-icon-color":"#121212","sidebar-selected-text-color":"#121212","state-icon-color":"rgba(18,18,18,.64)","state-active-color":"#E8901F","state-light-active-color":"#E8901F","state-switch-active-color":"#14946C","state-cover-active-color":"#3C82F0","state-climate-heat-color":"#E8901F","state-climate-cool-color":"#3C82F0","state-climate-auto-color":"#14946C","state-binary_sensor-active-color":"#E5383E","error-color":"#E5383E","warning-color":"#E8901F","success-color":"#14946C","info-color":"#3C82F0","switch-checked-color":"#14946C","switch-checked-button-color":"#FFFFFF","switch-checked-track-color":"#14946C","input-fill-color":"rgba(18,18,18,.05)","eh-ink":"#121212","eh-ink2":"rgba(18,18,18,.64)","eh-ink3":"rgba(18,18,18,.62)","eh-alert-text":"#B3261E","eh-amber-text":"#9A5B00","eh-mint-text":"#0B6B4D","eh-line-strong":"rgba(18,18,18,.42)","eh-hair":"rgba(18,18,18,.08)","eh-glass":"linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.72))","eh-edge":"inset 0 1px 0 #fff, inset 0 0 0 1px rgba(18,18,18,.04)","eh-deep":"0 1px 1px rgba(40,30,20,.05), 0 10px 20px rgba(40,30,20,.06), 0 30px 60px rgba(40,30,20,.08)","eh-amber":"#E8901F","eh-amber-glow":"rgba(255,170,80,.55)","eh-ice":"#3C82F0","eh-ice-glow":"rgba(90,150,255,.35)","eh-alert":"#E5383E","eh-alert-glow":"rgba(255,80,80,.45)","eh-mint":"#14946C","eh-fill-top-bright":"50%","eh-fill-bottom-deep":"70%","eh-dry":"#1E97AA","eh-fan":"#7B61E0","eh-chart-now":"#14946C","eh-track":"rgba(18,18,18,.07)"}},"cards":{"track":"var(--eh-track,rgba(127,127,127,.12))","amber":"var(--eh-amber,#E8901F)","card-bg":"var(--card-background-color,#fff)","white":"#fff","head-dark-ink":"#F4F2EE","shade-35":"rgba(0,0,0,.35)","head-light-ink":"#121212","ice":"var(--eh-ice,#3C82F0)","amber-2":"var(--eh-amber,#FFB25C)","shade-42":"rgba(0,0,0,.42)","track-08":"var(--eh-track,rgba(127,127,127,.08))","ink":"var(--eh-ink,#1c1c1e)","dry":"var(--eh-dry,#2AA5B8)","fan":"var(--eh-fan,#8B74E8)","chart-now":"var(--eh-chart-now,#2FA67A)","track-14":"var(--eh-track,rgba(127,127,127,.14))","head-dark-ink2":"rgba(244,242,238,.64)","ice-2":"var(--eh-ice,#8DC2FF)","alert":"var(--eh-alert,#FF5A5F)","shade-25":"rgba(0,0,0,.25)","page-bg":"var(--primary-background-color,#fff)","head-dark-bg":"#08090A","head-light-bg":"#EFECE6","head-light-ink2":"rgba(18,18,18,.64)","shade-18":"rgba(0,0,0,.18)","error":"var(--error-color,#c62828)","charcoal":"#1F1E1C","shade-28":"rgba(0,0,0,.28)","glass":"var(--eh-glass,var(--ha-card-background,var(--card-background-color,#fff)))","shade-55":"rgba(0,0,0,.55)","shade-30":"rgba(0,0,0,.3)","shade-50":"rgba(0,0,0,.5)","live":"#ff3b30","mint-text":"var(--eh-mint-text,#1F7A57)","hair":"var(--eh-hair,var(--divider-color,rgba(127,127,127,.2)))","track-10":"var(--eh-track,rgba(127,127,127,.1))","alert-text":"var(--eh-alert-text,var(--eh-alert,#B3261E))","hair-35":"var(--eh-hair,var(--divider-color,rgba(127,127,127,.35)))","mint":"var(--eh-mint,#2FA67A)","card-bg-2":"var(--card-background-color,#141517)","text":"var(--primary-text-color,#F4F2EE)","primary":"var(--primary-color,#5CE0B4)","on-primary":"var(--text-primary-color,#08090A)","amber-glow":"var(--eh-amber-glow,rgba(255,160,70,.5))","ice-glow":"var(--eh-ice-glow,rgba(90,160,255,.42))","alert-glow":"var(--eh-alert-glow,rgba(255,70,80,.5))","mint-2":"var(--eh-mint,#5CE0B4)","grey-14":"rgba(127,127,127,.14)","divider":"var(--divider-color,rgba(127,127,127,.18))","on-accent":"#141414","toast-ok":"#5CE0B4","toast-bg":"#1d1d1f","toast-action":"#FFC070","shade-64":"rgba(0,0,0,.64)","shade-45":"rgba(0,0,0,.45)","white-20":"rgba(255,255,255,.2)","mint-glow-mixed":"rgba(92,224,180,.4)","view-bg":"var(--lovelace-background,var(--primary-background-color,#f4f4f4))","bg":"var(--eh-bg,var(--card-background-color,#fff))","shade-20":"rgba(0,0,0,.2)","glass-solid":"#fff","camera-bg":"#111","white-85":"rgba(255,255,255,.85)","white-08":"rgba(255,255,255,.08)","shade-12":"rgba(0,0,0,.12)","line-strong":"var(--eh-line-strong,rgba(127,127,127,.5))","mint-3":"var(--eh-mint,#2FB383)","ink3":"var(--eh-ink3,#757575)","line-strong-50":"var(--eh-line-strong,var(--divider-color,rgba(127,127,127,.5)))","alert-2":"var(--eh-alert,#E5484D)","shade-40":"rgba(0,0,0,.4)","white-70":"rgba(255,255,255,.7)","chip-ink":"#333","divider-35":"var(--divider-color,rgba(127,127,127,.35))","ha-card-bg":"var(--ha-card-background,var(--card-background-color,#fff))","page-bg-2":"var(--primary-background-color,#f4f2ee)","divider-30":"var(--divider-color,rgba(127,127,127,.3))","divider-25":"var(--divider-color,rgba(127,127,127,.25))","grey-12":"rgba(127,127,127,.12)","dusk-top":"rgba(40,20,0,.10)","dusk-bottom":"rgba(20,10,0,.16)","grey-15":"rgba(127,127,127,.15)","text-2":"var(--primary-text-color,#111)","grey-16":"rgba(127,127,127,.16)","alarm":"#FF5A5F","black":"#000","night-ink":"rgba(255,236,210,.74)","slider-ink":"#111","grey-10":"rgba(127,127,127,.1)","hue-spectrum":"linear-gradient(90deg,#f00,#ff0 17%,#0f0 33%,#0ff 50%,#00f 67%,#f0f 83%,#f00)","ct-spectrum":"linear-gradient(90deg,#ffb15a,#fff3e0 55%,#cfe3ff)","r-xs":"10px","r-sm":"14px","r-md":"18px","r-lg":"30px","pad":"16px","pad-title":"18px","card-w":"400px","pad-climate":"20px","icon-s":"16px","icon-m":"20px","icon-l":"28px","caps-ls":".14em","hit":"44px","row-gap":"8px","fill-top-bright":"var(--eh-fill-top-bright,50%)","fill-bottom-deep":"var(--eh-fill-bottom-deep,70%)"}},"fonts":{"onest-cyrillic":"data:font/woff2;base64,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","onest-latin":"data:font/woff2;base64,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"}};
 // Hauflo «Atelier» cards for Home Assistant (owner 2026-10-24) — served by the Hauflo agent.
 // Own cards only (no third-party code, nothing loaded from the internet): hauflo-hero, hauflo-room,
 // hauflo-scenes, hauflo-climate, hauflo-sliders, hauflo-alert. Plain web components; HA calls
@@ -27,6 +27,17 @@ const HF_DATA = typeof HF_PACK === "object" ? { theme: HF_PACK.theme } : !HF_FIR
   const [theme] = await Promise.all([get("themes/hauflo.json")]);
   return { theme };
 })();
+/** Slot → index of the cell put there: a cell with a rank (a room tile in the client's order, `_hfRank` on its cell —
+ * orderAfter) takes the place of another ranked one, by rank, then as they came; the rest keep their places. One rule for
+ * every container the tiles stand in (Hauflo's layout and section, HA's own grid). */
+const hfRankSeq = (cells) => {
+  const rank = (c) => (c && Number.isFinite(c._hfRank) ? c._hfRank : null);
+  const slots = cells.map((c, i) => i).filter((i) => rank(cells[i]) !== null);
+  const by = [...slots].sort((a, b) => rank(cells[a]) - rank(cells[b]) || a - b);
+  const seq = cells.map((c, i) => i);
+  slots.forEach((s, k) => (seq[s] = by[k]));
+  return seq;
+};
 (() => {
   if (!HF_FIRST) return;
   // Served by the agent (/hauflo_static) or, after it was removed, from /local/hauflo (keep.py).
@@ -222,15 +233,17 @@ const HF_DATA = typeof HF_PACK === "object" ? { theme: HF_PACK.theme } : !HF_FIR
 .hfrow.hfrow>*{--sp:var(--s2,2);flex:1 1 calc((100% - (var(--sp) - 1) * var(--hf-row-gap)) / var(--sp) - .5px);min-width:0;max-width:none;min-height:var(--hf-hit)}
 @container (min-width:300px){.hfrow.hfrow>*{--sp:var(--s3,3)}}@container (min-width:420px){.hfrow.hfrow>*{--sp:var(--s4,4)}}@container (min-width:540px){.hfrow.hfrow>*{--sp:var(--s5,5)}}@container (min-width:660px){.hfrow.hfrow>*{--sp:var(--s6,6)}}
 `;
+  /** The cards' colour tokens — every card's :host, and a sheet that draws a card's parts (the history sheet's chart). */
+  const HOST_TOKENS = `--ink:var(--eh-ink,var(--primary-text-color));--ink2:var(--eh-ink2,var(--secondary-text-color));--ink3:var(--eh-ink3,var(--disabled-text-color));
+ --hair:var(--eh-hair,var(--divider-color));--amber:var(--hf-amber-2);--amberGlow:var(--hf-amber-glow);
+ --ice:var(--hf-ice-2);--iceGlow:var(--hf-ice-glow);--alert:var(--hf-alert);--alertGlow:var(--hf-alert-glow);
+ --mint:var(--hf-mint-2);--track:var(--hf-track);
+ --alertT:var(--eh-alert-text,var(--alert));--amberT:var(--eh-amber-text,var(--amber));--mintT:var(--eh-mint-text,var(--mint));--line:var(--eh-line-strong,var(--hair))`;
   const CSS = `
 :host([inset])>.glass{background:none;box-shadow:none;border-radius:0;padding:0;overflow:visible}:host([inset])>.glass>.glow{display:none}
 :host([cw]){width:min(100%,var(--hf-card-w,400px));margin-inline:auto}:host([fit]){height:100%}:host([fit])>.glass{height:100%;box-sizing:border-box;overflow:hidden}
 :host{container-type:inline-size;display:block;font-family:Onest,var(--ha-font-family-body),system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--eh-ink,var(--primary-text-color));
- --ink:var(--eh-ink,var(--primary-text-color));--ink2:var(--eh-ink2,var(--secondary-text-color));--ink3:var(--eh-ink3,var(--disabled-text-color));
- --hair:var(--eh-hair,var(--divider-color));--amber:var(--hf-amber-2);--amberGlow:var(--hf-amber-glow);
- --ice:var(--hf-ice-2);--iceGlow:var(--hf-ice-glow);--alert:var(--hf-alert);--alertGlow:var(--hf-alert-glow);
- --mint:var(--hf-mint-2);--track:var(--hf-track);
- --alertT:var(--eh-alert-text,var(--alert));--amberT:var(--eh-amber-text,var(--amber));--mintT:var(--eh-mint-text,var(--mint));--line:var(--eh-line-strong,var(--hair))}
+ ${HOST_TOKENS}}
 *{box-sizing:border-box}
 .glass{background:var(--eh-glass,var(--ha-card-background,var(--card-background-color)));box-shadow:var(--eh-edge,none),var(--eh-deep,var(--ha-card-box-shadow,none));border-radius:var(--eh-radius,var(--hf-r-lg));position:relative;overflow:hidden}
 .caps{font:500 11px/1.2 Onest,var(--ha-font-family-body),sans-serif;letter-spacing:var(--hf-caps-ls);text-transform:uppercase;color:var(--ink2)}
@@ -252,8 +265,9 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
 /* Scenes are compact (icon over a short word on a phone): four in a row from 340 px, so a room's «Ярко · Средне · Тускло · Выключить» is
    ONE row on an iPhone (owner 07.11/10.11: 3+1 per room, two rooms = half a screen). Other rows keep the canon (420 px). */
 @container (min-width:340px){.scn.hfrow.hfrow>*{--sp:var(--s4,4)}}@container (min-width:420px){.scn.hfrow.hfrow>*{--sp:var(--s4,4)}}@container (min-width:540px){.scn.hfrow.hfrow>*{--sp:var(--s5,5)}}@container (min-width:660px){.scn.hfrow.hfrow>*{--sp:var(--s6,6)}}
+.scn.hfrow{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:none}.scn.hfrow::-webkit-scrollbar{display:none}.scn.hfrow.hfrow>*{flex:1 1 0;min-width:calc(var(--hf-hit) * 1.5);scroll-snap-align:start}
 .scg{display:flex;flex-direction:column;gap:8px}.scg .sgc{font:500 11px/1.2 Onest,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);padding:4px 2px 0}.scg .sgc:first-child{padding-top:0}.scn button.go{background:color-mix(in srgb,var(--sacc) 26%,transparent)}.scn button.lit{background:color-mix(in srgb,var(--sacc) 30%,transparent);box-shadow:inset 0 0 0 2px var(--sacc);transition:background .3s,box-shadow .3s}.scn.light,.scn button[data-kind=light]{--sacc:var(--amber)}.scn.cover,.scn button[data-kind=cover]{--sacc:var(--ice)}.scn.mixed,.scn button[data-kind=mixed]{--sacc:var(--mint)}
-[data-scene-add]:not(button){-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}.scn button.add{box-shadow:inset 0 0 0 1px var(--line);background:transparent;color:var(--ink2);padding:0 14px 0 10px}.scn button.add ha-icon{color:var(--ink2)}
+[data-scene-add]:not(button){-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}.shint{font:400 13px/1.45 Onest,sans-serif;color:var(--ink3);margin:8px 2px 0;cursor:pointer}.scn button.add{box-shadow:inset 0 0 0 1px var(--line);background:transparent;color:var(--ink2);padding:0 14px 0 10px}.scn button.add ha-icon{color:var(--ink2)}
 .scn button{position:relative}.scn button .src{flex:0 0 auto;font:500 11px/1 Onest,sans-serif;font-style:normal;letter-spacing:.04em;color:var(--ink3);pointer-events:none}
 .srow{margin-top:14px}.srow>.caps{display:block;margin-bottom:8px}
 :host button.sent{background:color-mix(in srgb,var(--amber) 16%,transparent);box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--amber) 55%,transparent)}:host button.sent ha-icon{color:var(--amberT)}.ackx.ask>:not(.cur){visibility:hidden}
@@ -265,6 +279,13 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
   // No data (gone, unavailable, unknown) is never shown as normal — no «Всё спокойно» over a leak sensor that lost
   // the bus (SCADA expert 25.10, ISA-101: three states of a value — good, bad, no data).
   const nd = (s) => !s || s.state === "unavailable" || s.state === "unknown";
+  /** A control is drawn by what the entity can (HA's supported_features bit, as HA's own more-info), never by an attribute
+   * or list alone (owner 10.11: «Вентилятор 1 2 3 4 5» of a unit whose fan the integrator turned off — fan_modes stay).
+   * Several bits — any of them. No features reported (an old integration): unknown, the attribute decides as before. */
+  const canDo = (s, bit) => {
+    const f = num(s?.attributes?.supported_features);
+    return f === undefined || (f & bit) !== 0;
+  };
   /** A light / switch / fan HA has no state for («unknown»: a KNX command with no status address — HA's «assumed state»):
    * the card claims nothing — no «нет связи» (that is only «unavailable»), no «выкл» — and a tap sends an explicit
    * command (stage 10 round 2: «Light — no signal» read like a fault). */
@@ -378,6 +399,10 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
       return this.data;
     },
   };
+  /** Р57: Alice's zone areas → their rooms' areas (agent ownership.py, the deploy's map, via HOUSE.data.zones): a device
+   * in «Кухня-гостиная · Остров» is the room's on every card (its block, faults, leaks, scenes). No map — an older agent,
+   * zones off, not here yet — every area is itself, as before. Asks the agent once a page (HOUSE.get). */
+  const roomArea = (a) => (a && (HOUSE.data || HOUSE.get())?.zones?.[a]) || a || null;
   /** N5: the agent is there and hasn't said what it protects yet (the first frame, or its answer failed): what could be
    * protected counts as protected — a tap asks «Точно?» / waits for the answer, never goes unguarded. Without the agent
    * (`HOUSE.off`) the card's own rule by state alone. */
@@ -409,6 +434,8 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     return card?._config?.service?.phone || card?._config?.service?.email ? card._config.service : null;
   };
   const telOf = (p) => String(p || "").replace(/[^\d+]/g, "");
+  /** The look of callLink — one for every card and sheet that shows it. */
+  const CALL_CSS = `.call{display:flex;align-items:center;gap:12px;min-height:56px;padding:8px 16px;border-radius:18px;text-decoration:none;color:inherit;background:color-mix(in srgb,var(--hf-mint) 16%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--hf-mint) 45%,transparent);font:600 15px Onest,sans-serif}.call ha-icon{--mdc-icon-size:var(--hf-icon-m);color:var(--hf-mint-text)}.call .cl{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.call .cl span{overflow-wrap:break-word;hyphens:auto}.call b{font:400 14px Onest,sans-serif;color:var(--eh-ink2,var(--secondary-text-color))}`;
   /** «Позвонить · <company>» with the number under it — the alarm card, the settings, the «Сервис» page. */
   const callLink = (svc, cls = "call") =>
     svc?.phone
@@ -445,7 +472,7 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     for (const id of ids) AGENT.ids.add(id);
     if (h) refreshAlarms(h);
     const list = AGENT.data?._list;
-    if (!Array.isArray(list)) return ids.filter((id) => st(h, id)?.state === "on").map((id) => ({ entity: id }));
+    if (!Array.isArray(list)) return ids.filter((id) => alarmNow(st(h, id))).map((id) => ({ entity: id }));
     const want = new Set(ids);
     const seen = new Set();
     if (everything) for (const a of list) want.add(a.entity);
@@ -457,15 +484,17 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
   // The signals canon (agent tuning.json → «signals», 0.32 п.5): what a sensor in its alarm state means for the house — its
   // class's level (alarm / fault / none), severity, the life-safety ones, a classless one by the words of its name. Kept
   // here literally (the agent serves this file as is); scripts/check-cards-logic.mjs compares it with tuning.json.
-  const SIGNALS = {"classes":{"binary_sensor.moisture":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.smoke":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.gas":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.carbon_monoxide":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.safety":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.heat":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.cold":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.tamper":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.vibration":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.problem":{"alarm":{"states":["on"]},"house":"fault","severity":"important"},"binary_sensor.battery":{"alarm":{"states":["on"]},"house":"none","severity":"info"},"binary_sensor.connectivity":{"alarm":{"states":["off"]},"house":"none","severity":"important"},"sensor.battery":{"alarm":{"below":20,"step":5},"house":"none","severity":"info"},"event.doorbell":{"house":"none","severity":"important"}},"lifeSafety":["binary_sensor.moisture","binary_sensor.smoke","binary_sensor.gas","binary_sensor.carbon_monoxide","classless.loud"],"watch":["binary_sensor.problem","binary_sensor.safety","binary_sensor.smoke","binary_sensor.gas","binary_sensor.moisture","binary_sensor.carbon_monoxide","binary_sensor.tamper","binary_sensor.heat","binary_sensor.battery","sensor.battery","event.doorbell"],"classless":{"domains":["binary_sensor"],"alarm":{"states":["on"]},"loudWords":"leak|flood|water|smoke|fire|(?<![a-z])gas|протеч|залив|вод[аы]|дым|пожар|(?<![а-я])газ|protech|zaliv|dym|(?<![a-z])co(?![a-z0-9])|угарн|ugarn","withLoudWords":{"house":"alarm","severity":"important"},"faultWords":"ошибк|авари|неисправ|угроз|fault|error|failure|alarm|warning|threat|oshibk|avari|neispr|ugroz","withWords":{"house":"fault","severity":"important"}},"undetermined":{"house":"none","severity":"info"},"unlisted":{"house":"none","severity":"important"}};
+  const SIGNALS = {"classes":{"binary_sensor.moisture":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.smoke":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.gas":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.carbon_monoxide":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.safety":{"alarm":{"states":["on"]},"house":"alarm","severity":"critical"},"binary_sensor.heat":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.cold":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.tamper":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.vibration":{"alarm":{"states":["on"]},"house":"alarm","severity":"important"},"binary_sensor.problem":{"alarm":{"states":["on"]},"house":"fault","severity":"important"},"binary_sensor.battery":{"alarm":{"states":["on"]},"house":"none","severity":"info"},"binary_sensor.connectivity":{"alarm":{"states":["off"]},"house":"none","severity":"important"},"sensor.battery":{"alarm":{"below":20,"step":5},"house":"none","severity":"info"},"event.doorbell":{"house":"none","severity":"important"},"lock":{"alarm":{"states":["jammed"]},"house":"alarm","severity":"important"}},"onDevice":{"lock":{"sensor.battery":{"alarm":{"below":20,"step":5},"house":"fault","severity":"important"},"binary_sensor.battery":{"alarm":{"states":["on"]},"house":"fault","severity":"important"}}},"lifeSafety":["binary_sensor.moisture","binary_sensor.smoke","binary_sensor.gas","binary_sensor.carbon_monoxide","classless.loud"],"watch":["binary_sensor.problem","binary_sensor.safety","binary_sensor.smoke","binary_sensor.gas","binary_sensor.moisture","binary_sensor.carbon_monoxide","binary_sensor.tamper","binary_sensor.heat","binary_sensor.battery","sensor.battery","event.doorbell","lock"],"classless":{"domains":["binary_sensor"],"alarm":{"states":["on"]},"loudWords":"leak|flood|water|smoke|fire|(?<![a-z])gas|протеч|залив|вод[аы]|дым|пожар|(?<![а-я])газ|protech|zaliv|dym|(?<![a-z])co(?![a-z0-9])|угарн|ugarn","withLoudWords":{"house":"alarm","severity":"important"},"faultWords":"ошибк|авари|неисправ|угроз|fault|error|failure|alarm|warning|threat|oshibk|avari|neispr|ugroz","withWords":{"house":"fault","severity":"important"}},"undetermined":{"house":"none","severity":"info"},"unlisted":{"house":"none","severity":"important"},"meanings":{"on":{"states":["on"]},"off":{"states":["off"]},"none":{"alarm":"none"},"reading":{"alarm":"none","watch":"off"}}};
   // The agent's own entities and the phones' are never watched (signals_agent.watch_skip_platforms).
   const SIGNALS_SKIP = ["hauflo", "mobile_app"];
   const SIG_LOUD = new RegExp(SIGNALS.classless.loudWords, "i");
   const SIG_FAULT = new RegExp(SIGNALS.classless.faultWords, "i");
   /** The agent's verdict on one signal (owner 10.11: «Авария когда: Не авария» set in Hauflo, the tile stayed red) —
    * signals.py with the site's policy, `_signals` of GET /api/hauflo/alarms: { house: alarm|fault, alarm: its condition }
-   * for a watched one, { house: "none" } for one that is never an alarm here. undefined — the agent says nothing of it
-   * (an older agent, none, not listed): the canon here decides, the same one. */
+   * for a watched one, { house: "none" } for one that is never an alarm here — with its condition when it has one (Р9/Р19:
+   * a tile listing it as its fault frames red by it); `src` — where the choice came from (ha / entity / scope / the canon's
+   * base), `meaning` — the «Авария когда» it says. undefined — the agent says nothing of it (an older agent, none, not
+   * listed): the canon here decides, the same one. */
   const agentSignal = (id) => {
     const m = AGENT.data?._signals;
     const v = m && typeof m === "object" && Object.hasOwn(m, id) ? m[id] : undefined;
@@ -477,25 +506,45 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
    * the agent's verdict when it gives one, else the canon as the agent's signals.py reads it (base_of + alarm_of) with no
    * choice of the site's: { key, house: alarm|fault|none, severity, problem (in its alarm state now), undetermined
    * (classless, no words), life, agent (the agent said it) }. The state is compared live with the condition. */
-  const signalOf = (s) => {
+  /** The kind of each device the canon judges its signals by (`onDevice`: a lock's battery — Р56): device id → the domain
+   * of the device's entity named there, as the agent's signals.device_kinds. */
+  const deviceKinds = (hass) => {
+    const kinds = Object.keys(SIGNALS.onDevice || {});
+    const out = {};
+    for (const e of Object.values(hass?.entities || {})) {
+      const dom = typeof e?.entity_id === "string" ? e.entity_id.split(".")[0] : "";
+      if (e.device_id && kinds.includes(dom) && !Object.hasOwn(out, e.device_id)) out[e.device_id] = dom;
+    }
+    return out;
+  };
+  const signalOf = (s, kind = "") => {
     const id = s.entity_id;
     const dom = id.split(".")[0];
     const dc = typeof s.attributes?.device_class === "string" ? s.attributes.device_class.trim().toLowerCase() : "";
     const cl = SIGNALS.classless;
+    const own = dc ? `${dom}.${dc}` : dom;
+    const onDev = kind && Object.hasOwn(SIGNALS.onDevice || {}, kind) ? SIGNALS.onDevice[kind] : null;
     let key = "unlisted";
     let base = SIGNALS.unlisted;
-    if (dc) {
-      if (Object.hasOwn(SIGNALS.classes, `${dom}.${dc}`)) [key, base] = [`${dom}.${dc}`, SIGNALS.classes[`${dom}.${dc}`]];
+    if (onDev && Object.hasOwn(onDev, own)) [key, base] = [`${kind}:${own}`, onDev[own]];
+    else if (dc && Object.hasOwn(SIGNALS.classes, own)) [key, base] = [own, SIGNALS.classes[own]];
+    else if (Object.hasOwn(SIGNALS.classes, dom)) [key, base] = [dom, SIGNALS.classes[dom]];
+    else if (dc) {
+      // a class the canon doesn't list: unlisted
     } else if (cl.domains.includes(dom)) {
       // HA's State.name: the friendly name, else the object id with spaces.
       const name = s.attributes?.friendly_name || id.split(".")[1].replace(/_/g, " ");
       [key, base] = SIG_LOUD.test(name) ? ["classless.loud", { alarm: cl.alarm, ...cl.withLoudWords }] : SIG_FAULT.test(name) ? ["classless.fault", { alarm: cl.alarm, ...cl.withWords }] : ["undetermined", { alarm: cl.alarm, ...SIGNALS.undetermined }];
     }
     const v = agentSignal(id);
-    const a = v ? (v.house === "none" ? null : v.alarm) : base.alarm;
+    // The condition (Р9/Р19): the agent's even for a signal not moving the house (a site's «Авария когда: выкл»), else the
+    // canon's; null — none («не авария», a class with no alarm state: running, power, opening…).
+    const a = v ? v.alarm : base.alarm;
+    const cond = !!a && typeof a === "object" && !a.none ? a : null;
     const n = typeof s.state === "string" && s.state.trim() !== "" ? Number(s.state) : NaN;
-    const problem = !!a && typeof a === "object" && !(a.none) && (Array.isArray(a.states) ? a.states.includes(s.state) : Number.isFinite(n) && ((a.below !== undefined && n < a.below) || (a.above !== undefined && n > a.above)));
-    return { key, house: v ? v.house : base.house, severity: base.severity, problem, undetermined: !v && key === "undetermined", life: SIGNALS.lifeSafety.includes(key), agent: !!v };
+    const hit = !!cond && (Array.isArray(cond.states) ? cond.states.includes(s.state) : Number.isFinite(n) && ((cond.below !== undefined && n < cond.below) || (cond.above !== undefined && n > cond.above)));
+    const problem = hit && !(v && v.house === "none");
+    return { key, house: v ? v.house : base.house, severity: base.severity, problem, cond, hit, undetermined: !v && key === "undetermined", life: SIGNALS.lifeSafety.includes(key), agent: !!v, src: typeof v?.src === "string" ? v.src : "", rule: v?.rule === true, meaning: typeof v?.meaning === "string" && Object.hasOwn(SIGNALS.meanings, v.meaning) ? v.meaning : "" };
   };
   /** «Всё хорошо» of the house — ONE helper for the header, the alarm screen, the screensaver and the tiles (0.32 п.5).
    * The agent's answer when it gives one (`_house` ok / fault / alarm / offline, `_faults` — what moves it, `_shelved` —
@@ -514,13 +563,14 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     const listed = new Set(cfg?.alarms || []);
     const faults = [];
     const shelved = [];
+    const kinds = deviceKinds(hass);
     for (const s of Object.values(hass?.states || {})) {
       const id = s.entity_id;
-      if (!id.startsWith("binary_sensor.") && !id.startsWith("sensor.") && !id.startsWith("event.")) continue;
+      if (!SIG_DOMAINS.includes(id.split(".")[0])) continue;
       const e = hass.entities?.[id];
       if ((e?.hidden && !listed.has(id)) || SIGNALS_SKIP.includes(e?.platform)) continue;
-      const g = signalOf(s);
-      if (!SIGNALS.watch.includes(g.key) && !g.key.startsWith("classless.") && g.key !== "undetermined") continue;
+      const g = signalOf(s, kinds[e?.device_id] || "");
+      if (!SIGNALS.watch.includes(g.key.split(":").pop()) && !g.key.startsWith("classless.") && g.key !== "undetermined") continue;
       if (!g.problem) continue;
       if (g.undetermined) {
         if (g.problem) shelved.push(id);
@@ -554,12 +604,21 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
   /** The agent says this signal is never an alarm here (the site's «Не авария» / «не влияет» / «не следить»): a card's
    * own words by the name («Авария котла», «Угроза») say nothing of a fault either. */
   const signalQuiet = (s) => agentSignal(s.entity_id)?.house === "none";
-  /** A two-state signal in its alarm state now: by the agent's condition for a watched one (the site may say «авария when
-   * off»), else HA's «on». */
+  /** A two-state signal in its alarm state now: by its condition (the agent's, the site may say «авария when off»; else the
+   * canon's), HA's «on» when neither knows one. */
   const signalOn = (s) => {
     const g = signalOf(s);
-    return g.agent && g.house !== "none" ? g.problem : s.state === "on";
+    return g.cond ? g.hit : s.state === "on";
   };
+  /** The meanings of «Авария когда» that make an alarm (the canon's with states: on / off). */
+  const MEANING_ALARM = Object.keys(SIGNALS.meanings).filter((k) => Array.isArray(SIGNALS.meanings[k].states));
+  /** One the site / a card chose «Авария когда: вкл / выкл» for (Р9/Р19) — an alarm by its own choice, the house's level
+   * aside (watch stays as it was): its tile's / row's word and frame say «авария» in that state. */
+  const signalChosen = (s) => MEANING_ALARM.includes(signalOf(s).meaning);
+  /** A fault sensor listed on a tile / row / hero in its alarm state now — by meaning (Р9/Р19, owner: not «any check
+   * that is on = red»): its condition (the agent's verdict, else the canon's class / classless one); a class with no
+   * alarm state (running, power, door…) or «не авария» — never, until «Авария когда» says otherwise. */
+  const alarmNow = (s) => !!s && signalOf(s).hit;
   /** The signals that move «Всё хорошо» in this house: the canon's classes over HA's states (house ≠ none) and what the
    * agent says moves it now (`_faults`: its site choices, an entity HA may not have here). `hidden` — HA's hidden ones too:
    * the editors' «На „Всё хорошо“ влияют N сигналов» counts them (a project's alarm inputs are hidden from the client,
@@ -681,7 +740,7 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     "Освещение": "Lighting", "Сцены": "Scenes", "Уведомления": "Notifications", "Без комнаты": "No room", "Нет связи": "Offline", "Теплее": "Warmer", "Холоднее": "Cooler", "нет связи": "offline", "Нет термостата": "No thermostat", "Держит": "Holding", "Нагревает": "Heating", "Охлаждает": "Cooling",
     "Осушает": "Drying", "Вентилирует": "Ventilating", "Выключен": "Off", "выключен": "off", "выключена": "off", "Нагрев": "Heat", "Холод": "Cool", "Охлаждение": "Cooling",
     "Авто": "Auto", "Диапазон": "Range", "Осушение": "Dry", "Вент.": "Fan", "Комфорт": "Comfort", "Эко": "Eco", "Эконом": "Economy", "Ночь": "Night", "Сон": "Sleep",
-    "Буст": "Boost", "Кондиционеры": "Air conditioners", "Отопление": "Heating", "Изменить нужную температуру": "Change the setpoint", "Все выключены": "All off", "Тихо": "Quiet", "Авто ↓": "Auto ↓", "Авто ↑": "Auto ↑", "Средне": "Medium", "Сильно": "High", "Макс": "Max", "Мягко": "Diffuse", "Фокус": "Focus", "Турбо": "Turbo", "Обдув": "Swing", "Отпуск": "Away", "Нет дома": "Away", "Защита": "Protection", "Вкл": "On", "Выкл": "Off", "вкл": "on", "выкл": "off", "Вкл. все": "All on",
+    "Буст": "Boost", "Кондиционеры": "Air conditioners", "Отопление": "Heating", "Изменить нужную температуру": "Change the setpoint", "Все выключены": "All off", "Тихо": "Quiet", "Авто ↓": "Auto ↓", "Авто ↑": "Auto ↑", "Средне": "Medium", "Сильно": "High", "Макс": "Max", "Мягко": "Diffuse", "Фокус": "Focus", "Турбо": "Turbo", "Обдув": "Swing", "Медленнее": "Slower", "Быстрее": "Faster", "Отпуск": "Away", "Нет дома": "Away", "Защита": "Protection", "Вкл": "On", "Выкл": "Off", "вкл": "on", "выкл": "off", "Вкл. все": "All on",
     "Выкл. все": "All off", "Все": "All", "Все закрыты": "All closed", "Нет данных": "No data", "нет данных": "no data", "Яркость": "Brightness", "Группы": "Groups", "Все вместе": "All together",
     "Прочее": "Other", "Откр.": "Open", "Закр.": "Closed", "закр.": "closed", "Открыть": "Open", "Закрыть": "Close", "Стоп": "Stop", "открыта": "open", "закрыта": "closed",
     "открыт": "open", "закрыт": "closed", "открыто": "open", "закрыто": "closed", "открывается…": "opening…", "закрывается…": "closing…", "Откр…": "Opening", "Закр…": "Closing", "Шторы": "Blinds",
@@ -714,16 +773,15 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     "Принять": "Accept", "авария останется, пока причина не устранена": "the alarm stays until the cause is gone", "отправлено": "sent", "Нет связи с Home Assistant — команда могла не дойти": "No link to Home Assistant — the command may not have arrived", "Не получилось — ещё раз": "Didn't work — try again",
     "не отправлено — нет связи с Home Assistant": "not sent — no link to Home Assistant", "Показания": "Readings", "Комната": "Room", "Здесь пока ничего нет — добавьте устройства в проект или свои карточки в Home Assistant": "Nothing here yet — add devices to the project or your own cards in Home Assistant",
     "Тёплые полы": "Floor heating", "цель · обогрев": "target · heating", "цель · охлаждение": "target · cooling", "Сцены": "Scenes", "Светильник": "Light", "Выключатель": "Switch", "Штора": "Blind", "Датчик": "Sensor", "Сцена": "Scene", "Кран": "Valve", "Замок": "Lock", "Устройство": "Device", "нужная температура ещё не пришла от системы": "no setpoint from the system yet", "нет данных от системы": "no data from the system yet", "нужная температура ещё не пришла": "no setpoint yet", "нет нужной температуры": "no setpoint", "Положение неизвестно": "Position unknown", "Поднять": "Raise", "Опустить": "Lower", "Раздвинуть": "Open", "Задвинуть": "Close",
-    "Новая сцена": "New scene", "Сцена света": "Light scene", "Сцена штор": "Blind scene", "Новая сцена света": "New light scene", "Новая сцена штор": "New blind scene", "Название": "Name", "Например, Утро": "e.g. Morning", "Например, Кино": "e.g. Movie night",
+    "Новая сцена": "New scene", "Удерживайте название блока, чтобы добавить сцену": "Hold the block's title to add a scene", "Сцена света": "Light scene", "Сцена штор": "Blind scene", "Новая сцена света": "New light scene", "Новая сцена штор": "New blind scene", "Название": "Name", "Например, Утро": "e.g. Morning", "Например, Кино": "e.g. Movie night",
     "Поставьте шторы как нужно — сцена запомнит их положение.": "Set the blinds the way you want — the scene remembers where they are.",
     "Включите свет как нужно — сцена запомнит, что горит и как ярко.": "Set the lights the way you want — the scene remembers what is on and how bright.",
     "Запомнить как сейчас": "Save as it is now", "Отмена": "Cancel", "Введите название": "Enter a name", "Переименовать": "Rename", "Сохранить": "Save", "Удалить сцену": "Delete scene", "Убрать с панели": "Remove from the dashboard",
     "Сцену создал сервис. Можно переименовать и перезаписать.": "Your service created this scene. You can rename it and save it again.",
-    "Сцена сохранится в Home Assistant: на панели, в голосе и автоматизациях. На настенных выключателях KNX её не будет.": "The scene is saved in Home Assistant: on the dashboard, in voice and in automations. It won't be on the KNX wall switches.",
     "Сцена — та же, что на настенных выключателях.": "The same scene as on the wall switches.", "Детский профиль: сцены меняют взрослые.": "Child profile: the adults change the scenes.", "Запомнить как сейчас?": "Save as it is now?", "Запомнить": "Save", "Отправлено": "Sent", "Готово": "Done",
     "Если сцена не сохранилась, сообщите сервису.": "If the scene didn't save, please contact your service.",
     "Название на панели. Пусто — снова название от сервиса.": "The name on this dashboard. Empty — your service's name again.",
-    "пол сейчас": "floor now", "пол": "floor", "тёплый пол": "floor heating", "климат": "climate", "Все ждут": "All idle", "Греет": "Heating", "Греет · клапаны открыты": "Heating · valves open", "Греет · клапан открыт": "Heating · valve open", "Нагрев · клапаны открыты": "Heating · valves open", "Нагрев · клапан открыт": "Heating · valve open", "клапан открыт": "valve open", "клапан закрыт": "valve closed", "греет": "heating", "держит": "holding", "поддерживает": "keeping", "Сейчас не греют": "Not heating now", "сейчас": "now", "Пол": "Floor", "В комнате": "Room",
+    "пол сейчас": "floor now", "пол": "floor", "тёплый пол": "floor heating", "климат": "air", "Все ждут": "All idle", "Греет": "Heating", "Греет · клапаны открыты": "Heating · valves open", "Греет · клапан открыт": "Heating · valve open", "Нагрев · клапаны открыты": "Heating · valves open", "Нагрев · клапан открыт": "Heating · valve open", "клапан открыт": "valve open", "клапан закрыт": "valve closed", "греет": "heating", "держит": "holding", "поддерживает": "keeping", "Сейчас не греют": "Not heating now", "сейчас": "now", "Пол": "Floor", "В комнате": "Room",
     "Состояние": "Status", "Управление": "Controls", "Настройки": "Settings", "охлаждает": "cooling", "осушает": "drying", "вентилирует": "ventilating", "Электро": "Electric", "Тепловой насос": "Heat pump", "Мощность": "Performance",
   };
   Object.assign(EN, { "правило": "rule", "сработало": "triggered", "правило выкл": "rule off" });
@@ -794,9 +852,37 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
   const uiWord = (k) => (UI_VOCAB ||= new Set([...Object.values(HVAC), ...Object.values(CLIMATE_STATE_WORDS), ...Object.values(PRESET), ...Object.values(FAN), "Режим", "Вентилятор"])).has(k);
   /** The element's `data-ui` role: «chip» is a status chip — its word is a state («Heating»), not a mode button's («Heat»). */
   const uiOf = (n) => n?.parentElement?.closest?.("[data-ui]")?.dataset.ui || "";
+  // The dashboard's default block titles as the integrator's deploy writes them (backend blockTitleWords.ts, purposes.ts
+  // BLOCK_WORDS, locales dash.*; kept equal by backend cardsDefaultTitles.test.ts) → the same title an English house gets.
+  // A house deployed in Russian and read in English (walk 3В: «Свет», «Климат», «Тёплый пол» stayed Russian) kept them:
+  // KNX names its devices the same («Климат», «Тёплый пол»), so tr() took the title for the client's own name. A heading
+  // that IS a default is the deploy's word, not a name; a title the client typed is `data-own` and never comes here.
+  const DEFAULT_TITLES = {
+    "Тёплые полы": "Floor heating", "Свет": "Light", "Шторы": "Blinds", "Розетки": "Sockets", "Сцены": "Scenes", "Сцены света": "Light scenes",
+    "Сцены штор": "Blind scenes", "Аварийные датчики": "Alarm sensors", "Отопление": "Heating", "Вентиляция": "Ventilation", "Вода": "Water",
+    "Безопасность": "Security", "Устройства": "Devices", "Розетки и приборы": "Sockets", "Свет и приборы": "Light & switches",
+    "Кондиционеры": "Air conditioning", "Климат": "Climate", "Тёплый пол": "Floor heating", "Дома": "Home", "Комнаты": "Rooms",
+    "Другие комнаты": "Other rooms", "Весь этаж": "Whole floor",
+  };
+  // fix5 п.3 (acceptance fix4: «Свет здания» stayed Russian on an English «Главная»): the house's / a floor's consoles are
+  // titled «<default> <of whom>» (atelierDashboard groupCards: dash.ofTheBuilding / dash.ofTheFloor, held by the same test).
+  const DEFAULT_OF = { "здания": "of the building", "этажа": "of the floor" };
+  /** Where a text is a heading (a block's title, a dialog's name): there a default title is read as one. */
+  const HEAD = ".caps,h1,h2,h3,[data-head]";
   const tr = (text, ui = "") => {
     if (LANG === "ru" || !text || !/[А-Яа-яЁё]/.test(text)) return text;
     const k = text.trim();
+    if (ui === "head") {
+      // The cards' own word where they have one (the header's «Свет» reads «Lights» as before), else the deploy's English.
+      const def = (t) => (Object.hasOwn(DEFAULT_TITLES, t) ? EN[t] || DEFAULT_TITLES[t] : "");
+      if (def(k)) return text.replace(k, def(k));
+      // «Свет здания», «Шторы этажа»: a default and whose it is.
+      const sp = k.lastIndexOf(" ");
+      if (sp > 0 && Object.hasOwn(DEFAULT_OF, k.slice(sp + 1)) && def(k.slice(0, sp))) return text.replace(k, `${def(k.slice(0, sp))} ${DEFAULT_OF[k.slice(sp + 1)]}`);
+      // «Свет · Зона 1», «Тёплый пол · 3 зоны»: the default before « · », the rest as any text.
+      const d = /^(.+?) · (.+)$/.exec(k);
+      if (d && def(d[1])) return text.replace(k, `${def(d[1])} · ${tr(d[2])}`);
+    }
     if (ui === "chip" && CHIP_EN[k]) return text.replace(k, CHIP_EN[k]);
     if (isOwn(k) && !uiWord(k)) return text;
     if (EN[k]) return text.replace(k, EN[k]);
@@ -819,18 +905,26 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     for (const [rx, rep] of EN_FRAG) out = out.replace(rx, rep);
     return out;
   };
+  const TR_ATTRS = ["aria-label", "title", "placeholder", "alt"];
   const translate = (root) => {
     if (LANG === "ru") return;
     // A name the client typed (`data-own`) stays as typed.
     const walk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: (n) => (n.parentNode?.nodeName === "STYLE" || n.parentElement?.closest?.("[data-own]") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT) });
     for (let n = walk.nextNode(); n; n = walk.nextNode()) {
-      const v = tr(n.nodeValue, uiOf(n));
+      const v = tr(n.nodeValue, uiOf(n) || (n.parentElement?.closest?.(HEAD) ? "head" : ""));
       if (v !== n.nodeValue) n.nodeValue = v;
     }
-    root.querySelectorAll("[aria-label],[title]").forEach((el) => {
-      for (const a of ["aria-label", "title"]) if (el.hasAttribute(a)) el.setAttribute(a, tr(el.getAttribute(a)));
+    // Every attribute a person reads or hears: a field's hint (walk 3В: «Например, Кино» stayed Russian in EN), a
+    // picture's text, the screen reader's label, the hover tip.
+    root.querySelectorAll(`[${TR_ATTRS.join("],[")}]`).forEach((el) => {
+      const head = el.getAttribute("role") === "dialog" || el.closest(HEAD) ? "head" : "";
+      for (const a of TR_ATTRS) if (el.hasAttribute(a)) el.setAttribute(a, tr(el.getAttribute(a), head));
     });
   };
+  /** fix5 п.2: a title the deploy wrote (a block's, a row's) shown where translate() doesn't run — the settings and order
+   * sheets (acceptance fix4: their 9 block names and «Порядок элементов» stayed Russian in EN) — read as a heading: a
+   * default → English, any other name as typed. The client's own title is never passed here. */
+  const deployTitle = (t) => (typeof t === "string" && t ? tr(t, "head") : t);
   // --- The client's names (review round 2) ---------------------------------------------------------------------
   // HA and Hauflo keep the ETS name as is (owner rule); the client's cards don't show the integrator's working notes:
   // a device/model code in brackets at the end («Движение (bps7)», «Температура (i4-net)») goes — unless two devices
@@ -851,21 +945,29 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
       for (const [eid, s] of Object.entries(h.states)) {
         const n = String(s?.attributes?.friendly_name || "");
         const b = techTail(n);
-        const key = `${h.entities?.[eid]?.area_id || ""}|${(b ?? n).toLowerCase()}`;
+        const key = `${roomArea(h.entities?.[eid]?.area_id) || ""}|${(b ?? n).toLowerCase()}`; // Р57: per room, its zones together
         count.set(key, (count.get(key) || 0) + 1);
       }
       NAMES = { states: h.states, base: count };
     }
-    return NAMES.base.get(`${h.entities?.[id]?.area_id || ""}|${base.toLowerCase()}`) || 1;
+    return NAMES.base.get(`${roomArea(h.entities?.[id]?.area_id) || ""}|${base.toLowerCase()}`) || 1;
   };
+  /** A machine id said as words (acceptance 0.33: «climate_living Temperature» — an MQTT device named by its id): the
+   * snake_case tokens spaced, as HA says an entity with no name (agent notify.plain — the same rule). */
+  const plainName = (n) => {
+    const t = String(n || "").trim();
+    const out = t.replace(/\b[a-z0-9]+(?:_[a-z0-9]+)+\b/g, (m) => m.replace(/_/g, " "));
+    return out === t ? t : out.charAt(0).toUpperCase() + out.slice(1);
+  };
+  const plainId = (id) => plainName(String(id || "").split(".").pop());
   const clientName = (raw, id) => {
-    const n = String(raw || "").trim();
-    if (!n) return id;
+    const n = plainName(raw);
+    if (!n) return plainId(id);
     if (n.includes("?")) return KIND[String(id || "").split(".")[0]] || "Устройство";
     const base = techTail(n);
     return trimSep(base && sameBase(id, base) < 2 ? base : n) || n;
   };
-  const nameOf = (s, id) => (s && s.attributes.friendly_name ? clientName(s.attributes.friendly_name, id) : id);
+  const nameOf = (s, id) => (s && s.attributes.friendly_name ? clientName(s.attributes.friendly_name, id) : plainId(id));
   // Device codes («DKP1-1», «B1-2») keep a non-breaking hyphen: «Протечка (DKP1-» / «1)» on two lines read as
   // nonsense (integrator run 15). Only upper-case codes — icon names and entity ids are lower case.
   // A picture for CSS url('…') (security review 04.11): HTML escaping is undone before CSS reads a style attribute, so
@@ -1080,7 +1182,7 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
   const rowOf = (card, id) => (card?._config?.entities || []).find((x) => typeof x === "object" && x?.entity === id) || null;
   /** The row's linked fault sensors (card settings → «Аварии этой плитки»): the first one firing frames the tile red. */
   const rowAlarms = (row) => [].concat(row?.alarms || []).filter((x) => typeof x === "string");
-  const rowAlarm = (hass, row) => rowAlarms(row).map((id) => st(hass, id)).find((a) => a && a.state === "on");
+  const rowAlarm = (hass, row) => rowAlarms(row).map((id) => st(hass, id)).find(alarmNow);
   const brightnessPct = (s) => (s && s.state === "on" ? (num(s.attributes.brightness) !== undefined ? Math.round((num(s.attributes.brightness) / 255) * 100) : 100) : 0);
   /** Д-1 (399, 08.11): a lamp fed by a wall relay that is off, a device whose radio sleeps — HA takes the command, nothing
    * moves, the tile stays as it was and the family taps again and again. After a command that must change ONE entity
@@ -1120,7 +1222,8 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     }, REPLY_MS);
   };
   const call = (hass, domain, service, data) => {
-    const p = hass.callService(domain, service, data);
+    // Р56: a lock the agent knows (HOUSE.data.locks) goes through hauflo.lock — the agent checks who may unlock it.
+    const p = lockOf(data?.entity_id) && domain === "lock" && hass.services?.hauflo?.lock ? hass.callService("hauflo", "lock", { entity_id: data.entity_id, action: service }) : hass.callService(domain, service, data);
     try {
       watchReply(hass, domain, service, data, p);
     } catch {
@@ -1211,9 +1314,16 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     return "";
   };
   /** True: the tap goes. False: it asked — the card redraws, its tile says `riskWord(card, id)` for 4 s. */
-  const riskTap = (card, id) => {
+  const riskTap = (card, id, ask = null, key = id) => {
     HOUSE.get(card);
-    const q = riskAsk(st(card._hass, id), card._hass);
+    const s = st(card._hass, id);
+    // Р56: a lock that lists who may unlock it, this person not among them — said at once, never asked, never sent.
+    if (lockOf(id)?.can_unlock === false && s && (ask || riskAsk(s, card._hass))) {
+      okToast(LL("Нет прав отпирать эту дверь", "No rights to unlock this door"), true);
+      return false;
+    }
+    const q = ask ?? riskAsk(s, card._hass);
+    id = key;
     const again = card._risk?.id === id && card._risk.until > Date.now();
     clearTimeout(card._riskT);
     if (!q || again) {
@@ -1228,6 +1338,29 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     return false;
   };
   const riskWord = (card, id) => (card._risk?.id === id && card._risk.until > Date.now() ? card._risk.q : "");
+  // --- Р56: a smart lock the agent knows (agent locks.py → /api/hauflo/house «locks»): its last event, battery, «Открыть
+  // дверь», who may unlock it, how often a cloud lock is read. Any integration — the agent found it by HA's metadata.
+  const lockOf = (id) => (typeof id === "string" && id.startsWith("lock.") && HOUSE.data?.locks?.[id]) || null;
+  /** How the lock was opened / what happened, said on the tile («последнее: отпечаток · Мария · 18:02»). */
+  const LOCK_LAST = { fingerprint: ["отпечаток", "fingerprint"], face: ["лицо", "face"], card: ["карта", "card"], code: ["код", "code"], key: ["ключ", "key"], app: ["приложение", "app"], phone: ["телефон", "phone"], manual: ["вручную", "manually"], auto: ["автоматически", "automatically"], lock: ["заперт", "locked"], unlock: ["открыт", "unlocked"], jammed: ["заклинило", "jammed"], tamper: ["попытка взлома", "tampering"], wrong: ["неверный ввод", "wrong code"] };
+  const lockLast = (h, L) => {
+    const x = L?.last;
+    if (!x?.op) return "";
+    const how = x.op === "unlock" && LOCK_LAST[x.method] ? LOCK_LAST[x.method] : LOCK_LAST[x.op];
+    const who = /^#\d+$/.test(x.user || "") ? LL(`пользователь №${x.user.slice(1)}`, `user ${x.user}`) : x.user ? `<span data-own>${esc(x.user)}</span>` : "";
+    const t = x.at ? houseClock(h, x.at) : null;
+    const when = t ? (t.day === houseClock(h, Date.now()).day ? t.hhmm : `${t.ddmm} ${t.hhmm}`) : "";
+    return `${LL("последнее", "last")}: ${[how ? esc(LL(...how)) : "", who, when].filter(Boolean).join(" · ")}`;
+  };
+  /** The lock's battery chip: its % (amber below the canon's lock threshold), or «батарея» when a low-battery flag is on. */
+  const lockBattery = (h, L) => {
+    const b = L?.battery ? st(h, L.battery) : null;
+    if (!b || nd(b)) return "";
+    const low = SIGNALS.onDevice?.lock?.["sensor.battery"]?.alarm?.below ?? 0;
+    if (b.entity_id.startsWith("binary_sensor.")) return b.state === "on" ? `<span class="bat low"><ha-icon icon="mdi:battery-alert-variant-outline"></ha-icon>${LL("батарея", "battery")}</span>` : "";
+    const v = num(b.state);
+    return v === undefined ? "" : `<span class="bat ${v < low ? "low" : ""}"><ha-icon icon="${v < low ? "mdi:battery-alert-variant-outline" : "mdi:battery-outline"}"></ha-icon>${Math.round(v)}\u00a0%</span>`;
+  };
   /** After a card is rebuilt: the buttons that are still within their «отправлено» get it back. */
   const reAck = (card) => {
     const m = card._acks;
@@ -1413,6 +1546,62 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     if (sh) sh.scrollTop = top;
     if (sel && !sr.activeElement) sr.querySelector(sel)?.focus({ preventScroll: true });
     if (sh) sh.scrollTop = top;
+  };
+
+  /** Р42 (owner 11.11, iPhone: «уходишь в самый низ, ничего не жмёшь — хлоп, перекинуло наверх»): an element drawn again
+   * whole (a card on every state change, the rules page on every tap) keeps its height until its new content has laid out
+   * — WebKit lays the page out over a few frames with the new content shorter (icons, nested cards, charts not in yet) and
+   * cuts the page's scroll to the shorter end — and the page scrolled up by that, not by the person, is put back. One code
+   * for every whole redraw (was a one-frame minHeight in the cards' base only). Held ≤ 600 ms after the last redraw, ≤ 3 s in a burst. */
+  let USER_T = 0;
+  for (const ev of ["wheel", "touchstart", "touchmove", "pointerdown", "keydown"]) window.addEventListener(ev, () => (USER_T = Date.now()), { capture: true, passive: true });
+  const scrolledAbove = (el) => {
+    const out = [];
+    for (let n = el; n; ) {
+      n = n.parentNode instanceof ShadowRoot ? n.parentNode.host : n.parentNode;
+      if (n?.nodeType === 1 && n.scrollTop > 0) out.push([n, n.scrollTop]);
+    }
+    const se = document.scrollingElement;
+    if (se && se.scrollTop > 0 && !out.some(([n]) => n === se)) out.push([se, se.scrollTop]);
+    return out;
+  };
+  const holdPlace = (el, fn) => {
+    const hold = el._hold;
+    const h = hold ? hold.h : el.isConnected && !el.hidden ? el.getBoundingClientRect().height : 0;
+    if (!h) return fn();
+    const t0 = Date.now();
+    const at = hold ? hold.at : scrolledAbove(el);
+    const me = (el._hold = { h, at, t0: hold ? hold.t0 : t0, moving: hold ? hold.moving : lastScroll > t0 - 300 });
+    el.style.minHeight = `${h}px`;
+    fn();
+    // Put back only an upward jump nobody asked for: not after a touch/wheel/key, not while the page was still moving.
+    const back = () => {
+      if (USER_T >= me.t0 || me.moving) return;
+      for (const [n, top] of me.at) if (n.isConnected && n.scrollTop < top - 1) n.scrollTop = top;
+    };
+    back();
+    const sr = el.shadowRoot || el;
+    const inner = () => {
+      const top = el.getBoundingClientRect().top;
+      let b = top;
+      for (const c of sr.children) {
+        const r = c.localName === "style" ? null : c.getBoundingClientRect();
+        if (r && (r.width || r.height)) b = Math.max(b, r.bottom); // not laid out yet: a 0×0 box at the viewport's 0
+      }
+      return b - top;
+    };
+    let frames = 0;
+    const tick = () => {
+      if (el._hold !== me) return;
+      const now = Date.now();
+      if (++frames >= 2 && (inner() >= h - 1 || now - t0 > 600 || now - me.t0 > 3000 || !el.isConnected)) {
+        el._hold = null;
+        el.style.minHeight = "";
+        return back();
+      }
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
   };
 
   // --- touch discipline (owner 28.10, iPhone: «бесят случайные нажатия, когда листаешь страницу комнаты») -----------
@@ -1706,6 +1895,14 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
       .sort((a, b) => a[1] - b[1])
       .map(([x]) => x);
   };
+  /** The block's main device first (Р48: `primary` — the integrator's mark, sent with the dashboard) while the client has no
+   * order of his own («Порядок» puts any one first); without a mark the list stays as it came, so its first is the main one. */
+  const primaryFirst = (c, lk) => {
+    const list = c[lk];
+    const id = typeof c.primary === "string" ? c.primary : "";
+    const i = id && Array.isArray(list) ? list.findIndex((x) => (typeof x === "string" ? x : x?.entity) === id) : -1;
+    return i > 0 ? { ...c, [lk]: [list[i], ...list.slice(0, i), ...list.slice(i + 1)] } : c;
+  };
   /** Before a card draws: its config's lists in the block's order (a copy; the config itself is left as it is). */
   const orderApply = (card) => {
     const raw = card._raw;
@@ -1728,7 +1925,7 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     const lk = ROW_LIST[card.localName] || "entities";
     const c = miss.length && Array.isArray(raw[lk]) ? { ...raw, [lk]: raw[lk].filter((x) => !miss.includes(typeof x === "string" ? x : x?.entity)) } : raw;
     if (!sig) {
-      card._config = c;
+      card._config = primaryFirst(c, lk);
       return;
     }
     const out = { ...c };
@@ -1743,12 +1940,12 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
   };
   /** Ids a card finds itself (an area's entities) in the block's order. */
   const orderIds = (card, ids) => orderSort(ORDER.data?.[orderKey(card)], ids, (x) => x);
-  /** The cell of HA's grid a card sits in (a room tile is a card of its own: the tiles are ordered by CSS `order`). */
+  /** The cell of the grid a card sits in (a room tile is a card of its own: the tiles are ordered as cells, not inside a card). */
   const orderCell = (card) => {
     let el = card;
     for (let n = 0; n < 5 && el; n++) {
       const up = el.parentElement || el.getRootNode?.()?.host || null;
-      if (!up || /^HUI-CARD-OPTIONS$|^HUI-SECTION-EDIT/.test(up.tagName)) return null; // the dashboard being edited
+      if (!up || /^HUI-CARD-OPTIONS$|^HUI-CARD-EDIT-MODE$|^HUI-SECTION-EDIT/.test(up.tagName)) return null; // the dashboard being edited
       const d = getComputedStyle(up).display;
       if (d === "grid" || d === "inline-grid" || d === "flex") return el;
       el = up;
@@ -1761,10 +1958,43 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     if (!key) return;
     ORDER.cards.add(card);
     if (card._raw?.type === "custom:hauflo-room") {
+      // fix4 п.1 (walk 3В: kept, but the tiles never moved): a cell's CSS `order` does nothing where the cells are placed
+      // one by one — Hauflo's section packs its columns by nth-child (grid-column/grid-row), Hauflo's layout moves the
+      // cards into its columns itself. The tile's rank goes on its cell (`_hfRank`): those two place the cells by it
+      // (HaufloLayout._seq) and are told by the event; HA's own grid (cells flowed in order) keeps CSS `order`.
       const list = ORDER.data?.[key] || [];
       const i = list.indexOf(card._raw.path);
+      const rank = list.length ? (i >= 0 ? i : list.length) : undefined;
       const cell = orderCell(card);
-      if (cell) cell.style.order = list.length ? String(i >= 0 ? i : list.length) : "";
+      if (card._hfCell && card._hfCell !== cell) {
+        card._hfCell.style.order = "";
+        card._hfCell._hfRank = undefined;
+      }
+      card._hfCell = cell;
+      if (!cell) return;
+      const host = cell.parentElement?.getRootNode?.()?.host;
+      const own = !!host && /^HAUFLO-(SECTION|LAYOUT)$/.test(host.tagName);
+      if (cell._hfRank !== rank) {
+        cell._hfRank = rank;
+        if (own) card.dispatchEvent(new CustomEvent("hauflo-order", { bubbles: true, composed: true }));
+      }
+      // HA's own grid (cells flowed in order): every cell's CSS `order` = its slot by the same rule (fix5 п.1 — a cell
+      // with none is `order:0`: a card beside the tiles jumped before them).
+      if (!own && cell.parentElement) {
+        const kids = [...cell.parentElement.children];
+        const seq = hfRankSeq(kids);
+        const moved = seq.some((x, s) => x !== s);
+        seq.forEach((x, s) => {
+          const k = kids[x];
+          if (moved) {
+            k.style.order = String(s);
+            k._hfOrd = true;
+          } else if (k._hfOrd) {
+            k.style.order = "";
+            k._hfOrd = false;
+          }
+        });
+      }
       return;
     }
     const head = card.shadowRoot?.querySelector(".caps");
@@ -1814,7 +2044,7 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
       const seen = new Set();
       const tiles = [...ORDER.cards]
         .filter((x) => x.isConnected && orderKey(x) === key && !seen.has(x._raw.path) && seen.add(x._raw.path))
-        .map((x) => ({ id: x._raw.path, name: x._raw.name || x._raw.path, icon: x._raw.icon || "" }));
+        .map((x) => ({ id: x._raw.path, name: x._raw.name || x._raw.path, icon: x._raw.icon || "", ...(x._raw.area && canEdit(h) ? { photo: x } : {}) }));
       return [{ label: "", items: orderSort(ORDER.data?.[key], tiles, (x) => x.id) }];
     }
     const it = (x) => {
@@ -1825,27 +2055,31 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
       return { id, name: FAM.names?.[id] || (x && typeof x === "object" && x.name) || (typeof card.label === "function" ? card.label(id) : nameOf(s, id)), icon: (x && typeof x === "object" && x.icon) || "", room: (a && h?.areas?.[a]?.name) || "" }; // the card's own icon only: a device's raw one looked out of place
     };
     const secs = [];
-    const add = (label, arr) => {
+    const add = (label, arr, cls) => {
       const items = (Array.isArray(arr) ? arr : []).map(it).filter(Boolean);
-      if (items.length) secs.push({ label, items });
+      if (items.length) secs.push({ label, items, ...(cls ? { cls } : {}) });
     };
     if (typeof card.members === "function") {
-      // An area card: its sub-blocks (399-51: «Свет», «Шторы», «Климат»… — the classes of «Управление», the family puts
-      // them in its own order), then a section per group it draws (climate, switches, values…), in its order.
-      // A block card («Управление», «Показания», «Диагностика») lists its own block's items, never the room's whole.
+      // An area card (Р52б, owner 12.11: classes and their items were two flat lists, unnamed lists of «Люстра», «Радиатор»,
+      // «Siri» beside «Климат / Розетки / Медиа»): «Подблоки» — the classes of «Управление» (399-51, the family's own order
+      // of them, `cls:` keys) — then a section per class under its word, its own items inside, in the classes' order (a
+      // class moved in «Подблоки» moves its section at once); then «Показания» and «Диагностика», each one section as the
+      // card draws them. A block card («Управление», «Показания», «Диагностика») lists its own block's items only.
+      // What is kept is the same: `cls:` keys + entity ids (agent order.py) — only the sheet's layout is new.
       const part = c.block && Object.hasOwn(AREA_PARTS, c.block) ? AREA_PARTS[c.block] : null;
       const ids = orderIds(card, card.members()).filter((id) => st(h, id) && (!part || part.includes(card.kind(id))));
-      if (typeof card.areaClass === "function" && (!c.block || c.block === "control")) {
-        const have = new Set(ids.filter((id) => AREA_PARTS.control.includes(card.kind(id))).map((id) => card.areaClass(id)));
-        const cls = areaClassOrder(card).filter((k) => have.has(k));
+      const inPart = (p) => ids.filter((id) => AREA_PARTS[p].includes(card.kind(id)));
+      if (!c.block || c.block === "control") {
+        const by = new Map();
+        for (const id of inPart("control")) by.set(card.areaClass(id), [...(by.get(card.areaClass(id)) || []), id]);
+        const cls = areaClassOrder(card).filter((k) => by.has(k));
         if (cls.length > 1) secs.push({ label: w.blocks, items: cls.map((k) => ({ id: CLS + k, name: LL(...AREA_CLASS[k]), icon: AREA_CLASS_ICON[k] || "" })) });
+        for (const k of cls) add(LL(...AREA_CLASS[k]), by.get(k), k);
       }
-      const by = new Map();
-      for (const id of ids) {
-        const k = typeof card.kind === "function" ? card.kind(id) : "";
-        by.set(k, [...(by.get(k) || []), id]);
-      }
-      for (const list of by.values()) add("", list);
+      // «Показания» as its grid draws them: the family's order when kept, else alarms, states, then what is read most.
+      const rd = inPart("readings");
+      add(LL(...AREA_BLOCK.readings), ORDER.data?.[orderKey(card)] ? rd : [...rd].sort((a, b) => card.readRank(a) - card.readRank(b)));
+      add(LL(...AREA_BLOCK.diagnostics), inPart("diagnostics"));
       // Five «Батарея» rows (the class's word, as the tiles say it): the device's name under each one alike.
       for (const sec of secs) {
         const dup = new Set(sec.items.map((x) => String(x.name).toLowerCase()).filter((n, i, a) => a.indexOf(n) !== i));
@@ -1861,11 +2095,15 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     add("", c.sensors);
     add(c.type === "custom:hauflo-alert" ? "" : w.alarms, c.alarms);
     // Scenes with the family's own ones of the room (agent scenes.py) after the integrator's, as the block draws them.
-    // KNX → the integrator's HA → the family's (Д19), as sceneChips.
+    // KNX → the integrator's HA → the family's (Д19), as sceneChips. An area card's scenes are its light / blinds
+    // console's (Р53: it draws them and keeps their order), never a second list here.
     const withFamily = (arr, room, kind) => orderSort(ORDER.data?.[orderKey(card)], bySource(h, [...(arr || []), ...(room ? familyScenes(h, room, kind).filter((x) => !(arr || []).some((y) => itemId(y) === x.entity)) : [])]));
-    if (Array.isArray(c.rows)) for (const r of c.rows) add(r?.title || (r?.kind === "cover" ? w.names.covers : w.names.lights), withFamily(r?.scenes, r?.scene_room, r?.kind === "cover" ? "cover" : "light"));
-    add(secs.length ? w.scenes : "", withFamily(c.scenes, c.scene_room, card.kind === "cover" || c.kind === "cover" ? "cover" : "light"));
+    if (Array.isArray(c.rows)) for (const r of c.rows) add(deployTitle(r?.title) || (r?.kind === "cover" ? w.names.covers : w.names.lights), withFamily(r?.scenes, r?.scene_room, r?.kind === "cover" ? "cover" : "light"));
+    if (typeof card.members !== "function") add(secs.length ? w.scenes : "", withFamily(c.scenes, c.scene_room, card.kind === "cover" || c.kind === "cover" ? "cover" : "light"));
+    // One list: the sheet's title names it. Two or more: every one under its word — a list with no name beside named ones
+    // (Р52б: the block's own items under «Группы» and «Сцены») takes the block's name.
     if (secs.length === 1) secs[0].label = "";
+    else for (const sec of secs) if (!sec.label) sec.label = orderName(card);
     // Items from two or more rooms («Ошибка тёплого пола 1» in a house-wide list): the room as a second line, unless the
     // name says it — the name and where it is, like Apple Home's order list and HA's entity picker (owner 29.10).
     for (const sec of secs) {
@@ -1881,10 +2119,10 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     const t = String(c.type || "").replace(/^custom:hauflo-/, "");
     const own = c.block && TITLES.data?.[c.block];
     if (own) return own;
-    if (t === "area" && Object.hasOwn(AREA_BLOCK, c.block || "")) return c.title || AREA_BLOCK[c.block][langOf(card._hass) === "en" ? 1 : 0];
-    if (t === "area") return c.title || devName(card._hass, c.device) || card._hass?.areas?.[c.area]?.name || w.names.area;
+    if (t === "area" && Object.hasOwn(AREA_BLOCK, c.block || "")) return deployTitle(c.title) || AREA_BLOCK[c.block][langOf(card._hass) === "en" ? 1 : 0];
+    if (t === "area") return deployTitle(c.title) || devName(card._hass, c.device) || card._hass?.areas?.[c.area]?.name || w.names.area;
     if (t === "sliders") return JSON.stringify(c.entities || []).includes('"cover.') ? w.names.covers : w.names.lights;
-    return c.title || c.label || w.names[t] || t;
+    return deployTitle(c.title || c.label) || w.names[t] || t;
   };
   /** This page's blocks that can be ordered (one per block — a tablet copy is the same block), top to bottom. */
   const orderBlocksHere = () => {
@@ -1900,11 +2138,101 @@ ${HFROW_CSS}@container (max-width:440px){.scn.hfrow button{flex-direction:column
     }
     return [...by.values()].sort((a, b) => Number(b.shown) - Number(a.shown) || a.top - b.top);
   };
+  // --- every sheet over the page (Р36/Р41, owner 11.11: «на телефоне шторку не закрыть»): its head with ✕ stays at the
+  // top while the sheet scrolls, a pull down from the top closes it (a grabber shows it can), so does the backdrop and
+  // the phone's back. `pt` — the sheet's own top padding, the head covers it so nothing shows above it.
+  const SHEET_UX = (pt) => `.sh{position:relative;overscroll-behavior:contain}
+.sh>.hd{position:sticky;top:-${pt}px;z-index:3;margin-top:-${pt}px;padding-top:${pt}px;padding-bottom:8px;background:inherit}
+.sh>.x{position:sticky;top:0;z-index:3;background:linear-gradient(var(--hf-track),var(--hf-track)) var(--hf-view-bg)}
+@media (pointer:coarse) and (max-width:599px){.sh::before{content:"";position:absolute;z-index:4;top:6px;left:50%;width:36px;height:4px;margin-left:-18px;border-radius:2px;background:var(--hf-track-14,var(--hf-track))}}`;
+  /** Pull-to-close and the back button for a sheet `host` (its shadow root `sr` holds `.sh`); `close` — the sheet's own
+   * close (the order sheet's keeps a move first). A drag starting on a slider / grip / field or below the top is left
+   * alone. Returns `off` for the sheet's close; listeners also drop once the host is gone. */
+  // The page under an open sheet / overlay stays put (acceptance 0.33: on a phone the scroll ran on behind the sheet —
+  // `overscroll-behavior` holds only a sheet that overflows, never the backdrop): the page's scroll is off while any
+  // of them is on the page, back as it was once the last is gone (each lives in document.body).
+  const LOCKED = new Set();
+  let lockWas = null;
+  const relock = () => {
+    for (const el of LOCKED) if (!el.isConnected) LOCKED.delete(el);
+    const de = document.documentElement;
+    if (LOCKED.size && !lockWas) {
+      lockWas = [de.style.overflow, document.body.style.overflow];
+      de.style.overflow = document.body.style.overflow = "hidden";
+    } else if (!LOCKED.size && lockWas) {
+      [de.style.overflow, document.body.style.overflow] = lockWas;
+      lockWas = null;
+      lockObs.disconnect();
+    }
+  };
+  const lockObs = new MutationObserver(relock);
+  const lockScroll = (el) => {
+    LOCKED.add(el);
+    lockObs.observe(document.body, { childList: true });
+    queueMicrotask(relock); // after the caller put it on the page
+  };
+  const sheetUx = (host, sr, close, { back = true } = {}) => {
+    lockScroll(host);
+    let y0 = null;
+    let dy = 0;
+    let t0 = 0;
+    let sh = null;
+    const still = (e) => {
+      for (const n of e.composedPath()) {
+        if (n === host || !(n instanceof Element)) break;
+        if (n.matches("input,textarea,select,[data-grip],.gr,.sl") || /^(none|pan-x)/.test(getComputedStyle(n).touchAction)) return true;
+      }
+      return false;
+    };
+    const reset = (anim = true) => {
+      if (!sh) return;
+      sh.style.transition = anim ? "transform .2s ease" : "";
+      sh.style.transform = "";
+    };
+    sr.addEventListener("touchstart", (e) => {
+      sh = sr.querySelector(".sh");
+      y0 = sh && e.touches.length === 1 && sh.scrollTop <= 0 && !still(e) ? e.touches[0].clientY : null;
+      dy = 0;
+      t0 = Date.now();
+    }, { passive: true });
+    sr.addEventListener("touchmove", (e) => {
+      if (y0 === null) return;
+      dy = e.touches[0].clientY - y0;
+      if (dy <= 0 || sh.scrollTop > 0) {
+        if (dy < 0) (y0 = null), reset(false);
+        return;
+      }
+      // The page is scrolling already (the event can't be cancelled): no pull — the console's «Ignored attempt to cancel
+      // a touchmove event with cancelable=false» (acceptance 0.33).
+      if (!e.cancelable) return void ((y0 = null), reset(false));
+      e.preventDefault();
+      sh.style.transition = "none";
+      sh.style.transform = `translateY(${dy}px)`;
+    }, { passive: false });
+    const end = () => {
+      if (y0 === null) return;
+      y0 = null;
+      const fast = dy / Math.max(1, Date.now() - t0) > 0.5;
+      if (dy > 90 || (dy > 30 && fast)) {
+        sh.style.transition = "transform .18s ease-in";
+        sh.style.transform = "translateY(100%)";
+        setTimeout(() => (close(), reset(false)), 170);
+      } else reset();
+    };
+    sr.addEventListener("touchend", end);
+    sr.addEventListener("touchcancel", () => ((y0 = null), reset()));
+    host.addEventListener("click", (e) => e.composedPath()[0] === host && close());
+    const onBack = () => (host.isConnected ? close() : off());
+    const off = () => window.removeEventListener("popstate", onBack);
+    if (back) window.addEventListener("popstate", onBack);
+    return off;
+  };
   const OCSS = `:host{--hf-toast-b:96px;position:fixed;inset:0;z-index:10000;display:grid;place-items:end center;background:var(--hf-shade-42);font-family:Onest,var(--ha-font-family-body),system-ui,sans-serif;color:var(--eh-ink,var(--primary-text-color));-webkit-tap-highlight-color:transparent}
 @media (min-width:600px){:host{place-items:center}}
 *{box-sizing:border-box}
 .sh{width:min(100%,480px);max-height:92vh;overflow:auto;overscroll-behavior:contain;background:var(--hf-card-bg);background-image:var(--eh-glass,none);border-radius:var(--hf-r-lg) var(--hf-r-lg) 0 0;padding:20px 16px calc(16px + env(safe-area-inset-bottom));box-shadow:0 20px 60px var(--hf-shade-35)}
 @media (min-width:600px){.sh{border-radius:var(--hf-r-lg);padding:20px}}
+${SHEET_UX(20)}
 .hd{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:4px}.hd h2{font:600 20px/1.2 Onest,sans-serif;margin:0;letter-spacing:-.01em;min-width:0;overflow-wrap:anywhere;hyphens:auto;hyphenate-limit-chars:12 6 6}
 .x{width:44px;height:44px;flex:none;border-radius:22px;border:0;background:var(--hf-track);color:inherit;font-size:22px;cursor:pointer;display:grid;place-items:center}.x ha-icon{--mdc-icon-size:var(--hf-icon-m)}
 .hint{font:400 13px/1.45 Onest,sans-serif;color:var(--eh-ink2,var(--secondary-text-color));margin:4px 2px 10px}
@@ -1944,6 +2272,8 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
     let inflight = null;
     const ids = () => [...new Set(secs.flatMap((s) => s.items.map((x) => x.id)))];
     const hasCls = secs.some((s) => s.items.some((x) => x.id.startsWith(CLS)));
+    // Р54: a room's own block (the area card) — its photo from here too.
+    const photoArea = card.localName === "hauflo-area" && card._config?.area && canEdit(h) ? card._config.area : "";
     const kept = () => !!(ORDER.data?.[key] || (hasCls && ORDER.data?.[houseKey(card)]));
     const save = (items) => {
       clearTimeout(saveT);
@@ -1986,6 +2316,7 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
       host.remove();
       orderOpen = null;
       document.removeEventListener("keydown", onKey);
+      offUx?.();
     };
     // Closing (✕, «Готово», the backdrop, Escape) keeps what was done: a move still waiting goes now, the sheet closes
     // once it's kept — a failed one keeps it open with the error over it (never a silent loss).
@@ -1996,7 +2327,7 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
     const onKey = (e) => e.key === "Escape" && done();
     document.addEventListener("keydown", onKey);
     const row = (x, i, n) =>
-      `<li data-id="${esc(x.id)}"><span class="gr" data-grip aria-hidden="true"><ha-icon icon="mdi:drag"></ha-icon></span>${x.icon ? `<ha-icon class="ic" icon="${esc(x.icon)}"></ha-icon>` : ""}<span class="tx"><span class="nm">${esc(x.name)}</span>${x.sub ? `<span class="sb">${esc(x.sub)}</span>` : ""}</span><button class="mv" data-up="${esc(x.id)}" aria-label="${esc(`${w.up}: ${x.name}`)}"${i ? "" : " disabled"}><ha-icon icon="mdi:chevron-up"></ha-icon></button><button class="mv" data-down="${esc(x.id)}" aria-label="${esc(`${w.down}: ${x.name}`)}"${i < n - 1 ? "" : " disabled"}><ha-icon icon="mdi:chevron-down"></ha-icon></button></li>`;
+      `<li data-id="${esc(x.id)}"><span class="gr" data-grip aria-hidden="true"><ha-icon icon="mdi:drag"></ha-icon></span>${x.icon ? `<ha-icon class="ic" icon="${esc(x.icon)}"></ha-icon>` : ""}<span class="tx"><span class="nm">${esc(x.name)}</span>${x.sub ? `<span class="sb">${esc(x.sub)}</span>` : ""}</span>${x.photo ? `<button class="mv" data-photo aria-label="${esc(`${LL("Фото комнаты", "Room photo")}: ${x.name}`)}"><ha-icon icon="mdi:image-edit-outline"></ha-icon></button>` : ""}<button class="mv" data-up="${esc(x.id)}" aria-label="${esc(`${w.up}: ${x.name}`)}"${i ? "" : " disabled"}><ha-icon icon="mdi:chevron-up"></ha-icon></button><button class="mv" data-down="${esc(x.id)}" aria-label="${esc(`${w.down}: ${x.name}`)}"${i < n - 1 ? "" : " disabled"}><ha-icon icon="mdi:chevron-down"></ha-icon></button></li>`;
     /** The lists drawn again where they are: the sheet keeps its scroll, the arrow just pressed keeps the focus. */
     const lists = (focus) => {
       keepPlace(sr, () => {
@@ -2005,6 +2336,15 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
         if (focus) sr.querySelector(`li[data-id="${window.CSS.escape(focus.id)}"] [data-${focus.which}]`)?.focus({ preventScroll: true });
       });
       if (focus) sr.querySelector(`li[data-id="${window.CSS.escape(focus.id)}"]`)?.scrollIntoView({ block: "nearest" });
+    };
+    // Р52б: a class moved in «Подблоки» moves its own section with it (an area card's sections follow its classes).
+    const follow = () => {
+      const top = secs.find((x) => x.items.some((i) => i.id.startsWith(CLS)));
+      if (!top) return;
+      const rank = new Map(top.items.map((x, i) => [x.id.slice(CLS.length), i]));
+      const at = secs.flatMap((x, i) => (x.cls && rank.has(x.cls) ? [i] : []));
+      const sorted = at.map((i) => secs[i]).sort((a, b) => rank.get(a.cls) - rank.get(b.cls));
+      at.forEach((i, j) => (secs[i] = sorted[j]));
     };
     const bindLists = () => {
       sr.querySelectorAll("ol").forEach((ol) => {
@@ -2015,10 +2355,18 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
             if (j < 0 || j >= s.items.length) return;
             [s.items[i], s.items[j]] = [s.items[j], s.items[i]];
             haptic(card, "selection");
+            follow();
             lists({ id: s.items[j].id, which: j === 0 ? "down" : j === s.items.length - 1 ? "up" : which });
             changed();
           };
           li.querySelector("[data-up]").onclick = () => move(-1, "up");
+          // Р54: the tile's photo — the order kept and the sheet closed first (one sheet at a time).
+          const ph = li.querySelector("[data-photo]");
+          if (ph) ph.onclick = async () => {
+            const t = s.items[i].photo;
+            await done();
+            if (!orderOpen) openRoomPhoto(t, t._raw.area, t._raw.name || "");
+          };
           li.querySelector("[data-down]").onclick = () => move(1, "down");
           li.querySelector("[data-grip]").addEventListener("pointerdown", (e) => {
             if (e.pointerType === "mouse" && e.button !== 0) return;
@@ -2051,6 +2399,7 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
               const byId = new Map(s.items.map((x) => [x.id, x]));
               s.items = [...ol.children].map((o) => byId.get(o.dataset.id)).filter(Boolean);
               haptic(card);
+              follow();
               lists();
               if ([...ol.children].map((o) => o.dataset.id).join("\n") !== before0) changed();
             };
@@ -2065,10 +2414,15 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
 <div class="hd"><h2>${esc(w.title)} · ${esc(orderName(card))}</h2><button class="x" data-x aria-label="${esc(w.close)}"><ha-icon icon="mdi:close"></ha-icon></button></div>
 <p class="hint">${esc(w.hint)}</p>
 <div data-lists></div>
-<div class="ft"><button class="lnk" data-reset${kept() ? "" : " hidden"}>${esc(w.reset)}</button><span class="sp"></span><button class="b1" data-done>${esc(w.done)}</button></div></div>`;
+<div class="ft">${photoArea ? `<button class="lnk" data-photo>${esc(LL("Фото комнаты", "Room photo"))}</button>` : ""}<button class="lnk" data-reset${kept() ? "" : " hidden"}>${esc(w.reset)}</button><span class="sp"></span><button class="b1" data-done>${esc(w.done)}</button></div></div>`;
     lists();
     sr.querySelector("[data-x]").onclick = done;
     sr.querySelector("[data-done]").onclick = done;
+    const fp = sr.querySelector(".ft [data-photo]");
+    if (fp) fp.onclick = async () => {
+      await done();
+      if (!orderOpen) openRoomPhoto(card, photoArea, h?.areas?.[photoArea]?.name || orderName(card));
+    };
     sr.querySelector("[data-reset]").onclick = async () => {
       clearTimeout(saveT);
       dirty = false;
@@ -2078,7 +2432,7 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
     };
     // A tap on the dim backdrop closes — not the click that ends the long press which opened it (it lands on the backdrop).
     const opened = Date.now();
-    host.addEventListener("click", (e) => e.composedPath()[0] === host && Date.now() - opened > 700 && done());
+    const offUx = sheetUx(host, sr, () => Date.now() - opened > 700 && done());
     document.body.appendChild(carryTheme(host, card));
     sr.querySelector("[data-done]")?.focus({ preventScroll: true });
   };
@@ -2192,7 +2546,7 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
   const roomOfSceneId = (s) => ROOM_OF_SCENE.exec(String(s?.attributes?.id || ""))?.[1];
   const areaOf = (hass, id) => {
     const e = hass?.entities?.[id];
-    return e?.area_id || (e?.device_id && hass?.devices?.[e.device_id]?.area_id) || null;
+    return roomArea(e?.area_id || (e?.device_id && hass?.devices?.[e.device_id]?.area_id));
   };
   const areaName = (hass, id) => {
     const a = areaOf(hass, id);
@@ -2263,7 +2617,7 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
   };
   /** Scene buttons of one kind (light amber, blinds ice — as hauflo-scenes' own cover row, owner 03.11 — both mint) — the room's top card and the blocks share them.
    * `room` (the card's `scene_room`): the family's own scenes after the integrator's. A new scene: hold the block's header or
-   * any scene (owner 03.11: no permanent «+ Сцена»); the button shows only while the row has no scene at all. */
+   * any scene (owner 03.11: no permanent «+ Сцена»; Р47 11.11: no button on an empty row either — the title's hold + a hint). */
   const sceneCanAdd = (hass, kind, room) => !!room && kind !== "mixed" && FAM.api === true && canEdit(hass);
   /** `data-scene-add` on a block's header: holding it opens «Новая сцена» when the family may add one here. */
   const sceneAddAttr = (hass, kind, room) => (sceneCanAdd(hass, kind, room) ? ` data-scene-add="${kind === "cover" ? "cover" : "light"}"` : "");
@@ -2286,11 +2640,6 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
         kids.forEach((c, i) => c.style.setProperty(`--s${m}`, String(spans[i])));
       });
     });
-  };
-  const sceneAddBtn = (hass, kind) => {
-    const en = langOf(hass) === "en";
-    const t = en ? "New scene" : "Новая сцена";
-    return `<button class="add" data-scene-add="${kind === "cover" ? "cover" : "light"}" aria-label="${t}" title="${t}"><ha-icon icon="mdi:plus"></ha-icon><span>${en ? "Scene" : "Сцена"}</span></button>`;
   };
   /** One kind's scene buttons + its «+» button (owner 07.11, п.69б: no caption rows inside a scenes block). */
   const sceneGroups = (hass, list, kind, room, card) => {
@@ -2319,8 +2668,9 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
         const lit = card?._sceneLit?.id === x.entity && card._sceneLit.until > Date.now();
         return `<button data-scene="${esc(x.entity)}" data-kind="${kind}"${shortLab ? " data-pre" : ""} ${lit ? 'class="lit" ' : ""}${editable ? `data-edit="${src === "knx" ? "knx" : "1"}"` : ""} title="${esc(tip)}"><ha-icon icon="${esc(x.icon || s.attributes.icon || (kind === "cover" ? "hauflo:blind" : "hauflo:scene"))}"></ha-icon><span${FAM.names?.[x.entity] ? " data-own" : ""}>${esc(shortLab || label)}</span>${tag}</button>`;
     };
-    const add = sceneCanAdd(hass, kind, room) ? sceneAddBtn(hass, kind) : "";
-    if (!all.length) return { btns: [], add };
+    // No scenes of this kind: no row at all (Р47, owner 11.11: an empty «+ Сцена» took a whole row) — a new scene is
+    // added by holding the block's title, with a one-time hint (EHCard.sceneHint).
+    if (!all.length) return { btns: [], add: "" };
     // ≥2 series of this kind (`series` on the buttons, set by the generator — the room's own carries `series_head: false`):
     // the scenes go under a caption row with the room's name, the own room first; the family's HA scenes without a series
     // join the own room (owner 10.11: «подзаголовок с названием комнаты, если комнат ≥2; одна комната — без подзаголовка»;
@@ -2380,6 +2730,7 @@ button:focus-visible{outline:2px solid var(--hf-ice);outline-offset:1px}
   // A function: SHEET_CSS (the climate sheet's) is defined further down.
   const sceneSheetCss = () => `${SHEET_CSS}
 *{box-sizing:border-box}.sh{padding:18px 18px calc(18px + env(safe-area-inset-bottom));gap:12px}.t{font:500 17px Onest,sans-serif;color:var(--primary-text-color)}
+${SHEET_UX(18)}.sh>.hd{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:0}.hd .t{min-width:0;overflow-wrap:anywhere}.hd .x{flex:none}
 .n{font:400 13px/1.4 Onest,sans-serif;color:var(--secondary-text-color)}.e{font:400 13px/1.4 Onest,sans-serif;color:var(--hf-alert)}
 input{height:48px;border-radius:var(--hf-r-sm);border:1px solid var(--divider-color);padding:0 14px;font:400 16px Onest,sans-serif;background:transparent;color:var(--primary-text-color)}
 .b{height:48px;border-radius:var(--hf-r-sm);border:0;font:500 15px Onest,sans-serif;cursor:pointer;background:var(--hf-track);color:var(--primary-text-color)}
@@ -2392,12 +2743,17 @@ input{height:48px;border-radius:var(--hf-r-sm);border:1px solid var(--divider-co
     const close = () => {
       host.remove();
       document.removeEventListener("keydown", onKey);
+      offUx();
     };
     const onKey = (e) => e.key === "Escape" && close();
     document.addEventListener("keydown", onKey);
-    host.addEventListener("click", (e) => e.composedPath()[0] === host && close());
+    const offUx = sheetUx(host, sr, close);
+    // Its title (the first `.t`) and a ✕ make the head that stays on top — every scene sheet closes from there too.
     const draw = (html) => {
-      sr.innerHTML = `<style>${TZ(sceneSheetCss())}</style><div class="sh" role="dialog" aria-modal="true">${html}</div>`;
+      const m = /^\s*(<div class="t">[\s\S]*?<\/div>)/.exec(html);
+      const hd = `<div class="hd">${m ? m[1] : "<span></span>"}<button class="x" data-xx aria-label="Закрыть"><ha-icon icon="mdi:close"></ha-icon></button></div>`;
+      sr.innerHTML = `<style>${TZ(sceneSheetCss())}</style><div class="sh" role="dialog" aria-modal="true">${hd}${m ? html.slice(m[0].length) : html}</div>`;
+      sr.querySelector("[data-xx]").addEventListener("click", close);
       if (LANG !== "ru") translate(sr);
     };
     document.body.appendChild(carryTheme(host, card));
@@ -2416,6 +2772,142 @@ input{height:48px;border-radius:var(--hf-r-sm);border:1px solid var(--divider-co
     FAM.state = "";
     loadFam(card._hass);
     setTimeout(famRerender, 400); // HA's scene reload: the new / renamed entity shows a moment later
+  };
+  // --- Р54: a room's photo from its card (HA's area picture — the same one HA's own area page shows) ----------------
+  // The phone's photo goes through HA's image store (/api/image/upload, as HA's area dialog does), the service's ready
+  // pictures come from the agent (`hauflo/room_picture_options`), the area is set by the agent (`hauflo/area_picture`).
+  /** Pictures just set here, by HA area: the tile shows one at once, before HA's area list says it (dropped once it does). */
+  const ROOM_PIC = new Map();
+  /** The upload: the photo made smaller on the phone (a 12 MP shot is over HA's 10 MB), HA's thumbnail size it is shown at. */
+  const ROOM_PIC_UP = { side: 1600, quality: 0.86, thumb: "512x512", types: ["image/jpeg", "image/png", "image/gif"], max: 10 * 1024 * 1024 };
+  /** The room's picture now: just set here → HA's area → the one the dashboard was made with. */
+  const roomPic = (h, c) => {
+    const a = c.area ? h?.areas?.[c.area] : undefined;
+    if (c.area && ROOM_PIC.has(c.area)) {
+      const p = ROOM_PIC.get(c.area);
+      if (!a || (a.picture || null) !== p) return p || "";
+      ROOM_PIC.delete(c.area);
+    }
+    return a && a.picture !== undefined ? a.picture || "" : c.picture || "";
+  };
+  const roomPicRedraw = (area) => CARDS.forEach((x) => x._config?.area === area && x.isConnected && x._update());
+  /** The photo as JPEG of at most `side` px (EXIF turn applied); the original when the browser can't draw it. */
+  const roomPicShrink = async (file) => {
+    try {
+      const bmp = await createImageBitmap(file, { imageOrientation: "from-image" });
+      const k = Math.min(1, ROOM_PIC_UP.side / Math.max(bmp.width, bmp.height));
+      const cv = document.createElement("canvas");
+      cv.width = Math.max(1, Math.round(bmp.width * k));
+      cv.height = Math.max(1, Math.round(bmp.height * k));
+      cv.getContext("2d").drawImage(bmp, 0, 0, cv.width, cv.height);
+      bmp.close?.();
+      const blob = await new Promise((res) => cv.toBlob(res, "image/jpeg", ROOM_PIC_UP.quality));
+      if (blob) return new File([blob], "room.jpg", { type: "image/jpeg" });
+    } catch (e) {
+      /* the original below */
+    }
+    return ROOM_PIC_UP.types.includes(file.type) && file.size <= ROOM_PIC_UP.max ? file : null;
+  };
+  /** «Фото комнаты»: upload one, take a ready one, or remove it. `area` — the room's HA area. */
+  const openRoomPhoto = (card, area, name) => {
+    const h = card._hass;
+    const now = () => roomPic(card._hass, { area, picture: card._config?.picture });
+    let opts = null; // null — still asking the agent
+    let off = false; // the agent has no such command yet (not updated)
+    let busy = "";
+    let msg = "";
+    let bad = false;
+    let sure = false;
+    sceneSheet(card, ({ sr, draw, close }) => {
+      // Over the settings sheet too (opened from «Порядок», which comes back to the settings).
+      sr.host.style.zIndex = "10001";
+      const say = (text, isBad = false) => ((msg = text), (bad = isBad), view());
+      const set = async (url) => {
+        await h.callWS({ type: "hauflo/area_picture", area_id: area, picture: url || null });
+        ROOM_PIC.set(area, url || null);
+        roomPicRedraw(area);
+        haptic(card, "success");
+      };
+      const fail = (e) => (["unauthorized", "not_allowed"].includes(e?.code) ? LL("Нет прав менять фото комнаты", "No permission to change the room photo") : LL("Не получилось — ещё раз", "That didn't work — try again"));
+      const view = () => {
+        const cur = now();
+        draw(`<div class="t">${esc(LL("Фото комнаты", "Room photo"))} · ${esc(name)}</div>
+${off ? `<div class="n">${esc(LL("Смена фото появится после обновления сервиса.", "Changing the photo comes with the next service update."))}</div>` : `<div class="n">${esc(LL("Фото видно на плитке комнаты у всех в доме.", "The photo shows on the room's tile for everyone at home."))}</div>
+<input type="file" accept="image/*" hidden data-file><button class="b" data-up${busy ? " disabled" : ""}>${esc(busy === "up" ? LL("Загружаю…", "Uploading…") : LL("Загрузить фото", "Upload a photo"))}</button>
+${opts === null ? `<div class="n">${esc(LL("Ищу готовые фото…", "Looking for ready photos…"))}</div>` : opts.length ? `<div class="n">${esc(LL("Готовые", "Ready ones"))}</div>${opts.map((o, i) => `<button class="b${o.url === cur ? " go" : ""}" data-opt="${i}" aria-pressed="${o.url === cur}"${busy ? " disabled" : ""}>${esc(o.label)}</button>`).join("")}` : ""}
+${cur ? `<button class="b bad" data-rm${busy ? " disabled" : ""}>${esc(sure ? LL("Точно убрать фото?", "Remove the photo?") : LL("Убрать фото", "Remove the photo"))}</button>` : ""}`}
+${msg ? `<div class="${bad ? "e" : "n"}" role="status">${esc(msg)}</div>` : ""}<button class="b" data-x>${esc(LL("Готово", "Done"))}</button>`);
+        sr.querySelector("[data-x]").addEventListener("click", close);
+        const file = sr.querySelector("[data-file]");
+        sr.querySelector("[data-up]")?.addEventListener("click", () => file.click());
+        file?.addEventListener("change", async () => {
+          const f = file.files?.[0];
+          if (!f) return;
+          busy = "up";
+          sure = false;
+          say("");
+          let id = "";
+          try {
+            const small = await roomPicShrink(f);
+            if (!small) throw { code: "type" };
+            const body = new FormData();
+            body.append("file", small);
+            const r = await h.fetchWithAuth("/api/image/upload", { method: "POST", body });
+            id = r.ok ? (await r.json())?.id || "" : "";
+            if (!id) throw { code: r.status === 413 ? "size" : "upload" };
+            await set(`/api/image/serve/${encodeURIComponent(id)}/${ROOM_PIC_UP.thumb}`);
+            busy = "";
+            say(LL("Сохранено", "Saved"));
+          } catch (e) {
+            // Uploaded but not set: HA's image goes again (best effort — it needs HA's admin).
+            if (id) h.callWS({ type: "image/delete", image_id: id }).catch(() => {});
+            busy = "";
+            say(e?.code === "type" ? LL("Этот файл не фото — выберите JPEG или PNG", "That file isn't a photo — choose a JPEG or PNG") : e?.code === "size" ? LL("Фото слишком большое — выберите поменьше", "The photo is too large — choose a smaller one") : fail(e), true);
+          }
+        });
+        sr.querySelectorAll("[data-opt]").forEach((b) =>
+          b.addEventListener("click", async () => {
+            const o = opts[Number(b.dataset.opt)];
+            if (!o || o.url === now()) return;
+            busy = "opt";
+            sure = false;
+            say("");
+            try {
+              await set(o.url);
+              busy = "";
+              say(LL("Сохранено", "Saved"));
+            } catch (e) {
+              busy = "";
+              say(fail(e), true);
+            }
+          })
+        );
+        sr.querySelector("[data-rm]")?.addEventListener("click", async () => {
+          if (!sure) return ((sure = true), view());
+          busy = "rm";
+          sure = false;
+          try {
+            await set(null);
+            busy = "";
+            say(LL("Фото убрано", "Photo removed"));
+          } catch (e) {
+            busy = "";
+            say(fail(e), true);
+          }
+        });
+      };
+      view();
+      h.callWS({ type: "hauflo/room_picture_options", area_id: area })
+        .then((r) => {
+          const list = Array.isArray(r) ? r : Array.isArray(r?.options) ? r.options : [];
+          opts = list.filter((o) => o && typeof o.url === "string" && cssUrl(o.url) === o.url && o.url && typeof o.label === "string").slice(0, 24);
+        })
+        .catch((e) => {
+          opts = [];
+          off = e?.code === "unknown_command";
+        })
+        .finally(() => sr.host.isConnected && view());
+    });
   };
   /** «В избранное» in a scene sheet: shown unless the agent is known to be absent; the house's settings are fetched first. */
   const favBtn = (entity) => (HOUSE.off ? "" : `<button class="b" data-fav>${favHas(entity) ? "Убрать из избранного" : "В избранное"}</button>`);
@@ -2439,7 +2931,7 @@ input{height:48px;border-radius:var(--hf-r-sm);border:1px solid var(--divider-co
       const form = (err = "", value = "") => {
         draw(`<div class="t">${kind === "cover" ? "Новая сцена штор" : "Новая сцена света"}</div>
 <div class="n">${kind === "cover" ? "Поставьте шторы как нужно — сцена запомнит их положение." : "Включите свет как нужно — сцена запомнит, что горит и как ярко."}</div>
-<div class="n">Сцена сохранится в Home Assistant: на панели, в голосе и автоматизациях. На настенных выключателях KNX её не будет.</div>
+<div class="n">${esc(LL("Сцена появится на панели, в голосе и автоматизациях. На настенных выключателях её не будет.", "The scene shows on the panel, in voice and in automations. It won't be on the wall switches."))}</div>
 <input maxlength="40" placeholder="${kind === "cover" ? "Например, Утро" : "Например, Кино"}" aria-label="Название" value="${esc(value)}">
 ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-save>Запомнить как сейчас</button><button class="b" data-x>Отмена</button>`);
         const input = sr.querySelector("input");
@@ -2650,9 +3142,20 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       }),
     );
     // Holding a block's header: «Новая сцена» (light / blinds; both on the room's top card → which one first).
+    const holdSeen = () => {
+      try {
+        localStorage.setItem("hauflo_scene_hold_seen", "1");
+      } catch (e) {
+        /* private mode: the hint stays */
+      }
+      // Every block showing the hint drops it now, not on its next state change.
+      if (root.querySelector("[data-shint]")) famRerender();
+    };
+    root.querySelector("[data-shint]")?.addEventListener("click", holdSeen);
     root.querySelectorAll("[data-scene-add]:not(button)").forEach((el) =>
       longPress(el, () => {
         haptic(card, "medium");
+        holdSeen();
         const kinds = el.dataset.sceneAdd.split(" ");
         // The block's order is the second line of the same sheet (owner 03.11: a header's hold showed only «Порядок»).
         const order = ORDER.ok && canEdit(card._hass) && orderSections(card).some((x) => x.items.length > 1);
@@ -2668,9 +3171,38 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
     );
   };
   const OPENING = ["window", "door", "garage_door", "opening"];
+  /** A climate's fan as one control (Р38/Р16/Р23, owner 10–11.11): «Авто» apart; ordered speeds (numbers, low → top)
+   * read 1 · 2 · 3 by their order (the word stays as the hint); more than FAN_STEPS_MAX speeds — a «− n +» stepper like the
+   * setpoint's, never a cut list. Speeds that aren't one scale (diffuse / focus, auto ↓) keep their words. */
+  const FAN_STEPS_MAX = 5;
+  const FAN_RANK = { quiet: 0, low: 1, on_low: 1, medium: 2, middle: 2, mid: 2, high: 3, on_high: 3, top: 4, turbo: 5 };
+  const fanPlan = (list) => {
+    const auto = list.includes("auto") ? "auto" : null;
+    const rest = list.filter((f) => f !== auto);
+    const rank = (f) => (num(f) !== undefined ? num(f) : FAN_RANK[String(f).toLowerCase()]);
+    const scale = rest.length > 1 && rest.every((f) => rank(f) !== undefined) && new Set(rest.map(rank)).size === rest.length;
+    const speeds = scale ? [...rest].sort((a, b) => rank(a) - rank(b)) : rest;
+    return { auto, speeds, scale, stepper: scale && speeds.length > FAN_STEPS_MAX };
+  };
+  /** The device's own fan speed settings (number / input_number «Скорость …» on the climate's device, not hidden): they
+   * are the unit's real speed control (supply / exhaust, one or two) — the climate's own fan selector is a rough copy
+   * and isn't drawn (Р22а, owner 11.11: «убрать скорости 1 2 3 4 5 … есть переключалка скоростей ниже»). */
+  const ownFanSpeeds = (h, id) => {
+    const dev = h?.entities?.[id]?.device_id;
+    if (!dev) return [];
+    return Object.values(h.entities || {}).filter((e) => e?.device_id === dev && !e.hidden && !e.hidden_by && !e.disabled_by && /^(number|input_number)\./.test(e.entity_id) && h.states?.[e.entity_id] && DUP_SPEED.test(dupOwnName(h, e.entity_id))).map((e) => e.entity_id);
+  };
   const FAN = { auto: "Авто", on_low: "Тихо", on_high: "Сильно", auto_low: "Авто ↓", auto_high: "Авто ↑", low: "Тихо", medium: "Средне", middle: "Средне", mid: "Средне", high: "Сильно", top: "Макс", quiet: "Тихо", diffuse: "Мягко", focus: "Фокус", turbo: "Турбо" };
   /** climate.turn_off is there: the TURN_OFF feature (128) or «off» among its modes. */
   const canTurnOff = (s) => ((Number(s.attributes.supported_features) || 0) & 128) !== 0 || (s.attributes.hvac_modes || []).includes("off");
+  /** A climate's controls by its features (canDo): its setpoint (TARGET_TEMPERATURE 1), range (TARGET_TEMPERATURE_RANGE 2),
+   * presets (PRESET_MODE 16), fan speeds (FAN_MODE 8), swing (SWING_MODE 32); hvac_modes need no bit. A value or list
+   * without its bit is no control: no ±, no buttons. */
+  const climateCan = (s) => {
+    const a = s?.attributes || {};
+    const rng = canDo(s, 2);
+    return { sp: canDo(s, 1) ? num(a.temperature) : undefined, lo: rng ? num(a.target_temp_low) : undefined, hi: rng ? num(a.target_temp_high) : undefined, presets: canDo(s, 16) ? a.preset_modes || [] : [], fans: canDo(s, 8) ? a.fan_modes || [] : [], swings: canDo(s, 32) ? a.swing_modes || [] : [] };
+  };
   const HVAC = { heat: "Нагрев", cool: "Холод", auto: "Авто", heat_cool: "Диапазон", off: "Выкл", fan_only: "Вент.", dry: "Осушение" };
   const HVAC_ICON = { heat: "mdi:fire", cool: "hauflo:snow", auto: "mdi:thermostat-auto", heat_cool: "mdi:sun-snowflake-variant", off: "hauflo:power", fan_only: "hauflo:fan", dry: "hauflo:humidity" };
   // «режим: нагрев» — the MODE is small print; what the thermostat DOES is another word (owner 28.10, Д16).
@@ -3253,6 +3785,8 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
     if (cfg.order !== undefined && cfg.order !== null && !Array.isArray(cfg.order)) out.push(["«order» — не список", "«order» is not a list"]);
     return out;
   };
+  /** Which block says the scene hint on this page (EHCard.sceneHint): one at a time. */
+  const SHINT = { card: null };
   class EHCard extends HTMLElement {
     constructor() {
       super();
@@ -3423,10 +3957,10 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       // Safari/iOS (WebKit) lays the page out with the card empty while its content is replaced: a page scrolled
       // near its end lost the card's height and jumped up — to the very top for the climate card (owner, Горького 3,
       // 27.10: «перепрыгивают страницы» on every setpoint change). The card keeps its height until the new content is in.
-      const h = first ? 0 : this.getBoundingClientRect().height;
-      if (h) this.style.minHeight = `${h}px`;
-      this.shadowRoot.innerHTML = html;
-      if (h) requestAnimationFrame(() => (this.style.minHeight = ""));
+      // The page keeps its place too (Р42: holdPlace, every card, every whole redraw).
+      // Held by what was drawn, not by «.glass»: the house's hero has none and was redrawn with no guard at the page's top.
+      if (!this.shadowRoot.childElementCount) this.shadowRoot.innerHTML = html;
+      else holdPlace(this, () => (this.shadowRoot.innerHTML = html));
       askWrap(this.shadowRoot);
       translate(this.shadowRoot);
       hfRows(this.shadowRoot);
@@ -3478,6 +4012,28 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       this.style.display = hide ? "none" : "";
       this.dispatchEvent(new CustomEvent("card-visibility-changed", { detail: { value: !hide } }));
     }
+    /** `data-scene-add` for this block's title / scenes caption: holding it adds a scene (Р47) — never on «Розетки», nor on a
+     * block of one device (a scene of one lamp is its own button). */
+    sceneHold() {
+      if (this._config.block === "sockets") return "";
+      const k = this.kind === "cover" ? "cover" : "light";
+      const room = rowRoom(this, k);
+      return sceneCanAdd(this._hass, k, room) && captureList(this, k).length > 1 ? sceneAddAttr(this._hass, k, room) : "";
+    }
+    /** The one-time hint where a block has no scenes row (Р47): how to add the first scene; gone once a title was held or the
+     * hint tapped (`hauflo_scene_hold_seen`, as the stepper's «±» hint). */
+    sceneHint(row) {
+      if (row || !this.sceneHold()) return "";
+      try {
+        if (localStorage.getItem("hauflo_scene_hold_seen") === "1") return "";
+      } catch (e) {
+        /* no storage: show it */
+      }
+      // Once on the page (acceptance 0.33: under «Свет» and again under «Шторы»): the first block drawn that may say it.
+      if (SHINT.card && SHINT.card !== this && SHINT.card.isConnected && SHINT.card.sceneHold()) return "";
+      SHINT.card = this;
+      return `<p class="shint" data-shint>Удерживайте название блока, чтобы добавить сцену</p>`;
+    }
     /** The scenes of this block (light / blinds) when they're shown in it — the integrator's choice or the client's. */
     sceneRow() {
       const c = this._config;
@@ -3490,7 +4046,7 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       if (where !== "blocks") return "";
       const chips = sceneChips(this._hass, c.scenes || [], this.kind === "cover" ? "cover" : "light", room, this);
       if (!chips) return "";
-      return `<div class="srow"><span class="caps"${sceneAddAttr(this._hass, this.kind === "cover" ? "cover" : "light", room)}>${blockTitle(this, this.kind === "cover" ? "Сцены штор" : "Сцены света", this.kind === "cover" ? "cover_scenes" : "light_scenes")}</span>${chips}</div>`;
+      return `<div class="srow"><span class="caps"${this.sceneHold()}>${blockTitle(this, this.kind === "cover" ? "Сцены штор" : "Сцены света", this.kind === "cover" ? "cover_scenes" : "light_scenes")}</span>${chips}</div>`;
     }
   }
 
@@ -3498,7 +4054,34 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
   /** An alarm card of this view is showing an alarm (Apple / Google: one alarm block) — the headline then says only the
    * state; the card has what to do and «Позвонить». */
   const alertShown = (card) => [...AGENT.cards].some((c) => c !== card && c.localName === "hauflo-alert" && c.isConnected && c._shown);
+  /** One alarm per surface (Р3/Р11/Р29, owner 10.11–11.11: the same fault three times on «Главная» — the line, the header,
+   * «Датчики · неисправность»): a house header on this page that covers this alert card's sensors (the house's — `all_alarms`
+   * or the first page — or a floor's whose list has them) says their state itself, so the alert card's thin line of the
+   * same faults isn't drawn under it. An open rule's alarm keeps the big card (what to do, «Принять», the valve) and the
+   * header then gives the word only (alertShown). A room's page has no header: its line stays. */
+  const heroCovers = (card) => {
+    const a = card._config || {};
+    return [...CARDS].some((x) => {
+      if (x === card || x.localName !== "hauflo-hero" || !x.isConnected || !x._config || !x._saysHouse) return false;
+      if (x._config.all_alarms || x.home()) return true;
+      return !a.all_alarms && (a.alarms || []).every((id) => (x._config.alarms || []).includes(id));
+    });
+  };
+  /** The signals the house's status is made of, as «Что входит в статус дома» lists them (Р44) — the header's count says
+   * the same number (Р18: «Статус дома · 12 датчиков в норме»). `k` — the header's `_chk`. */
+  const statusSignals = (card, k) => {
+    const hh = card._hass;
+    const c = card._config || {};
+    if (!k || !hh) return [];
+    const mine = (id) => (c.alarms || []).includes(id) || (c.devices || []).includes(id) || !!alarmRoom(c, hh, id);
+    return [...new Set([...k.alarms, ...k.open, ...(k.other || []).filter(mine), ...k.wet, ...k.problems, ...k.lost])].filter((id) => !!st(hh, id) || k.names?.[id]);
+  };
   class Hero extends EHCard {
+    /** On the page: the alert cards here look again whether this header says their faults (heroCovers). */
+    connectedCallback() {
+      super.connectedCallback();
+      setTimeout(() => CARDS.forEach((x) => x.localName === "hauflo-alert" && x.isConnected && x._hass && ((x._sig = ""), x._update())), 0);
+    }
     watched() {
       const c = this._config;
       const loud = Object.keys(this._hass?.states || {}).filter((id) => id.startsWith("siren.") || id.startsWith("alarm_control_panel."));
@@ -3551,7 +4134,7 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       const lights = (rc.lights || []).filter((id) => st(h, id));
       const lit = lights.filter((id) => st(h, id).state === "on").length;
       const cs = rc.climate && st(h, rc.climate);
-      const sp = cs && !nd(cs) && cs.attributes.preset_mode !== "building_protection" ? num(cs.attributes.temperature) : undefined;
+      const sp = cs && !nd(cs) && cs.attributes.preset_mode !== "building_protection" ? climateCan(cs).sp : undefined;
       const want = this._warm && this._warm.id === rc.climate && Date.now() - this._warm.at < 10000 ? this._warm.v : sp;
       const cur = cs ? num(cs.attributes.current_temperature) : undefined;
       const light = lights.length
@@ -3674,7 +4257,16 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       // 10 round 3); «не решено» never moves it.
       // The level by itself (the agent's `_house` with no fault named here) and a fault of an entity HA's states don't have
       // (named by the agent) are said too (acceptance 10.11 M-1); «offline» is its own amber state.
-      const hl = this.home() || c.all_alarms ? houseLevel(h, c) : null;
+      // A floor's header: the faults of its own alarm sensors (as that floor's alert card), never the whole house's level.
+      const scopeAll = this.home() || !!c.all_alarms;
+      const hlAll = houseLevel(h, c);
+      const hl = scopeAll ? hlAll : { ...hlAll, level: "ok", agent: false, faults: hlAll.faults.filter((f) => (c.alarms || []).includes(f.entity)) };
+      // The page's header says the state of what it covers (Р29, one signal once per place): the quiet alarm strip under it
+      // («Неисправность: …», «Нет связи» with no rule's alarm open) steps aside (heroCovers) — told when that changes.
+      if (!this._saysHouse) {
+        this._saysHouse = true;
+        setTimeout(() => CARDS.forEach((x) => x.localName === "hauflo-alert" && x.isConnected && ((x._sig = ""), x._update())), 0);
+      }
       const hh = houseHead(hl, alarms);
       const wetOther = hh.wet;
       const problemOn = hh.problems;
@@ -3687,6 +4279,10 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
       const w0 = st(h, wetOther[0]?.entity);
       const wetLeak = !!w0 && (w0.attributes?.device_class === "moisture" || signalOf(w0).key === "classless.loud");
       const wetTodo = w0 ? (wetLeak ? TODO.moisture : TODO[w0.attributes?.device_class] || "") : "";
+      // The big alert card of this page names the alarm, says what to do and has «Принять»: the header gives the word only.
+      const cardShown = alertShown(this);
+      // The headline names the faults itself (a leak / «Неисправность: …»): the «Датчики» counter doesn't say them again (Р29).
+      const headNamesFaults = (!alarms.length && !loud.length && !!wetOther.length) || (ok && hh.level !== "alarm" && !!problemOn.length);
       const headline = !alarms.length && !loud.length && wetOther.length
         ? `<div class="hl bad"><span class="dot" style="background:var(--alert);box-shadow:0 0 12px var(--alert)"></span>${wetLeak ? "Протечка" : "Авария"}: ${esc(fName(wetOther[0]))}${fRoom(wetOther[0]) ? ` · ${esc(fRoom(wetOther[0]))}` : ""}</div>${wetTodo ? `<div class="todo2">${esc(wetTodo)}</div>` : ""}`
         : ok && hh.level === "alarm"
@@ -3711,21 +4307,25 @@ ${err ? `<div class="e">${esc(err)}</div>` : ""}<button class="b go" data-yes>Д
           }`
         : !alarms.length
         ? `<div class="hl bad"><span class="dot" style="background:var(--alert);box-shadow:0 0 12px var(--alert)"></span>${loud.some((s) => s.entity_id.startsWith("alarm_control_panel.")) ? "Авария · охрана" : "Звучит сирена"}</div>`
-        : `<div class="hl bad"${critical ? "" : ' style="color:var(--amberT)"'}><span class="dot" style="background:${critical ? "var(--alert)" : "var(--amber)"};box-shadow:0 0 12px ${critical ? "var(--alert)" : "var(--amber)"}"></span>${esc(alarms.length === 1 ? `Авария: ${topName}` : alarmCount(openList))}</div>${
-            alarms.length > 1 && pending ? `<div class="hl2">${esc(`Первая: ${topName}`)}</div>` : ""
-          }${alertShown(this) ? "" : `<div class="todo2">${esc(alarmTodo(topS?.attributes?.device_class, !!svc?.phone, false))}</div>`}`;
+        : `<div class="hl bad"${critical ? "" : ' style="color:var(--amberT)"'}><span class="dot" style="background:${critical ? "var(--alert)" : "var(--amber)"};box-shadow:0 0 12px ${critical ? "var(--alert)" : "var(--amber)"}"></span>${esc(alarms.length === 1 ? (cardShown ? LL("Авария", "Alarm") : `Авария: ${topName}`) : alarmCount(openList))}</div>${
+            alarms.length > 1 && pending && !cardShown ? `<div class="hl2">${esc(`Первая: ${topName}`)}</div>` : ""
+          }${cardShown ? "" : `<div class="todo2">${esc(alarmTodo(topS?.attributes?.device_class, !!svc?.phone, false))}</div>`}`;
       const pres = PRES.get(this);
       const away = pres?.enabled;
       // What the headline was decided from, in its order — the «Что проверяется» sheet (owner 03.11) reads this, never its own sums.
       this._chk = {
         alarms: c.alarms || [], open: openList.map((a) => a.entity), deaf,
         loud: loud.map((x) => x.entity_id), sirens: Object.keys(h.states).filter((id) => id.startsWith("siren.") || id.startsWith("alarm_control_panel.")),
-        other: hl ? houseSignals(h).filter((id) => !(c.alarms || []).includes(id)) : null,
+        other: scopeAll ? houseSignals(h).filter((id) => !(c.alarms || []).includes(id)) : null,
         wet: wetOther.map((x) => x.entity), problems: problemOn.map((x) => x.entity), lost: lostSig.map((x) => x.entity), level: hh.level, bare: hh.bare,
         names: Object.fromEntries([...wetOther, ...problemOn, ...lostSig].map((f) => [f.entity, fName(f)])),
         devices: c.devices || [], off: otherOff, climates, waiting, lights: lightIds, lightsDeaf: canReport.filter(longNd),
       };
       if (this._chkDraw) this._chkDraw();
+      // «Статус дома» (Р18, the sheet «Что входит в статус дома» counts the same): said in the footer only while the headline
+      // names nothing — a fault named in the headline is not counted again under it (Р29).
+      const calm = ok && hh.level === "ok" && !wetOther.length && !problemOn.length && !lostN;
+      const nSig = statusSignals(this, this._chk).length;
       // Working only in part: said on the chip too, amber outline (final review 28.10).
       const part = away ? presPartial(pres) : null;
       const awayWord = !part ? "Нет дома · имитация" : part.kind === "covers" ? "Нет дома · только шторы" : part.kind === "lights" ? "Нет дома · только свет" : "Нет дома · сегодня ничего";
@@ -3735,26 +4335,96 @@ ${headline.replace(/<div class="hl( [a-z]+)?"/, (m) => `${m} role="button" tabin
 ${hum !== undefined ? `<div><span class="caps">Влажность</span><b>${fmt(hum)}\u00a0%</b></div>` : ""}
 ${lightIds.length ? `<div><span class="caps">Свет</span><b>${lightsUnknown ? (lightsFresh ? "Обновляется…" : "Нет данных") : litRooms ? `${lamps} ${lamps % 10 === 1 && lamps % 100 !== 11 ? "лампа" : [2, 3, 4].includes(lamps % 10) && ![12, 13, 14].includes(lamps % 100) ? "лампы" : "ламп"} в ${litRooms} ${litRooms === 1 ? "комнате" : "комнатах"}${outerOn.length ? ` · ${esc(nameOf(st(h, outerOn[0]), outerOn[0]))}${outerOn.length > 1 ? ` +${outerOn.length - 1}` : ""}` : ""}` : outerOn.length ? `Включён: ${esc(nameOf(st(h, outerOn[0]), outerOn[0]))}${outerOn.length > 1 ? ` +${outerOn.length - 1}` : ""}` : lightsDeaf ? (lightsFresh ? "Выключен · обновляется…" : `Выключен · ${lightsDeaf} без данных`) : "Выключен"}</b></div>` : ""}
 ${ok && !offline.length && waiting.length && waiting.length < climates.length ? `<div><span class="caps">Климат</span><b>${waiting.length} из ${climates.length} без данных</b></div>` : ""}
-${(c.alarms || []).length && ok ? `<div><span class="caps">Датчики</span><b>${lostN ? `<span class="dot" style="background:var(--ink2)"></span>${lostN} ${sensorsWord(lostN)} без связи` : wetOther.length + problemOn.length ? `<span class="dot" style="background:var(--amber)"></span>неисправность: ${wetOther.length + problemOn.length}` : "в норме"}</b></div>` : ""}</div></div>`;
+${calm && nSig ? `<div><span class="caps">${LL("Статус дома", "Home status")}</span><b>${LL(`${nSig} ${sensorsWord(nSig)} в норме`, `${nSig} ${nSig === 1 ? "sensor" : "sensors"} OK`)}</b></div>` : ok && lostN && headNamesFaults ? `<div><span class="caps">${LL("Датчики", "Sensors")}</span><b><span class="dot" style="background:var(--ink2)"></span>${LL(`${lostN} ${sensorsWord(lostN)} без связи`, `${lostN} offline`)}</b></div>` : ""}</div></div>`;
     }
     getGridOptions() {
       return { columns: 12, rows: "auto" };
     }
   }
 
-  /** «Что проверяется»: the headline's checks, in the order the hero decides, with live values (owner 03.11). */
+  /** The groups of «Что входит в статус дома» (Р44, owner 11.11: the engineers' «Что проверяется» read as nonsense to a
+   * client — every HA sensor, «siren.*», counts with no names): a signal's group by its class in the signals canon; what is
+   * no class of these is «Другие аварийные датчики». `ok` — the group's calm word. A classless «loud» one by its name: water
+   * words — a leak, else smoke / gas (the canon's loudWords, split). */
+  const CHECK_GROUPS = [
+    { key: "leak", t: ["Протечка", "Leak"], ok: ["сухо", "dry"], bad: ["протечка", "leak"], cls: ["binary_sensor.moisture"] },
+    { key: "fire", t: ["Дым и газ", "Smoke and gas"], ok: ["в норме", "all clear"], bad: ["авария", "alarm"], cls: ["binary_sensor.smoke", "binary_sensor.gas", "binary_sensor.carbon_monoxide"] },
+    { key: "safety", t: ["Безопасность", "Safety"], ok: ["в норме", "all clear"], bad: ["авария", "alarm"], cls: ["binary_sensor.safety", "binary_sensor.heat", "binary_sensor.cold", "binary_sensor.tamper", "binary_sensor.vibration"] },
+    { key: "fault", t: ["Неисправности оборудования", "Equipment faults"], ok: ["нет", "none"], bad: ["неисправность", "fault"], cls: ["binary_sensor.problem", "classless.fault"] },
+    { key: "other", t: ["Другие аварийные датчики", "Other alarm sensors"], ok: ["в норме", "all clear"], bad: ["авария", "alarm"], cls: [] },
+  ];
+  const SIG_WATER = /leak|flood|water|протеч|залив|вод[аы]|protech|zaliv/i;
+  const checkGroupOf = (s) => {
+    const k = s ? signalOf(s).key : "";
+    if (k === "classless.loud") return SIG_WATER.test(s.attributes?.friendly_name || s.entity_id) ? "leak" : "fire";
+    return (CHECK_GROUPS.find((g) => g.cls.includes(k)) || CHECK_GROUPS[CHECK_GROUPS.length - 1]).key;
+  };
+  /** «Что входит в статус дома» — the client's sheet under the headline (Р44): only what this house's dashboard has (the
+   * card's alarm sensors, devices, lights; a signal of another integration only in a room of the house or while it moves
+   * the headline), grouped by the class of signal, with the names on a tap; a group with a problem first, red / amber,
+   * opened, with «Позвонить». Nothing of a kind — no row. Admins also get the engineers' «Что проверяется» (owner 03.11). */
   const openChecks = (card) =>
     sceneSheet(card, ({ sr, draw, close }) => {
+      let eng = false;
+      const opened = new Map(); // group → opened by a tap (true / false); unset — a problem group is open
       const h = () => card._hass;
       const nm = (id) => `<span data-own>${esc(card._chk?.names?.[id] || alarmName(h(), st(h(), id), id).name)}</span>`;
       const few = (ids) => (ids.length ? `<div class="n">${ids.slice(0, 5).map(nm).join(", ")}${ids.length > 5 ? ` ${LL("и ещё", "and")} ${ids.length - 5}` : ""}</div>` : "");
       const row = (bad, title, value, ids = []) => `<div class="ck"><span class="dt ${bad === null ? "na" : bad ? "bad" : "ok"}"></span><div><div class="t2">${esc(title)}</div><div class="n">${esc(value)}</div>${few(ids)}</div></div>`;
+      const client = (k) => {
+        const hh = h();
+        const c = card._config || {};
+        const has = (id) => !!st(hh, id);
+        const room = (id) => alarmRoom(c, hh, id);
+        const mine = (id) => (c.alarms || []).includes(id) || (c.devices || []).includes(id) || !!room(id);
+        const bad = new Set([...k.open, ...k.wet, ...k.problems]);
+        const lost = new Set([...k.deaf, ...k.lost]);
+        const sig = statusSignals(card, k);
+        const sensors = (n) => LL(`${n} ${sensorsWord(n)}`, `${n} ${n === 1 ? "sensor" : "sensors"}`);
+        const groups = [];
+        CHECK_GROUPS.forEach((g, i) => {
+          const ids = sig.filter((id) => checkGroupOf(st(hh, id)) === g.key);
+          if (!ids.length) return;
+          const b = ids.filter((id) => bad.has(id));
+          const l = ids.filter((id) => lost.has(id) && !bad.has(id));
+          const fault = b.every((id) => !k.open.includes(id) && !k.wet.includes(id));
+          const lv = b.length ? (fault ? "fault" : "bad") : l.length ? "warn" : "ok";
+          const v = [b.length ? `${LL(...g.bad)}: ${b.length}` : "", l.length ? `${LL("без связи", "no link")}: ${l.length}` : ""].filter(Boolean).join(" · ") || LL(...g.ok);
+          groups.push({ key: g.key, i, lv, t: LL(...g.t), v: `${sensors(ids.length)} · ${v}`, ids: [...b, ...l, ...ids.filter((id) => !b.includes(id) && !l.includes(id))], hot: new Map([...l.map((id) => [id, "warn"]), ...b.map((id) => [id, fault ? "fault" : "bad"])]) });
+        });
+        const sirens = (k.sirens || []).filter((id) => mine(id));
+        if (sirens.length) groups.push({ key: "siren", i: 5, lv: k.loud.length ? "bad" : "ok", t: LL("Сирены и охрана", "Sirens and security"), v: `${sirens.length} · ${k.loud.length ? `${LL("звучит", "sounding")}: ${k.loud.length}` : LL("тихо", "quiet")}`, ids: [...k.loud, ...sirens.filter((id) => !k.loud.includes(id))], hot: new Map(k.loud.map((id) => [id, "bad"])) });
+        const devs = k.devices.filter(has);
+        if (devs.length) groups.push({ key: "link", i: 6, lv: k.off.length ? "warn" : "ok", t: LL("Связь с оборудованием", "Equipment link"), v: `${LL(`${devs.length} ${plural(devs.length, "устройство", "устройства", "устройств")}`, `${devs.length} ${devs.length === 1 ? "device" : "devices"}`)} · ${k.off.length ? `${LL("без связи", "no link")}: ${k.off.length}` : LL("все на связи", "all linked")}`, ids: [...k.off, ...devs.filter((id) => !k.off.includes(id))], hot: new Map(k.off.map((id) => [id, "warn"])) });
+        if (k.climates.length) groups.push({ key: "climate", i: 7, lv: k.waiting.length ? "nd" : "ok", t: LL("Отопление и климат", "Heating and climate"), v: `${LL(`${k.climates.length} ${plural(k.climates.length, "термостат", "термостата", "термостатов")}`, `${k.climates.length} ${k.climates.length === 1 ? "thermostat" : "thermostats"}`)} · ${k.waiting.length ? `${LL("нет данных", "no data")}: ${k.waiting.length}` : LL("в норме", "fine")}`, ids: [...k.waiting, ...k.climates.filter((id) => !k.waiting.includes(id))], hot: new Map(k.waiting.map((id) => [id, "nd"])) });
+        const lights = k.lights.filter(has);
+        if (lights.length) groups.push({ key: "lights", i: 8, lv: k.lightsDeaf.length ? "nd" : "ok", t: LL("Свет", "Lights"), v: `${LL(`${lights.length} ${lampsWord(lights.length)}`, `${lights.length} ${lights.length === 1 ? "light" : "lights"}`)} · ${k.lightsDeaf.length ? `${LL("нет данных", "no data")}: ${k.lightsDeaf.length}` : LL("на связи", "linked")}`, ids: [...k.lightsDeaf, ...lights.filter((id) => !k.lightsDeaf.includes(id))], hot: new Map(k.lightsDeaf.map((id) => [id, "nd"])) });
+        // The agent's level with nothing of it named here: said by its word alone, first.
+        if (k.bare && k.level !== "ok") groups.push({ key: "bare", i: -1, lv: k.level === "alarm" ? "bad" : k.level === "fault" ? "fault" : "warn", t: k.level === "alarm" ? LL("Авария", "Alarm") : k.level === "fault" ? LL("Неисправность", "Fault") : LL("Нет связи с датчиками", "No link with sensors"), v: LL("по данным сервиса", "by the service's data"), ids: [], hot: new Map() });
+        const RANK = { bad: 0, fault: 1, warn: 2, nd: 3, ok: 4 };
+        groups.sort((a, b) => RANK[a.lv] - RANK[b.lv] || a.i - b.i);
+        const nameOfId = (id) => k.names?.[id] || (has(id) ? (id.startsWith("light.") || id.startsWith("climate.") || id.startsWith("cover.") ? nameOf(st(hh, id), id) : alarmName(hh, st(hh, id), id).name) : id);
+        const row = (g) => {
+          const open = opened.has(g.key) ? opened.get(g.key) : g.lv !== "ok" && g.lv !== "nd";
+          const names = g.ids.length ? `<div class="cn"${open ? "" : " hidden"}>${g.ids.map((id) => `<div class="cr${g.hot.has(id) ? ` ${g.hot.get(id)}` : ""}"><span data-own>${esc(nameOfId(id))}</span>${room(id) ? `<small data-own>${esc(room(id))}</small>` : ""}</div>`).join("")}</div>` : "";
+          return `<div class="cg ${g.lv}"><button class="ck" data-g="${g.key}"${g.ids.length ? ` aria-expanded="${open}"` : " disabled"}><span class="dt"></span><span class="cb"><span class="t2">${esc(g.t)}</span><span class="n">${esc(g.v)}</span></span>${g.ids.length ? `<ha-icon icon="mdi:chevron-down"></ha-icon>` : ""}</button>${names}</div>`;
+        };
+        const trouble = groups.some((g) => g.lv === "bad" || g.lv === "fault");
+        const svc = serviceOf(card);
+        return `<div class="t">${LL("Что входит в статус дома", "What the home's status is made of")}</div>
+<div class="n">${LL("Статус дома — заголовок «Всё хорошо» или «Авария» на главной — складывается из этих групп. Нажмите группу, чтобы увидеть датчики и устройства.", "The home's status — the “All is well” or “Alarm” headline on the home page — is made of these groups. Tap a group to see its sensors and devices.")}</div>
+${groups.length ? `<div class="cgs">${groups.map(row).join("")}</div>` : `<div class="n">${LL("Датчики в статусе дома не заданы — сообщите сервису.", "No sensors in the home's status — please tell your service.")}</div>`}
+${trouble && svc ? callLink(svc) : ""}`;
+      };
       const paint = () => {
         if (!host.isConnected) return (card._chkDraw = null);
         const k = card._chk;
         if (!k) return;
+        const admin = h()?.user?.is_admin === true;
         const n = (a, ru, en) => `${a.length} ${LL(ru, en)}`;
-        draw(`<div class="t">${LL("Что проверяется", "What is checked")}</div>
+        draw(!eng || !admin ? `${client(k)}
+${admin ? `<button class="b lnk" data-eng>${LL("Подробно для сервиса", "Details for the service")}</button>` : ""}
+<button class="b" data-x>${LL("Закрыть", "Close")}</button>` : `<div class="t">${LL("Что проверяется", "What is checked")}</div>
 <div class="n">${LL("Заголовок решается по этим проверкам сверху вниз: первая с проблемой — и есть заголовок.", "The headline comes from these checks, top to bottom: the first one with a problem is the headline.")}</div>
 ${row(k.open.length ? true : !k.alarms.length ? null : false, LL("Аварийные датчики", "Alarm sensors"), !k.alarms.length ? LL("не заданы — сообщите сервису", "not set — please contact your service") : k.open.length ? `${LL("авария", "alarm")}: ${k.open.length} ${LL("из", "of")} ${k.alarms.length}` : `${LL("в норме", "all clear")} · ${n(k.alarms, "шт.", "in total")}`, k.open)}
 ${row(k.loud.length ? true : !k.sirens.length ? null : false, LL("Сирены и охрана", "Sirens and security"), !k.sirens.length ? LL("нет", "none") : k.loud.length ? `${LL("звучит", "sounding")}: ${k.loud.length} ${LL("из", "of")} ${k.sirens.length}` : `${LL("тихо", "quiet")} · ${n(k.sirens, "шт. (все siren.* и alarm_control_panel.*)", "in total (every siren.* and alarm_control_panel.*)")}`, k.loud)}
@@ -3764,9 +4434,26 @@ ${row(k.deaf.length + k.lost.length || (k.bare && k.level === "offline") ? true 
 ${row(k.off.length ? true : !k.devices.length ? null : false, LL("Устройства на связи", "Devices linked"), !k.devices.length ? "—" : k.off.length ? `${LL("без связи", "no link")}: ${k.off.length} ${LL("из", "of")} ${k.devices.length}` : `${LL("все на связи", "all linked")} · ${k.devices.length}`, k.off)}
 ${row(k.waiting.length ? true : !k.climates.length ? null : false, LL("Термостаты", "Thermostats"), !k.climates.length ? "—" : k.waiting.length ? `${LL("уставка не получена", "no setpoint yet")}: ${k.waiting.length} ${LL("из", "of")} ${k.climates.length}` : `${LL("в норме", "fine")} · ${k.climates.length}`, k.waiting)}
 ${row(k.lightsDeaf.length ? true : !k.lights.length ? null : false, LL("Свет", "Lights"), !k.lights.length ? "—" : k.lightsDeaf.length ? `${LL("молчат дольше 10 мин", "silent over 10 min")}: ${k.lightsDeaf.length} ${LL("из", "of")} ${k.lights.length}` : `${LL("на связи", "linked")} · ${k.lights.length}`, k.lightsDeaf)}
+<button class="b lnk" data-eng>${LL("Кратко", "In short")}</button>
 <button class="b" data-x>${LL("Закрыть", "Close")}</button>`);
         sr.querySelector("[data-x]").addEventListener("click", close);
-        if (!sr.querySelector("style[data-ck]")) sr.querySelector(".sh").insertAdjacentHTML("beforebegin", `<style data-ck>.ck{display:flex;gap:12px;align-items:flex-start}.dt{flex:none;width:10px;height:10px;border-radius:5px;margin-top:6px;background:var(--hf-mint-2)}.dt.bad{background:var(--hf-alert)}.dt.na{background:var(--hf-track)}.t2{font:500 15px Onest,sans-serif;color:var(--primary-text-color)}</style>`);
+        sr.querySelector("[data-eng]")?.addEventListener("click", () => ((eng = !eng), paint()));
+        sr.querySelectorAll("[data-g]").forEach((b) => b.addEventListener("click", () => {
+          const was = b.getAttribute("aria-expanded") === "true";
+          opened.set(b.dataset.g, !was);
+          b.setAttribute("aria-expanded", String(!was));
+          b.nextElementSibling?.toggleAttribute("hidden", was);
+        }));
+        if (!sr.querySelector("style[data-ck]")) sr.querySelector(".sh").insertAdjacentHTML("beforebegin", `<style data-ck>:host{${HOST_TOKENS}}.ck{display:flex;gap:12px;align-items:flex-start}.dt{flex:none;width:10px;height:10px;border-radius:5px;margin-top:6px;background:var(--hf-mint-2)}.dt.bad{background:var(--hf-alert)}.dt.na{background:var(--hf-track)}.t2{font:500 15px Onest,sans-serif;color:var(--primary-text-color)}
+.cgs{display:flex;flex-direction:column}.cg{border-top:1px solid var(--hair)}.cg:first-child{border-top:0}
+.cg .ck{width:100%;min-height:56px;padding:10px 2px;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;align-items:center}.cg .ck:disabled{cursor:default;opacity:1}
+.cg .cb{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.cg .ck ha-icon{flex:none;--mdc-icon-size:var(--hf-icon-m);color:var(--ink3);transition:transform .2s}.cg .ck[aria-expanded="true"] ha-icon{transform:rotate(180deg)}
+.cg .dt{margin-top:0}.cg.bad .dt{background:var(--alert)}.cg.fault .dt,.cg.warn .dt{background:var(--amber)}.cg.nd .dt{background:var(--ink3)}
+.cg.bad .t2{color:var(--alertT)}.cg.fault .t2{color:var(--amberT)}
+.cn{display:flex;flex-direction:column;padding:0 2px 10px 22px}.cn[hidden]{display:none}.cr{display:flex;align-items:baseline;gap:8px;padding:6px 0;font:400 14px/1.35 Onest,sans-serif;color:var(--ink)}.cr span{flex:1;min-width:0;overflow-wrap:anywhere}.cr small{flex:none;max-width:45%;text-align:right;font:400 13px Onest,sans-serif;color:var(--ink2);overflow-wrap:anywhere}
+.cr.bad span{color:var(--alertT)}.cr.fault span,.cr.warn span{color:var(--amberT)}.cr.nd span{color:var(--ink2)}
+.b.lnk{background:none;min-height:44px;font-weight:500;color:var(--ink2)}
+${CALL_CSS}</style>`);
       };
       const host = sr.host;
       card._chkDraw = paint;
@@ -3847,11 +4534,12 @@ ${row(k.lightsDeaf.length ? true : !k.lights.length ? null : false, LL("Свет
   const leakIds = (card) => {
     const h = card._hass;
     const c = card._config;
-    const area = c.area || [...(c.lights || []), c.climate, ...(c.covers || []), ...(c.alarms || [])].map((id) => id && areaOf(h, id)).find(Boolean);
+    const area = roomArea(c.area) || [...(c.lights || []), c.climate, ...(c.covers || []), ...(c.alarms || [])].map((id) => id && areaOf(h, id)).find(Boolean);
     if (!area || !h?.entities) return [];
     let by = MOIST.get(h.entities);
-    if (!by) {
+    if (!by || by.zones !== HOUSE.data?.zones) {
       by = new Map();
+      by.zones = HOUSE.data?.zones; // Р57: the zone map came later — counted again
       for (const [id, s] of Object.entries(h.states || {})) {
         if (!id.startsWith("binary_sensor.") || s.attributes?.device_class !== "moisture") continue;
         const e = h.entities[id];
@@ -3863,7 +4551,28 @@ ${row(k.lightsDeaf.length ? true : !k.lights.length ? null : false, LL("Свет
     }
     return (by.get(area) || []).filter((id) => !(c.alarms || []).includes(id));
   };
+  /** The house's faults in a tile's place (Р3, owner 10.11: «Сервис» said «Всё в норме» beside the header's «Авария» of the
+   * Zont boiler in «Котельная»): houseLevel's faults — the header's one source — of its own alarm sensors or in its HA areas
+   * (`areas`: a floor's tile; `area` / its devices' area: a room's), less what the tile says apart (`skip`, its open alarms). */
+  const tileFaults = (card, skip = []) => {
+    const h = card._hass;
+    const c = card._config;
+    const areas = new Set((Array.isArray(c.areas) && c.areas.length ? c.areas : [c.area || [...(c.lights || []), c.climate, ...(c.covers || []), ...(c.alarms || [])].map((id) => id && areaOf(h, id)).find(Boolean)]).map(roomArea).filter(Boolean));
+    const own = new Set(c.alarms || []);
+    return houseLevel(h, c).faults.filter((f) => !f.offline && !skip.includes(f.entity) && (own.has(f.entity) || areas.has(areaOf(h, f.entity))));
+  };
   class Room extends EHCard {
+    /** The tile's photo: HA's area picture live (Р54: changed from the card), else the one the dashboard was made with. */
+    pic() {
+      return roomPic(this._hass, this._config || {});
+    }
+    _update() {
+      if (this._config && this._hass && !this._busy) {
+        const p = this.pic();
+        if (p !== this._pic) (this._pic = p), (this._sig = "");
+      }
+      super._update();
+    }
     watched() {
       const c = this._config;
       return [...(c.lights || []), c.climate, ...(c.alarms || []), ...(this._hass ? leakIds(this) : []), ...(c.covers || []), ...(c.temps || []).map((x) => x.entity), ...actIds(c.activity)].filter(Boolean);
@@ -3915,6 +4624,12 @@ ${row(k.lightsDeaf.length ? true : !k.lights.length ? null : false, LL("Свет
       if (alarm) return { kind: openList.some((a) => a.critical !== false && !a.ackedBy) ? "alarm" : "alarm warn", text: c.rooms?.[alarm.entity_id] ? `${c.rooms[alarm.entity_id]}${elsewhere > 0 ? ` и ещё ${elsewhere}` : ""}` : alarmsOn.length > 1 ? alarmCount(openList) : "" };
       const wet = leakIds(this).map((id) => st(h, id)).filter((s) => s && s.state === "on");
       if (wet.length) return { kind: "alarm", text: `Протечка: ${alarmName(h, wet[0], wet[0].entity_id).name}${wet.length > 1 ? ` и ещё ${wet.length - 1}` : ""}` };
+      const fz = tileFaults(this, [...openList.map((a) => a.entity), ...wet.map((s) => s.entity_id)]);
+      if (fz.length) {
+        const f = fz.find((x) => x.house === "alarm") || fz[0];
+        const fn = st(h, f.entity) ? alarmName(h, st(h, f.entity), f.entity).name : f.name || f.entity;
+        return { kind: f.house === "alarm" ? "alarm" : "alarm warn", text: LL(`${f.house === "alarm" ? "Авария" : "Неисправность"}: ${fn}${fz.length > 1 ? ` и ещё ${fz.length - 1}` : ""}`, `${f.house === "alarm" ? "Alarm" : "Problem"}: ${fn}${fz.length > 1 ? ` and ${fz.length - 1} more` : ""}`) };
+      }
       const deaf = (c.alarms || []).filter((id) => nd(st(h, id))).length;
       if (deaf) return { kind: "", text: `Нет связи · ${deaf} ${sensorsWord(deaf)}` };
       if (on.length) {
@@ -3968,7 +4683,8 @@ ${row(k.lightsDeaf.length ? true : !k.lights.length ? null : false, LL("Свет
         hum !== undefined ? `<span><ha-icon icon="hauflo:humidity"></ha-icon>${fmt(hum)}\u00a0%</span>` : "",
         this.leakChip(),
       ].filter(Boolean);
-      return `<div class="glass r ${s.kind} ${c.picture ? "pic" : ""}" role="button" tabindex="0" aria-label="${esc(c.name)}">${c.picture ? `<div class="ph" style="background-image:url('${cssUrl(c.picture)}')"></div>` : ""}<div class="glow"></div>
+      const pic = this.pic();
+      return `<div class="glass r ${s.kind} ${pic ? "pic" : ""}" role="button" tabindex="0" aria-label="${esc(c.name)}">${pic ? `<div class="ph" style="background-image:url('${cssUrl(pic)}')"></div>` : ""}<div class="glow"></div>
 <div class="top"><span class="caps">${esc(c.name)}</span>${mark}</div>
 <div class="mid"><span class="ri">${c.badge ? `<b class="rb">${esc(c.badge)}</b>` : `<ha-icon icon="${esc(c.icon || "hauflo:home")}"></ha-icon>`}</span><div class="tt"><div class="t thin">${t === undefined ? "" : `${Math.round(t)}<small>°</small>`}</div>${others.slice(0, 2).map((x) => `<div class="t2">${esc(x.name)} ${fmt(x.v)}°</div>`).join("")}</div></div>
 <div><div class="s">${esc(s.text)}</div>${chips.length ? `<div class="chips">${chips.join("")}</div>` : ""}</div></div>`;
@@ -3988,9 +4704,12 @@ ${row(k.lightsDeaf.length ? true : !k.lights.length ? null : false, LL("Свет
         held = false;
         at = [ev.clientX, ev.clientY];
         this._busy = true;
+        // A hold on the room's name (whoever may set the house up): its photo (Р54); anywhere else — all its lights.
+        const photo = this._config.area && canEdit(this._hass) && ev.target?.closest?.(".top .caps");
         timer = setTimeout(() => {
           held = true;
           haptic(this, "medium");
+          if (photo) return openRoomPhoto(this, this._config.area, this._config.name || "");
           const lights = this._config.lights || [];
           if (!lights.length) return;
           const anyOn = lights.some((id) => st(this._hass, id)?.state === "on");
@@ -4043,7 +4762,8 @@ ${row(k.lightsDeaf.length ? true : !k.lights.length ? null : false, LL("Свет
 @container (max-width:440px){.row.hfrow button{flex-direction:column;justify-content:center;gap:4px;padding:6px 4px;height:auto;min-height:56px}.row.hfrow button span{text-align:center}}
 .row button.go{background:color-mix(in srgb,var(--acc) 26%,transparent);box-shadow:0 0 22px color-mix(in srgb,var(--accGlow) 60%,transparent)}
 .light{--acc:var(--amber);--accGlow:var(--amberGlow)}.cover{--acc:var(--ice);--accGlow:var(--iceGlow)}.mixed{--acc:var(--mint);--accGlow:var(--hf-mint-glow-mixed)}
-.rows{--acc:var(--amber);--accGlow:var(--amberGlow)}.rows .hd{margin-bottom:8px}`;
+.rows{--acc:var(--amber);--accGlow:var(--amberGlow)}.rows .hd{margin-bottom:8px}
+.row.hfrow{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:none}.row.hfrow::-webkit-scrollbar{display:none}.row.hfrow.hfrow>*{flex:1 1 0;min-width:calc(var(--hf-hit) * 1.5);scroll-snap-align:start}`;
     }
     render() {
       const c = this._config;
@@ -4053,7 +4773,7 @@ ${row(k.lightsDeaf.length ? true : !k.lights.length ? null : false, LL("Свет
         const rows = c.rows.filter((r) => (r.always || sceneWhere(this, r.kind === "cover" ? "cover" : "light") === "top") && (r.scenes || []).some((x) => st(this._hass, x.entity)));
         this.hideCard(!rows.length);
         if (!rows.length) return "";
-        const adds = rows.filter((r) => r.kind !== "mixed" && sceneCanAdd(this._hass, r.kind === "cover" ? "cover" : "light", rowRoom(this, r.kind))).map((r) => (r.kind === "cover" ? "cover" : "light"));
+        const adds = rows.filter((r) => r.kind !== "mixed" && sceneCanAdd(this._hass, r.kind === "cover" ? "cover" : "light", rowRoom(this, r.kind)) && captureList(this, r.kind === "cover" ? "cover" : "light").length > 1).map((r) => (r.kind === "cover" ? "cover" : "light"));
         const parts = rows.map((r) => {
           const k = r.kind === "cover" ? "cover" : r.kind === "mixed" ? "mixed" : "light";
           const room = r.kind === "mixed" ? undefined : rowRoom(this, r.kind);
@@ -4084,19 +4804,18 @@ ${sceneFlow(parts)}</div>`;
    * (`cool_setpoint` / `heat_setpoint`); any HA climate kept between two values (heat_cool: target_temp_low/high). */
   const setpointPair = (card, s) => {
     const c = card._config;
-    const a = s?.attributes || {};
     const otherId = c.cool_setpoint || c.heat_setpoint;
+    const cc = climateCan(s);
     if (otherId) {
       const other = num(st(card._hass, otherId)?.state);
-      const own = num(a.temperature);
+      const own = cc.sp;
       const heat = c.cool_setpoint ? own : other;
       const cool = c.cool_setpoint ? other : own;
       if (heat === undefined && cool === undefined) return null;
       return { kind: "pair", heat, cool, heatId: c.heat_setpoint || null, coolId: c.cool_setpoint || null };
     }
-    const lo = num(a.target_temp_low);
-    const hi = num(a.target_temp_high);
-    if (lo !== undefined && hi !== undefined && num(a.temperature) === undefined) return { kind: "range", heat: lo, cool: hi };
+    const { lo, hi } = cc;
+    if (lo !== undefined && hi !== undefined && cc.sp === undefined) return { kind: "range", heat: lo, cool: hi };
     return null;
   };
   /** What the thermostat does now by its mode: heating or cooling (none known — null). */
@@ -4109,8 +4828,9 @@ ${sceneFlow(parts)}</div>`;
    * открывать большой»). */
   const SHEET_CSS = `:host{position:fixed;inset:0;z-index:9998;display:grid;place-items:end center;background:var(--hf-shade-42);-webkit-tap-highlight-color:transparent}
 @media (min-width:600px){:host{place-items:center}}
-.sh{width:min(100%,520px);max-height:94vh;overflow:auto;padding:12px 12px calc(12px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:8px;background:var(--hf-view-bg);border-radius:var(--hf-r-lg) var(--hf-r-lg) 0 0;box-shadow:0 20px 60px var(--hf-shade-35)}
+.sh{box-sizing:border-box;width:min(100%,520px);min-width:0;max-width:100vw;max-height:94vh;overflow:auto;overflow-x:hidden;padding:12px 12px calc(12px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:8px;background:var(--hf-view-bg);border-radius:var(--hf-r-lg) var(--hf-r-lg) 0 0;box-shadow:0 20px 60px var(--hf-shade-35)}
 @media (min-width:600px){.sh{border-radius:var(--hf-r-lg)}}
+${SHEET_UX(12)}
 .x{align-self:flex-end;width:44px;height:44px;border-radius:22px;border:0;background:var(--hf-track);color:var(--primary-text-color);font-size:22px;cursor:pointer;display:grid;place-items:center}.x ha-icon{--mdc-icon-size:var(--hf-icon-m)}
 .go{display:flex;align-items:center;justify-content:center;gap:6px;min-height:48px;margin:2px 0 0;padding:0 16px;border:0;border-radius:var(--hf-r-sm);background:var(--hf-track);color:var(--primary-text-color);font:500 15px Onest,sans-serif;cursor:pointer}.go ha-icon{--mdc-icon-size:var(--hf-icon-m);opacity:.7}`;
   /** A thermostat's control sheet over the page: its large card (the room's own config when given) — and, from a list of
@@ -4152,7 +4872,7 @@ ${sceneFlow(parts)}</div>`;
     window.addEventListener("location-changed", onNav);
     window.addEventListener("popstate", onNav);
     sr.querySelector(".x").addEventListener("click", close);
-    host.addEventListener("click", (e) => e.composedPath()[0] === host && close());
+    sheetUx(host, sr, close, { back: false }); // the back button: onNav above
     if (LANG !== "ru") translate(sr);
     document.body.appendChild(carryTheme(host, card));
     el.hass = card._hass;
@@ -4253,10 +4973,35 @@ ${sceneFlow(parts)}</div>`;
     }
     /** In the sheet: the chart's period over it and «История в HA» under it — HA's history of all the sheet's entities
      * (the thermostat, its room sensor, the floor's) for a deeper look (п.63.11). Nothing on a dashboard card. */
+    /** The fan (Р38/Р16/Р23): one row «Авто · 1 · 2 · 3» (the speed's word as its hint), a «− n +» stepper past
+     * FAN_STEPS_MAX speeds, the words as they are where the speeds aren't one scale; «Обдув» at the end. */
+    fanRow(fans, swing, known, tone) {
+      const a = st(this._hass, this._config.entity)?.attributes || {};
+      const p = fanPlan(fans);
+      const cur = known ? a.fan_mode : undefined;
+      const on = (f) => (cur === f ? (tone ? "on mk" : "on") : "");
+      const btn = (f, label, hint) => `<button class="${on(f)}" data-f="${esc(f)}" aria-pressed="${cur === f}"${hint && hint !== label ? ` title="${esc(hint)}" aria-label="${esc(hint)}"` : ""}>${esc(label)}</button>`;
+      const sw = swing ? `<button class="sw ${known && a.swing_mode && a.swing_mode !== "off" ? (tone ? "on mk" : "on") : ""}" data-sw="${esc(a.swing_mode && a.swing_mode !== "off" ? "off" : swing)}">Обдув</button>` : "";
+      const auto = p.auto ? btn(p.auto, FAN[p.auto]) : "";
+      if (p.stepper) {
+        const i = p.speeds.indexOf(cur);
+        return `<div class="modes fan one fstep hfrow">${auto}<button class="pm" data-fs="-1" aria-label="Медленнее"${i <= 0 ? " disabled" : ""}>−</button><span class="fv" aria-live="polite">${i < 0 ? "—" : i + 1}<small>/${p.speeds.length}</small></span><button class="pm" data-fs="1" aria-label="Быстрее"${i >= p.speeds.length - 1 ? " disabled" : ""}>+</button>${sw}</div>`;
+      }
+      if (p.scale) return `<div class="modes fan one hfrow">${auto}${p.speeds.map((f, i) => btn(f, String(i + 1), FAN[f] || "")).join("")}${sw}</div>`;
+      return `<div class="modes fan hfrow">${fans.map((f) => btn(f, FAN[f] || f)).join("")}${sw}</div>`;
+    }
     chartPeriods() {
       if (!this._config.popup || this._config.chart === false) return "";
       const on = chartPeriod();
       return `<div class="seg tper" role="group" aria-label="${esc(LL("Период графика", "Chart period"))}">${Object.keys(CHART_PERIODS).map((k) => `<button data-per="${k}" aria-pressed="${k === on}">${esc(chartPeriodWord(k))}</button>`).join("")}</div>`;
+    }
+    /** «История» of the sheet's entities in our own sheet (Р45) — the thermostat's chart as the card reads it. */
+    openHist() {
+      const c = this._config;
+      const ids = [...new Set([c.entity, c.history, ...readingsOf(c).map((r) => r.entity)].filter(Boolean))].filter((i) => hasHistory(this._hass, i));
+      const own = (hours) => (c.zones?.length ? undefined : c.history || (hours > CHART_DETAIL_HOURS ? climateCurSensor(this._hass, c.entity) : undefined));
+      const s = st(this._hass, c.entity);
+      openHistory(this, ids, `${LL("История", "History")} · ${c.name || nameOf(s, c.entity)}`, { chart: c.entity?.startsWith("climate.") ? (hours) => climateSeries(this._hass, c.entity, hours, own(hours)) : undefined });
     }
     chartHistory() {
       const c = this._config;
@@ -4269,7 +5014,7 @@ ${sceneFlow(parts)}</div>`;
     css() {
       return `${TCHART_CSS}${VALVE_CSS}${TONE_CSS}.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;padding:4px;border-radius:var(--hf-r-md);background:var(--hf-track)}.seg button{font:500 14px Onest,sans-serif;color:inherit;border:0;border-radius:var(--hf-r-sm);min-height:44px;padding:6px 4px;background:none;cursor:pointer}.seg button[aria-pressed="true"]{background:var(--hf-card-bg);box-shadow:0 1px 3px var(--hf-shade-18);font-weight:600}
 .tper{margin-top:16px}.tper+.tch{margin-top:12px}.thist+.scale{margin-top:0}.thist{position:relative;z-index:1;display:flex;align-items:center;gap:2px;width:max-content;min-height:44px;margin:-12px 0 -14px auto;font:500 13px Onest,sans-serif;color:var(--ink2);text-decoration:none;cursor:pointer}.thist ha-icon{--mdc-icon-size:var(--hf-icon-s);opacity:.7}
-.sub .act{margin-right:6px}.sub.one{display:flex;align-items:center;gap:6px;white-space:nowrap;min-width:0}.sub.one>*{flex:none}.sub.one .act{margin:0}.sub.one>.hm,.sub.one>.vwrap,.sub.one .vch{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}.sub.one .vwrap{position:relative;overflow:visible}.sub.one .vt{min-width:0;overflow:hidden;text-overflow:ellipsis}.sub.one .vpop{position:absolute;top:100%;left:0;z-index:2;white-space:nowrap;background:var(--hf-card-bg);box-shadow:0 8px 24px rgba(0,0,0,.25)}.c{padding:var(--hf-pad-climate)}.nr{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}.st{flex:none}.act.k-idle i{background:var(--mint);box-shadow:0 0 8px var(--mint)}
+.sub .act{margin-right:6px}.sub.one{display:flex;align-items:center;gap:6px;white-space:nowrap;min-width:0}.sub.one>*{flex:none}.sub.one .act{margin:0}.sub.one>.hm,.sub.one>.vwrap,.sub.one .vch{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}.sub.one .vwrap{position:relative;overflow:visible}.sub.one .vt{min-width:0;overflow:hidden;text-overflow:ellipsis}.sub.one .vpop{position:absolute;top:100%;left:0;z-index:2;white-space:nowrap;background:var(--hf-card-bg);box-shadow:0 8px 24px rgba(0,0,0,.25)}.c{padding:var(--hf-pad-climate)}.nr{display:flex;justify-content:space-between;align-items:center;gap:12px}.st{flex:none}.act.k-idle i{background:var(--mint);box-shadow:0 0 8px var(--mint)}
 .t{font-size:76px;line-height:.9}.t sup{font:300 20px Onest,sans-serif;vertical-align:top;position:relative;top:8px;color:var(--ink2);margin-left:2px}
 .sub{font:400 13px Onest,sans-serif;color:var(--ink2);margin-top:8px}.st{display:flex;flex-direction:column;gap:8px}
 .none{font:300 20px/1.2 Onest,sans-serif;color:var(--ink2);margin:6px 0}
@@ -4296,7 +5041,8 @@ ${sceneFlow(parts)}</div>`;
 .pr.on{color:var(--ink);background:var(--track);box-shadow:none}.pr.on::before{opacity:1}.pr.act::after{content:"●";font-size:8px;color:var(--ink3);margin-left:2px}
 [data-open],.zs .zr{cursor:pointer}[data-open] .ccn{position:relative}[data-open] .ccn::before,.zs .zr .ccn::before{content:"";position:absolute;inset:min(0px,(100% - var(--hf-hit))/2) 0}[data-open] .ccn .caps::after{content:"›";margin-left:6px;font-size:14px;letter-spacing:0;color:var(--ink3)}
 .pair2{font:400 12px/1.3 Onest,sans-serif;color:var(--ink3)}
-.modes{margin-top:16px}.modes.fan{margin-top:8px;align-items:center}.modes.fan button{white-space:nowrap;padding:0 4px;font-size:12px;min-width:0}.modes button{flex:1;min-height:44px;padding:0 6px;border-radius:var(--hf-r-sm);font:500 13px Onest,sans-serif;color:var(--ink2);box-shadow:inset 0 0 0 1px var(--line)}
+.modes{margin-top:16px}.modes.fan{margin-top:8px;align-items:center}.modes.one{display:flex;flex-wrap:nowrap;gap:6px}.modes.one .sw{flex:1.6}
+.fstep .fv{flex:1;text-align:center;font:500 17px Onest,sans-serif;font-variant-numeric:tabular-nums}.fstep .fv small{font:400 12px Onest,sans-serif;color:var(--ink3);margin-left:1px}.modes.fan button{white-space:nowrap;padding:0 4px;font-size:12px;min-width:0}.modes button{flex:1;min-height:44px;padding:0 6px;border-radius:var(--hf-r-sm);font:500 13px Onest,sans-serif;color:var(--ink2);box-shadow:inset 0 0 0 1px var(--line)}.modes.fstep button.pm{flex:0 0 44px;width:44px;height:44px;min-height:44px;padding:0;border-radius:22px;display:grid;place-items:center;background:var(--eh-glass,transparent);box-shadow:var(--eh-edge,inset 0 0 0 1px var(--line,var(--hf-track-14)));color:var(--ink);font:300 22px/1 Onest,sans-serif}.modes.fstep button.pm:disabled{opacity:.35;pointer-events:none}:host .toned .modes.fstep button.pm{color:var(--acT)}
 .modes .on{color:var(--ink);background:var(--track);box-shadow:none}.modes .arm{color:var(--alertT);background:color-mix(in srgb,var(--alert) 14%,transparent);box-shadow:inset 0 0 0 1.5px var(--alert)}
 .toned .glow{background:radial-gradient(50% 50% at 20% 10%,var(--acG),transparent 70%);opacity:.6}.toned.calm .glow{opacity:.32}
 .cc{padding:var(--hf-pad)}.ccrow{display:flex;align-items:center;gap:12px;position:relative}.ccn{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
@@ -4328,7 +5074,8 @@ ${sceneFlow(parts)}</div>`;
       const pair = setpointPair(this, s);
       const sel = this.selOf(pair, s);
       const act = pair ? activeMode(s) : null;
-      const target = this.pendSp(null, sel, pair ? pair[sel] : num(a.temperature));
+      const cc = climateCan(s);
+      const target = this.pendSp(null, sel, pair ? pair[sel] : cc.sp);
       const lo = undefined;
       const hi = undefined;
       const range = false;
@@ -4370,11 +5117,12 @@ ${sceneFlow(parts)}</div>`;
             .join("")}</div>`
         : "";
       const modes = (a.hvac_modes || []).filter((m) => HVAC[m]);
-      const presets = (a.preset_modes || []).filter((p) => p !== "none");
+      const presets = cc.presets.filter((p) => p !== "none");
       const useModes = modes.length > 1;
-      // An AC's fan speed and swing (persona round 3, Dubai: «no fan speed or swing»): shown when the device has them.
-      const fans = (a.fan_modes || []).filter((f) => f !== "off");
-      const swing = (a.swing_modes || []).includes("off") ? (a.swing_modes.find((m) => m !== "off") ?? null) : null;
+      // An AC's fan speed and swing (persona round 3, Dubai: «no fan speed or swing»): shown when the device has them —
+      // by its FAN_MODE / SWING_MODE bits, not by the lists (climateCan).
+      const fans = ownFanSpeeds(this._hass, this._config.entity).length ? [] : cc.fans.filter((f) => f !== "off");
+      const swing = cc.swings.includes("off") ? (cc.swings.find((m) => m !== "off") ?? null) : null;
       // A mode lit only when the thermostat has said something: HA's default «heat» isn't a fact (integrator run 25.10).
       // «Ожидание» isn't lit over a floor that heats (family review round 3): KNX's operation mode without a state address
       // reads «standby» by default — the action is the fact, the guessed preset isn't.
@@ -4397,8 +5145,8 @@ ${sceneFlow(parts)}</div>`;
 <div class="sub one">${small ? `<span class="sm">${esc(small)}</span>` : ""}${doing ? `<span class="act${fault ? " bad" : frost ? " frost" : now ? ` k-${now}` : ""}" data-ui="chip"><i></i>${doing}</span>` : ""}${valveIcons(this._hass, this._config.activity?.valves, this._config.floor && s)}${hum !== undefined ? `<span class="hm">· влажность ${fmt(hum)}\u00a0%</span>` : ""}</div>${readings.length ? this.readingsRow(readings) : ""}${pairRow}
 ${chart}
 ${fixed || frost ? "" : `<div class="scale" data-min="${min}" data-max="${max}" data-step="${step}"${pair ? ` data-pair="1"` : ""}><div class="ticks">${ticks}</div><div class="ends"><span>${fmt(min)}°</span><span>проведите, чтобы изменить</span><span>${fmt(max)}°</span></div></div>`}
-${opts.length ? `<div class="mh">Режим</div><div class="modes hfrow">${opts.slice(0, 5).map(([k, l, on]) => `<button class="${!on ? "" : useModes ? (climateTone(null, now, k) ? `on mk m-${climateTone(null, now, k)}` : "on") : tone ? "on mk" : "on"}" data-${useModes ? "m" : "p"}="${esc(k)}"${!useModes && k === "building_protection" ? ` data-ask="Точно? Защита"` : ""} aria-pressed="${!!on}">${esc(l)}</button>`).join("")}</div>` : ""}
-${fans.length > 1 || swing ? `<div class="mh">Вентилятор</div><div class="modes fan hfrow">${fans.slice(0, 5).map((f) => `<button class="${known && a.fan_mode === f ? (tone ? "on mk" : "on") : ""}" data-f="${esc(f)}" aria-pressed="${known && a.fan_mode === f}">${esc(FAN[f] || f)}</button>`).join("")}${swing ? `<button class="${known && a.swing_mode && a.swing_mode !== "off" ? (tone ? "on mk" : "on") : ""}" data-sw="${esc(a.swing_mode && a.swing_mode !== "off" ? "off" : swing)}">Обдув</button>` : ""}</div>` : ""}</div></div>`;
+${opts.length ? `<div class="mh">Режим</div><div class="modes hfrow">${opts.map(([k, l, on]) => `<button class="${!on ? "" : useModes ? (climateTone(null, now, k) ? `on mk m-${climateTone(null, now, k)}` : "on") : tone ? "on mk" : "on"}" data-${useModes ? "m" : "p"}="${esc(k)}"${!useModes && k === "building_protection" ? ` data-ask="Точно? Защита"` : ""} aria-pressed="${!!on}">${esc(l)}</button>`).join("")}</div>` : ""}
+${fans.length > 1 || swing ? `<div class="mh">Вентилятор</div>${this.fanRow(fans, swing, known, tone)}` : ""}</div></div>`;
     }
     /** Floor-heating zones of one room in one card: a line each — name, now, setpoint, ± (persona review 25.10). */
     zones() {
@@ -4406,7 +5154,7 @@ ${fans.length > 1 || swing ? `<div class="mh">Вентилятор</div><div cla
       const rows = this._config.zones.map((z, i) => {
         const s = st(this._hass, z.entity);
         const a = s?.attributes || {};
-        const target = this.pendSp(z.entity, null, num(a.temperature));
+        const target = this.pendSp(z.entity, null, climateCan(s).sp);
         const cur = num(a.current_temperature);
         const step = Math.max(num(a.target_temp_step) || 0.5, 0.5);
         const nowZ = climateNow(this._hass, s, z.activity);
@@ -4449,7 +5197,7 @@ ${this.cct(cur, target, step, z.entity)}
       const a = s.attributes;
       const pair = setpointPair(this, s);
       const sel = this.selOf(pair, s);
-      const target = this.pendSp(null, sel, pair ? pair[sel] : num(a.temperature));
+      const target = this.pendSp(null, sel, pair ? pair[sel] : climateCan(s).sp);
       const cur = num(a.current_temperature);
       const step = Math.max(num(a.target_temp_step) || 0.5, 0.5);
       const nowC = climateNow(this._hass, s, this._config.activity);
@@ -4477,7 +5225,7 @@ ${this.cct(cur, target, step, this._config.entity)}
           const pair = b.dataset.e ? null : setpointPair(this, s);
           const sel = this.selOf(pair, s);
           // No setpoint heard yet: nothing is sent (the buttons are off, the card says why — review round 2).
-          const base = this.pendSp(b.dataset.e, b.dataset.e ? null : sel, pair ? pair[sel] : num(a.temperature));
+          const base = this.pendSp(b.dataset.e, b.dataset.e ? null : sel, pair ? pair[sel] : climateCan(s).sp);
           if (base === undefined) return;
           const v = Math.min(num(a.max_temp) ?? 35, Math.max(num(a.min_temp) ?? 5, base + Number(b.dataset.d)));
           haptic(this);
@@ -4585,7 +5333,7 @@ ${this.cct(cur, target, step, this._config.entity)}
       this.shadowRoot.querySelectorAll("a.thist").forEach((a) =>
         a.addEventListener("click", (ev) => {
           ev.preventDefault();
-          navigate(a.getAttribute("href"));
+          this.openHist();
         }),
       );
       // «Защита» (frost protection, the room cools to ~7°) asks «Точно?» for everyone (family review round 3: one tap of a
@@ -4608,6 +5356,13 @@ ${this.cct(cur, target, step, this._config.entity)}
         }),
       );
       this.shadowRoot.querySelectorAll("button[data-f]").forEach((b) => b.addEventListener("click", () => call(this._hass, "climate", "set_fan_mode", { entity_id: id, fan_mode: b.dataset.f })));
+      this.shadowRoot.querySelectorAll("button[data-fs]").forEach((b) => b.addEventListener("click", () => {
+        const s = st(this._hass, id);
+        const { speeds } = fanPlan(climateCan(s).fans.filter((f) => f !== "off"));
+        const i = speeds.indexOf(s?.attributes?.fan_mode);
+        const to = speeds[Math.max(0, Math.min(speeds.length - 1, i < 0 ? 0 : i + Number(b.dataset.fs)))];
+        if (to !== undefined) call(this._hass, "climate", "set_fan_mode", { entity_id: id, fan_mode: to });
+      }));
       this.shadowRoot.querySelectorAll("button[data-sw]").forEach((b) => b.addEventListener("click", () => call(this._hass, "climate", "set_swing_mode", { entity_id: id, swing_mode: b.dataset.sw })));
       const head = this.shadowRoot.querySelector(".c") && this.shadowRoot.querySelector(".caps");
       if (head) {
@@ -4765,13 +5520,15 @@ ${this.cct(cur, target, step, this._config.entity)}
     }
     render() {
       const items = this.items().map((e) => ({ e, m: this.model(e) }));
+      // A row with its fault sensors (rowAlarm): the agent's verdicts asked, the card drawn again when they come (Р9/Р19).
+      if (items.some(({ e }) => rowAlarms(e).length)) openAlarms(this, []);
       const cols = Math.min(4, Math.max(1, items.length));
       // Its scenes above the sliders (a light / blinds block of up to three).
       this.kind = items.some((x) => x.m.dom === "cover") ? "cover" : "light";
       const scenes = this.sceneRow();
       // A block's caption inside its own glass (owner 05.11, п.63: never HA's heading card over a Hauflo block) — with its scenes under it.
-      const cap = this._config.title ? `<span class="caps tt">${blockTitle(this, "")}</span>` : "";
-      return `${scenes || cap ? `<div class="glass sc${cap ? " ttl" : ""}">${cap}${scenes}</div>` : ""}<div class="wrap" style="--cols:${cols}">${items
+      const cap = this._config.title ? `<span class="caps tt"${this.sceneHold()}>${blockTitle(this, "")}</span>` : "";
+      return `${scenes || cap ? `<div class="glass sc${cap ? " ttl" : ""}">${cap}${scenes || (cap ? this.sceneHint(scenes) : "")}</div>` : ""}<div class="wrap" style="--cols:${cols}">${items
         .map(({ e, m }) => {
           const unavailable = m.s.state === "unavailable";
           const moving = m.dom === "cover" && ["opening", "closing"].includes(m.s.state);
@@ -4779,7 +5536,7 @@ ${this.cct(cur, target, step, this._config.entity)}
           const label = m.dom === "cover" ? (!m.known ? "—" : moving ? (m.s.state === "opening" ? "Откр…" : "Закр…") : m.dimmable && num(m.s.attributes.current_position) !== undefined ? `${m.pct}` : m.on ? "Откр." : "Закр.") : nd(m.s) ? "—" : m.label && m.dimmable ? m.label(m.pct) : m.on ? (m.dimmable ? `${m.pct}` : "Вкл") : "Выкл";
           const body = `<ha-icon class="ic" icon="${esc(m.icon)}"></ha-icon>
 <div><div class="p thin${NUM_LABEL.test(label) ? "" : " w"}" data-u="${esc(m.unit ?? "%")}">${esc(label)}</div><div class="n">${esc(riskWord(this, e.entity) || (fault ? nameOf(fault, fault.entity_id) : m.name))}</div>
-${m.dom === "cover" && !m.dimmable ? `<div class="ud3">${coverButtons(coverKindOf({ ...e, s: m.s }, this._config), "data-c")}</div>` : ""}</div>`;
+${m.dom === "cover" && !m.dimmable ? `<div class="ud3">${coverButtons(coverKindOf({ ...e, s: m.s }, this._config), "data-c", "", null, m.s)}</div>` : ""}</div>`;
           return `<div class="glass v ${SL_TONE[m.dom]} ${m.on ? "" : "off"} ${moving ? "mv" : ""} ${unavailable ? "unavail" : ""}${fault ? " alarm" : ""}" style="--f:${m.on || m.dom === "cover" || m.label ? m.pct : 0}%" data-e="${esc(e.entity)}" role="slider" aria-label="${esc(m.name)}" aria-valuenow="${m.pct}" tabindex="0">
 <div class="lvl"></div><div class="fg">${body}</div><div class="inv" aria-hidden="true" inert>${body}</div></div>`;
         })
@@ -5045,7 +5802,11 @@ h2{font:300 30px/1.1 Onest,sans-serif;letter-spacing:-.03em;margin:14px 0 0}
         // agent's alarms, not HA's «state on» (a link rule's alarm is «off»).
         // Hidden the HA way (hideCard): `display:none` alone left HA's grid slot and its row gap — the next block in the
         // column started 12 px below the other columns' first blocks (owner 03.11: «верхние блоки разной высоты»).
-        if (c.hide_ok && !deaf && !bad.length && !lvl) {
+        // Nothing but the state of what the page's header covers, and that header says it (Р29, heroCovers): not a second
+        // time here.
+        const covered = c.hide_ok && heroCovers(this);
+        if (c.hide_ok && (covered || (!deaf && !bad.length && !lvl))) {
+          if (covered) this._hidWhy = LL("Скрыто: заголовок дома на этой странице уже показывает это", "Hidden: the home header on this page already shows it");
           this.hideCard(true);
           return "";
         }
@@ -5240,6 +6001,29 @@ ${top.key && !top.ackedBy ? `<button class="ack" data-ack="${esc(top.key)}">Пр
     return t || name;
   };
 
+  /** Р46 (owner 11.11, «Кухня-Гостиная»: «Подсветка в потолок, гостиная» drawn whole while «…, зона острова» was
+   * «Подсветка в потолок» + «Остров»): one rule for a name «{имя}, {уточнение}» — the title is what stands before the comma,
+   * the note after it is the caption («У окна», «Слева», «Часть 1»); a note that names a part of a combined room
+   * («Кухня-Гостиная»: «гостиная», «кухни») is that part's zone; one that names the room itself is dropped. `room`: the
+   * room's name. → { head, zone?, note? } or null (no comma, or «зона …» that zoneOf reads). */
+  const STEM = (w) => String(w).toLowerCase().replace(/ё/g, "е").slice(0, Math.max(3, Math.min(5, String(w).length - 1)));
+  const sameWord = (a, b) => a.length > 2 && b.length > 2 && STEM(a) === STEM(b);
+  const nameNote = (name, room) => {
+    const m = /^([^,]{3,}?)\s*,\s*(.*\p{L}.*)$/u.exec(String(name || "").trim());
+    if (!m || /(^|\s)зон[аеыу](\s|$)/i.test(m[2])) return null;
+    const head = trimSep(m[1]);
+    const note = trimSep(m[2]).replace(/^(?:в\s+)?зон[аеыу]\s+/i, "");
+    if (!head || !note) return null;
+    const words = note.split(/\s+/);
+    const parts = String(room || "").split(/\s*[-–—/+]\s*|\s+и\s+/i).map((x) => x.trim()).filter(Boolean);
+    if (words.length === 1) {
+      const part = parts.length > 1 && parts.find((x) => !/\s/.test(x) && sameWord(x, note));
+      if (part) return { head, zone: part[0].toUpperCase() + part.slice(1) };
+      if (parts.length === 1 && sameWord(parts[0], note)) return { head };
+    }
+    return { head, note: note.replace(/^\p{Ll}/u, (c) => c.toUpperCase()) };
+  };
+
   // Blinds go up/down, curtains apart/together (owner 2026-10-25: «часто влево вправо»). Set per cover
   // (`direction: horizontal|vertical`) or for the card; else by the name: roller/жалюзи/рольставни go up,
   // «штора», «тюль», «портьера» to the side.
@@ -5354,10 +6138,12 @@ ${top.key && !top.ackedBy ? `<button class="ack" data-ack="${esc(top.key)}">Пр
     }
     return Object.entries(n).sort((x, y) => y[1] - x[1])[0]?.[0] || "roller";
   };
-  const coverBtnList = (kind) => COVER_BTN.map(([svc, i, label]) => [svc, i < 0 ? "mdi:stop" : (COVER_OC[kind] || COVER_OC.roller)[i], label]);
+  /** A cover's ▲ ■ ▼ in its kind's icons; with its state `s`, only those it can (OPEN 1, STOP 8, CLOSE 2 — canDo). */
+  const COVER_BIT = { open_cover: 1, stop_cover: 8, close_cover: 2 };
+  const coverBtnList = (kind, s) => COVER_BTN.filter(([svc]) => !s || canDo(s, COVER_BIT[svc])).map(([svc, i, label]) => [svc, i < 0 ? "mdi:stop" : (COVER_OC[kind] || COVER_OC.roller)[i], label]);
   const coverBtnIcon = (s, svc) => (coverBtnList(coverKindOf({ entity: s.entity_id, s }, {})).find(([x]) => x === svc) || [])[1];
-  const coverButtons = (kind, attr, id, only) =>
-    coverBtnList(kind)
+  const coverButtons = (kind, attr, id, only, s) =>
+    coverBtnList(kind, s)
       .filter(([svc]) => !only || only.includes(svc))
       .map(([svc, icon, label]) => `<button ${attr}="${svc}" ${id ? `data-g="${esc(id)}"` : ""} aria-label="${label}" title="${label}"><ha-icon icon="${icon}"></ha-icon></button>`)
       .join("");
@@ -5407,7 +6193,7 @@ ${top.key && !top.ackedBy ? `<button class="ack" data-ack="${esc(top.key)}">Пр
 .chips button.on{color:var(--ink);background:var(--track);box-shadow:none}.chips em{font-style:normal;color:var(--amberT);margin-left:5px;display:inline-grid;text-align:right}.chips em>*{grid-area:1/1}.chips em .sz{visibility:hidden}
 /* A phone-wide block (HA card ≈ 361 px on a 393 px iPhone): the row of zone chips keeps to one line where it did before the count slot (owner 06.11). */
 @container (max-width:440px){.chips button{padding:0 9px}.chips em{margin-left:3px}}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.grid:empty{display:none}.grid>:last-child:nth-child(odd){grid-column:1/-1}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.grid:empty{display:none}.grid>.full{grid-column:1/-1}
 .pill{position:relative;min-height:56px;padding-top:7px;padding-bottom:7px;border-radius:var(--hf-r-md);overflow:hidden;display:flex;align-items:center;gap:10px;padding:0 12px;box-shadow:inset 0 0 0 1px var(--hair);touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:pointer}
 .pill .f{position:absolute;left:0;top:0;bottom:0;transition:width .25s}
 .pill.dragging .f{transition:none}.pill>*:not(.f){position:relative}
@@ -5429,8 +6215,17 @@ ${top.key && !top.ackedBy ? `<button class="ack" data-ack="${esc(top.key)}">Пр
       const all = this.items();
       const isCover = this.kind === "cover";
       const zones = [];
+      const room = all.length ? areaName(this._hass, all[0].entity) : "";
       for (const e of all) {
-        const z = e.zone || zoneOf(e.name || nameOf(e.s, e.entity)) || "";
+        const full = e.name || nameOf(e.s, e.entity);
+        let z = e.zone || zoneOf(full) || "";
+        // Р46: «{имя}, {уточнение}» — the note is a caption (or the combined room's part as a zone), never half the title.
+        const nn = z ? null : nameNote(full, room);
+        if (nn) {
+          e.cut = nn.head;
+          e.q = nn.note || "";
+          z = nn.zone || "";
+        }
         e.z = z;
         if (z && !zones.includes(z)) zones.push(z);
       }
@@ -5515,11 +6310,19 @@ ${top.key && !top.ackedBy ? `<button class="ack" data-ack="${esc(top.key)}">Пр
       /** The state at the end of a pill's second line in a box as wide as its widest usual value: «80 %» ↔ «выкл» no
        * longer re-wraps a long «(note) · zone · » line, so the pill keeps its height on/off (owner 04.11: 2 ↔ 3 lines). */
       const stateBox = (cur, widest) => `<span class="sv"><span>${cur}</span>${widest.map((w) => `<span class="sz" aria-hidden="true">${w}</span>`).join("")}</span>`;
-      const pill = (e) => {
+      /** Two pills a row; an odd count leaves one pill the whole row — the FIRST of the narrow ones (the block's main light,
+       * `primary` / the client's «Порядок»), never the last by chance (Р48, owner 11.11: «Зеркало» took the row in «Гостевой СУ»).
+       * A blind without a position is a whole row anyway (`.wide`) and isn't counted. */
+      const grid = (list) => {
+        const narrow = list.filter((e) => !(isCover && !this.settable(e)));
+        const solo = narrow.length % 2 ? narrow[0] : null;
+        return `<div class="grid">${list.map((e) => pill(e, e === solo)).join("")}</div>`;
+      };
+      const pill = (e, wide) => {
         // The zone is in the chip (or under the name): the name itself without it.
         const full = e.name || nameOf(e.s, e.entity);
-        let name = e.z && e.z !== "Прочее" ? shortName(full) : full;
-        const zoneTagAll = !sec && !this._zone && e.z && e.z !== "Прочее" ? `${e.z} · ` : "";
+        let name = e.cut || (e.z && e.z !== "Прочее" ? shortName(full) : full);
+        const zoneTagAll = `${e.q ? `${e.q} · ` : ""}${!sec && !this._zone && e.z && e.z !== "Прочее" ? `${e.z} · ` : ""}`;
         const settable = this.settable(e);
         const unavailable = e.s.state === "unavailable";
         if (isCover) {
@@ -5529,9 +6332,9 @@ ${top.key && !top.ackedBy ? `<button class="ack" data-ack="${esc(top.key)}">Пр
           // Without a position the pill has ▲ ■ ▼ — full width, the name stays readable.
           const state = riskWord(this, e.entity) || (open && !["opening", "closing"].includes(e.s.state) && pos !== undefined ? `${pos}\u00a0%` : coverWord(e.s));
           const moving = ["opening", "closing"].includes(e.s.state);
-          return `<div class="pill ${open ? "on" : ""} ${moving ? "mv" : ""} ${settable ? "" : "wide"} ${unavailable ? "unavail" : ""}" data-e="${esc(e.entity)}" data-set="${settable ? 1 : 0}"><div class="f" style="width:${moving ? 100 : open ? pos ?? 100 : 0}%"></div>
+          return `<div class="pill ${open ? "on" : ""} ${moving ? "mv" : ""} ${settable ? "" : "wide"}${wide ? " full" : ""} ${unavailable ? "unavail" : ""}" data-e="${esc(e.entity)}" data-set="${settable ? 1 : 0}"><div class="f" style="width:${moving ? 100 : open ? pos ?? 100 : 0}%"></div>
 <ha-icon icon="${esc(e.icon || coverIcon(e, this._config))}"></ha-icon><div class="tx"><div class="nm">${esc(name)}</div>${state || zoneTagAll ? `<div class="lv">${esc(state ? zoneTagAll : zoneTagAll.replace(/ · $/, ""))}${state ? stateBox(state, settable ? ["100 %", "открыта", "закрыта"] : ["открыта", "закрыта"]) : ""}</div>` : ""}</div>${ruleBadge(this, e.entity, "rbell-mark")}
-${settable ? "" : `<div class="ud">${coverButtons(coverKindOf(e, this._config), "data-c")}</div>`}</div>`;
+${settable ? "" : `<div class="ud">${coverButtons(coverKindOf(e, this._config), "data-c", "", null, e.s)}</div>`}</div>`;
         }
         const on = isOpenOn(e);
         const pct = brightnessPct(e.s);
@@ -5539,12 +6342,13 @@ ${settable ? "" : `<div class="ud">${coverButtons(coverKindOf(e, this._config), 
         const nb = name.length > 20 ? /^(.{6,}?)\s*\(([^()]{2,})\)\s*$/.exec(name) : null;
         const zoneTag = nb ? `${nb[2]} · ${zoneTagAll}` : zoneTagAll;
         name = nb ? trimSep(nb[1]) : name;
-        return `<div class="pill ${on ? "on" : ""} ${settable ? "" : "solo"} ${unavailable ? "unavail" : ""}" data-e="${esc(e.entity)}" data-set="${settable ? 1 : 0}"><div class="f" style="width:${on && settable ? pct : 0}%"></div>
+        return `<div class="pill ${on ? "on" : ""} ${settable ? "" : "solo"}${wide ? " full" : ""} ${unavailable ? "unavail" : ""}" data-e="${esc(e.entity)}" data-set="${settable ? 1 : 0}"><div class="f" style="width:${on && settable ? pct : 0}%"></div>
 <ha-icon icon="${esc(e.icon || (!String(e.entity).startsWith("light.") ? e.s.attributes.icon || "hauflo:power" : on ? "hauflo:bulb-on" : "hauflo:bulb"))}"></ha-icon><div class="tx"><div class="nm">${esc(name)}</div><div class="lv">${esc(zoneTag)}${stateBox(assumed(e.s) ? "" : nd(e.s) ? "нет связи" : on ? (settable ? `${pct}\u00a0%` : "вкл") : "выкл", settable ? ["100 %", "выкл"] : ["выкл"])}</div></div>${ruleBadge(this, e.entity, "rbell-mark")}</div>`;
       };
-      return `<div class="glass k ${isCover ? "cover" : "light"}"><div class="hd"><div class="sum"><span class="caps">${title}${this._zone ? ` · ${esc(this._zone)}` : ""}</span><b class="${isCover && unknownAll ? "nd" : ""}">${esc(summary)}</b></div><div class="mst">${master}</div></div>
+      const srow = this.sceneRow();
+      return `<div class="glass k ${isCover ? "cover" : "light"}"><div class="hd"><div class="sum"><span class="caps"${this.sceneHold()}>${title}${this._zone ? ` · ${esc(this._zone)}` : ""}</span><b class="${isCover && unknownAll ? "nd" : ""}">${esc(summary)}</b></div><div class="mst">${master}</div></div>
 ${dimmables.length > 1 && (isCover || n) ? `<div class="bar" data-bar="1"><i style="width:${lvl ?? 0}%"></i><span>${isCover ? "Все" : "Яркость"}${lvl === undefined ? "" : ` · ${lvl}\u00a0%`}</span></div>` : ""}
-${this.sceneRow()}
+${srow}${this.sceneHint(srow)}
 ${this.groupsRow()}
 ${zones.length > 1 && !sec ? `<div class="chips hfrow"><button data-z="" class="${this._zone ? "" : "on"}">Все</button>${zones
         .map((z) => {
@@ -5555,7 +6359,7 @@ ${zones.length > 1 && !sec ? `<div class="chips hfrow"><button data-z="" class="
           return `<button data-z="${esc(z)}" class="${this._zone === z ? "on" : ""}">${esc(z)}<em><span>${k || ""}</span><span class="sz" aria-hidden="true">${mem.length}</span></em></button>`;
         })
         .join("")}</div>` : ""}
-${sec ? zones.map((z, zi) => { const mem = shown.filter((e) => e.z === z); if (!mem.length) return ""; const k = onCount(mem); return `<div class="zs"><div class="zh"><span class="zt">${esc(z)}<small>${k} из ${mem.length}</small></span><button data-zall="${zi}" data-zop="${k ? "turn_off" : "turn_on"}" class="${k ? "on" : ""}" data-gh="${k ? "Вкл. всё" : "Выкл. всё"}">${k ? "Выкл. всё" : "Вкл. всё"}</button></div><div class="grid">${mem.map(pill).join("")}</div></div>`; }).join("") : `<div class="grid">${shown.map(pill).join("")}</div>`}
+${sec ? zones.map((z, zi) => { const mem = shown.filter((e) => e.z === z); if (!mem.length) return ""; const k = onCount(mem); return `<div class="zs"><div class="zh"><span class="zt">${esc(z)}<small>${k} из ${mem.length}</small></span><button data-zall="${zi}" data-zop="${k ? "turn_off" : "turn_on"}" class="${k ? "on" : ""}" data-gh="${k ? "Вкл. всё" : "Выкл. всё"}">${k ? "Выкл. всё" : "Вкл. всё"}</button></div>${grid(mem)}</div>`; }).join("") : grid(shown)}
 ${hidden ? `<button class="more" data-more="1">${coversFolded ? `Каждая отдельно (${zoneItems.length})` : `Показать все (${total})`}</button>` : this._expanded && (total > LIMIT || coversFolded) ? `<button class="more" data-more="0">Свернуть</button>` : ""}</div>`;
     }
     /** Commands for several devices at once («Шторы 4, 6», «Подсветка (вся)») on their own row. */
@@ -5857,6 +6661,7 @@ ${hidden ? `<button class="more" data-more="1">${coversFolded ? `Каждая о
 *{box-sizing:border-box}
 .sh{container-type:inline-size;width:min(100%,420px);max-height:94vh;overflow:auto;padding:18px 18px calc(18px + env(safe-area-inset-bottom));display:flex;flex-direction:column;align-items:stretch;gap:12px;background:var(--hf-card-bg);background-image:var(--eh-glass,none);border-radius:var(--hf-r-lg) var(--hf-r-lg) 0 0;box-shadow:0 20px 60px var(--hf-shade-35)}
 @media (min-width:600px){.sh{border-radius:var(--hf-r-lg)}}
+${SHEET_UX(18)}
 .hd{display:flex;align-items:flex-start;gap:12px}.hd b{flex:1;min-width:0;font:600 20px Onest,sans-serif;line-height:1.25;overflow-wrap:anywhere;hyphens:auto;hyphenate-limit-chars:12 6 6}.hd small{display:block;font:400 14px Onest,sans-serif;color:var(--eh-ink2,var(--secondary-text-color));margin-top:2px}
 .x{width:44px;height:44px;flex:none;border-radius:22px;border:0;background:var(--hf-track);color:inherit;cursor:pointer;display:grid;place-items:center}.x ha-icon{--mdc-icon-size:var(--hf-icon-m)}
 .sl{align-self:center;width:132px;height:300px;border-radius:36px;background:var(--hf-track-14);position:relative;overflow:hidden;touch-action:none;cursor:ns-resize;user-select:none;-webkit-user-select:none}
@@ -6004,10 +6809,11 @@ ${hidden ? `<button class="more" data-more="1">${coversFolded ? `Каждая о
       TILE = null;
       clearInterval(live);
       document.removeEventListener("keydown", onKey);
+      offUx();
     };
     const onKey = (e) => e.key === "Escape" && close();
     document.addEventListener("keydown", onKey);
-    host.addEventListener("click", (e) => e.composedPath()[0] === host && close());
+    const offUx = sheetUx(host, sr, close);
     const draw = () => {
       const h = hass();
       const s = st(h, id);
@@ -6036,7 +6842,7 @@ ${hidden ? `<button class="more" data-more="1">${coversFolded ? `Каждая о
         const pos = coverHasPosition({}, s) ? num(s.attributes.current_position) : undefined;
         state = coverWord(s) || (pos !== undefined ? `${pos}\u00a0%` : "");
         const dir = coverKindOf({ entity: id, s }, {});
-        body = `${pos !== undefined ? `<div class="sl cv" data-sl role="slider" aria-label="Положение" aria-valuenow="${pos}"><i style="height:${pos}%"></i><span>${pos}\u00a0%</span></div>` : ""}<div class="r3">${coverBtnList(dir).map(([svc, icon, label]) => `<button class="b" data-cv="${svc}"><ha-icon icon="${icon}"></ha-icon><span>${label}</span></button>`).join("")}</div>`;
+        body = `${pos !== undefined ? `<div class="sl cv" data-sl role="slider" aria-label="Положение" aria-valuenow="${pos}"><i style="height:${pos}%"></i><span>${pos}\u00a0%</span></div>` : ""}<div class="r3">${coverBtnList(dir, s).map(([svc, icon, label]) => `<button class="b" data-cv="${svc}"><ha-icon icon="${icon}"></ha-icon><span>${label}</span></button>`).join("")}</div>`;
       } else if (dom === "fan" && !nd(s) && s.attributes.supported_features & 1 && !fanSpeeds(s).n && !scaleOf(rowOf(card, id), s)) {
         // A stepless fan (more than FAN_SPEEDS_MAX speeds): the light's big slider, as HA's more-info (polish 04.11: the
         // speed in % read differently from the brightness); its swing and modes under it, the tile's controls.
@@ -6090,7 +6896,7 @@ ${body.includes('class="mem"') ? "" : `<button class="b lnk" data-more>Подр�
       };
       sr.querySelector("[data-hist]")?.addEventListener("click", () => {
         close();
-        navigate(historyPath([id]));
+        openHistory(card, [id], `${LL("История", "History")} · ${nameOf(st(h, id), id)}`);
       });
       sr.querySelectorAll("[data-mem]").forEach((b) => b.addEventListener("click", () => {
         haptic(card);
@@ -6216,7 +7022,7 @@ ${body.includes('class="mem"') ? "" : `<button class="b lnk" data-more>Подр�
     "Порядок для всех меняют взрослые — у вас детский профиль": "The order for everyone is changed by the adults — you have a child profile",
     "Позвонить сервису": "Call service", "нет связи": "no signal", "вкл": "on", "выкл": "off" });
   EN_RX.unshift(
-    [/^Принять все · (\d+)$/, "Accept all · $1"], [/^Принять все неисправности · (\d+)$/, "Accept all faults · $1"], [/^Принять:$/, "Accept:"], [/^Перекройте воду — кнопка «(.+)» ниже \(или кран на вводе у счётчика\)\. Потом проверьте место протечки\.( Уведомление отправлено на телефоны.*)?$/, (m, v, sent) => `Shut the water off — the «${v}» button below (or the main valve by the meter). Then check where it leaks.${sent ? " Sent to the phones (whether it arrived isn't known until someone taps «Accept»); «Accept» stops the repeats." : ""}`], [/^Авария: /, "Alarm: "], [/^Протечка: /, "Leak: "], [/^Первая: /, "First: "],
+    [/^Принять все · (\d+)$/, "Accept all · $1"], [/^Принять все неисправности · (\d+)$/, "Accept all faults · $1"], [/^Принять:$/, "Accept:"], [/^Перекройте воду — кнопка «(.+)» ниже \(или кран на вводе у счётчика\)\. Потом проверьте место протечки\.( Уведомление отправлено на телефоны.*)?$/, (m, v, sent) => `Shut the water off — the “${v}” button below (or the main valve by the meter). Then check where it leaks.${sent ? " Sent to the phones (whether it arrived isn't known until someone taps “Accept”); “Accept” stops the repeats." : ""}`], [/^Авария: /, "Alarm: "], [/^Протечка: /, "Leak: "], [/^Первая: /, "First: "],
     [/^Приняты · (\d+) авари[яий]+$/, (m, a) => `Accepted · ${a} alarm${a === "1" ? "" : "s"}`],
     [/^(\d+) авари[яий]+ · принято: (\d+)$/, (m, a, b) => `${a} alarm${a === "1" ? "" : "s"} · ${b} accepted`],
     [/^ещё (\d+) авари[яий]+$/, (m, a) => `${a} more alarm${a === "1" ? "" : "s"}`],
@@ -6227,6 +7033,129 @@ ${body.includes('class="mem"') ? "" : `<button class="b lnk" data-more>Подр�
   // More kinds (owner 2026-10-25: «покажи как может выглядеть любая из карточек»): weather, air, media,
   // graphs, automations, engineering status, security, cameras, any other device.
   const hhmm = (d) => `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+  // --- our own history sheet (Р45, owner 11.11: HA's «История» panel has no way back in the phone app) -----------------
+  /** Binary sensors whose «on» is an alarm (HA device classes), said «Авария» / «Норма» in the list of events. */
+  const HIST_ALARM = ["moisture", "smoke", "gas", "carbon_monoxide", "safety", "problem", "tamper", "heat"];
+  const HIST_ONOFF = ["light", "switch", "fan", "input_boolean", "media_player", "siren", "humidifier", "water_heater", "automation"];
+  /** A state in the events list: [word, tone] or null (not an event worth a line: a number, «opening», a text). */
+  const histWord = (s0, state) => {
+    const dom = s0.entity_id.split(".")[0];
+    const dc = s0.attributes?.device_class;
+    if (state === "unavailable") return [LL("Нет связи", "Offline"), "nd"];
+    if (state === "unknown") return null;
+    if (dom === "binary_sensor") {
+      if (HIST_ALARM.includes(dc)) return state === "on" ? [LL("Авария", "Alarm"), "bad"] : [LL("Норма", "Normal"), ""];
+      if (OPENING.includes(dc)) return state === "on" ? [LL("Открыто", "Open"), "on"] : [LL("Закрыто", "Closed"), ""];
+      return state === "on" ? [LL("Сработал", "Triggered"), "on"] : [LL("Спокойно", "Clear"), ""];
+    }
+    if (dom === "cover" || dom === "valve") return state === "open" ? [LL("Открыто", "Open"), "on"] : state === "closed" ? [LL("Закрыто", "Closed"), ""] : null;
+    if (dom === "lock") return state === "unlocked" ? [LL("Открыто", "Unlocked"), "on"] : state === "locked" ? [LL("Закрыто", "Locked"), ""] : null;
+    if (dom === "climate") return state === "off" ? [LL("Выключено", "Off"), ""] : [LL("Включено", "On"), "on"];
+    if (HIST_ONOFF.includes(dom)) return state === "off" ? [LL("Выключено", "Off"), ""] : state === "on" || dom === "media_player" ? [LL("Включено", "On"), "on"] : null;
+    return null;
+  };
+  const histNumeric = (s0) => s0 && !s0.entity_id.startsWith("climate.") && num(s0.state) !== undefined && !!s0.attributes?.unit_of_measurement;
+  const histTemp = (s0) => s0 && (s0.entity_id.startsWith("climate.") || s0.attributes?.device_class === "temperature" || /°/.test(s0.attributes?.unit_of_measurement || ""));
+  /** The events of the period, newest first: each change of a state's word (the period's first row is where it started). */
+  const histEvents = async (hass, ids, hours) => {
+    if (!ids.length) return [];
+    const end = new Date();
+    const start = new Date(end.getTime() - hours * 3600000);
+    let r = {};
+    try {
+      r = await hass.callWS({ type: "history/history_during_period", start_time: start.toISOString(), end_time: end.toISOString(), entity_ids: ids, minimal_response: true, no_attributes: true, significant_changes_only: false });
+    } catch (e) {
+      r = {};
+    }
+    const out = [];
+    for (const id of ids) {
+      const s0 = st(hass, id);
+      let was = null;
+      (r?.[id] || []).forEach((p, i) => {
+        const w = histWord(s0, p.s ?? p.state);
+        const t = (p.lc ?? p.lu) ? (p.lc ?? p.lu) * 1000 : Date.parse(p.last_changed || p.last_updated);
+        if (!w || isNaN(t)) return;
+        if (i && was !== w[0]) out.push({ id, t, w: w[0], tone: w[1] });
+        was = w[0];
+      });
+    }
+    return out.sort((a, b) => b.t - a.t).slice(0, 150);
+  };
+  /** A number's line over the period (humidity, CO₂, power…): the canon spark with its min / max — the thermostat's chart
+   * is degrees-only. */
+  const histSpark = (data, s0) => {
+    const W = 320;
+    const H = 88;
+    const sp = data?.pts?.length ? spark(data, W, H, 6, 0, 2) : null;
+    if (!sp) return `<div class="tch" style="height:132px"><div class="tno">${esc(data === undefined ? LL("загрузка…", "loading…") : LL("истории пока нет", "no history yet"))}</div></div>`;
+    const u = s0.attributes?.unit_of_measurement || "";
+    const f = (v) => `${fmt(v, Math.abs(v) < 10 ? 1 : 0)}\u00a0${u}`;
+    return `<div class="tch hsp" style="height:132px"><div class="tlg"><span>${esc(nameOf(s0, s0.entity_id))}</span></div><div class="tpl" style="height:${H}px"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><path class="ar" d="${sp.area}"/><path class="cu" d="${sp.line}" vector-effect="non-scaling-stroke"/></svg></div><div class="hmm">${esc(LL("мин", "min"))} ${esc(f(sp.lo))} · ${esc(LL("макс", "max"))} ${esc(f(sp.hi))}</div></div>`;
+  };
+  const HIST_CSS = () => `:host{${HOST_TOKENS}}${TCHART_CSS}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;padding:4px;border-radius:var(--hf-r-md);background:var(--hf-track)}.seg button{font:500 14px Onest,sans-serif;color:inherit;border:0;border-radius:var(--hf-r-sm);min-height:44px;padding:6px 4px;background:none;cursor:pointer}.seg button[aria-pressed="true"]{background:var(--hf-card-bg);box-shadow:0 1px 3px var(--hf-shade-18);font-weight:600}
+.tch{margin-top:0}.hsp .tpl{margin-right:0}.hmm{margin-top:8px;font:400 12px Onest,sans-serif;color:var(--ink3)}
+.hev{display:flex;flex-direction:column}.her{display:flex;align-items:baseline;gap:12px;padding:10px 2px;border-top:1px solid var(--hair);font:400 14px/1.35 Onest,sans-serif;color:var(--ink)}.her:first-child{border-top:0}
+.her .ht{flex:none;min-width:84px;font-variant-numeric:tabular-nums;color:var(--ink2)}.her .hn{flex:1;min-width:0;overflow-wrap:anywhere}.her b{flex:none;font-weight:500;margin-left:auto}.her b.on{color:var(--amberT)}.her b.bad{color:var(--alertT)}.her b.nd{color:var(--ink3)}
+.b.lnk{background:none;min-height:44px;font-weight:500;color:var(--eh-ink2,var(--secondary-text-color))}`;
+  /** History of `ids` in our sheet over the page: the chart of the first number (a thermostat — its canon chart) with the
+   * period «Сутки / Неделя / Месяц», then the events «включено / выключено / авария» with their time. ✕, a pull down,
+   * the backdrop and the phone's back close it (sheetUx); HA's own panel — admins only. `opts.chart` — the caller's own
+   * chart for a period (the thermostat card hands its room sensor). */
+  const openHistory = (card, ids, title, opts = {}) => {
+    const hs = () => card._hass || AGENT.hass;
+    const h0 = hs();
+    ids = [...new Set(ids)].filter((id) => st(h0, id));
+    if (!ids.length) return;
+    const main = ids.find((id) => id.startsWith("climate.")) || ids.find((id) => histNumeric(st(h0, id)));
+    const evIds = ids.filter((id) => id !== main || id.startsWith("climate.")).filter((id) => !histNumeric(st(h0, id)));
+    const many = evIds.length > 1;
+    sceneSheet(card, ({ sr, draw, close }) => {
+      let per = chartPeriod();
+      let chart;
+      let evs;
+      let seq = 0;
+      const render = () => {
+        const h = hs();
+        const s0 = main && st(h, main);
+        const want = CHART_PERIODS[per];
+        const ch = !main ? "" : histTemp(s0) && chart !== null ? tchart(chart, { cur: main.startsWith("climate.") ? num(s0.attributes.current_temperature) : num(s0.state), sp: main.startsWith("climate.") ? num(s0.attributes.temperature) : undefined }, { label: main.startsWith("climate.") ? "В комнате" : nameOf(s0, main), want }) : histSpark(chart === null ? { pts: [] } : chart, s0);
+        const day = new Date().toDateString();
+        const when = (t) => (new Date(t).toDateString() === day ? hhmm(new Date(t)) : `${dayMonth(t)} ${hhmm(new Date(t))}`);
+        const list = evs === undefined ? `<p class="n">${esc(LL("загрузка…", "loading…"))}</p>` : evs.length ? `<div class="hev">${evs.map((e) => `<div class="her"><span class="ht">${esc(when(e.t))}</span>${many ? `<span class="hn" data-own>${esc(nameOf(st(h, e.id), e.id))}</span>` : ""}<b class="${e.tone}">${esc(e.w)}</b></div>`).join("")}</div>` : evIds.length ? `<p class="n">${esc(LL("За этот период изменений нет", "No changes in this period"))}</p>` : "";
+        const admin = h?.user?.is_admin === true;
+        draw(`<div class="t"><span data-own>${esc(title)}</span></div><div class="seg" role="group" aria-label="${esc(LL("Период", "Period"))}">${Object.keys(CHART_PERIODS).map((k) => `<button data-per="${k}" aria-pressed="${k === per}">${esc(chartPeriodWord(k))}</button>`).join("")}</div>${ch}${list}${admin && hasHistory(h, ids[0]) ? `<button class="b lnk" data-ha>${esc(LL("Открыть в Home Assistant", "Open in Home Assistant"))}</button>` : ""}`);
+        const style = sr.querySelector("style");
+        if (style) style.textContent += TZ(HIST_CSS());
+        bindTchart(sr, h);
+        sr.querySelectorAll("[data-per]").forEach((b) => b.addEventListener("click", () => {
+          if (b.dataset.per === per) return;
+          per = b.dataset.per;
+          setChartPeriod(per);
+          load();
+        }));
+        sr.querySelector("[data-ha]")?.addEventListener("click", () => (close(), navigate(historyPath(ids))));
+      };
+      const load = async () => {
+        const n = ++seq;
+        const hours = CHART_PERIODS[per];
+        chart = undefined;
+        evs = undefined;
+        render();
+        const h = hs();
+        const s0 = main && st(h, main);
+        const [c, e] = await Promise.all([
+          !main ? undefined : (opts.chart ? opts.chart(hours) : main.startsWith("climate.") ? climateSeries(h, main, hours) : series(h, main, hours).then((d) => (histTemp(s0) ? { cur: d.pts, sp: [], range: d.range } : d))).catch(() => null),
+          histEvents(h, evIds, hours),
+        ]);
+        if (n !== seq || !sr.host.isConnected) return;
+        chart = c;
+        evs = e;
+        render();
+      };
+      load();
+    });
+  };
   const ago = (iso) => {
     if (!iso) return "";
     const d = new Date(iso);
@@ -6384,18 +7313,20 @@ ${v.pm25 === undefined ? "" : `<div class="sc">${[0, 1, 2, 3].map((k) => `<b cla
       if (!s) return `<div class="glass p"><span class="caps">Нет плеера</span></div>`;
       const a = s.attributes;
       const name = this._config.name || nameOf(s, s.entity_id);
+      // Its buttons and volume by what it can (canDo): no features reported — the volume by its level, as before.
+      const volBar = num(a.supported_features) === undefined ? num(a.volume_level) !== undefined : canDo(s, 4);
       // Off keeps the playing card's size (step 3: it shrank 236 → 78 px when the TV went off and everything below jumped):
       // the same cover, controls and volume rows, quiet — the middle button switches it on.
       if (["off", "unavailable", "standby"].includes(s.state))
         return `<div class="glass p ofs"><div class="row"><div class="art"><ha-icon icon="hauflo:speaker"></ha-icon></div><div class="tx"><span class="caps">${esc(name)}</span><div class="tt">${s.state === "unavailable" ? "Нет связи" : "Выключен"}</div><div class="ar"></div></div></div>
-<div class="ctl"><button class="pw" data-s="turn_on" aria-label="Включить"><ha-icon icon="hauflo:power"></ha-icon></button></div>${a.supported_features & 4 || num(a.volume_level) !== undefined ? `<div class="vq"></div>` : ""}</div>`;
+<div class="ctl"><button class="pw" data-s="turn_on" aria-label="Включить"><ha-icon icon="hauflo:power"></ha-icon></button></div>${volBar ? `<div class="vq"></div>` : ""}</div>`;
       const pic = a.entity_picture;
-      const vol = num(a.volume_level);
+      const vol = volBar ? num(a.volume_level) : undefined;
       const playing = s.state === "playing";
       return `<div class="glass p">${pic ? `<div class="bg" style="background-image:url('${cssUrl(pic)}')"></div>` : ""}
 <div class="row"><div class="art" ${pic ? `style="background-image:url('${cssUrl(pic)}')"` : ""}>${pic ? "" : `<ha-icon icon="hauflo:speaker"></ha-icon>`}</div>
 <div class="tx"><span class="caps">${esc(name)}${a.source ? ` · ${esc(a.source)}` : ""}${groupOf(s).length ? ` · <span class="gb" data-group="${groupOf(s).length}">Группа ${groupOf(s).length}</span>` : ""}</span><div class="tt">${esc(a.media_title || (playing ? "Играет" : "Пауза"))}</div><div class="ar">${esc(a.media_artist || a.media_album_name || a.app_name || "")}</div></div></div>
-<div class="ctl"><button data-s="media_previous_track" aria-label="Назад"><ha-icon icon="mdi:skip-previous"></ha-icon></button><button class="pp" data-s="media_play_pause" aria-label="${playing ? "Пауза" : "Играть"}"><ha-icon icon="${playing ? "hauflo:pause" : "hauflo:play"}"></ha-icon></button><button data-s="media_next_track" aria-label="Вперёд"><ha-icon icon="mdi:skip-next"></ha-icon></button></div>
+<div class="ctl">${canDo(s, 16) ? `<button data-s="media_previous_track" aria-label="Назад"><ha-icon icon="mdi:skip-previous"></ha-icon></button>` : ""}${canDo(s, 1 | 16384) ? `<button class="pp" data-s="media_play_pause" aria-label="${playing ? "Пауза" : "Играть"}"><ha-icon icon="${playing ? "hauflo:pause" : "hauflo:play"}"></ha-icon></button>` : ""}${canDo(s, 32) ? `<button data-s="media_next_track" aria-label="Вперёд"><ha-icon icon="mdi:skip-next"></ha-icon></button>` : ""}</div>
 ${vol === undefined ? "" : `<div class="vol"><i style="width:${Math.round(vol * 100)}%"></i><span><ha-icon icon="hauflo:speaker"></ha-icon>${Math.round(vol * 100)}\u00a0%</span></div>`}</div>`;
     }
     bind() {
@@ -6567,7 +7498,7 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
         // The word «авария»: a watched signal (the agent's verdict, else the canon's class or classless words) in its alarm
         // state, or a classless name that says a fault the canon leaves undetermined («Перегрев»…) — the word only, the
         // house's level stays houseLevel's.
-        const faulty = signalWatched(s) || (!dc && !quiet && /ошибк|авари|неисправ|протечк|утечк|перегрев|fault|error|alarm|leak|failure/i.test(s.attributes.friendly_name || s.entity_id));
+        const faulty = signalWatched(s) || signalChosen(s) || (!dc && !quiet && /ошибк|авари|неисправ|протечк|утечк|перегрев|fault|error|alarm|leak|failure/i.test(s.attributes.friendly_name || s.entity_id));
         if (faulty) return signalOn(s) ? ["авария", "fault"] : ["в норме", "ok"];
         if (dc === "connectivity") return s.state === "on" ? ["на связи", "ok"] : ["нет связи", "fault"];
         // Windows and doors say «открыто/закрыто», not «вкл» with a green dot (integrator run 16).
@@ -6742,6 +7673,10 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
   // The canon card a class is drawn with in «Крупно» (its own header says the class): lights / sockets — hauflo-lights,
   // blinds — hauflo-covers; `block` — the client's name of that block (Настройки → Вид), as on a KNX room.
   const AREA_EMBED = { lights: ["hauflo-lights", "lights"], sockets: ["hauflo-lights", "sockets"], covers: ["hauflo-covers", "covers"] };
+  // Р53: the classes whose console carries the room's scenes (its scene list's field on the area card) and the fields it
+  // takes over as they are (Area.sceneCfg).
+  const AREA_SCENE_OF = { lights: "scenes", covers: "cover_scenes" };
+  const AREA_SCENE_KEYS = ["scene_room", "capture", "scene_layout", "cover_scene_layout"];
   // A relay that is a light (HA's «Show as light» not done yet — a Shelly / Sonoff / Aqara wall switch's relay): its icon or
   // its name says so; an outlet (HA's device_class or its name) is a socket.
   const AREA_LIGHT_ICON = /^(mdi|hauflo):(lightbulb|lamp|ceiling-light|floor-lamp|wall-sconce|led-strip|spotlight|chandelier|desk-lamp|string-lights|light-|bulb|track-light|vanity-light|outdoor-lamp)/i;
@@ -6881,10 +7816,15 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
         const own = dupOwnName(h, id);
         const tempCopy = climates.some((c) => {
           if (!u || u !== dupTempUnit(h, S(c))) return false;
-          const target = near(v, dupNum(S(c).attributes?.temperature)) && (DUP_SET.test(own) || (temps.length === 1 && temps[0] === id));
+          // A copy of the setpoint only where the climate takes one (TARGET_TEMPERATURE 1): else the number is the setpoint.
+          const target = canDo(S(c), 1) && near(v, dupNum(S(c).attributes?.temperature)) && (DUP_SET.test(own) || (temps.length === 1 && temps[0] === id));
           return target || dupCurOf(h, id, S(c), temps);
         });
-        const fanCopy = DUP_SPEED.test(own) && (DUP_SET.test(own) || DUP_CUR.test(own) || speeds.length === 1) && climates.some((c) => near(v, dupNum(S(c).attributes?.fan_mode)));
+        // A copy of the climate's fan speed only where the climate takes it (FAN_MODE 8): a unit whose fan is off in the
+        // climate keeps its own speed numbers (supply / exhaust) — they are the only speed control (owner 10.11).
+        // The device's own speed settings win over the climate's selector (Р22а: the climate one isn't drawn then) — so they
+        // are never its copy.
+        const fanCopy = DUP_SPEED.test(own) && (DUP_SET.test(own) || DUP_CUR.test(own) || speeds.length === 1) && climates.some((c) => canDo(S(c), 8) && !ownFanSpeeds(h, c).length && near(v, dupNum(S(c).attributes?.fan_mode)));
         const stems = dupStems(name);
         const setCopy =
           d === "sensor" &&
@@ -7106,7 +8046,7 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
   };
   /** A state tile in alarm (the red frame): a watched signal of the canon (leak, smoke, gas, CO, safety, a problem, a
    * tamper, heat — or a classless one by its words) in its alarm state now. */
-  const tileAlarm = (s) => !!s && signalWatched(s) && signalOf(s).problem;
+  const tileAlarm = (s) => !!s && ((signalWatched(s) && signalOf(s).problem) || (signalChosen(s) && signalOf(s).hit));
   /** The open view of the dashboard (HA's lovelace panel): its title is not said again over a card. */
   const curView = () => {
     const views = lovelacePanel()?.lovelace?.config?.views || [];
@@ -7180,7 +8120,11 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
   class Area extends Status {
     hiddenName() {
       const c = this._config;
-      return esc(c.title || (c.device ? devName(this._hass, c.device) : this._hass?.areas?.[c.area]?.name) || LL("Комната", "Room"));
+      // The placeholder says which block it is (Р49: three alike «Зона СПА» in HA's editor): «Другие устройства · Управление».
+      const part = Object.hasOwn(AREA_PARTS, c.block || "") ? LL(...AREA_BLOCK[c.block]) : "";
+      if (c.title) return esc(c.title);
+      const base = c.others ? LL("Другие устройства", "Other devices") : (c.device ? devName(this._hass, c.device) : this._hass?.areas?.[c.area]?.name) || LL("Комната", "Room");
+      return esc(part ? `${base} · ${part}` : base);
     }
     /** The area's entities: put in it themselves or through their device; not hidden, not diagnostic / config. With
      * `device` (a device_id): the whole device, wherever its entities are («Устройство целиком», stage 5). */
@@ -7194,16 +8138,16 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
       const others = !!this._config.others;
       const owned = others ? ownedOnDashboard(this) : null;
       if (others && OWNED.wait) return [];
-      if (this._memo && this._memo.ents === h.entities && this._memo.devs === h.devices && this._memo.area === area && this._memo.owned === owned) return applyRows(this._config, this._memo.ids, (id) => labelHid(h, id));
+      if (this._memo && this._memo.ents === h.entities && this._memo.devs === h.devices && this._memo.area === area && this._memo.owned === owned && this._memo.zones === HOUSE.data?.zones) return applyRows(this._config, this._memo.ids, (id) => labelHid(h, id));
       const mine = (id) => { const e = h.entities?.[id]; return !e || ["knx", "hauflo"].includes(e.platform) || owned.has(id) || /^(hauflo|easyha)_/.test(String(h.states[id]?.attributes?.id || "")); };
       // A group of only Hauflo's / KNX members (the room's «Свет в комнате», stage 8) is not another integration's device.
       const groupOfMine = (e) => { const m = e.platform === "group" ? h.states[e.entity_id]?.attributes?.entity_id : null; return Array.isArray(m) && m.length > 0 && m.every(mine); };
       const foreign = (e) => !others || (!mine(e.entity_id) && !groupOfMine(e));
       const ids = Object.values(h.entities || {})
-        .filter((e) => !e.hidden && !e.disabled_by && this.shown(e) && foreign(e) && roleOf(h, e.entity_id) !== "hidden" && (dev ? e.device_id === dev : e.area_id ? e.area_id === area : !!e.device_id && h.devices?.[e.device_id]?.area_id === area))
+        .filter((e) => !e.hidden && !e.disabled_by && this.shown(e) && foreign(e) && roleOf(h, e.entity_id) !== "hidden" && (dev ? e.device_id === dev : areaOf(h, e.entity_id) === roomArea(area)))
         .map((e) => e.entity_id)
         .sort((a, b) => this.label(a).localeCompare(this.label(b), undefined, { numeric: true, sensitivity: "base" }));
-      this._memo = { ents: h.entities, devs: h.devices, area, owned, ids };
+      this._memo = { ents: h.entities, devs: h.devices, area, owned, ids, zones: HOUSE.data?.zones }; // Р57: the zone map too
       return applyRows(this._config, ids, (id) => labelHid(h, id));
     }
     /** The room's entities HA's label `hauflo_role_hidden` (or HA's own «hidden») keeps off it — the editor lists them,
@@ -7214,20 +8158,23 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
       const area = this._config.area;
       if (!h || (!area && !dev)) return [];
       return Object.values(h.entities || {})
-        .filter((e) => !e.disabled_by && this.shown(e) && (e.hidden || roleOf(h, e.entity_id) === "hidden") && (dev ? e.device_id === dev : e.area_id ? e.area_id === area : !!e.device_id && h.devices?.[e.device_id]?.area_id === area))
+        .filter((e) => !e.disabled_by && this.shown(e) && (e.hidden || roleOf(h, e.entity_id) === "hidden") && (dev ? e.device_id === dev : areaOf(h, e.entity_id) === roomArea(area)))
         .map((e) => e.entity_id);
     }
     /** Why the card is hidden now, in words (item 8): what is empty, and what the integrator's choices took out. */
     whyHidden(part, others) {
       const it = rowItems(this._config);
-      const lab = this.labelHidden().filter((id) => it.get(id)?.hidden !== false).length;
+      // HA's label count: to an admin only, and only what it took out of THIS block (Р49: «скрыто меткой: 5» on each of the
+      // three blocks counted the whole room and told nothing).
+      const keys = part ? AREA_PARTS[part] : null;
+      const lab = this._hass?.user?.is_admin === true ? this.labelHidden().filter((id) => it.get(id)?.hidden !== false && (!keys || keys.includes(this.kind(id)))).length : 0;
       const blk = part ? LL(...AREA_BLOCK[part]) : "";
-      const head = others
-        ? LL("в комнате нет устройств других интеграций (свои Hauflo показывает сам)", "the room has no other integrations' devices (Hauflo shows its own itself)")
-        : blk
+      const more = [...rowsWhyMore(this._config), lab ? LL(`скрыто меткой в настройках дома: ${lab}`, `hidden by a label in the home settings: ${lab}`) : ""].filter(Boolean);
+      // The other integrations' block (Р49): one phrase of when it shows — the placeholder's title says which block it is.
+      if (others) return `${LL("Появится, когда в комнате будут устройства других интеграций (Zigbee, Wi-Fi…)", "Shows up once the room has devices of other integrations (Zigbee, Wi-Fi…)")}${more.length ? ` · ${more.join(" · ")}` : ""}.`;
+      const head = blk
           ? LL(`в блоке «${blk}» нечего показать`, `nothing to show in «${blk}»`)
           : LL("в комнате нечего показать", "nothing to show in the room");
-      const more = [...rowsWhyMore(this._config), lab ? LL(`скрыто меткой Home Assistant: ${lab}`, `hidden by a Home Assistant label: ${lab}`) : ""].filter(Boolean);
       return `${LL("Скрыто, потому что", "Hidden because")} ${head}${more.length ? ` · ${more.join(" · ")}` : ""}.`;
     }
     /** What the card picks by itself, its rows not applied (the editor's «Состав блока» starts from it). */
@@ -7301,7 +8248,7 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
         const nm = `${s.attributes.device_class || ""} ${s.attributes.friendly_name || s.entity_id}`;
         // The agent's verdict first (the site's choice for it): a watched one — a fault in its alarm state; «Не авария» — a value.
         const g = signalOf(s);
-        if (g.agent) return [s.state, g.house === "none" ? "val" : g.problem ? "fault" : "ok"];
+        if (g.agent) return [s.state, g.problem || (MEANING_ALARM.includes(g.meaning) && g.hit) ? "fault" : g.house === "none" && !MEANING_ALARM.includes(g.meaning) ? "val" : "ok"];
         return FAULT_NAME.test(nm) ? [s.state, FAULT_OK.test(s.state.trim()) ? "ok" : WARN_NAME.test(nm) ? "warn" : "fault"] : [s.state, "val"];
       }
       // «Авария котла» / «Угроза» without a class (another integration's): a fault / a warning when on — never «вкл»; the
@@ -7368,6 +8315,25 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
       if (d === "event") return "status";
       return "other";
     }
+    /** Р53: the room's scenes go with its light / blinds console, as on a KNX room's light block (atelierDashboard
+     * `lightBlock`): the deploy writes on this card what it writes there — `scene_room` (the family's «+ Сцена», agent
+     * scenes.py), `capture` (the lamps «Запомнить как сейчас» takes, other integrations' too), `scenes` / `cover_scenes`
+     * (the integrator's), `scene_layout` / `cover_scene_layout` — and the console shows them by the same rules. */
+    sceneCfg(cls) {
+      const c = this._config;
+      const own = AREA_SCENE_OF[cls];
+      if (!own) return {};
+      const out = Object.fromEntries(AREA_SCENE_KEYS.filter((k) => c[k] !== undefined && c[k] !== null).map((k) => [k, c[k]]));
+      if (Array.isArray(c[own])) out.scenes = c[own];
+      return out;
+    }
+    /** 399-33: a reading's place in «Показания» while the family has no order of its own — alarms, states, then what is
+     * read most (AREA_READ_ORDER); the grid and the «Порядок» sheet sort by it alike. */
+    readRank(id) {
+      const s = this._hass.states[id];
+      const r = AREA_READ_ORDER.indexOf(s?.attributes?.device_class);
+      return (this.kind(id) === "status" ? (signalWatched(s) ? 0 : 1) : 2) * 1000 + (r < 0 ? 999 : r);
+    }
     /** 399-34: the class a control goes under (AREA_CLASS): a light, a relay that is one, a blind, an outlet, a device. */
     areaClass(id) {
       const k = this.kind(id);
@@ -7389,7 +8355,7 @@ ${isScript ? `<button class="run" data-run="${esc(id)}">Запустить</butt
       return p ? p === "compact" : this._config.compact === true;
     }
     css() {
-      return `${super.css()}${TONE_CSS}${STEP_CSS}:host .toned .pm button{color:var(--acT)}.d{padding:var(--hf-pad-title)}.d .sub{display:block;margin:18px 0 0 2px}.r ha-icon{--mdc-icon-size:var(--hf-icon-m);color:var(--ink3);flex:0 0 auto}.r.run ha-icon{color:var(--amberT)}.r.fault ha-icon{color:var(--alertT)}
+      return `${super.css()}${TONE_CSS}${STEP_CSS}.split{display:flex;flex-direction:column;gap:var(--ha-section-grid-row-gap,8px)}:host .toned .pm button{color:var(--acT)}.d{padding:var(--hf-pad-title)}.d .sub{display:block;margin:18px 0 0 2px}.r ha-icon{--mdc-icon-size:var(--hf-icon-m);color:var(--ink3);flex:0 0 auto}.r.run ha-icon{color:var(--amberT)}.r.fault ha-icon{color:var(--alertT)}
 .empty{font:400 14px/1.5 Onest,sans-serif;color:var(--ink2);margin:6px 2px 2px}.hint{font:400 13px/1.45 Onest,sans-serif;color:var(--ink3);margin:8px 2px 0}.hint b{font-weight:500;color:var(--ink2)}.r{min-height:56px}
 .cl{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--hair);cursor:pointer}.sub+.cl,.cl:first-of-type{border-top:0}
 .cl .ccn{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px;cursor:pointer;position:relative}.cl .ccn::before{content:"";position:absolute;inset:min(0px,(100% - var(--hf-hit))/2) 0}.cl .zn{font:500 15px/1.25 Onest,sans-serif;color:var(--ink);overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
@@ -7441,9 +8407,11 @@ ${RULE_CSS}`;
       const a = s.attributes;
       const wh = id.startsWith("water_heater.");
       const off = s.state === "off";
-      const range = !wh && num(a.temperature) === undefined && (num(a.target_temp_low) !== undefined || num(a.target_temp_high) !== undefined);
+      // What it can set (canDo): a climate by climateCan, a boiler by its TARGET_TEMPERATURE 1 / OPERATION_MODE 2.
+      const cc = wh ? { sp: canDo(s, 1) ? num(a.temperature) : undefined } : climateCan(s);
+      const range = !wh && cc.sp === undefined && (cc.lo !== undefined || cc.hi !== undefined);
       // The value being set by ± (not heard back yet), else the thermostat's — the same queue as the large card (spPend).
-      const target = spPend(this, id, num(a.temperature));
+      const target = spPend(this, id, cc.sp);
       const cur = num(a.current_temperature);
       const step = Math.max(num(a.target_temp_step) || (wh ? 1 : 0.5), 0.5);
       // What it DOES (greater than the mode, owner 28.10): hvac_action when it fits the temperatures; the mode small.
@@ -7460,10 +8428,12 @@ ${RULE_CSS}`;
         .map((x) => `<span>${esc(x)}</span>`)
         .join(" · ");
       // The big number is what is now; the setpoint is the small «цель 21°» (owner 28.10).
-      const tgtTxt = range ? `${fmt(num(a.target_temp_low))}–${fmt(num(a.target_temp_high))}°` : target === undefined ? "" : `${fmt(target, step < 1 && target % 1 ? 1 : 0)}°`;
+      const tgtTxt = range ? `${fmt(cc.lo)}–${fmt(cc.hi)}°` : target === undefined ? "" : `${fmt(target, step < 1 && target % 1 ? 1 : 0)}°`;
       const big = tgtTxt ? `${tgtTxt.replace(/°$/, "")}<small>°</small>` : cur === undefined ? "—" : `${fmt(cur, 1)}<small>°</small>`;
+      // ± only where it takes a setpoint (canDo TARGET_TEMPERATURE 1; the empty .pm keeps the row's grid); greyed while
+      // the value is not in yet or the link is down.
       const can = !nd(s) && !range && target !== undefined;
-      const modes = wh ? a.operation_list || [] : a.hvac_modes || [];
+      const modes = wh ? (canDo(s, 2) ? a.operation_list || [] : []) : a.hvac_modes || [];
       const modeKey = wh ? a.operation_mode : s.state;
       const chips =
         modes.length > 1 && !nd(s)
@@ -7473,7 +8443,7 @@ ${RULE_CSS}`;
       const tn = wh || nd(s) ? "" : climateTone(s, nowC);
       return `<div class="cl${heating ? " heat" : ""}${off ? " off" : ""}${tn ? ` m-${tn} toned${toneCalm(tn, nowC) ? " calm" : ""}` : ""}" data-info="${esc(id)}">${lean ? `<ha-icon icon="${esc(this.rowIcon(id) || a.icon || (wh ? "hauflo:boiler" : "hauflo:thermo"))}"></ha-icon>` : ""}<div class="ccn" role="button" tabindex="0"><span class="zn">${esc(this.label(id))}</span><span class="cs">${sub}</span></div>
 <div class="cct thin">${big}<span class="tgc">${tgtTxt && cur !== undefined ? `Сейчас ${fmt(cur, 1)}°` : ""}</span></div>
-<div class="pm"><button data-e="${esc(id)}" data-d="${-step}" aria-label="Холоднее на ${fmt(step, step % 1 ? 1 : 0)}°"${can ? "" : " disabled"}>−</button><button data-e="${esc(id)}" data-d="${step}" aria-label="Теплее на ${fmt(step, step % 1 ? 1 : 0)}°"${can ? "" : " disabled"}>+</button></div></div>${chips}`;
+<div class="pm">${canDo(s, 1) ? `<button data-e="${esc(id)}" data-d="${-step}" aria-label="Холоднее на ${fmt(step, step % 1 ? 1 : 0)}°"${can ? "" : " disabled"}>−</button><button data-e="${esc(id)}" data-d="${step}" aria-label="Теплее на ${fmt(step, step % 1 ? 1 : 0)}°"${can ? "" : " disabled"}>+</button>` : ""}</div></div>${chips}`;
     }
     /** A reading: its name and its value, large (a temperature, a pressure, a modulation…). */
     valueTile(id) {
@@ -7764,7 +8734,7 @@ ${RULE_CSS}`;
       const owned = ownedOnDashboard(this);
       this._owned = owned;
       const faults = ids.filter((id) => this.word(h.states[id])[1] === "fault").length;
-      const sum = faults ? `<span class="sum"><i class="fault"></i>аварий: ${faults}</span>` : "";
+      const sum = faults ? `<span class="sum"><i class="fault"></i>${esc(LL(`аварий: ${faults}`, `alarms: ${faults}`))}</span>` : "";
       const viewTitle = curView()?.title;
       const devOf = (id) => h.entities?.[id]?.device_id || "";
       // The canon's own cards inside (camera, player; 399-36 «Крупно»: light, sockets, blinds, the thermostat) — each by its
@@ -7817,7 +8787,7 @@ ${RULE_CSS}`;
         if (e && large) {
           const ok = list.filter((id) => !AREA_GUARDED(h.states[id]));
           const items = ok.map((id) => ({ entity: id, name: this.label(id), ...(this.rowIcon(id) ? { icon: this.rowIcon(id) } : cls === "lights" && !id.startsWith("light.") ? { icon: h.states[id].attributes.icon || "hauflo:bulb" } : {}) }));
-          return ok.length ? emb(e[0], `${cls}:${ok.join(",")}`, { entities: items, title: LL(...AREA_CLASS[cls]), block: e[1], ...lang }, true) : "";
+          return ok.length ? emb(e[0], `${cls}:${ok.join(",")}`, { entities: items, title: LL(...AREA_CLASS[cls]), block: e[1], ...this.sceneCfg(cls), ...lang }, true) : "";
         }
         if (e) return `${cap(cls)}${compact ? this.masterRow(cls, list) : ""}<div class="vals tgs">${list.map((id) => this.toggleRow(id)).join("")}</div>`;
         return `${cap(cls)}${bodies(kinds(list), cls)[cls] || ""}`;
@@ -7833,13 +8803,7 @@ ${RULE_CSS}`;
       // 399-33: «Показания» — one grid by class (alarms, states, then what is read most), no device captions; the client's
       // own order of the block (a long press on its title), when there is one, wins.
       const readGrid = (list) => {
-        const rank = (id) => {
-          const dc = h.states[id].attributes.device_class;
-          const st = this.kind(id) === "status";
-          const r = AREA_READ_ORDER.indexOf(dc);
-          return (st ? (signalWatched(h.states[id]) ? 0 : 1) : 2) * 1000 + (r < 0 ? 999 : r);
-        };
-        const sorted = ORDER.data?.[orderKey(this)] ? list : [...list].sort((a, b) => rank(a) - rank(b));
+        const sorted = ORDER.data?.[orderKey(this)] ? list : [...list].sort((a, b) => this.readRank(a) - this.readRank(b));
         return `<div class="vals">${sorted.map((id) => (this.kind(id) === "status" ? this.statusTile(id) : this.valueTile(id))).join("")}</div>`;
       };
       // «Диагностика» stays by device (which device's battery): its name over its part when the room has more than one.
@@ -7865,11 +8829,21 @@ ${RULE_CSS}`;
           })
           .join("");
       };
-      if (part) {
-        // The block's name is the title (never the room's — the page says it).
-        const html = part === "control" ? controlHtml(ids).map((x) => x[1]).join("") : part === "readings" ? readGrid(ids) : checksByDev(ids);
-        return `<div class="glass d${compact ? " cp" : ""}"><div class="hd"><span class="caps">${blockTitle(this, LL(...AREA_BLOCK[part]))}</span>${sum}</div>${html}</div>`;
-      }
+      // One block: its name is the title (never the room's — the page says it).
+      const blockHtml = (p, list, title) => {
+        const html = p === "control" ? controlHtml(list).map((x) => x[1]).join("") : p === "readings" ? readGrid(list) : checksByDev(list);
+        const n = list.filter((id) => this.word(h.states[id])[1] === "fault").length;
+        return `<div class="glass d${compact ? " cp" : ""}"><div class="hd"><span class="caps">${title}</span>${n ? `<span class="sum"><i class="fault"></i>${esc(LL(`аварий: ${n}`, `alarms: ${n}`))}</span>` : ""}</div>${html}</div>`;
+      };
+      if (part) return blockHtml(part, ids, blockTitle(this, LL(...AREA_BLOCK[part])));
+      // Р49 `split`: one card per room draws its three blocks itself, each only when it has something (HA's editor shows one
+      // placeholder, not three alike); the blocks one under another, as three cards of one column were.
+      if (this._config.split)
+        return `<div class="split">${Object.keys(AREA_PARTS)
+          .map((p) => [p, ids.filter((id) => AREA_PARTS[p].includes(this.kind(id)))])
+          .filter(([, list]) => list.length)
+          .map(([p, list]) => blockHtml(p, list, blockTitle(this, LL(...AREA_BLOCK[p]), p)))
+          .join("")}</div>`;
       // All in one card (no `block`, dashboards already deployed): the classes, then «Показания», «Диагностика». The title:
       // the device when the card shows one, else the room — not when the page's title says it already (п.63).
       const blk = Object.fromEntries(controlHtml(ids.filter((id) => AREA_PARTS.control.includes(this.kind(id)))));
@@ -7953,7 +8927,7 @@ ${RULE_CSS}`;
           const a = s.attributes;
           // The pending value is what the tap adds to; shown at once, sent once after the last tap (owner 09.11: a boiler's
           // compact row moved the setpoint «with a big delay» while the large card moved at once — it alone had the queue).
-          const base = spPend(this, id, num(a.temperature));
+          const base = spPend(this, id, canDo(s, 1) ? num(a.temperature) : undefined);
           if (base === undefined) return;
           const v = Math.min(num(a.max_temp) ?? 95, Math.max(num(a.min_temp) ?? 5, base + Number(b.dataset.d)));
           haptic(this);
@@ -8099,6 +9073,7 @@ ${RULE_CSS}`;
 .big>div{flex:1;min-width:0}.st{font:300 24px Onest,sans-serif;letter-spacing:-.02em}.sub{font:400 13px Onest,sans-serif;color:var(--ink2);margin-top:2px}
 .btns{margin-top:14px}.btns button{height:44px;border-radius:var(--hf-r-sm);font:500 13px Onest,sans-serif;box-shadow:inset 0 0 0 1px var(--line)}.btns button.on{background:var(--track);box-shadow:none}
 .lst{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}.it{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--hf-r-sm);background:var(--track);cursor:pointer;min-width:0}
+.it.lk{grid-column:1/-1}.it .w2{font:400 12px Onest,sans-serif;color:var(--ink2);margin-top:2px}.it .bat{display:inline-flex;align-items:center;gap:3px;margin-left:auto;padding:2px 8px;border-radius:999px;font:500 12px Onest,sans-serif;color:var(--ink2);white-space:nowrap}.it .bat ha-icon{--mdc-icon-size:16px}.it .bat.low{background:color-mix(in srgb,var(--amber) 22%,transparent);color:var(--amberT)}.it .lko{flex:none;height:36px;padding:0 12px;border-radius:var(--hf-r-sm);font:500 13px Onest,sans-serif;box-shadow:inset 0 0 0 1px var(--line);white-space:nowrap}.it .lko.arm{background:color-mix(in srgb,var(--amber) 22%,transparent);color:var(--amberT);box-shadow:none}
 .it .nm{font:500 13px Onest,sans-serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;hyphens:auto;hyphenate-limit-chars:12 6 6;overflow-wrap:anywhere;line-height:1.25}.it .w{font:400 13px Onest,sans-serif;color:var(--ink2)}.it.bad{background:color-mix(in srgb,var(--amber) 18%,transparent)}.it.bad ha-icon{color:var(--amberT)}
 .alarm .glow{background:radial-gradient(60% 60% at 15% 10%,var(--alertGlow),transparent 70%)}`;
     }
@@ -8116,9 +9091,16 @@ ${RULE_CSS}`;
       const unlocked = locks.filter((x) => !nd(x.s) && x.s.state !== "locked").length;
       return `<div class="glass s ${k}"><div class="glow"></div><div style="position:relative"><span class="caps">${esc(c.name || "Охрана")}</span>
 ${p ? `<div class="big"><span class="sh"><ha-icon icon="${k === "ok" ? "hauflo:shield" : k === "alarm" ? "hauflo:shield-alert" : "hauflo:shield"}"></ha-icon></span><div><div class="st">${esc(word)}</div><div class="sub">${[opens.length ? (openN ? `открыто: ${openN}` : openND ? `нет данных: ${openND}` : "всё закрыто") : "", locks.length ? (unlocked ? `не заперто: ${unlocked}` : lockND ? `замки без связи: ${lockND}` : "двери заперты") : ""].filter(Boolean).join(" · ")}</div></div></div>
-<div class="btns hfrow"><button data-a="alarm_disarm" class="${p.state === "disarmed" ? "on" : ""}">${p.state === "disarmed" ? "Снята" : "Снять"}</button><button data-a="alarm_arm_home" class="${p.state === "armed_home" ? "on" : ""}">Дома</button><button data-a="alarm_arm_away" class="${p.state === "armed_away" ? "on" : ""}">${p.state === "armed_away" ? "Под охраной" : "Уйти"}</button>${p.attributes.supported_features & 4 ? `<button data-a="alarm_arm_night" class="${p.state === "armed_night" ? "on" : ""}">Ночь</button>` : ""}</div>` : ""}
+<div class="btns hfrow"><button data-a="alarm_disarm" class="${p.state === "disarmed" ? "on" : ""}">${p.state === "disarmed" ? "Снята" : "Снять"}</button>${canDo(p, 1) ? `<button data-a="alarm_arm_home" class="${p.state === "armed_home" ? "on" : ""}">Дома</button>` : ""}${canDo(p, 2) ? `<button data-a="alarm_arm_away" class="${p.state === "armed_away" ? "on" : ""}">${p.state === "armed_away" ? "Под охраной" : "Уйти"}</button>` : ""}${p.attributes.supported_features & 4 ? `<button data-a="alarm_arm_night" class="${p.state === "armed_night" ? "on" : ""}">Ночь</button>` : ""}</div>` : ""}
 ${locks.length || opens.length ? `<div class="lst">${locks
-        .map((x) => `<div class="it ${!nd(x.s) && x.s.state !== "locked" ? "bad" : ""}" data-lock="${esc(x.id)}"><ha-icon icon="${x.s.state === "locked" ? "hauflo:lock" : "hauflo:unlock"}"></ha-icon><div style="min-width:0"><div class="nm">${esc(x.name || nameOf(x.s, x.id))}</div><div class="w">${riskWord(this, x.id) ? esc(riskWord(this, x.id)) : nd(x.s) ? "нет связи" : x.s.state === "locked" ? "заперт" : x.s.state === "jammed" ? "заклинило" : x.s.state === "open" ? "открыт" : "не заперт"}</div></div></div>`)
+        .map((x) => {
+          const L = HOUSE.get(this)?.locks?.[x.id];
+          const last = L ? lockLast(this._hass, L) : "";
+          const poll = L?.cloud && L.poll ? LL(`обновляется раз в ${L.poll} мин`, `updated every ${L.poll} min`) : "";
+          const openQ = riskWord(this, `open:${x.id}`);
+          const open = L?.open && !nd(x.s) ? `<button class="lko ${openQ ? "arm" : ""}" data-lock-open="${esc(x.id)}">${esc(openQ || LL("Открыть дверь", "Open door"))}</button>` : "";
+          return `<div class="it ${!nd(x.s) && x.s.state !== "locked" ? "bad" : ""} ${L ? "lk" : ""}" data-lock="${esc(x.id)}"><ha-icon icon="${x.s.state === "locked" ? "hauflo:lock" : "hauflo:unlock"}"></ha-icon><div style="min-width:0;flex:1"><div class="nm">${esc(x.name || nameOf(x.s, x.id))}</div><div class="w">${riskWord(this, x.id) ? esc(riskWord(this, x.id)) : nd(x.s) ? "нет связи" : x.s.state === "locked" ? "заперт" : x.s.state === "jammed" ? "заклинило" : x.s.state === "open" ? "открыт" : "не заперт"}</div>${last ? `<div class="w2">${last}</div>` : ""}${poll ? `<div class="w2">${esc(poll)}</div>` : ""}</div>${L ? lockBattery(this._hass, L) : ""}${open}</div>`;
+        })
         .join("")}${opens
         .map((x) => `<div class="it ${x.s.state === "on" ? "bad" : ""}" data-info="${esc(x.id)}"><ha-icon icon="${x.s.attributes.device_class === "window" ? "hauflo:window" : ["motion", "occupancy", "presence"].includes(x.s.attributes.device_class) ? "hauflo:motion" : "hauflo:door"}"></ha-icon><div style="min-width:0"><div class="nm">${esc(x.name || nameOf(x.s, x.id))}</div><div class="w">${nd(x.s) ? "нет данных" : x.s.attributes.device_class === "motion" || x.s.attributes.device_class === "occupancy" ? (x.s.state === "on" ? "есть движение" : "нет движения") : x.s.state === "on" ? "открыто" : "закрыто"}</div></div></div>`)
         .join("")}</div>` : ""}</div></div>`;
@@ -8131,6 +9113,17 @@ ${locks.length || opens.length ? `<div class="lst">${locks
           if (st(this._hass, c.entity)?.attributes.code_format) return moreInfo(this, c.entity);
           haptic(this);
           call(this._hass, "alarm_control_panel", b.dataset.a, { entity_id: c.entity });
+        }),
+      );
+      this.shadowRoot.querySelectorAll("[data-lock-open]").forEach((b) =>
+        b.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          const id = b.dataset.lockOpen;
+          const s = st(this._hass, id);
+          // «Открыть дверь» (the lock's OPEN: unlatch) is always asked — the door opens, not just unlocks.
+          if (!s || nd(s) || !riskTap(this, id, "Точно? Открыть", `open:${id}`)) return;
+          haptic(this);
+          call(this._hass, "lock", "open", { entity_id: id });
         }),
       );
       this.shadowRoot.querySelectorAll("[data-lock]").forEach((el) =>
@@ -8167,7 +9160,7 @@ ${locks.length || opens.length ? `<div class="lst">${locks
         for (const [id, s] of Object.entries(h.states || {})) {
           const d = id.split(".")[0];
           const e = h.entities[id];
-          if (e?.hidden || e?.disabled_by || areaOf(h, id) !== c.area) continue;
+          if (e?.hidden || e?.disabled_by || areaOf(h, id) !== roomArea(c.area)) continue;
           if (d === "binary_sensor" && s.attributes?.device_class === "moisture") sensors.push(id);
           else if (d === "valve" && s.attributes?.device_class !== "gas") valves.push(id);
           else if (d === "switch" && s.attributes?.device_class === "water") valves.push(id);
@@ -8263,33 +9256,281 @@ ${!vs.length && ss.length ? `<div class="hint" data-own>${LL("Кран не на
   }
 
   // --- hauflo-camera: the picture, refreshed; a tap opens the live view ---------------------------
+  // --- hauflo-camera as a door (Р55): the same card, with the intercom's state, «Ответить» / «Положить» / «Открыть».
+  // One contract for every panel: the agent's `sensor.<door>_intercom` (state idle / ringing / talking / answered_elsewhere,
+  // attributes audio_path, talker, can_open, open_button, camera, talk_camera, problem), or another integration's call event
+  // (eigger/hass-sip: incoming → ringing, connected → talking, ended → idle) with its own answer / hang-up buttons.
+  // The voice goes by HA's WebRTC on the door's talk camera: the one who answered speaks (sendrecv), anyone else listens.
+  const INTERCOM_WORD = { idle: "Ожидает звонка", ringing: "Звонок в дверь", talking: "Разговор", answered_elsewhere: "Ответили на другом устройстве", nolink: "Нет связи" };
+  const INTERCOM_TONE = { idle: "ok", ringing: "wait", talking: "arm", answered_elsewhere: "ok", nolink: "ok" };
+  /** The plate under the door, by the agent's `problem` code (and the browser's own limits): what the family can do about it. */
+  const INTERCOM_PROBLEM = { no_calls_yet: "Звонков ещё не было", no_audio: "Разговор без звука. Сообщите сервису.", nolink: "Нет связи с домофоном. Сообщите сервису.", https: "Микрофон работает только по защищённому адресу (https)", mic: "Нет доступа к микрофону", failed: "Звук не подключился. Попробуйте ещё раз." };
+  Object.assign(EN, {
+    "Ожидает звонка": "Waiting for a call", "Звонок в дверь": "Doorbell ringing", "Разговор": "Talking", "Ответили на другом устройстве": "Answered on another device",
+    "Звонков ещё не было": "No calls yet", "Разговор без звука. Сообщите сервису.": "The call has no sound. Please contact your service.", "Нет связи с домофоном. Сообщите сервису.": "No link to the intercom. Please contact your service.",
+    "Микрофон работает только по защищённому адресу (https)": "The microphone works only over a secure address (https)", "Нет доступа к микрофону": "No access to the microphone", "Звук не подключился. Попробуйте ещё раз.": "The sound didn't connect. Please try again.",
+    "Ответить": "Answer", "Положить": "Hang up", "Открыть": "Open", "Домофон": "Intercom", "Открыто": "Opened",
+  });
+  /** What a door's opener does by its domain: a button is pressed, a lock unlocked, a relay / script turned on. */
+  const openCall = (id) => {
+    const d = id.split(".")[0];
+    return d === "button" || d === "input_button" ? [d, "press"] : d === "lock" ? ["lock", "unlock"] : ["homeassistant", "turn_on"];
+  };
+  /** The door as one model, whichever integration rings it. Null — the card is a plain camera. */
+  const doorOf = (h, c) => {
+    if (c.intercom) {
+      const s = st(h, c.intercom);
+      if (!s) return null;
+      const a = s.attributes || {};
+      const off = nd(s);
+      const known = ["idle", "ringing", "talking", "answered_elsewhere"].includes(s.state);
+      const open = c.open || a.open_button || "";
+      return {
+        own: true, id: c.intercom, state: off ? "nolink" : known ? s.state : "idle", audio: a.audio_path || "none", talker: a.talker || null,
+        talk: a.talk_camera || "", camera: c.entity || a.camera || "", open: a.can_open === false ? "" : open, problem: off ? "nolink" : a.problem || "",
+        registered: a.registered, lastCall: a.last_invite_at || "", rx: a.rtp_bytes_in, tx: a.rtp_bytes_out, name: s.attributes.friendly_name,
+      };
+    }
+    if (c.call_event) {
+      const ev = st(h, c.call_event);
+      if (!ev) return null;
+      const t = ev.attributes?.event_type;
+      const at = Date.parse(ev.state);
+      const fresh = Number.isFinite(at) && Date.now() - at < (c.ring_timeout || 60) * 1000;
+      const reg = c.registration ? st(h, c.registration) : null;
+      const off = ev.state === "unavailable" || (reg && reg.state !== "registered");
+      return {
+        own: false, id: c.call_event, state: ev.state === "unavailable" ? "nolink" : t === "incoming" && fresh ? "ringing" : t === "connected" ? "talking" : "idle",
+        ringUntil: t === "incoming" && fresh ? at + (c.ring_timeout || 60) * 1000 : 0,
+        audio: "none", talker: null, talk: "", camera: c.entity || "", open: c.open || "", problem: off ? "nolink" : "", hangup: c.hangup_button || "",
+        registered: reg ? reg.state === "registered" : undefined, lastCall: Number.isFinite(at) ? ev.state : "", rx: ev.attributes?.bytes_received, tx: ev.attributes?.bytes_sent, name: "",
+      };
+    }
+    return null;
+  };
+  const kb = (n) => (Number.isFinite(n) ? `${Math.round(n / 1024)} ${LL("КБ", "KB")}` : "—");
   class Camera extends EHCard {
     watched() {
-      return [this._config.entity];
+      const c = this._config;
+      const d = this._hass ? doorOf(this._hass, c) : null;
+      return [c.entity, c.intercom, c.call_event, c.registration, c.open, c.hangup_button, d?.camera, d?.open].filter(Boolean);
+    }
+    set hass(h) {
+      super.hass = h;
+      this._icSync();
+    }
+    get hass() {
+      return this._hass;
     }
     connectedCallback() {
+      // The picture refreshes every `refresh` s; while the door rings or talks, every 2 s (who is at the door now).
+      let n = 0;
       this._t = setInterval(() => {
+        n++;
+        const live = ["ringing", "talking"].includes(this._door?.state);
+        if (n % (live ? 2 : this._config?.refresh || 10)) return;
         this._sig = "";
         this._update();
-      }, (this._config?.refresh || 10) * 1000);
+      }, 1000);
     }
     disconnectedCallback() {
       clearInterval(this._t);
+      this._icStop();
     }
     css() {
       return `.c{aspect-ratio:16/10;background:var(--hf-camera-bg) center/cover;cursor:pointer}.c::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--hf-shade-35),transparent 35%,transparent 65%,var(--hf-shade-50))}
 .l{position:absolute;left:16px;top:14px;z-index:1;color:var(--hf-white);font:500 13px Onest,sans-serif;display:flex;align-items:center;gap:8px}.l i{width:8px;height:8px;border-radius:4px;background:var(--hf-live);box-shadow:0 0 10px var(--hf-live)}
-.b{position:absolute;left:16px;bottom:12px;z-index:1;color:var(--hf-white-85);font:400 12px Onest,sans-serif}`;
+.b{position:absolute;left:16px;bottom:12px;z-index:1;color:var(--hf-white-85);font:400 12px Onest,sans-serif}
+.s{padding:var(--hf-pad-title)}.s .c{position:relative;overflow:hidden;border-radius:var(--hf-r-sm);margin-top:10px}.big{display:flex;align-items:center;gap:14px;margin-top:12px}.sh{width:56px;height:56px;border-radius:var(--hf-r-md);display:grid;place-items:center;flex:0 0 auto}.sh ha-icon{--mdc-icon-size:var(--hf-icon-l)}
+.ok .sh{background:var(--track);color:var(--ink2)}.arm .sh{background:color-mix(in srgb,var(--mint) 22%,transparent);color:var(--mintT)}.wait .sh{background:color-mix(in srgb,var(--amber) 22%,transparent);color:var(--amberT)}
+.big>div{flex:1;min-width:0}.st{font:300 24px Onest,sans-serif;letter-spacing:-.02em}.sub{font:400 13px Onest,sans-serif;color:var(--ink2);margin-top:2px}
+.pl{margin-top:12px;padding:10px 12px;border-radius:var(--hf-r-sm);font:400 13px/1.4 Onest,sans-serif;background:var(--track);color:var(--ink2)}.pl.bad{background:color-mix(in srgb,var(--amber) 18%,transparent);color:var(--ink)}
+.btns{margin-top:14px}.btns button{height:44px;border-radius:var(--hf-r-sm);font:500 13px Onest,sans-serif;box-shadow:inset 0 0 0 1px var(--line);display:flex;align-items:center;justify-content:center;gap:8px}.btns button ha-icon{--mdc-icon-size:var(--hf-icon-s)}.btns button.on{background:color-mix(in srgb,var(--mint) 22%,transparent);box-shadow:none}
+.btns button.arm{background:color-mix(in srgb,var(--amber) 22%,transparent)}.btns button.go{background:color-mix(in srgb,var(--mint) 26%,transparent)}
+.adm{margin-top:10px;font:400 12px Onest,sans-serif;color:var(--ink3)}`;
+    }
+    pic(id, label) {
+      const s = st(this._hass, id);
+      if (!s) return "";
+      const pic = s.attributes.entity_picture ? `${s.attributes.entity_picture}&t=${Date.now()}` : "";
+      return `<div class="c" style="background-image:url('${cssUrl(pic)}')"><div class="l"><i></i>${esc(label)}</div><div class="b">${s.state === "unavailable" ? "нет связи" : "обновлено " + hhmm(new Date())}</div></div>`;
     }
     render() {
-      const s = st(this._hass, this._config.entity);
-      if (!s) return `<div class="glass c"></div>`;
-      const pic = s.attributes.entity_picture ? `${s.attributes.entity_picture}&t=${Date.now()}` : "";
-      return `<div class="glass c" style="background-image:url('${cssUrl(pic)}')"><div class="l"><i></i>${esc(this._config.name || nameOf(s, s.entity_id))}</div><div class="b">${s.state === "recording" ? "запись" : s.state === "streaming" ? "трансляция" : s.state === "unavailable" ? "нет связи" : "обновлено " + hhmm(new Date())}</div></div>`;
+      const c = this._config;
+      const d = (this._door = doorOf(this._hass, c));
+      if (!d) {
+        const s = st(this._hass, c.entity);
+        if (!s) return `<div class="glass c"></div>`;
+        const pic = s.attributes.entity_picture ? `${s.attributes.entity_picture}&t=${Date.now()}` : "";
+        return `<div class="glass c" style="background-image:url('${cssUrl(pic)}')"><div class="l"><i></i>${esc(c.name || nameOf(s, s.entity_id))}</div><div class="b">${s.state === "recording" ? "запись" : s.state === "streaming" ? "трансляция" : s.state === "unavailable" ? "нет связи" : "обновлено " + hhmm(new Date())}</div></div>`;
+      }
+      if (d.ringUntil) this.wakeAt(d.ringUntil);
+      const h = this._hass;
+      const me = h.user?.id;
+      const name = c.name || (d.camera && st(h, d.camera) ? nameOf(st(h, d.camera), d.camera) : d.name) || "Домофон";
+      const live = ["ringing", "talking"].includes(d.state);
+      // «Ответить» only where the voice reaches this screen (audio_path), only while it rings; «Положить» while it rings or talks.
+      const answer = d.state === "ringing" && d.audio !== "none" && !!d.talk;
+      const hang = live && (d.own || !!d.hangup);
+      const word = d.state === "talking" && d.own && d.talker && d.talker !== me ? "answered_elsewhere" : d.state;
+      const plate = this._icErr || (d.problem ? (INTERCOM_PROBLEM[d.problem] ? d.problem : "nolink") : "");
+      const sub = d.state === "talking" && this._rtc ? (this._rtc.send ? LL("микрофон включён", "microphone on") : LL("только звук двери", "door's sound only")) : d.lastCall && word === "idle" ? `${LL("последний звонок", "last call")}: ${eventWhen({ state: d.lastCall })[0]}` : "";
+      const admin = h.user?.is_admin === true;
+      const diag = admin
+        ? [d.registered === undefined || d.registered === null ? "" : `${LL("регистрация", "registration")}: ${d.registered ? LL("да", "yes") : LL("нет", "no")}`, d.problem && !INTERCOM_PROBLEM[d.problem] ? d.problem : "", Number.isFinite(d.rx) || Number.isFinite(d.tx) ? `${LL("звук", "sound")} ↓${kb(d.rx)} ↑${kb(d.tx)}` : ""].filter(Boolean)
+        : [];
+      return `<div class="glass s ${INTERCOM_TONE[word] || "ok"}"><span class="caps">${esc(name)}</span>${d.camera ? this.pic(d.camera, name) : ""}
+<div class="big"><span class="sh"><ha-icon icon="hauflo:doorbell"></ha-icon></span><div><div class="st">${esc(INTERCOM_WORD[word] || INTERCOM_WORD.idle)}</div>${sub ? `<div class="sub">${esc(sub)}</div>` : ""}</div></div>
+${plate ? `<div class="pl${plate === "no_calls_yet" ? "" : " bad"}" role="status">${esc(INTERCOM_PROBLEM[plate])}</div>` : ""}
+${answer || hang || d.open ? `<div class="btns hfrow">${answer ? `<button data-ic="answer" class="on"><ha-icon icon="mdi:phone"></ha-icon><span>Ответить</span></button>` : ""}${hang ? `<button data-ic="hangup"><ha-icon icon="mdi:phone-hangup"></ha-icon><span>Положить</span></button>` : ""}${d.open ? `<button data-ic="open" data-ask="Точно? Открыть|Открыто"><ha-icon icon="hauflo:unlock"></ha-icon><span>Открыть</span></button>` : ""}</div>` : ""}
+${diag.length ? `<div class="adm">${esc(diag.join(" · "))}</div>` : ""}</div>`;
     }
     bind() {
-      const c = this.shadowRoot.querySelector(".c");
-      if (c) holdInfo(this, c, this._config.entity);
+      const c = this._config;
+      const d = this._door;
+      const pic = this.shadowRoot.querySelector(".c");
+      if (pic) holdInfo(this, pic, d?.camera || c.entity);
+      if (!d) return;
+      this.shadowRoot.querySelectorAll("button[data-ic]").forEach((b) =>
+        b.addEventListener("click", () => {
+          const k = b.dataset.ic;
+          if (k === "open") {
+            // Opening the door is never one tap (as a lock tile): the first tap asks, a second within 4 s opens.
+            if (b.dataset.arm !== "1") {
+              askShow(b, 1);
+              this._busy = true;
+              clearTimeout(this._armT);
+              this._armT = setTimeout(() => {
+                if (b.isConnected && b.dataset.arm === "1") askShow(b, 0);
+                this._busy = false;
+              }, 4000);
+              return;
+            }
+            clearTimeout(this._armT);
+            this._busy = false;
+            haptic(this);
+            const [dom, svc] = openCall(d.open);
+            call(this._hass, dom, svc, { entity_id: d.open }).then(
+              () => b.isConnected && askShow(b, 2, false),
+              () => okToast(LL("Дверь не открылась", "The door didn't open"), true),
+            );
+            setTimeout(() => b.isConnected && askShow(b, 0), 2000);
+            return;
+          }
+          haptic(this);
+          if (k === "answer") return this._icAnswer(d);
+          if (k === "hangup") {
+            this._icStop();
+            const p = d.own ? this._hass.callService("hauflo", "intercom_hangup", { entity_id: d.id }) : this._hass.callService("button", "press", { entity_id: d.hangup });
+            p.catch((e) => okToast(e?.message || LL("Не получилось", "Didn't work"), true));
+          }
+        }),
+      );
+    }
+    /** «Ответить»: the agent takes the call for this user, then the voice comes by WebRTC on the talk camera. */
+    async _icAnswer(d) {
+      const h = this._hass;
+      // The sound plays from a player outside the card (the card's content is redrawn on every state); started inside the
+      // tap, so a phone lets it play.
+      this._icAudio ??= new Audio();
+      this._icAudio.autoplay = true;
+      this._icAudio.play().catch(() => {});
+      this._icErr = "";
+      try {
+        await h.callService("hauflo", "intercom_answer", { entity_id: d.id });
+      } catch (e) {
+        okToast(e?.message || LL("Не получилось", "Didn't work"), true);
+        return;
+      }
+      const talker = st(this._hass, d.id)?.attributes?.talker;
+      await this._icStart(d.talk, !talker || talker === h.user?.id);
+    }
+    async _icStart(talk, mine) {
+      this._icStop();
+      const h = this._hass;
+      const rtc = (this._rtc = { send: false, pending: [], session: "" });
+      const fail = (why) => {
+        if (this._rtc !== rtc) return;
+        this._icStop();
+        this._icErr = why;
+        this._sig = "";
+        this._update();
+      };
+      try {
+        const cfg = await h.callWS({ type: "camera/webrtc/get_client_config", entity_id: talk });
+        const pc = (rtc.pc = new RTCPeerConnection(cfg?.configuration || {}));
+        let mic = null;
+        if (mine && !window.isSecureContext) this._icErr = "https";
+        else if (mine) {
+          try {
+            mic = rtc.mic = await navigator.mediaDevices.getUserMedia({ audio: true });
+          } catch {
+            this._icErr = "mic";
+          }
+        }
+        if (mic) pc.addTransceiver(mic.getAudioTracks()[0], { direction: "sendrecv", streams: [mic] });
+        else pc.addTransceiver("audio", { direction: "recvonly" });
+        rtc.send = !!mic;
+        pc.ontrack = (e) => {
+          this._icAudio.srcObject = e.streams?.[0] || new MediaStream([e.track]);
+          this._icAudio.play().catch(() => {});
+        };
+        const cand = (x) => h.callWS({ type: "camera/webrtc/candidate", entity_id: talk, session_id: rtc.session, candidate: x }).catch(() => {});
+        pc.onicecandidate = (e) => {
+          if (!e.candidate) return;
+          const x = e.candidate.toJSON();
+          if (rtc.session) cand(x);
+          else rtc.pending.push(x);
+        };
+        pc.onconnectionstatechange = () => pc.connectionState === "failed" && fail("failed");
+        const offer = await pc.createOffer();
+        await pc.setLocalDescription(offer);
+        rtc.unsub = await h.connection.subscribeMessage(
+          (m) => {
+            if (this._rtc !== rtc) return;
+            if (m.type === "session") {
+              rtc.session = m.session_id;
+              rtc.pending.splice(0).forEach(cand);
+            } else if (m.type === "answer") pc.setRemoteDescription({ type: "answer", sdp: m.answer }).catch(() => fail("failed"));
+            else if (m.type === "candidate") pc.addIceCandidate(m.candidate).catch(() => {});
+            else if (m.type === "error") {
+              console.warn("hauflo-cards: intercom webrtc", m.code, m.message);
+              fail("failed");
+            }
+          },
+          { type: "camera/webrtc/offer", entity_id: talk, offer: offer.sdp },
+        );
+        if (this._rtc !== rtc) rtc.unsub?.();
+      } catch (e) {
+        console.warn("hauflo-cards: intercom webrtc", e);
+        fail("failed");
+        return;
+      }
+      this._sig = "";
+      this._update();
+    }
+    _icStop() {
+      const rtc = this._rtc;
+      this._rtc = null;
+      if (!rtc) return;
+      try {
+        rtc.unsub?.();
+      } catch {}
+      rtc.mic?.getTracks().forEach((t) => t.stop());
+      try {
+        rtc.pc?.close();
+      } catch {}
+      if (this._icAudio) this._icAudio.srcObject = null;
+    }
+    /** The call ended, or another device took it: the voice here stops; a plate of the last call goes when a new one rings. */
+    _icSync() {
+      const d = this._config && this._hass ? doorOf(this._hass, this._config) : null;
+      if (this._rtc && (!d || d.state !== "talking")) {
+        this._icStop();
+        this._sig = "";
+      }
+      if (this._icErr && d?.state === "ringing" && this._icWas !== "ringing") this._icErr = "";
+      this._icWas = d?.state;
     }
     getGridOptions() {
       return { columns: 12, rows: "auto" };
@@ -8328,7 +9569,7 @@ ${!vs.length && ss.length ? `<div class="hint" data-own>${LL("Кран не на
     person: { icon: "hauflo:user", word: (s) => (s.state === "home" ? "дома" : s.state === "not_home" ? "не дома" : haState(s)), tap: null, on: (s) => s.state === "home" },
     input_boolean: { icon: "hauflo:switch", word: (s) => (s.state === "on" ? "вкл" : "выкл"), tap: ["input_boolean", "toggle"] },
     button: { icon: "mdi:gesture-tap-button", word: (s, name = "") => (/звон|bell/i.test(name) ? "позвонить" : /калит|ворот|двер|замок|gate|door/i.test(name) ? "открыть" : "нажать"), tap: ["button", "press"], on: () => false, action: true },
-    binary_sensor: { icon: "hauflo:info", word: (s) => (OPENING.includes(s.attributes.device_class) ? (s.state === "on" ? "открыто" : "закрыто") : s.state === "on" ? "сработал" : "в норме"), tap: null, tone: (s) => (tileAlarm(s) ? "alarm" : ""), on: (s) => s.state === "on" && !signalWatched(s) },
+    binary_sensor: { icon: "hauflo:info", word: (s) => (OPENING.includes(s.attributes.device_class) ? (s.state === "on" ? "открыто" : "закрыто") : signalOn(s) ? "сработал" : "в норме"), tap: null, tone: (s) => (tileAlarm(s) ? "alarm" : ""), on: (s) => signalOn(s) && !tileAlarm(s) },
     number: { icon: "hauflo:info", word: (s) => (num(s.state) === undefined ? "нет данных" : `${fmt(num(s.state), num(s.state) % 1 ? 1 : 0)} ${unitOf(s) || (num(s.attributes.max) === 100 && num(s.attributes.min) === 0 ? "%" : "")}`.trim()), tap: null, on: () => false },
     // An event (a doorbell press, a button, a motion event — HA's event entity): when it last fired, its class's icon; a tap — HA's
     // dialog (its history). `stamp`: «unknown» = never fired, not offline.
@@ -8374,10 +9615,8 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
       const step = Math.max(num(a.target_temp_step) || 0.5, 0.5);
       const min = num(a.min_temp) ?? 5;
       const max = num(a.max_temp) ?? 35;
-      const t = num(a.temperature);
+      const { sp: t, lo, hi } = climateCan(s); // what it can set, not what it reports
       if (t !== undefined) return { v: t, step, min, max, data: (v) => ({ temperature: v }) };
-      const lo = num(a.target_temp_low);
-      const hi = num(a.target_temp_high);
       if (lo === undefined || hi === undefined) return null;
       const cool = activeMode(s) === "cool";
       return { v: cool ? hi : lo, step, min, max, data: (v) => (cool ? { target_temp_low: Math.min(lo, v), target_temp_high: v } : { target_temp_low: v, target_temp_high: Math.max(hi, v) }) };
@@ -8637,6 +9876,7 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
     render() {
       // The list's own order, always (step 3: sorting by state — alarm → warning → on → rest, designer review 25.10 — moved a
       // tile 74 px under the finger when a device changed; the tile's colour already says what needs attention).
+      openAlarms(this, []); // the agent's verdicts (rowAlarm, the tiles' tone): asked, the card drawn again when they come (Р9/Р19)
       const items = (this._config.entities || []).map((e) => (typeof e === "string" ? { entity: e } : e)).map((e) => ({ ...e, s: st(this._hass, e.entity) })).filter((e) => e.s);
       this.hideCard(!items.length);
       if (!items.length) return "";
@@ -8720,8 +9960,9 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
   /** Within a section: what needs a look first. */
   const INSIGHT_STAGES = ["deviation", "learning", "ready", "normal", "excluded"];
   /** The card's own canon (tuning.json insight.card, check-cards-logic): the agent's tickS held within tick_min_s..tick_max_s,
-   * an answer awaited timeout_s at most, a 403 asked again every denied_every_ticks ticks (the integrator may open it to all). */
-  const INSIGHT_CARD = { tick_min_s: 10, tick_max_s: 3600, timeout_s: 20, denied_every_ticks: 5 };
+   * an answer awaited timeout_s at most, a 403 asked again every denied_every_ticks ticks (the integrator may open it to all);
+   * a row's «что анализируется» shows uses_max inputs then «+N», a section of the «Анализ» panel `fold` rows then «Показать ещё». */
+  const INSIGHT_CARD = { tick_min_s: 10, tick_max_s: 3600, timeout_s: 20, denied_every_ticks: 5, uses_max: 4, fold: 8 };
   /** `hide_ok`: these stages say nothing to act on («Отмечено как норма» stays — its «Снова следить» is on the card only). */
   const INSIGHT_OK = ["ready"];
   const INSIGHT_ICON = { climate: "mdi:thermostat", energy: "mdi:lightning-bolt-outline", water: "mdi:water-outline", air: "mdi:weather-windy", link: "mdi:access-point-network", system: "mdi:server-outline", pairs: "mdi:link-variant", other: "mdi:dots-horizontal-circle-outline" };
@@ -8808,12 +10049,19 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
     let line = "";
     let pr = null;
     if (stage === "learning") {
+      // Р17 (0.33): ONE formula everywhere (the card, the platform's table) — the norm comes when BOTH are met, so the bar
+      // is the slower of the two; the line says what is still awaited and ticks the one already met.
+      const need = Number(v.need) > 0 ? Number(v.need) : 0;
+      const needH = Number(v.needH) > 0 ? Number(v.needH) : 0;
+      const have = Number(v.have) || 0;
+      const hours = Number(v.hours) || 0;
+      pr = need || needH ? Math.max(0, Math.min(1, Math.min(need ? have / need : 1, needH ? hours / needH : 1))) : null;
+      const n = Math.max(0, need - have);
+      const hh = Math.max(0, Math.ceil(needH - hours));
       const parts = [];
-      if (Number(v.need) > 0) parts.push(`${LL("эпизодов", "episodes")} ${Number(v.have) || 0}/${Number(v.need)}`);
-      if (Number(v.needH) > 0) parts.push(`${LL("часов", "hours")} ${insNum(Math.min(Number(v.hours) || 0, Number(v.needH)))}/${Number(v.needH)}`);
-      line = parts.join(" · ");
-      const ps = [Number(v.need) > 0 ? (Number(v.have) || 0) / Number(v.need) : 1, Number(v.needH) > 0 ? (Number(v.hours) || 0) / Number(v.needH) : 1];
-      pr = Number(v.need) > 0 || Number(v.needH) > 0 ? Math.max(0, Math.min(1, Math.min(...ps))) : null;
+      if (need) parts.push(n ? LL(`ещё ${n} ${plural(n, "наблюдение", "наблюдения", "наблюдений")}`, `${n} more observation${n === 1 ? "" : "s"}`) : LL("наблюдения ✓", "observations ✓"));
+      if (needH) parts.push(hh ? LL(`осталось ${hh} ч`, `${hh} h to go`) : LL("время ✓", "time ✓"));
+      line = [pr != null ? `${LL("готово", "done")} ${Math.round(pr * 100)}%` : "", ...parts].filter(Boolean).join(" · ");
     } else if (stage === "ready") line = v.norm != null && insNum(v.norm) !== "" ? `${LL("норма", "norm")} ≈ ${insNum(v.norm)}${unit(v.unit || r.unit)}` : "";
     else if (stage === "deviation") line = [insWhen(v.since) ? `${LL("с", "since")} ${insWhen(v.since)}` : "", v.was != null && insNum(v.was) !== "" ? `${LL("норма", "norm")} ${insNum(v.was)}` : "", v.now != null && insNum(v.now) !== "" ? `${LL("сейчас", "now")} ${insNum(v.now)}` : ""].filter(Boolean).join(" · ");
     else if (stage === "normal") line = [v.by, v.at ? insWhen(v.at) : ""].filter(Boolean).join(", ");
@@ -8833,6 +10081,145 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
     rows.sort((a, b) => rank(a.sec) - rank(b.sec) || INSIGHT_STAGES.indexOf(a.stage) - INSIGHT_STAGES.indexOf(b.stage) || String(a.name || a.entityId).localeCompare(String(b.name || b.entityId)) || String(a.kind).localeCompare(String(b.kind)));
     return rows;
   };
+  /** «Что анализируется» (0.33 Р26/Р8): a row's inputs as the reader knows them — the entity's KNX addresses, the other
+   * entities by name, the rest (street, season, peers) by the agent's word. `max` items, then «+N». */
+  const insUses = (r, max = INSIGHT_CARD.uses_max) => {
+    const out = [];
+    for (const u of Array.isArray(r?.uses) ? r.uses : []) {
+      if (!u || typeof u !== "object") continue;
+      const knx = Array.isArray(u.knx) ? u.knx.filter((x) => typeof x === "string").join(", ") : "";
+      if (u.role === "self") {
+        if (knx) out.push(knx);
+        continue;
+      }
+      const nm = u.entityId ? String(u.name || u.entityId) : insWord("insight_input", u.role);
+      if (nm) out.push(knx ? `${nm} (${knx})` : nm);
+    }
+    return out.length > max ? [...out.slice(0, max), `+${out.length - max}`] : out;
+  };
+  /** The panel's filters (status · type · room · text) over the card's rows; the text finds a name, room, entity, address. */
+  const insFilter = (rows, f) => {
+    const q = String(f?.q || "").trim().toLowerCase();
+    return rows.filter((r) => {
+      if (f?.stage && r.stage !== f.stage) return false;
+      if (f?.sec && r.sec !== f.sec) return false;
+      if (f?.area && (r.area || "") !== f.area) return false;
+      if (!q) return true;
+      const hay = [r.name, r.area, r.entityId, insWord("insight_kind", r.kind), ...(Array.isArray(r.uses) ? r.uses.flatMap((u) => [u?.name, u?.entityId, ...(Array.isArray(u?.knx) ? u.knx : [])]) : [])];
+      return hay.some((x) => typeof x === "string" && x.toLowerCase().includes(q));
+    });
+  };
+  /** The facets of the panel's chips: each value with its count, in the canon's order (stages, sections) or by name (rooms). */
+  const insFacets = (rows) => {
+    const count = (key) => rows.reduce((m, r) => m.set(r[key] || "", (m.get(r[key] || "") || 0) + 1), new Map());
+    const st = count("stage");
+    const sec = count("sec");
+    const area = count("area");
+    return {
+      stage: INSIGHT_STAGES.filter((s) => st.get(s)).map((s) => [s, st.get(s)]),
+      sec: [...sec.entries()],
+      area: [...area.entries()].filter(([a]) => a).sort((a, b) => a[0].localeCompare(b[0])),
+    };
+  };
+  /** Why a row is where it is (0.33 Р8: tap → «почему так решено»), in words — the stage's own explanation. */
+  const insWhy = (r) => {
+    const v = r[r.stage] || {};
+    const unit = (u) => (u ? ` ${insWord("insight_unit", u)}` : "");
+    if (r.stage === "learning") {
+      const need = Number(v.need) > 0 ? Number(v.need) : 0;
+      const needH = Number(v.needH) > 0 ? Number(v.needH) : 0;
+      const have = Number(v.have) || 0;
+      const hours = Math.floor(Number(v.hours) || 0);
+      const cond = [need ? LL(`${need} ${plural(need, "наблюдение", "наблюдения", "наблюдений")} (есть ${have})`, `${need} observation${need === 1 ? "" : "s"} (${have} so far)`) : "", needH ? LL(`${needH} ч наблюдения (прошло ${hours})`, `${needH} h of watching (${hours} so far)`) : ""].filter(Boolean);
+      return cond.length
+        ? LL(`Норма станет известна, когда будут выполнены оба условия: ${cond.join(" и ")}. Полоса — по тому условию, что отстаёт.`, `The norm is known once both are met: ${cond.join(" and ")}. The bar follows the one that lags.`)
+        : LL("Собираю данные.", "Collecting data.");
+    }
+    if (r.stage === "ready")
+      return v.norm != null && insNum(v.norm) !== ""
+        ? LL(`Норма ≈ ${insNum(v.norm)}${unit(v.unit || r.unit)} по ${Number(v.n) || 0} ${plural(Number(v.n) || 0, "наблюдению", "наблюдениям", "наблюдениям")}. Сообщу, если станет заметно хуже обычного.`, `Norm ≈ ${insNum(v.norm)}${unit(v.unit || r.unit)} from ${Number(v.n) || 0} observation${Number(v.n) === 1 ? "" : "s"}. I'll say when it gets clearly worse than usual.`)
+        : LL("Порог задан правилом проверки — изучать нечего, слежу сразу.", "The check has a fixed threshold — nothing to learn, watching right away.");
+    if (r.stage === "deviation") return LL(`${r.line ? `Не как обычно: ${r.line}. ` : ""}Если для этого прибора так и должно быть — «Это норма», и сообщения прекратятся.`, `${r.line ? `Off its usual: ${r.line}. ` : ""}If this is how the device should work, press “This is normal” and the messages stop.`);
+    if (r.stage === "normal") return LL(`Отмечено как норма${r.line ? ` (${r.line})` : ""}. Об отклонениях не сообщаю, пока не нажмёте «Снова следить».`, `Marked as normal${r.line ? ` (${r.line})` : ""}. No deviations are reported until “Watch again”.`);
+    return r.line ? LL(`Не проверяю: ${r.line}.`, `Not checked: ${r.line}.`) : LL("Не проверяю.", "Not checked.");
+  };
+  /** The row's sheet (0.33 Р8): what is analysed, how it is decided, why it is where it is, the last observations, the actions. */
+  const insSheet = (card, r) =>
+    sceneSheet(card, ({ sr, draw, close }) => {
+      const h = card._hass;
+      const admin = h?.user?.is_admin === true && INS.data?.canEdit !== false;
+      let eps = null;
+      let err = "";
+      let sure = false;
+      let busy = false;
+      const ep = (e) => {
+        const at = insWhen(e?.start);
+        const res = String(e?.result || "");
+        const word = res === "used" ? insWord("insight_result", "used") : insWord("insight_result", res.startsWith("dropped:") ? res.slice(8) : res);
+        const val = e?.rate != null && insNum(e.rate) !== "" ? `${insNum(e.rate)}${r.unit || r.ready?.unit ? ` ${insWord("insight_unit", r.unit || r.ready?.unit)}` : ""}` : "";
+        return `<li><span>${esc(at)}</span>${val ? `<b>${esc(val)}</b>` : ""}<i class="${res === "used" ? "ok" : ""}">${esc(word)}</i></li>`;
+      };
+      const input = (u) => {
+        const role = insWord("insight_input", u.role);
+        const nm = u.entityId ? [u.name || u.entityId, u.area].filter(Boolean).join(" · ") : "";
+        const knx = Array.isArray(u.knx) && u.knx.length ? u.knx.join(", ") : "";
+        return `<li><div class="ir">${esc(role)}</div>${nm ? `<div class="iv">${esc(nm)}</div>` : ""}${knx ? `<div class="ik">${esc(LL("Адреса", "Addresses"))}: ${esc(knx)}</div>` : ""}${admin && u.entityId ? `<div class="ie">${esc(u.entityId)}</div>` : ""}</li>`;
+      };
+      const act = r.stage === "deviation" ? "normal" : r.stage === "normal" ? "follow" : "";
+      const paint = () => {
+        const sub = [r.area, insWord("insight_kind", r.kind)].filter(Boolean).join(" · ");
+        const uses = Array.isArray(r.uses) && r.uses.length ? r.uses : [{ role: "self", entityId: r.entityId, name: r.name, area: r.area }];
+        const how = r.how ? insWord("insight_how", r.how) : "";
+        const list = eps === null ? `<p class="n">${esc(LL("Загружаю…", "Loading…"))}</p>` : eps.length ? `<ul class="ep">${eps.slice(-INSIGHT_CARD.fold).reverse().map(ep).join("")}</ul>` : `<p class="n">${esc(LL("Наблюдений пока нет", "No observations yet"))}</p>`;
+        const btns = admin
+          ? `<div class="bb">${act ? `<button class="b go" data-a="${act}"${busy ? " disabled" : ""}>${esc(act === "normal" ? LL("Это норма", "This is normal") : LL("Снова следить", "Watch again"))}</button>` : ""}${r.stage !== "excluded" ? `<button class="b bad" data-a="reset"${busy ? " disabled" : ""}>${esc(sure ? LL("Точно сбросить? Норму придётся изучать заново", "Reset for sure? The norm will be learned again") : LL("Сбросить обучение", "Reset learning"))}</button>` : ""}</div>`
+          : "";
+        draw(`<div class="t"><span data-own>${esc(r.name || r.entityId)}</span></div><div data-own class="ins">
+<style>.ins{display:grid;gap:14px}.ins .sub{font:400 13px/1.4 Onest,sans-serif;color:var(--secondary-text-color);margin-top:-8px}.ins .stg{display:flex;align-items:center;gap:8px;font:500 14px/1.35 Onest,sans-serif}.ins .stg i{width:10px;height:10px;border-radius:5px;flex:none;background:var(--hf-amber)}.ins .stg.bad i{background:var(--hf-alert)}.ins .stg.ok i{background:var(--hf-mint,var(--success-color))}.ins .stg.nrm i,.ins .stg.off i{background:transparent;box-shadow:inset 0 0 0 1.5px var(--secondary-text-color)}
+.ins h4{margin:0 0 6px;font:600 12px/1.3 Onest,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--secondary-text-color)}.ins p{margin:0;font:400 14px/1.45 Onest,sans-serif;color:var(--primary-text-color)}
+.ins ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}.ins .ir{font:500 13px/1.3 Onest,sans-serif}.ins .iv{font:400 13px/1.35 Onest,sans-serif;color:var(--primary-text-color)}.ins .ik{font:400 12px/1.35 Onest,sans-serif;color:var(--secondary-text-color)}.ins .ie{font:400 11px/1.3 ui-monospace,monospace;color:var(--secondary-text-color);overflow-wrap:anywhere}
+.ins .ep li{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font:400 13px/1.35 Onest,sans-serif}.ins .ep span{color:var(--secondary-text-color);min-width:7.5em}.ins .ep i{font-style:normal;color:var(--secondary-text-color)}.ins .ep i.ok{color:var(--primary-text-color)}
+.ins .bb{display:grid;gap:8px}</style>
+${sub ? `<div class="sub">${esc(sub)}</div>` : ""}
+<div class="stg ${INSIGHT_TONE[r.stage] || ""}"><i></i><span>${esc(insWord("insight_stage", r.stage))}${r.line ? ` · ${esc(r.line)}` : ""}</span></div>
+<section><h4>${esc(LL("Почему так", "Why"))}</h4><p>${esc(insWhy(r))}</p></section>
+${how ? `<section><h4>${esc(LL("Как проверяю", "How it's checked"))}</h4><p>${esc(how)}</p></section>` : ""}
+<section><h4>${esc(LL("Что анализируется", "What is analysed"))}</h4><ul>${uses.map(input).join("")}</ul></section>
+<section><h4>${esc(LL("Последние наблюдения", "Latest observations"))}</h4>${list}</section>
+${err ? `<p class="e">${esc(err)}</p>` : ""}${btns}</div>`);
+        sr.querySelectorAll("[data-a]").forEach((b) =>
+          b.addEventListener("click", async () => {
+            const action = b.dataset.a;
+            if (action === "reset" && !sure) {
+              sure = true;
+              return paint();
+            }
+            busy = true;
+            err = "";
+            paint();
+            haptic(card);
+            try {
+              await h.callApi("POST", "hauflo/insights", { entity: r.entityId, kind: r.kind, action });
+              await INS.fetch(h, true);
+              return close();
+            } catch (e) {
+              err = e?.status_code === 403 ? LL("Только для администраторов", "Only for administrators") : LL("Не получилось сохранить. Попробуйте ещё раз.", "Couldn't save. Please try again.");
+            }
+            busy = false;
+            sure = false;
+            paint();
+          }),
+        );
+      };
+      paint();
+      h?.callApi?.("GET", `hauflo/insights?entity=${encodeURIComponent(r.entityId)}&limit=${INSIGHT_PAGE}`)
+        .catch((e) => (e?.status_code === 400 ? h.callApi("GET", `hauflo/insights?entity=${encodeURIComponent(r.entityId)}`) : Promise.reject(e)))
+        .then(
+          (d) => (eps = Array.isArray(d?.episodes) ? d.episodes.filter((e) => e && typeof e === "object") : []),
+          () => (eps = []),
+        )
+        .finally(() => sr.isConnected !== false && paint());
+    });
   class Insights extends EHCard {
     connectedCallback() {
       super.connectedCallback?.();
@@ -8847,16 +10234,22 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
     css() {
       return `.d{padding:var(--hf-pad)}.hd{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.sum{font:400 13px Onest,sans-serif;color:var(--ink2)}
 .sec{margin-top:14px}.sh{display:flex;align-items:center;gap:8px;margin-bottom:6px}.sh ha-icon{--mdc-icon-size:var(--hf-icon-s);color:var(--ink2)}.sh .n{font:400 12px Onest,sans-serif;color:var(--ink3)}
-.lst{display:grid;gap:6px}.r{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:var(--hf-r-md);box-shadow:inset 0 0 0 1px var(--hair);min-width:0}
+.lst{display:grid;gap:6px}.r{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:var(--hf-r-md);box-shadow:inset 0 0 0 1px var(--hair);min-width:0;cursor:pointer}.r:focus-visible{outline:2px solid var(--amber);outline-offset:1px}
 .r .tx{flex:1;min-width:0}.r .nm{font:500 13px/1.25 Onest,sans-serif;overflow-wrap:anywhere}.r .rm{font:400 11px/1.3 Onest,sans-serif;color:var(--ink3)}
 .r .st{display:flex;align-items:center;flex-wrap:wrap;gap:2px 6px;font:500 12px/1.3 Onest,sans-serif;margin-top:4px}.r .st>span:first-of-type{white-space:nowrap}.r .st i{width:8px;height:8px;border-radius:4px;flex:0 0 auto}.r .ln{font:400 12px/1.35 Onest,sans-serif;color:var(--ink2)}
+.r .us{font:400 11px/1.35 Onest,sans-serif;color:var(--ink3);margin-top:3px;overflow-wrap:anywhere}.r .us b{font-weight:500;color:var(--ink2)}
 .bad .st{color:var(--alertT)}.bad .st i{background:var(--alert);box-shadow:0 0 8px var(--alertGlow)}.r.bad{box-shadow:none;background:color-mix(in srgb,var(--alert) 12%,transparent)}
 .lrn .st{color:var(--amberT)}.lrn .st i{background:var(--amber)}.ok .st{color:var(--mintT)}.ok .st i{background:var(--mint)}.nrm .st{color:var(--ink2)}.nrm .st i{background:transparent;box-shadow:inset 0 0 0 1.5px var(--mint)}
 .off{opacity:.65}.off .st{color:var(--ink3)}.off .st i{background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink3)}
-.pg{height:4px;border-radius:2px;background:var(--track);margin-top:6px;overflow:hidden}.pg>b{display:block;height:100%;background:var(--amber);border-radius:2px}
+.lbar{height:4px;border-radius:2px;background:var(--track);margin-top:6px;overflow:hidden}.lbar>b{display:block;height:100%;background:var(--amber);border-radius:2px}
 .r button{height:var(--hf-hit);padding:0 14px;border-radius:var(--hf-r-sm);font:500 13px Onest,sans-serif;box-shadow:inset 0 0 0 1px var(--line);color:var(--ink);white-space:nowrap;flex:0 0 auto}.r button[disabled]{opacity:.5}
 .cmp .r{padding:6px 10px}.cmp .r .st{margin-top:2px}.cmp .lst{gap:4px}
 .empty{font:400 14px/1.45 Onest,sans-serif;color:var(--ink2);margin:10px 0 0}.more{font:400 12px Onest,sans-serif;color:var(--ink3);margin-top:10px}
+.fl{display:grid;gap:8px;margin-top:12px}.fchips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.fchips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;height:32px;padding:0 12px;border-radius:16px;font:500 13px Onest,sans-serif;color:var(--ink2);box-shadow:inset 0 0 0 1px var(--line);white-space:nowrap;display:inline-flex;align-items:center;gap:6px}.chip em{font-style:normal;color:var(--ink3);font-weight:400}
+.chip[aria-pressed="true"]{color:var(--ink);background:color-mix(in srgb,var(--amber) 22%,transparent);box-shadow:none}.chip[aria-pressed="true"] em{color:var(--ink2)}
+.q{height:40px;border-radius:var(--hf-r-sm);border:0;box-shadow:inset 0 0 0 1px var(--line);background:transparent;color:var(--ink);padding:0 12px;font:400 14px Onest,sans-serif;width:100%;box-sizing:border-box}
+.fold{margin-top:6px;height:36px;padding:0 12px;border-radius:var(--hf-r-sm);font:500 13px Onest,sans-serif;color:var(--ink2);box-shadow:inset 0 0 0 1px var(--hair);width:100%}
 @container (max-width:420px){.r{flex-wrap:wrap}.r button{flex:1 1 100%}}`;
     }
     render() {
@@ -8865,14 +10258,15 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
       INS.cards.add(this);
       INS.fetch(h);
       if (!INS_TR[LANG]) insWords(h, LANG)?.then(() => INS.set());
-      const title = esc(c.title || LL("Диагностика", "Diagnostics"));
+      const title = esc(c.title || LL("Анализ", "Analysis"));
       const frame = (body, sum = "") => `<div class="glass d${c.compact ? " cmp" : ""}"><div class="hd"><span class="caps" data-own>${title}</span>${sum ? `<span class="sum" data-own>${esc(sum)}</span>` : ""}</div>${body}</div>`;
       const say = (t) => frame(`<p class="empty" data-own>${esc(t)}</p>`);
       if (INS.err === "denied") return say(LL("Только для администраторов", "Only for administrators"));
-      if (INS.err === "gone" || INS.err === "old") return say(LL("Диагностика появится после обновления Hauflo в Home Assistant", "Diagnostics will appear after Hauflo is updated in Home Assistant"));
+      if (INS.err === "gone" || INS.err === "old") return say(LL("«Анализ» появится после обновления Hauflo в Home Assistant", "“Analysis” will appear after Hauflo is updated in Home Assistant"));
       if (!INS.data) return say(INS.err === "starting" ? LL("Hauflo запускается…", "Hauflo is starting…") : INS.err ? LL("Нет ответа от Hauflo. Попробуем ещё раз позже.", "No answer from Hauflo. Trying again later.") : LL("Загружаю…", "Loading…"));
-      const all = insRows(INS.data, c);
-      if (!all.length)
+      const every = insRows(INS.data, c);
+      this._rows = new Map(every.map((r) => [r.key || `${r.kind}|${r.entityId}`, r]));
+      if (!every.length)
         return say(
           !(INS.data.items || []).length
             ? LL("Пока учится — нормы появятся, когда приборы поработают", "Still learning — norms will appear once the devices have run for a while")
@@ -8880,14 +10274,17 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
               ? LL("Отклонений нет — всё в норме", "No deviations — all is normal")
               : LL("Здесь пока ничего нет", "Nothing here yet"),
         );
+      // The «Анализ» panel (0.33 Р26): chips by status · type · room and a search over every row the agent sent.
+      const f = (this._f = this._f || { stage: "", sec: "", area: "", q: "" });
+      const all = c.filters ? insFilter(every, f) : every;
       const limit = Number(c.limit) > 0 ? Math.floor(Number(c.limit)) : all.length;
       const rows = all.slice(0, limit);
-      const learning = all.filter((r) => r.stage === "learning");
+      const learning = every.filter((r) => r.stage === "learning");
       // Everything still learning: when the first norm comes (the nearest row's observation hours left).
-      const left = learning.length === all.length && !c.stage ? learning.map((r) => r.left).filter((x) => x != null) : [];
+      const left = learning.length === every.length && !c.stage ? learning.map((r) => r.left).filter((x) => x != null) : [];
       this._soon = left.length && Math.min(...left) > 0 ? Math.ceil(Math.min(...left)) : null;
-      const cnt = (s) => all.filter((r) => r.stage === s).length;
-      const sum = INSIGHT_STAGES.filter((s) => cnt(s)).map((s) => `${insWord("insight_stage", s)}: ${cnt(s)}`).join(" · ");
+      const cnt = (s) => every.filter((r) => r.stage === s).length;
+      const sum = c.filters ? "" : INSIGHT_STAGES.filter((s) => cnt(s)).map((s) => `${insWord("insight_stage", s)}: ${cnt(s)}`).join(" · ");
       const admin = h?.user?.is_admin === true && INS.data.canEdit !== false;
       const btn = (r) => {
         if (!admin) return "";
@@ -8899,7 +10296,9 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
       const row = (r) => {
         const name = r.name || r.entityId;
         const sub = [r.area, insWord("insight_kind", r.kind)].filter(Boolean).join(" · ");
-        return `<div class="r ${INSIGHT_TONE[r.stage] || ""}" data-own><div class="tx"><div class="nm">${esc(name)}</div>${sub ? `<div class="rm">${esc(sub)}</div>` : ""}<div class="st"><i></i><span>${esc(insWord("insight_stage", r.stage))}</span>${r.line && (!c.compact || r.stage === "deviation") ? `<span class="ln">· ${esc(r.line)}</span>` : ""}</div>${r.pr != null && !c.compact ? `<div class="pg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(r.pr * 100)}"><b style="width:${Math.round(r.pr * 100)}%"></b></div>` : ""}</div>${btn(r)}</div>`;
+        const uses = c.compact ? [] : insUses(r);
+        const pct = r.pr != null ? Math.round(r.pr * 100) : null;
+        return `<div class="r ${INSIGHT_TONE[r.stage] || ""}" data-own data-key="${esc(r.key || `${r.kind}|${r.entityId}`)}" role="button" tabindex="0"><div class="tx"><div class="nm">${esc(name)}</div>${sub ? `<div class="rm">${esc(sub)}</div>` : ""}<div class="st"><i></i><span>${esc(insWord("insight_stage", r.stage))}</span>${r.line && (!c.compact || r.stage === "deviation") ? `<span class="ln">· ${esc(r.line)}</span>` : ""}</div>${pct != null && !c.compact ? `<div class="lbar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}" aria-label="${esc(r.line)}"><b style="width:${pct}%"></b></div>` : ""}${uses.length ? `<div class="us"><b>${esc(LL("Смотрю:", "Uses:"))}</b> ${esc(uses.join(" · "))}</div>` : ""}</div>${btn(r)}</div>`;
       };
       const secs = [];
       for (const r of rows) {
@@ -8908,16 +10307,31 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
         else secs.push({ sec: r.sec, rows: [r] });
       }
       const n = (s) => all.filter((r) => r.sec === s).length;
-      const body = secs
-        .map((s) => `<div class="sec"><div class="sh"><ha-icon icon="${esc(INSIGHT_ICON[s.sec] || INSIGHT_ICON.other)}"></ha-icon><span class="caps" data-own>${esc(insWord("insight_section", s.sec))}</span><span class="n">${n(s.sec)}</span></div><div class="lst">${s.rows.map(row).join("")}</div></div>`)
-        .join("");
+      const open = (this._open = this._open || new Set());
+      const fold = c.filters ? INSIGHT_CARD.fold : 0;
+      const sec = (s) => {
+        // A long section of the panel folds after `fold` rows — deviations first, so a fault is never behind the fold.
+        const keep = fold && !open.has(s.sec) ? Math.max(fold, s.rows.filter((r) => r.stage === "deviation").length) : s.rows.length;
+        const rest = s.rows.length - keep;
+        return `<div class="sec"><div class="sh"><ha-icon icon="${esc(INSIGHT_ICON[s.sec] || INSIGHT_ICON.other)}"></ha-icon><span class="caps" data-own>${esc(insWord("insight_section", s.sec))}</span><span class="n">${n(s.sec)}</span></div><div class="lst">${s.rows.slice(0, keep).map(row).join("")}</div>${rest > 0 ? `<button class="fold" data-fold="${esc(s.sec)}" data-own>${esc(LL(`Показать ещё ${rest}`, `Show ${rest} more`))}</button>` : ""}</div>`;
+      };
+      const body = secs.map(sec).join("");
       const more = insMore(INS.data, c, rows.length, all.length) ? `<div class="more" data-own>${esc(insMore(INS.data, c, rows.length, all.length))}</div>` : "";
       const soon = this._soon != null ? `<p class="empty" data-own>${esc(LL(`Пока учится — нормы появятся примерно через ${this._soon} ч`, `Still learning — norms will appear in about ${this._soon} h`))}</p>` : "";
       const fail = this._postErr ? `<p class="empty" data-own>${esc(this._postErr)}</p>` : "";
-      return frame(`${soon}${fail}${body}${more}`, sum);
+      let bar = "";
+      if (c.filters) {
+        const fc = insFacets(every);
+        const chip = (k, v, label, num) => `<button class="chip" data-f="${k}" data-v="${esc(v)}" aria-pressed="${f[k] === v}">${esc(label)}${num != null ? ` <em>${num}</em>` : ""}</button>`;
+        const group = (k, list, word, allLabel) => (list.length > 1 || f[k] ? `<div class="fchips" role="group">${chip(k, "", allLabel, null)}${list.map(([v, num]) => chip(k, v, word(v), num)).join("")}</div>` : "");
+        bar = `<div class="fl" data-own>${group("stage", fc.stage, (s) => insWord("insight_stage", s), LL(`Все ${every.length}`, `All ${every.length}`))}${group("sec", fc.sec, (s) => insWord("insight_section", s), LL("Все проверки", "All checks"))}${group("area", fc.area, (a) => a, LL("Все комнаты", "All rooms"))}<input class="q" type="search" data-q value="${esc(f.q)}" placeholder="${esc(LL("Найти: прибор, комната, адрес", "Find: device, room, address"))}" aria-label="${esc(LL("Поиск", "Search"))}"></div>`;
+      }
+      const none = c.filters && !rows.length ? `<p class="empty" data-own>${esc(LL("По этим условиям ничего нет", "Nothing matches these filters"))}</p>` : "";
+      return frame(`${bar}${soon}${fail}${none}${body}${more}`, sum);
     }
     bind() {
-      this.shadowRoot.querySelectorAll("button[data-ins]").forEach((b) =>
+      const sr = this.shadowRoot;
+      sr.querySelectorAll("button[data-ins]").forEach((b) =>
         b.addEventListener("click", async (ev) => {
           ev.stopPropagation();
           const { ins: action, ent: entity, kind } = b.dataset;
@@ -8936,12 +10350,97 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
           this._update();
         }),
       );
+      const redraw = () => {
+        this._sig = "";
+        this._update();
+      };
+      sr.querySelectorAll(".r[data-key]").forEach((el) => {
+        const go = () => {
+          const r = this._rows?.get(el.dataset.key);
+          if (r) insSheet(this, r);
+        };
+        el.addEventListener("click", (ev) => !ev.composedPath().some((n) => n instanceof HTMLButtonElement) && go());
+        el.addEventListener("keydown", (ev) => (ev.key === "Enter" || ev.key === " ") && ev.target === el && (ev.preventDefault(), go()));
+      });
+      sr.querySelectorAll("button[data-f]").forEach((b) =>
+        b.addEventListener("click", () => {
+          this._f[b.dataset.f] = this._f[b.dataset.f] === b.dataset.v ? "" : b.dataset.v;
+          redraw();
+        }),
+      );
+      sr.querySelectorAll("button[data-fold]").forEach((b) => b.addEventListener("click", () => (this._open.add(b.dataset.fold), redraw())));
+      const q = sr.querySelector("input[data-q]");
+      if (q) {
+        q.addEventListener("input", () => {
+          this._f.q = q.value;
+          const at = q.selectionStart;
+          redraw();
+          const again = this.shadowRoot.querySelector("input[data-q]");
+          again?.focus();
+          again?.setSelectionRange?.(at, at);
+        });
+      }
     }
     getCardSize() {
       return 6;
     }
     getGridOptions() {
       return { columns: "full", rows: "auto" };
+    }
+  }
+  /** «Анализ» (0.33 Р26/Р8): the house's diagnosis as its OWN item of HA's sidebar next to «Дом» — a panel of HA's own kind
+   * the agent registers (analysis.py), this element its page: HA's menu button and title, the insights card with filters. */
+  class AnalysisPanel extends HTMLElement {
+    constructor() {
+      super();
+      this.attachShadow({ mode: "open" });
+    }
+    connectedCallback() {
+      // Set before this element was defined (HA creates the panel's element as soon as the file loads): taken over.
+      for (const k of ["hass", "narrow", "route", "panel"])
+        if (Object.hasOwn(this, k)) {
+          const v = this[k];
+          delete this[k];
+          this[k] = v;
+        }
+      this._draw();
+    }
+    set hass(h) {
+      this._hass = h;
+      if (!h) return;
+      const lang = langOf(h);
+      if (lang !== LANG) LANG = lang;
+      if (this._menu) this._menu.hass = h;
+      if (this._card) this._card.hass = h;
+      this._title();
+    }
+    get hass() {
+      return this._hass;
+    }
+    set narrow(v) {
+      this._narrow = v;
+      if (this._menu) this._menu.narrow = v;
+    }
+    get narrow() {
+      return this._narrow;
+    }
+    _title() {
+      const t = this.shadowRoot.querySelector(".tt");
+      if (t) t.textContent = LL("Анализ", "Analysis");
+    }
+    _draw() {
+      if (this._card) return;
+      this.shadowRoot.innerHTML = `<style>${TZ(`:host{display:block;min-height:100vh;background:var(--primary-background-color);color:var(--primary-text-color)}
+.top{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:4px;height:var(--header-height,56px);padding:0 12px 0 4px;background:var(--app-header-background-color,var(--primary-background-color));color:var(--app-header-text-color,var(--primary-text-color));border-bottom:var(--app-header-border-bottom,none);box-sizing:border-box;padding-top:env(safe-area-inset-top)}
+.tt{font:400 20px Onest,var(--ha-font-family-body),sans-serif;margin-left:8px}.body{max-width:980px;margin:0 auto;padding:16px 16px calc(24px + env(safe-area-inset-bottom));box-sizing:border-box}`)}</style><div class="top"><ha-menu-button></ha-menu-button><div class="tt"></div></div><div class="body"></div>`;
+      this._menu = this.shadowRoot.querySelector("ha-menu-button");
+      this._menu.narrow = this._narrow;
+      if (this._hass) this._menu.hass = this._hass;
+      const card = (this._card = document.createElement("hauflo-insights"));
+      card.setConfig({ filters: true, title: LL("Что изучается и что не так", "What is learned and what is off") });
+      if (this._hass) card.hass = this._hass;
+      this.shadowRoot.querySelector(".body").appendChild(card);
+      this._title();
     }
   }
 
@@ -8966,7 +10465,7 @@ button.off{min-height:40px;padding:0 14px;border-radius:20px;font:500 13px Onest
     ["hauflo-area", Area, "Hauflo · Комната из Home Assistant", "Всё, что Home Assistant отнёс к комнате, — в стиле Hauflo"],
     ["hauflo-leaks", Leaks, "Hauflo · Защита от протечек", "Датчики протечки и кран любой интеграции: всё в порядке или где протечка"],
     ["hauflo-devices", Devices, "Hauflo · Устройства", "Вентиляторы, клапаны, замки, пылесосы, бойлеры…"],
-    ["hauflo-insights", Insights, "Hauflo · Диагностика", "Что Hauflo изучает о приборах: нормы, отклонения, «это норма»"],
+    ["hauflo-insights", Insights, "Hauflo · Анализ", "Что Hauflo изучает о приборах: нормы, отклонения, «это норма»"],
   ];
   // --- a dashboard with a fixed light or dark Atelier theme: HA paints only the view, the header follows here
   // (owner 2026-10-25: «Вилла Юг · тёмная» had a light header).
@@ -9130,7 +10629,7 @@ ha-tab-group-tab:hover,ha-tab-group-tab:focus-visible{color:var(--eh-ink,var(--p
         run: "Проверить сейчас", runAsk: (x) => `Сейчас выполнится: ${x}. Продолжить?`, runYes: "Выполнить", ran: "Выполнено — смотрите на шторы и свет.",
         rampNote: "Плавный свет займёт заданные минуты.",
         needLoc: "Местоположение не задано — время рассвета и заката будет приблизительным.", needLocAdmin: "Укажите местоположение в блоке «Местоположение» на этой странице.", needLocUser: "Попросите администратора указать местоположение в Home Assistant.", approx: "время приблизительное", needAction: "Добавьте хотя бы одно действие.", needDay: "Выберите хотя бы один день.",
-        err: "Не получилось: ", errNet: "Нет связи — попробуйте ещё раз.", noAgent: "Систему нужно обновить — сообщите сервису.", agentGone: "Система не подключена — правила и режим «Нет дома» недоступны.", locWarn: "Сохранено, но местоположение не задано — время рассвета и заката приблизительное.",
+        err: "Не получилось: ", errNet: "Нет связи — попробуйте ещё раз.", drawErr: "Страница не отрисовалась. Закройте и откройте её снова; если не поможет — сообщите сервису.", noAgent: "Систему нужно обновить — сообщите сервису.", agentGone: "Система не подключена — правила и режим «Нет дома» недоступны.", locWarn: "Сохранено, но местоположение не задано — время рассвета и заката приблизительное.",
         last: (t) => `Последний раз: ${t}`, never: "ещё не срабатывало", missing: "нет в Home Assistant — сохраните заново",
         changedTag: "изменено в Home Assistant",
         changedNote: "Это правило поменяли в редакторе Home Assistant — Hauflo его не изменяет: включать, выключать и проверять можно, править — там. Или верните как было в Hauflo (правка из Home Assistant пропадёт).",
@@ -9201,6 +10700,7 @@ ha-tab-group-tab:hover,ha-tab-group-tab:focus-visible{color:var(--eh-ink,var(--p
           noExt: "Внешний адрес не задан в настройках системы: гость откроет только из домашней сети.",
           needName: "Введите имя", needPages: "Выберите хотя бы одну страницу", needRooms: "Выберите хотя бы одну комнату",
           pInvite: "Дать гостю вход", pages: "Страницы", pagesHint: "В меню гостя будут только эти страницы.", pAdmin: "служебная", pNested: "вложенная",
+          role: "Кто это", roleOwn: "Свой набор", roles: { technician: "Техник" }, roleHint: { technician: "Отмечены служебные страницы — «Сервис» и его комнаты: управление есть, настроек дома нет. Добавьте или снимите страницы, поменяйте срок." },
           pCreate: "Выдать", pReady: "Вход для гостя готов",
           pOnce: "Пароль показан один раз и нигде не хранится — передайте его гостю сейчас. Потерялся — отзовите вход и выдайте новый.",
           login: "Логин", password: "Пароль", urlOut: "Адрес", urlIn: "Адрес дома (по Wi‑Fi)",
@@ -9305,7 +10805,7 @@ ha-tab-group-tab:hover,ha-tab-group-tab:focus-visible{color:var(--eh-ink,var(--p
         run: "Test now", runAsk: (x) => `This runs now: ${x}. Go on?`, runYes: "Run", ran: "Done — look at the blinds and lights.",
         rampNote: "The slow light takes the minutes set.",
         needLoc: "The location isn't set — sunrise and sunset times will be approximate.", needLocAdmin: "Set the location in the “Location” block on this page.", needLocUser: "Ask the administrator to set the location in Home Assistant.", approx: "time is approximate", needAction: "Add at least one action.", needDay: "Pick at least one day.",
-        err: "Didn't work: ", errNet: "No connection — try again.", noAgent: "The system needs an update — please contact your service.", agentGone: "The system isn't connected — rules and “Away” mode are unavailable.", locWarn: "Saved, but the location isn't set — sunrise and sunset times are approximate.",
+        err: "Didn't work: ", errNet: "No connection — try again.", drawErr: "The page didn't draw. Close it and open it again; if that doesn't help, please contact your service.", noAgent: "The system needs an update — please contact your service.", agentGone: "The system isn't connected — rules and “Away” mode are unavailable.", locWarn: "Saved, but the location isn't set — sunrise and sunset times are approximate.",
         last: (t) => `Last run: ${t}`, never: "hasn't run yet", missing: "not in Home Assistant — save it again",
         changedTag: "changed in Home Assistant",
         changedNote: "This rule was changed in Home Assistant's editor — Hauflo leaves it alone: switch it on / off and test it here, edit it there. Or put it back as it was in Hauflo (the Home Assistant edit is lost).",
@@ -9376,6 +10876,7 @@ ha-tab-group-tab:hover,ha-tab-group-tab:focus-visible{color:var(--eh-ink,var(--p
           noExt: "No external address is set in the system settings: the guest can open it only from the home network.",
           needName: "Enter a name", needPages: "Choose at least one page", needRooms: "Choose at least one room",
           pInvite: "Give a guest a login", pages: "Pages", pagesHint: "The guest's menu will show only these pages.", pAdmin: "service", pNested: "nested",
+          role: "Who it is", roleOwn: "Custom", roles: { technician: "Technician" }, roleHint: { technician: "The service pages are ticked — “Service” and its rooms: control yes, the house's settings no. Add or untick pages, change the term." },
           pCreate: "Give access", pReady: "The guest's login is ready",
           pOnce: "The password is shown once and kept nowhere — pass it to your guest now. Lost it? Revoke the login and give a new one.",
           login: "Login", password: "Password", urlOut: "Address", urlIn: "Home address (on Wi‑Fi)",
@@ -9447,6 +10948,7 @@ ha-tab-group-tab:hover,ha-tab-group-tab:focus-visible{color:var(--eh-ink,var(--p
 :host{display:block;font-family:Onest,var(--ha-font-family-body),system-ui,sans-serif;color:var(--eh-ink,var(--primary-text-color));-webkit-tap-highlight-color:transparent}
 *{box-sizing:border-box}
 .pg{max-width:760px;margin:0 auto;padding:8px 12px 40px}
+.ovh{position:sticky;top:0;z-index:5;display:flex;justify-content:flex-end;margin:-8px -28px 0;padding:calc(12px + env(safe-area-inset-top,0px)) 28px 8px;background:var(--hf-page-bg-2)}
 .map.dk img{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}
 h1{font:500 11px/1.2 Onest,sans-serif;letter-spacing:var(--hf-caps-ls);text-transform:uppercase;color:var(--eh-ink2,var(--secondary-text-color));margin:10px 0 8px}h2{font:600 18px/1.2 Onest,sans-serif;margin:0}
 .sub,.hint,.muted{font:400 13px/1.45 Onest,sans-serif;color:var(--eh-ink2,var(--secondary-text-color))}.sub{margin:0 0 14px}
@@ -9796,6 +11298,7 @@ ${body}${closeAll}${logHtml}</section>`;
         };
         const label = (h) => g.hours[h] || g.hoursMore[h] || String(h);
         const hoursList = gs.pages_hours || [];
+        const roles = (gs.pages_roles || []).filter((r) => g.roles[r.id]);
         const hours = hoursList.includes(this.gHoursP) ? this.gHoursP : hoursList.includes(24) ? 24 : hoursList[0];
         const sel = this.gSelP || new Set();
         const need = (k, t) => (this.gNeed?.has(k) ? `<p class="msg bad" role="status" data-gneed="${k}">${esc(t)}</p>` : "");
@@ -9814,6 +11317,7 @@ ${body}${closeAll}${logHtml}</section>`;
         else if (!avail.some((d) => d.views.length)) form = `<p class="hint">${esc(g.noPages)}</p>`;
         else if (this.gFormP)
           form = `<div class="fld"><div class="caps">${esc(g.who)}</div><input data-gplabel maxlength="40" placeholder="${esc(g.whoPh)}" value="${esc(this.gLabelP || "")}" aria-label="${esc(g.who)}"${this.gNeed?.has("name") ? ' aria-invalid="true"' : ""}>${need("name", g.needName)}</div>
+${roles.length ? `<div class="fld"><div class="caps">${esc(g.role)}</div><div class="seg"><button aria-pressed="${!this.gRoleP}" data-gprole="">${esc(g.roleOwn)}</button>${roles.map((r) => `<button aria-pressed="${this.gRoleP === r.id}" data-gprole="${esc(r.id)}">${esc(g.roles[r.id] || r.id)}</button>`).join("")}</div>${this.gRoleP && g.roleHint[this.gRoleP] ? `<p class="hint">${esc(g.roleHint[this.gRoleP])}</p>` : ""}</div>` : ""}
 <div class="fld"><div class="caps">${esc(g.pages)}</div>${avail
             .filter((d) => d.views.length)
             .map((d) => `<div class="gpd">${avail.length > 1 ? `<span class="muted">${esc(d.title)}</span>` : ""}<div class="chips">${d.views.map((v) => `<button aria-pressed="${sel.has(pk(d, v))}" data-gpage="${esc(pk(d, v))}"><span data-own>${esc(v.title)}</span>${mark(v) ? `<small>${esc(mark(v))}</small>` : ""}</button>`).join("")}</div></div>`)
@@ -9822,7 +11326,7 @@ ${body}${closeAll}${logHtml}</section>`;
 <div class="row"><button class="btn pri" data-gpissue ${this.gBusy ? "disabled" : ""}>${esc(g.pCreate)}</button><button class="btn" data-gpcancel>${esc(g.cancel)}</button></div>`;
         else if (!this.gNewP) form = `<button class="btn sm pri" data-gpinvite ${dis}>+ ${esc(g.pInvite)}</button>`;
         const row = (x, live) =>
-          `<li class="${live ? "" : "dis"}"><div class="gtx"><b>${esc(x.label || g.guest)}</b><span class="muted">${esc([x.username, x.pages.map(title).join(", "), live ? g.until(date(x.until)) : g.pState[x.status] || x.status].filter(Boolean).join(" · "))}</span></div>${live ? `<button class="btn sm" data-grevoke="${esc(x.id)}" data-ask="${esc(g.closeAsk)}" ${dis}>${esc(g.close)}</button>` : ""}</li>`;
+          `<li class="${live ? "" : "dis"}"><div class="gtx"><b>${esc(x.label || g.guest)}</b><span class="muted">${esc([x.role ? g.roles[x.role] : "", x.username, x.pages.map(title).join(", "), live ? g.until(date(x.until)) : g.pState[x.status] || x.status].filter(Boolean).join(" · "))}</span></div>${live ? `<button class="btn sm" data-grevoke="${esc(x.id)}" data-ask="${esc(g.closeAsk)}" ${dis}>${esc(g.close)}</button>` : ""}</li>`;
         const ended = (gs.pages || []).filter((x) => x.status !== "active").slice(0, 3);
         const list = pActive.length ? `<div class="fld"><div class="caps">${esc(g.pActive)}</div><ul class="gls">${pActive.map((x) => row(x, true)).join("")}</ul></div>` : `<p class="muted">${esc(g.pNone)}</p>`;
         const endedHtml = ended.length ? `<div class="fld"><div class="caps">${esc(g.ended)}</div><ul class="gls">${ended.map((x) => row(x, false)).join("")}</ul></div>` : "";
@@ -10127,6 +11631,9 @@ ${logHtml}</section>`;
       // --- suggestions ---------------------------------------------------------------------------------------------------
       suggestions() {
         const lang = this.lang || "ru";
+        // `w` was dropped with the recipes move (23337541): the first habit the agent found threw here and left the page
+        // blank (owner 11.11, Р43 — «раздел автоматизаций не открылся», Г3 after two weeks of history).
+        const w = this.w;
         const have = new Set((this.data?.rules || []).map((r) => r.from).filter(Boolean));
         // Ready rules come from the agent (automation_recipes.json): texts, parameters and standards are data there.
         const out = (this.data?.recipes || []).map((r) => ({ key: r.key, group: r.group, title: r.title[lang] || r.title.en, sub: r.sub[lang] || r.sub.en, rule: r.rule }));
@@ -10193,14 +11700,23 @@ ${logHtml}</section>`;
           return done();
         }
         // «Гостевой доступ» from «Настройки» (owner 04.11: it opened the rules page): the guest links alone.
-        const body = this._config?.only === "guest" ? this.guestHtml() || `<h1>${esc(w.g.title)}</h1>` : this.view === "edit" ? this.editHtml() : this.view === "loc" ? this.locHtml() : this.listHtml();
+        // A part that fails to draw says so — never a blank page with no way out (Р43: one ReferenceError emptied it on iOS).
+        let body;
+        try {
+          body = this._config?.only === "guest" ? this.guestHtml() || `<h1>${esc(w.g.title)}</h1>` : this.view === "edit" ? this.editHtml() : this.view === "loc" ? this.locHtml() : this.listHtml();
+        } catch (err) {
+          console.error("hauflo-automations:", err);
+          body = `<h1>${esc(this._config?.only === "guest" ? w.g.title : w.title)}</h1><p class="msg bad" role="status">${esc(w.drawErr)}</p>`;
+        }
         // The whole page is drawn again on every tap: keepPlace puts the focus back on the same control (keyboard / screen reader).
-        keepPlace(sr, () => {
-          sr.innerHTML = `<style>${TZ(CSS3)}</style><div class="pg">${this._config?.overlay ? `<div class="row end"><button class="btn sm" data-close>${esc(w.close)}</button></div>` : ""}${body}</div>`;
+        // The page keeps its height and scroll too (Р42): drawn again on every tap and on the house's settings.
+        holdPlace(this, () => keepPlace(sr, () => {
+          // Over the dashboard: its «Закрыть» stays at the top while the page scrolls (Р41/Р43: it scrolled away on a phone).
+          sr.innerHTML = `<style>${TZ(CSS3)}</style><div class="pg">${this._config?.overlay ? `<div class="ovh"><button class="btn sm" data-close>${esc(w.close)}</button></div>` : ""}${body}</div>`;
           sr.querySelector("[data-close]")?.addEventListener("click", () => this.dispatchEvent(new CustomEvent("hauflo-close", { bubbles: true, composed: true })));
           askWrap(sr);
           this.bind();
-        });
+        }));
         done();
       }
       listHtml() {
@@ -10758,8 +12274,21 @@ ${seg("sto", ["on", "off"].map((x) => [x, w.stTo[kind][x]]), v.to)}${kind === "m
           this.gSelP = new Set();
           this.gHoursP = null;
           this.gLabelP = "";
+          this.gRoleP = "";
           this.gMsg = "";
           this.gNeed = null;
+          this.draw();
+        });
+        // A role (guest.py ROLES): its pages ticked (the ones only the administrators saw) and its term; still editable.
+        on("[data-gprole]", (el) => {
+          const r = (this.gst?.pages_roles || []).find((x) => x.id === el.dataset.gprole);
+          this.gRoleP = r ? r.id : "";
+          if (r) {
+            const pick = (this.gst?.pages_available || []).flatMap((d) => d.views.filter((v) => r.pick === "admin" && v.admin).map((v) => `${d.url_path}/${v.path}`));
+            this.gSelP = new Set(pick);
+            this.gHoursP = r.hours;
+            if (pick.length) this.gNeed?.delete("pages");
+          }
           this.draw();
         });
         on("[data-gpcancel]", () => {
@@ -10788,7 +12317,7 @@ ${seg("sto", ["on", "off"].map((x) => [x, w.stTo[kind][x]]), v.to)}${kind === "m
             return sr.querySelector(miss.has("name") ? "[data-gplabel]" : "[data-gpage]")?.focus();
           }
           this.gNeed = null;
-          this.guestDo({ op: "issue_pages", label: (this.gLabelP || "").trim(), pages, hours });
+          this.guestDo({ op: "issue_pages", label: (this.gLabelP || "").trim(), pages, hours, ...(this.gRoleP ? { role: this.gRoleP } : {}) });
         });
         on("[data-gpdone]", () => {
           this.gNewP = null;
@@ -11446,7 +12975,7 @@ ${seg("sto", ["on", "off"].map((x) => [x, w.stTo[kind][x]]), v.to)}${kind === "m
         return;
       }
       const wrap = document.createElement("div");
-      wrap.style.cssText = "position:fixed;inset:0;z-index:9999;overflow:auto;background:var(--hf-page-bg-2);padding:12px 16px calc(24px + env(safe-area-inset-bottom))";
+      wrap.style.cssText = "position:fixed;inset:0;z-index:9999;overflow:auto;overscroll-behavior:contain;background:var(--hf-page-bg-2);padding:0 16px calc(24px + env(safe-area-inset-bottom))";
       const el = document.createElement("hauflo-automations");
       el.setConfig({ ...cfg, overlay: true });
       el.hass = hass;
@@ -11464,6 +12993,7 @@ ${seg("sto", ["on", "off"].map((x) => [x, w.stTo[kind][x]]), v.to)}${kind === "m
       el.addEventListener("hauflo-close", close);
       wrap.appendChild(el);
       document.body.appendChild(carryTheme(wrap));
+      lockScroll(wrap);
       if (part) setTimeout(() => reach(part), 300);
     };
     return { open, openGuest: (hass) => open(hass, null, { only: "guest" }), openService, servicePath, Automations };
@@ -11624,6 +13154,7 @@ ${seg("sto", ["on", "off"].map((x) => [x, w.stTo[kind][x]]), v.to)}${kind === "m
 *{box-sizing:border-box}
 .sh{width:min(100%,460px);max-height:92vh;overflow:auto;background:var(--hf-card-bg);background-image:var(--eh-glass,none);border-radius:var(--hf-r-lg) var(--hf-r-lg) 0 0;padding:20px 20px calc(20px + env(safe-area-inset-bottom));box-shadow:0 20px 60px var(--hf-shade-35)}
 @media (min-width:600px){.sh{border-radius:var(--hf-r-lg);width:min(100%,560px)}}
+${SHEET_UX(20)}
 .hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}.hd h2{font:600 20px/1.2 Onest,sans-serif;margin:0;letter-spacing:-.01em}
 .x{width:44px;height:44px;border-radius:22px;border:0;background:var(--hf-track);color:inherit;font-size:22px;cursor:pointer;display:grid;place-items:center}.x ha-icon{--mdc-icon-size:var(--hf-icon-m)}
 .caps{font:500 11px/1.2 Onest,sans-serif;letter-spacing:var(--hf-caps-ls);text-transform:uppercase;color:var(--eh-ink2,var(--secondary-text-color));margin:18px 0 8px}
@@ -11648,7 +13179,7 @@ ul{margin:4px 0 0;padding:0 0 0 18px}li{margin:2px 0}
 .reset::before{content:"";position:absolute;inset:min(0px,(100% - var(--hf-hit))/2)}.reset{position:relative;margin-top:10px;min-height:40px;padding:0 14px;border:0;border-radius:var(--hf-r-sm);background:var(--hf-track);color:inherit;font:500 13px Onest,sans-serif;cursor:pointer}.reset:disabled{opacity:.45;cursor:default}
 .go{display:flex;align-items:center;gap:12px;width:100%;margin:18px 0 0;padding:14px;border:0;border-radius:var(--hf-r-md);background:var(--hf-track);color:inherit;text-align:left;cursor:pointer;min-height:64px}
 .go.ord{margin-top:8px;min-height:56px}.go.ord ha-icon{color:var(--eh-ink2,var(--secondary-text-color))}
-.call{display:flex;align-items:center;gap:12px;min-height:56px;padding:8px 16px;border-radius:18px;text-decoration:none;color:inherit;background:color-mix(in srgb,var(--hf-mint) 16%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--hf-mint) 45%,transparent);font:600 15px Onest,sans-serif}.call ha-icon{--mdc-icon-size:var(--hf-icon-m);color:var(--hf-mint-text)}.call .cl{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.call .cl span{overflow-wrap:break-word;hyphens:auto}.call b{font:400 14px Onest,sans-serif;color:var(--eh-ink2,var(--secondary-text-color))}
+${CALL_CSS}
 .ask{margin-top:10px;min-height:120px;padding:12px;border-radius:var(--hf-r-md);background:color-mix(in srgb,var(--hf-amber) 16%,transparent);box-shadow:inset 3px 0 0 var(--hf-amber)}.ask b{display:block;font:600 14px Onest,sans-serif;line-height:1.4}.ask .r2{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}.ask button{min-height:44px;padding:0 16px;border:0;border-radius:var(--hf-r-sm);font:600 14px Onest,sans-serif;cursor:pointer;background:var(--hf-track);color:inherit}.ask button.yes{background:var(--hf-ink);color:var(--hf-card-bg)}
 .fl{display:flex;flex-direction:column;gap:6px}.fi{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 4px 0 14px;border-radius:var(--hf-r-sm);background:var(--hf-track-08);font:500 15px Onest,sans-serif}.fi span{flex:1;min-width:0;overflow-wrap:break-word;hyphens:auto}.fi .wh{display:block;color:var(--eh-ink2,var(--secondary-text-color));font:400 max(13px,.85em) Onest,sans-serif}.fi button{width:44px;height:44px;border:0;border-radius:var(--hf-r-sm);background:none;color:inherit;cursor:pointer;display:grid;place-items:center}
 .rch{display:flex;flex-wrap:wrap;gap:6px}.rch button{min-height:44px;padding:0 14px;border:0;border-radius:var(--hf-r-sm);background:var(--hf-track);color:inherit;font:500 14px Onest,sans-serif;cursor:pointer}.rch button[aria-pressed="true"]{background:var(--hf-ink);color:var(--hf-card-bg)}
@@ -11703,6 +13234,7 @@ details.pro{color:var(--eh-ink,var(--primary-text-color))}.ed .lim{margin-left:a
         sheet = null;
         clearTimeout(namesT);
         document.removeEventListener("keydown", onKey);
+        offUx?.();
       };
       // Escape closes the sheet on top: «Порядок» over the settings goes first.
       const onKey = (e) => e.key === "Escape" && !orderOpen && close();
@@ -11736,7 +13268,7 @@ details.pro{color:var(--eh-ink,var(--primary-text-color))}.ed .lim{margin-left:a
         const own = TITLES.data || {};
         const ro = !canEdit(hassOf());
         return `<p class="vl">${esc(w.names)}</p><div class="nm">${blocks
-          .map(([k, t]) => `<label><span>${esc(t)}</span><input data-name="${esc(k)}" maxlength="40" placeholder="${esc(t)}" value="${esc(own[k] ?? "")}" autocomplete="off" enterkeyhint="done"${ro ? " disabled" : ""}></label>`)
+          .map(([k, t]) => `<label data-head><span>${esc(deployTitle(t))}</span><input data-name="${esc(k)}" maxlength="40" placeholder="${esc(deployTitle(t))}" value="${esc(own[k] ?? "")}" autocomplete="off" enterkeyhint="done"${ro ? " disabled" : ""}></label>`)
           .join("")}</div><p class="hint">${esc(ro ? w.ro : w.namesHint)}</p>`;
       };
       /** «Вид»: scenes in blocks / on top, ACs and floor heating large / compact — what this dashboard has. */
@@ -12074,7 +13606,7 @@ ${askHtml || (res ? `<div class="ask done"><p class="res" data-res role="status"
       sr.innerHTML = `<style>${TZ(CSS2 + TOAST_CSS)}</style><div class="sh" role="dialog" aria-modal="true" aria-label="${esc(w.title)}">
 <div class="hd"><h2>${esc(w.title)}</h2><button class="x" data-x aria-label="${esc(w.close)}"><ha-icon icon="mdi:close"></ha-icon></button></div>
 <div class="caps">${esc(w.textSize)} · <span data-tsn>${esc(tsName(TS.mode))}</span></div>
-<div class="seg ts" role="group" aria-label="${esc(w.textSize)}">${[["phone", w.tsPhone], ["small", w.tsSmall], ["normal", w.tsNormal], ["big", w.tsBig], ["huge", w.tsHuge]].map(([v, l]) => `<button data-ts="${v}" aria-pressed="${TS.mode === v}" aria-label="${esc(l)}" title="${esc(l)}">${v === "phone" ? `<ha-icon icon="mdi:cellphone"></ha-icon>` : `<i aria-hidden="true">А</i>`}</button>`).join("")}</div>
+<div class="seg ts" role="group" aria-label="${esc(w.textSize)}">${[["phone", w.tsPhone], ["small", w.tsSmall], ["normal", w.tsNormal], ["big", w.tsBig], ["huge", w.tsHuge]].map(([v, l]) => `<button data-ts="${v}" aria-pressed="${TS.mode === v}" aria-label="${esc(l)}" title="${esc(l)}">${v === "phone" ? `<ha-icon icon="mdi:cellphone"></ha-icon>` : `<i aria-hidden="true">A</i>`}</button>`).join("")}</div>
 <p class="hint">${esc(w.tsHint)}</p>
 <div class="caps">${esc(w.theme)}</div>
 <div class="seg" role="group" aria-label="${esc(w.theme)}">${["light", "dark", "auto"].map((v) => `<button data-theme="${v}" aria-pressed="${th === v}">${esc(w[v])}</button>`).join("")}</div>
@@ -12109,7 +13641,7 @@ ${askHtml || (res ? `<div class="ask done"><p class="res" data-res role="status"
         saved(true);
       }));
       // A tap on the dim backdrop closes; inside the sheet (a shadow root — retargeted to the host) it doesn't.
-      sheet.addEventListener("click", (e) => e.composedPath()[0] === sheet && close());
+      const offUx = sheetUx(sheet, sr, close);
       document.body.appendChild(carryTheme(sheet));
       sr.querySelector("[data-x]")?.focus({ preventScroll: true });
       const ordered = loadOrder(h);
@@ -12303,7 +13835,7 @@ ${askHtml || (res ? `<div class="ask done"><p class="res" data-res role="status"
       // «Ошибка тёплого пола 1 · Гостиная» — the room from HA's registry (integrator run 25.10: two identical names).
       const roomOf = (id) => {
         const e = hass?.entities?.[id];
-        const area = e?.area_id || (e?.device_id && hass?.devices?.[e.device_id]?.area_id);
+        const area = roomArea(e?.area_id || (e?.device_id && hass?.devices?.[e.device_id]?.area_id)); // Р57: the room, not the zone
         return area ? hass?.areas?.[area]?.name : "";
       };
       // What moves the house now (houseHead: the agent's answer, else the canon) — the same decision as the header's: the
@@ -12342,14 +13874,14 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
   let STUB_CTX = null; // { seen: Set } while looking, { area, max } while filling
   const areaOfId = (h, id) => {
     const e = h?.entities?.[id];
-    return e?.area_id || h?.devices?.[e?.device_id]?.area_id || null;
+    return roomArea(e?.area_id || h?.devices?.[e?.device_id]?.area_id);
   };
   const ids = (hass, domain, n, test = () => true) => {
     const all = Object.keys(hass?.states || {}).filter((id) => id.startsWith(domain + ".") && test(hass.states[id]));
     const c = STUB_CTX;
     if (c?.seen) all.forEach((id) => c.seen.add(id));
     if (!c?.max) return all.slice(0, n);
-    const mine = c.area ? all.filter((id) => areaOfId(hass, id) === c.area) : all;
+    const mine = c.area ? all.filter((id) => areaOfId(hass, id) === roomArea(c.area)) : all;
     // One required entity (a thermostat, a player) the room hasn't: the house's first, never an empty card.
     return (mine.length || n > 1 ? mine : all).slice(0, Math.min(n, c.max));
   };
@@ -12517,9 +14049,8 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       const a = s.attributes;
       const step = Math.max(num(a.target_temp_step) || 0.5, 0.1);
       const dg = step < 1 ? 1 : 0;
-      const lo = num(a.target_temp_low);
-      const hi = num(a.target_temp_high);
-      const t = spPend(card, `${s.entity_id}|temperature`, num(a.temperature));
+      const { lo, hi, sp, presets: pl } = climateCan(s);
+      const t = spPend(card, `${s.entity_id}|temperature`, sp);
       const set =
         t !== undefined
           ? PM_("climate.set_temperature", "temperature", t, step, num(a.min_temp), num(a.max_temp), "°", dg)
@@ -12528,13 +14059,14 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
             : "";
       const modes = (a.hvac_modes || []).filter(Boolean);
       const chips = modes.length > 1 ? `<div class="row chips hfrow">${modes.slice(0, 6).map((m) => `<button class="chip${m === s.state ? " on" : ""}" data-svc="climate.set_hvac_mode" data-x="${esc(JSON.stringify({ hvac_mode: m }))}">${esc(HVAC[m] || m)}</button>`).join("")}</div>` : "";
-      const presets = (a.preset_modes || []).length > 1 ? `<div class="row chips hfrow">${a.preset_modes.slice(0, 6).map((m) => `<button class="chip${m === a.preset_mode ? " on" : ""}" data-svc="climate.set_preset_mode" data-x="${esc(JSON.stringify({ preset_mode: m }))}">${esc(PRESET[m] || m)}</button>`).join("")}</div>` : "";
+      const presets = pl.length > 1 ? `<div class="row chips hfrow">${pl.slice(0, 6).map((m) => `<button class="chip${m === a.preset_mode ? " on" : ""}" data-svc="climate.set_preset_mode" data-x="${esc(JSON.stringify({ preset_mode: m }))}">${esc(PRESET[m] || m)}</button>`).join("")}</div>` : "";
       return `${set ? `<div class="row">${set}</div>` : ""}${chips}${presets}`;
     },
     water_heater: (s, card) => {
       const a = s.attributes;
-      const t = spPend(card, `${s.entity_id}|temperature`, num(a.temperature));
-      const ops = a.operation_list || [];
+      // By its features, as climateCan: the setpoint (TARGET_TEMPERATURE 1), the modes (OPERATION_MODE 2).
+      const t = spPend(card, `${s.entity_id}|temperature`, canDo(s, 1) ? num(a.temperature) : undefined);
+      const ops = canDo(s, 2) ? a.operation_list || [] : [];
       return `${t !== undefined ? `<div class="row">${PM_("water_heater.set_temperature", "temperature", t, Math.max(num(a.target_temp_step) || 1, 0.5), num(a.min_temp), num(a.max_temp), "°")}</div>` : ""}${ops.length > 1 ? `<div class="row chips hfrow">${ops.slice(0, 6).map((m) => `<button class="chip${m === a.operation_mode ? " on" : ""}" data-svc="water_heater.set_operation_mode" data-x="${esc(JSON.stringify({ operation_mode: m }))}">${esc(WH_MODE[m] || m)}</button>`).join("")}</div>` : ""}`;
     },
     humidifier: (s, card) => {
@@ -12875,10 +14407,10 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
     "hauflo-media": [["Hauflo · Мультимедиа", "Любой media_player: обложка, управление, громкость"], ["Hauflo · Media", "Any media_player: artwork, controls, volume"]],
     "hauflo-graph": [["Hauflo · График", "Датчики за последние часы — энергия, температура, что угодно"], ["Hauflo · Graph", "Sensors over the last hours — energy, temperature, anything"]],
     "hauflo-auto": [["Hauflo · Автоматизации", "Автоматизации и скрипты: вкл/выкл, запуск, когда сработали"], ["Hauflo · Automations", "Automations and scripts: on/off, run, last triggered"]],
-    "hauflo-automations": [["Hauflo · Правила", "Рассвет, закат, время, будильник и «Нет дома» — правила семьи"], ["Hauflo · Rules", "Sunrise, sunset, time, alarm clock and «Away» — the family's rules"]],
+    "hauflo-automations": [["Hauflo · Правила", "Рассвет, закат, время, будильник и «Нет дома» — правила семьи"], ["Hauflo · Rules", "Sunrise, sunset, time, alarm clock and “Away” — the family's rules"]],
     "hauflo-status": [["Hauflo · Диспетчеризация", "Инженерные системы: работает, авария, нет связи"], ["Hauflo · Building systems", "Plant status: running, fault, offline"]],
     "hauflo-security": [["Hauflo · Охрана", "Любая охранная панель, замки, двери и окна"], ["Hauflo · Security", "Any alarm panel, locks, doors and windows"]],
-    "hauflo-camera": [["Hauflo · Камера", "Любая камера: кадр, тап — трансляция"], ["Hauflo · Camera", "Any camera: snapshot, tap for live view"]],
+    "hauflo-camera": [["Hauflo · Камера", "Любая камера: кадр, тап — трансляция; с домофоном — звонок, ответ, открыть"], ["Hauflo · Camera", "Any camera: snapshot, tap for live view; with an intercom — the call, answer, open"]],
     "hauflo-acs": [["Hauflo · Кондиционеры", "Все кондиционеры: какие работают, температура, выключить все"], ["Hauflo · Air conditioners", "All ACs: which run, temperature, all off"]],
     "hauflo-area": [["Hauflo · Комната из Home Assistant", "Всё, что Home Assistant отнёс к комнате, или устройство целиком (любые интеграции), — в стиле Hauflo"], ["Hauflo · Home Assistant area", "Everything Home Assistant puts in an area, or a whole device (any integration), in the Hauflo style"]],
     "hauflo-leaks": [["Hauflo · Защита от протечек", "Датчики протечки и кран любой интеграции: всё в порядке или где протечка; кран — только кнопкой"], ["Hauflo · Leak protection", "Leak sensors and a valve of any integration: all is well, or where the leak is; the valve only by a button"]],
@@ -12904,7 +14436,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       STUB_CTX = { seen: new Set() };
       STUB[tag](hass);
       const seen = [...STUB_CTX.seen];
-      const here = viewArea(hass);
+      const here = roomArea(viewArea(hass));
       const area = (here && seen.some((id) => areaOfId(hass, id) === here) ? here : areaMost(hass, seen)) || null;
       STUB_CTX = { area, max: STUB_MAX };
       c = JSON.parse(JSON.stringify(STUB[tag](hass)));
@@ -12963,7 +14495,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
     "hauflo-auto": [TXT("title"), E("entities", ["automation", "script"], true)],
     "hauflo-status": [TXT("title"), E("entities", ["binary_sensor", "sensor", "switch", "input_boolean"], true)],
     "hauflo-security": [TXT("name"), E("entity", "alarm_control_panel"), E("locks", "lock", true), E("openings", "binary_sensor", true)],
-    "hauflo-camera": [E("entity", "camera"), G(TXT("name"), NUM("refresh", 2, 600))],
+    "hauflo-camera": [E("entity", "camera"), G(TXT("name"), NUM("refresh", 2, 600)), E("intercom", "sensor"), E("open"), E("call_event", "event"), E("hangup_button", "button"), G(E("registration", "sensor"), NUM("ring_timeout", 5, 600))],
     "hauflo-acs": [G(TXT("title"), SEL("kind", [["ac", "Кондиционеры", "Air conditioners", "hauflo:ac"], ["floor_heating", "Тёплые полы", "Floor heating", "hauflo:floor-heat"]])), E("entities", "climate", true)],
     "hauflo-devices": [TXT("title"), E("entities", null, true)],
     "hauflo-leaks": [TXT("title"), { name: "area", selector: { area: {} } }, E("sensors", "binary_sensor", true), E("valves", ["valve", "switch"], true)],
@@ -12987,18 +14519,18 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
   for (const t of Object.keys(ROW_EDIT)) FORM[t] = [...FORM[t], BOOL("auto")];
   const ROW_FIELD = { name: TXT("name"), secondary: TXT("secondary"), icon: ICON(), block: SEL("block", Object.entries(AREA_BLOCK).map(([k, [ru, en]]) => [k, ru, en])), tap_action: ACT("tap_action"), hold_action: ACT("hold_action") };
   const COMP = {
-    ru: { head: "Состав блока", hint: "Строки, которые карточка показывает. Изменения сохраняются при следующем применении Hauflo.", add: "Добавить строку", up: "Выше", down: "Ниже", hide: "Скрыть", show: "Вернуть", drop: "Убрать", more: "Настроить строку", byLabel: "скрыто меткой Home Assistant", otherRoom: "из другой комнаты", renamed: "переименовано здесь", hidden: "скрыто здесь", added: "добавлено здесь", moved: "в блоке", empty: "Скрыто, потому что строк нет", errors: "Ошибки в настройке карточки", name: "Название", secondary: "Вторая строка", icon: "Иконка", block: "Блок", tap_action: "Нажатие", hold_action: "Удержание", entity: "Объект" },
-    en: { head: "Block rows", hint: "The rows the card shows. Changes are kept on Hauflo's next deploy.", add: "Add a row", up: "Up", down: "Down", hide: "Hide", show: "Show again", drop: "Remove", more: "Row settings", byLabel: "hidden by a Home Assistant label", otherRoom: "from another room", renamed: "renamed here", hidden: "hidden here", added: "added here", moved: "in block", empty: "Hidden because there are no rows", errors: "Problems in the card's settings", name: "Name", secondary: "Second line", icon: "Icon", block: "Block", tap_action: "Tap", hold_action: "Hold", entity: "Entity" },
+    ru: { head: "Состав блока", hint: "Строки, которые карточка показывает. Изменения сохраняются при следующем применении Hauflo.", add: "Добавить строку", up: "Выше", down: "Ниже", hide: "Скрыть", show: "Вернуть", drop: "Убрать", more: "Настроить строку", byLabel: "скрыто меткой в настройках дома", otherRoom: "из другой комнаты", renamed: "переименовано здесь", hidden: "скрыто здесь", added: "добавлено здесь", moved: "в блоке", empty: "Скрыто, потому что строк нет", errors: "Ошибки в настройке карточки", name: "Название", secondary: "Вторая строка", icon: "Иконка", block: "Блок", tap_action: "Нажатие", hold_action: "Удержание", entity: "Объект" },
+    en: { head: "Block rows", hint: "The rows the card shows. Changes are kept on Hauflo's next deploy.", add: "Add a row", up: "Up", down: "Down", hide: "Hide", show: "Show again", drop: "Remove", more: "Row settings", byLabel: "hidden by a label in the home settings", otherRoom: "from another room", renamed: "renamed here", hidden: "hidden here", added: "added here", moved: "in block", empty: "Hidden because there are no rows", errors: "Problems in the card's settings", name: "Name", secondary: "Second line", icon: "Icon", block: "Block", tap_action: "Tap", hold_action: "Hold", entity: "Entity" },
   };
   const LABEL = {
-    ru: { auto: "Подбирать строки сами", sensors: "Датчики протечки", valves: "Кран (клапан)", area: "Комната в Home Assistant", device: "Или устройство целиком", label: "Подпись", name: "Название", title: "Заголовок", subtitle: "Подзаголовок", icon: "Иконка", icon_type: "Что слева", color: "Цвет, когда включено", layout: "Расположение", show_level: "Полоска уровня (яркость, положение)", controls: "Управление под плиткой (яркость, шторы, ±, плеер…)", primary_info: "Первая строка", secondary_info: "Вторая строка", tap_action: "Нажатие", hold_action: "Удержание", double_tap_action: "Двойное нажатие", path: "Открывать по нажатию", picture: "Фото комнаты (URL)", temperature: "Температура (термостаты, датчики)", humidity: "Влажность", lights: "Свет", alarms: "Аварийные датчики", devices: "Устройства (нет связи)", weather: "Погода", climate: "Термостат", covers: "Шторы", kind: "Вид", scenes: "Сцены", entity: "Объект", entities: "Объекты", days: "Дней прогноза", forecast: "Прогноз", pm25: "PM2.5", pm10: "PM10", co2: "CO₂", voc: "Летучие в-ва", hours: "Часов", locks: "Замки", openings: "Двери, окна, движение", refresh: "Обновлять кадр, с", chart: "График за сутки", hide_ok: "Прятать, когда всё в норме", battery_percent: "Заряд батареи в % всегда (не только когда садится)", compact: "Компактно (строкой)", only: "Что показывать", heat_setpoint: "Уставка нагрева (number)", cool_setpoint: "Уставка охлаждения (number)", scene_layout: "Где сцены", block: "Блок комнаты (пусто — всё)" },
-    en: { auto: "Pick the rows itself", sensors: "Leak sensors", valves: "Valve", area: "Home Assistant area", device: "Or a whole device", label: "Label", name: "Name", title: "Title", subtitle: "Subtitle", icon: "Icon", icon_type: "On the left", color: "Color when on", layout: "Layout", show_level: "Level bar (brightness, position)", controls: "Controls under the tile (brightness, blinds, ±, player…)", primary_info: "First line", secondary_info: "Second line", tap_action: "Tap", hold_action: "Hold", double_tap_action: "Double tap", path: "Opens on tap", picture: "Room photo (URL)", temperature: "Temperature (thermostats, sensors)", humidity: "Humidity", lights: "Lights", alarms: "Alarm sensors", devices: "Devices (offline check)", weather: "Weather", climate: "Thermostat", covers: "Blinds", kind: "Kind", scenes: "Scenes", entity: "Entity", entities: "Entities", days: "Forecast days", forecast: "Forecast", pm25: "PM2.5", pm10: "PM10", co2: "CO₂", voc: "VOC", hours: "Hours", locks: "Locks", openings: "Doors, windows, motion", refresh: "Snapshot refresh, s", chart: "24 h chart", hide_ok: "Hide when all is OK", battery_percent: "Battery % always (not only when low)", compact: "Compact (one row)", only: "What to show", heat_setpoint: "Heating setpoint (number)", cool_setpoint: "Cooling setpoint (number)", scene_layout: "Where scenes go", block: "Room block (empty — all)" },
+    ru: { intercom: "Домофон (состояние двери)", open: "Чем открыть дверь", call_event: "Или звонок другой интеграции (событие)", hangup_button: "Её кнопка «положить трубку»", registration: "Её состояние регистрации", ring_timeout: "Звонок длится, с", auto: "Подбирать строки сами", sensors: "Датчики протечки", valves: "Кран (клапан)", area: "Комната в Home Assistant", device: "Или устройство целиком", label: "Подпись", name: "Название", title: "Заголовок", subtitle: "Подзаголовок", icon: "Иконка", icon_type: "Что слева", color: "Цвет, когда включено", layout: "Расположение", show_level: "Полоска уровня (яркость, положение)", controls: "Управление под плиткой (яркость, шторы, ±, плеер…)", primary_info: "Первая строка", secondary_info: "Вторая строка", tap_action: "Нажатие", hold_action: "Удержание", double_tap_action: "Двойное нажатие", path: "Открывать по нажатию", picture: "Фото комнаты (URL)", temperature: "Температура (термостаты, датчики)", humidity: "Влажность", lights: "Свет", alarms: "Аварийные датчики", devices: "Устройства (нет связи)", weather: "Погода", climate: "Термостат", covers: "Шторы", kind: "Вид", scenes: "Сцены", entity: "Объект", entities: "Объекты", days: "Дней прогноза", forecast: "Прогноз", pm25: "PM2.5", pm10: "PM10", co2: "CO₂", voc: "Летучие в-ва", hours: "Часов", locks: "Замки", openings: "Двери, окна, движение", refresh: "Обновлять кадр, с", chart: "График за сутки", hide_ok: "Прятать, когда всё в норме", battery_percent: "Заряд батареи в % всегда (не только когда садится)", compact: "Компактно (строкой)", only: "Что показывать", heat_setpoint: "Уставка нагрева (number)", cool_setpoint: "Уставка охлаждения (number)", scene_layout: "Где сцены", block: "Блок комнаты (пусто — всё)" },
+    en: { intercom: "Intercom (the door's state)", open: "What opens the door", call_event: "Or another integration's call (event)", hangup_button: "Its «hang up» button", registration: "Its registration state", ring_timeout: "A ring lasts, s", auto: "Pick the rows itself", sensors: "Leak sensors", valves: "Valve", area: "Home Assistant area", device: "Or a whole device", label: "Label", name: "Name", title: "Title", subtitle: "Subtitle", icon: "Icon", icon_type: "On the left", color: "Color when on", layout: "Layout", show_level: "Level bar (brightness, position)", controls: "Controls under the tile (brightness, blinds, ±, player…)", primary_info: "First line", secondary_info: "Second line", tap_action: "Tap", hold_action: "Hold", double_tap_action: "Double tap", path: "Opens on tap", picture: "Room photo (URL)", temperature: "Temperature (thermostats, sensors)", humidity: "Humidity", lights: "Lights", alarms: "Alarm sensors", devices: "Devices (offline check)", weather: "Weather", climate: "Thermostat", covers: "Blinds", kind: "Kind", scenes: "Scenes", entity: "Entity", entities: "Entities", days: "Forecast days", forecast: "Forecast", pm25: "PM2.5", pm10: "PM10", co2: "CO₂", voc: "VOC", hours: "Hours", locks: "Locks", openings: "Doors, windows, motion", refresh: "Snapshot refresh, s", chart: "24 h chart", hide_ok: "Hide when all is OK", battery_percent: "Battery % always (not only when low)", compact: "Compact (one row)", only: "What to show", heat_setpoint: "Heating setpoint (number)", cool_setpoint: "Cooling setpoint (number)", scene_layout: "Where scenes go", block: "Room block (empty — all)" },
   };
   // hauflo-insights (0.32 п.9): no entity — the agent's diagnosis; the editor picks its sections, a stage, how many rows.
   const INSIGHT_SECTION_OPT = [["climate", "Климат", "Climate"], ["energy", "Энергия", "Energy"], ["water", "Вода", "Water"], ["air", "Воздух", "Air"], ["link", "Связь и питание", "Link and power"], ["system", "Система", "System"], ["pairs", "Пары", "Pairs"], ["other", "Прочее", "Other"]];
   const INSIGHT_STAGE_OPT = [["deviation", "Отклонение", "Deviation"], ["learning", "Изучаю", "Learning"], ["ready", "Норма известна", "Norm known"], ["normal", "Отмечено как норма", "Marked as normal"], ["excluded", "Не наблюдаю", "Not watched"]];
   STUB["hauflo-insights"] = () => ({});
-  PICK["hauflo-insights"] = [["Hauflo · Диагностика", "Что Hauflo изучает о приборах: обучение, нормы, отклонения; «Это норма» — администраторам"], ["Hauflo · Diagnostics", "What Hauflo learns about the devices: learning, norms, deviations; “This is normal” for admins"]];
+  PICK["hauflo-insights"] = [["Hauflo · Анализ", "Что Hauflo изучает о приборах: обучение, нормы, отклонения; «Это норма» — администраторам"], ["Hauflo · Analysis", "What Hauflo learns about the devices: learning, norms, deviations; “This is normal” for admins"]];
   FORM["hauflo-insights"] = [TXT("title"), { name: "sections", selector: { select: { multiple: true, mode: "list", options: INSIGHT_SECTION_OPT } } }, G(SEL("stage", INSIGHT_STAGE_OPT), NUM("limit", 1, INSIGHT_PAGE)), G(BOOL("hide_ok"), BOOL("compact"))];
   Object.assign(LABEL.ru, { sections: "Разделы (пусто — все)", stage: "Только стадия", limit: "Не больше строк" });
   Object.assign(LABEL.en, { sections: "Sections (empty — all)", stage: "Only the stage", limit: "At most rows" });
@@ -13061,8 +14593,97 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
     const dev = hass.entities?.[id]?.device_id;
     if (!dev) return [];
     return Object.values(hass.entities)
-      .filter((x) => x.device_id === dev && x.entity_id.startsWith("binary_sensor.") && !!hass.states[x.entity_id] && signalOf(hass.states[x.entity_id]).house !== "none" && !!hass.states[x.entity_id].attributes?.device_class)
+      .filter((x) => x.device_id === dev && x.entity_id.startsWith("binary_sensor.") && !!hass.states[x.entity_id] && ((signalOf(hass.states[x.entity_id]).house !== "none" && !!hass.states[x.entity_id].attributes?.device_class) || signalChosen(hass.states[x.entity_id])))
       .map((x) => x.entity_id);
+  };
+  /** «Авария когда» of a signal (Р9/Р19): «По умолчанию» — the site's / the canon's condition, else the canon's meanings
+   * (signals.meanings — scripts/check-cards-logic.mjs checks the keys). */
+  const SIG_MEANING = { default: ["По умолчанию", "Default"], on: ["вкл", "on"], off: ["выкл", "off"], none: ["не авария", "not an alarm"], reading: ["только показание", "reading only"] };
+  const SIG_DOMAINS = [...new Set([...Object.keys(SIGNALS.classes).map((k) => k.split(".")[0]), ...SIGNALS.classless.domains])];
+  /** A condition said: «вкл», «ниже 20», … */
+  const condWords = (c, ru) =>
+    Array.isArray(c.states)
+      ? c.states.map((x) => (Object.hasOwn(SIG_MEANING, x) ? SIG_MEANING[x][ru ? 0 : 1] : x)).join(", ")
+      : [c.below !== undefined ? `${ru ? "ниже" : "below"} ${c.below}` : "", c.above !== undefined ? `${ru ? "выше" : "above"} ${c.above}` : ""].filter(Boolean).join(", ");
+  /** Why a signal is (or isn't) an alarm here, in the editor's words: its condition, where it came from, «Всё хорошо». */
+  const alarmWhy = (s, ru) => {
+    const g = signalOf(s);
+    const dc = typeof s.attributes?.device_class === "string" ? s.attributes.device_class : "";
+    const src =
+      g.src === "ha" ? (ru ? "выбрано на карточке" : "chosen on a card")
+      : g.src === "entity" ? (ru ? "задано в Hauflo" : "set in Hauflo")
+      : g.src === "scope" ? (ru ? "по правилу интеграции в Hauflo" : "by an integration rule in Hauflo")
+      : g.key.startsWith("classless.") ? (ru ? "по словам в названии" : "by the words of its name")
+      : g.key === "undetermined" ? (ru ? "датчик без класса" : "a sensor with no class")
+      : dc ? (ru ? `по классу «${dc}»` : `by class “${dc}”`) : ru ? "по умолчанию" : "by default";
+    const when = g.cond ? (ru ? `авария при «${condWords(g.cond, ru)}»` : `alarm when “${condWords(g.cond, ru)}”`) : ru ? "не авария" : "not an alarm";
+    const house = g.cond && g.house === "none" ? (ru ? ", на «Всё хорошо» не влияет" : ", doesn't affect “All good”") : "";
+    const now = g.hit ? (ru ? " · сейчас авария" : " · in alarm now") : "";
+    // «Не авария» / «только показание» never silences an integrator's alarm rule naming it (0.33 M6): said, not hidden.
+    const rule = g.rule && (!g.cond || g.house === "none") ? (ru ? " · правило уведомлений Hauflo по нему всё равно сообщает" : " · a Hauflo notification rule still reports it") : "";
+    return `${when} — ${src}${house}${now}${rule}`;
+  };
+  /** The «Авария когда» line of a signal in a card's editor (Р9/Р19): why — and the choice, applied in the house at once
+   * (POST hauflo/signals/choose, admins) and carried to Hauflo like «Это норма». Kept while nothing it shows changed
+   * (an open select keeps its focus over hass updates); `redraw` — the editor's own render after a save. */
+  // «Применено в доме» under the row for a while after the choice took (0.33 L5: the change applies at once, no Save — the
+  // row said nothing of it but its new words).
+  const SIG_OK_MS = 5000;
+  const SIG_OK = new Map();
+  const alarmChoice = (h, id, old, redraw, title = "") => {
+    const s = h.states[id];
+    if (!s || !SIG_DOMAINS.includes(domainOf(id))) return null;
+    const lang = userLang(h);
+    const ru = lang === "ru";
+    const g = signalOf(s);
+    // Only an agent that says its verdicts can take the choice (an older one, none: the line says why, no select).
+    const can = !!AGENT.data && typeof AGENT.data._signals === "object" && AGENT.data._signals !== null;
+    const why = `${title ? `${title}: ` : ""}${alarmWhy(s, ru)}`;
+    const okLeft = SIG_OK_MS - (Date.now() - (SIG_OK.get(id) || 0));
+    const key = `${id}|${g.meaning}|${why}|${can}|${lang}|${okLeft > 0}`;
+    if (old && old.dataset.key === key) return old;
+    const el = document.createElement("div");
+    el.dataset.sig = id;
+    el.dataset.key = key;
+    el.style.cssText = "display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font-size:12px;color:var(--secondary-text-color);margin:4px 0";
+    const opts = Object.keys(SIG_MEANING).filter((k) => k === "default" || domainOf(id) === "binary_sensor" || !SIGNALS.meanings[k]?.states);
+    el.innerHTML = `<span data-why style="flex:1 1 220px;min-width:0"></span>${can ? `<label style="display:flex;align-items:center;gap:6px;white-space:nowrap">${ru ? "Авария когда" : "Alarm when"}<select data-m style="font:inherit;color:var(--primary-text-color);background:var(--card-background-color);border:1px solid var(--divider-color);border-radius:8px;padding:4px 6px">${opts.map((k) => `<option value="${k}">${esc(SIG_MEANING[k][ru ? 0 : 1])}</option>`).join("")}</select></label>` : ""}<span data-ok role="status" style="flex-basis:100%;color:var(--success-color, var(--primary-color))"></span><span data-err style="flex-basis:100%;color:var(--error-color)"></span>`;
+    el.querySelector("[data-why]").textContent = why;
+    if (okLeft > 0) {
+      el.querySelector("[data-ok]").textContent = ru ? "Применено в доме" : "Applied in the house";
+      setTimeout(() => {
+        el.querySelector("[data-ok]").textContent = "";
+        el.dataset.key = "";
+      }, okLeft);
+    }
+    const sel = el.querySelector("[data-m]");
+    if (sel) {
+      sel.value = g.meaning || "default";
+      sel.addEventListener("change", async () => {
+        const err = el.querySelector("[data-err]");
+        err.textContent = "";
+        sel.disabled = true;
+        try {
+          await h.callApi("POST", "hauflo/signals/choose", { entity: id, meaning: sel.value });
+          SIG_OK.set(id, Date.now());
+          // The verdicts again now, not in a minute: every card and this editor say the new answer.
+          if (AGENT.wait) await AGENT.wait.catch(() => null);
+          AGENT.at = 0;
+          AGENT.sig = "";
+          refreshAlarms(h);
+          if (AGENT.wait) await AGENT.wait.catch(() => null);
+          el.dataset.key = "";
+        } catch (e) {
+          sel.value = g.meaning || "default";
+          err.textContent = e?.status_code === 403 || e?.status_code === 401 ? (ru ? "Выбрать может только администратор." : "Only an administrator can choose this.") : agentErr(e, h) ? (ru ? "Обновите Hauflo в доме — эта версия не принимает выбор." : "Update Hauflo in the house — this version doesn't take the choice.") : ru ? "Не сохранилось, попробуйте ещё раз." : "Not saved, try again.";
+        } finally {
+          sel.disabled = false;
+          redraw();
+        }
+      });
+    }
+    if (old) old.replaceWith(el);
+    return el;
   };
   const short = (v) => String(+Number(v).toFixed(3));
   /** How many speeds a unit has, as HA says (a fan's speed_count, else 100 ÷ percentage_step; a number's range ÷ step):
@@ -13095,7 +14716,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
     "hauflo-scenes": { kind: "light" },
     "hauflo-weather": { days: 5, forecast: "daily" },
     "hauflo-graph": { hours: 24 },
-    "hauflo-camera": { refresh: 10 },
+    "hauflo-camera": { refresh: 10, ring_timeout: 60 },
     "hauflo-acs": { kind: "ac" },
   };
   for (const t of Object.keys(ROW_EDIT)) DEFAULTS[t] = { ...DEFAULTS[t], auto: true };
@@ -13111,6 +14732,12 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
   const SIGNAL_EDITORS = ["hauflo-status", "hauflo-area"];
   // The editor's own notes (Hauflo's dashboard, the house's signals): one class over the theme's tokens, not inline styles
   // (acceptance 10.11 L-8). A <style> child of the editor reaches its tree wherever HA puts it (its dialog's shadow root).
+  // Р54: the room tile's editor — a picture of the service's set for the room (the agent's `hauflo/room_picture_options`),
+  // set on HA's area (`hauflo/area_picture`) and in the card; one's own photo goes in HA's area settings.
+  const ROOM_PHOTO_ED = {
+    ru: { label: "Фото из набора", own: "Своё фото…", none: "Без фото", hint: "Своё фото загружается в настройках комнаты Home Assistant: Настройки → Области → карандаш у комнаты → картинка. Карточка подхватит его сама.", fail: "Фото не сохранилось — нет прав или нет связи. Попробуйте ещё раз." },
+    en: { label: "Photo from the set", own: "Own photo…", none: "No photo", hint: "Your own photo is uploaded in the room's Home Assistant settings: Settings → Areas → the room's pencil → picture. The card picks it up by itself.", fail: "The photo wasn't saved — no permission or no connection. Try again." },
+  };
   const ED_CSS = `.hf-ed-note{display:block;margin:0 0 var(--hf-pad);padding:var(--hf-row-gap) var(--hf-r-sm);border-radius:var(--hf-r-sm);background:var(--hf-grey-10);font-size:13px;line-height:1.45;color:var(--secondary-text-color);text-decoration:none}
 .hf-ed-note[data-signals]{margin:var(--hf-pad) 0 0}a.hf-ed-note:hover{color:var(--primary-text-color)}a.hf-ed-note b{color:var(--primary-color);font-weight:500}`;
   // Hauflo's app (cards.json documentationURL too): the house's own server (its link entity's `server`), else by language.
@@ -13156,9 +14783,9 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
         this._note.textContent =
           userLang(this._hass) === "ru"
             ? "Свои карточки можно добавлять — Hauflo сохранит их при следующем применении. Названия блоков — «Настройки → Вид» на панели."
-            : "You can add your own cards — Hauflo keeps them on the next deploy. Block titles — «Settings → View» on the dashboard.";
+            : "You can add your own cards — Hauflo keeps them on the next deploy. Block titles — “Settings → View” on the dashboard.";
         // 399-36: a room of other integrations' devices — large by default, one row each by choice (here or for the whole house).
-        if (this.tag === "hauflo-area") this._note.textContent += userLang(this._hass) === "ru" ? " Крупно или строкой — «Компактно» здесь или для всего дома в «Настройки → Вид»." : " Large or one row — «Compact» here, or for the whole house in «Settings → View».";
+        if (this.tag === "hauflo-area") this._note.textContent += userLang(this._hass) === "ru" ? " Крупно или строкой — «Компактно» здесь или для всего дома в «Настройки → Вид»." : " Large or one row — “Compact” here, or for the whole house in “Settings → View”.";
         this._edCss.after(this._note);
         this._noteBase = this._note.textContent;
       }
@@ -13207,6 +14834,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       this._renderPicks(fields.filter(iconSel), data);
       if (ROW_CARDS.includes(this.tag)) this._renderRows();
       if (this.tag === "hauflo-entity") this._renderKind();
+      if (this.tag === "hauflo-room") this._renderPhoto();
       if (SIGNAL_EDITORS.includes(this.tag)) this._renderSignals();
       if (ROW_EDIT[this.tag]) this._renderComp();
     }
@@ -13274,6 +14902,15 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
     }
     /** «Состав блока»: one row editor for every card with rows (0.32 п.6) — each row's name and entity, ↑↓, the eye (hide /
      * put back), «⋯» its own settings; «+» adds an entity (another room's too). Each row says where it comes from. */
+    /** The agent's verdicts for «Авария когда» (refreshAlarms, throttled): the editor drawn again when they come. */
+    _askSignals(redraw) {
+      refreshAlarms(this._hass);
+      const w = AGENT.wait;
+      if (w && this._sigWait !== w) {
+        this._sigWait = w;
+        w.finally(() => this._sigWait === w && redraw());
+      }
+    }
     _renderComp() {
       const lang = userLang(this._hass);
       const w = COMP[lang] || COMP.en;
@@ -13281,9 +14918,10 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       const c = this._config;
       const it = rowItems(c);
       const k = this._comp();
+      this._askSignals(() => this._renderComp());
       const areaOf = (id) => {
         const e = h.entities?.[id];
-        return e?.area_id || h.devices?.[e?.device_id]?.area_id || "";
+        return roomArea(e?.area_id || h.devices?.[e?.device_id]?.area_id) || "";
       };
       if (!this._compBox) {
         const box = (this._compBox = document.createElement("div"));
@@ -13379,13 +15017,19 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
           how === "label" ? w.byLabel : "",
           how === "hidden" ? w.hidden : "",
           how === "moved" ? `${w.moved} «${(AREA_BLOCK[o.block] || [o.block])[lang === "ru" ? 0 : 1] ?? o.block}»` : "",
-          k.area && areaOf(id) && areaOf(id) !== k.area ? w.otherRoom : added ? w.added : "",
+          k.area && areaOf(id) && areaOf(id) !== roomArea(k.area) ? w.otherRoom : added ? w.added : "",
           o.name || o.secondary ? w.renamed : "",
         ].filter(Boolean);
         const nm = [o.name || nameOf(s, id), o.secondary].filter(Boolean).join(" · ");
         el.style.opacity = how === "vis" ? "" : ".6";
         el.querySelector("[data-n]").textContent = nm;
         el.querySelector("[data-sub]").textContent = [id, ...tags].join(" · ");
+        // A signal's «Авария когда» with why (Р9/Р19): shown rows only.
+        const sigOld = el.querySelector("[data-sig]");
+        const sig = how === "vis" ? alarmChoice(h, id, sigOld, () => this._renderComp()) : null;
+        if (!sig) sigOld?.remove();
+        else if (sig !== sigOld) el.querySelector("[data-f]").before(sig);
+        if (sig) sig.style.margin = "4px 6px 2px 0";
         const can = fields.length > 0 && how !== "label";
         const bkey = `${how}|${vi}|${k.vis.length}|${added}|${can}|${lang}`;
         const bb = el.querySelector("[data-b]");
@@ -13432,8 +15076,8 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       const n = houseSignals(this._hass, true).length;
       const word = ru ? (n % 10 === 1 && n % 100 !== 11 ? "сигнал" : [2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100) ? "сигнала" : "сигналов") : n === 1 ? "signal" : "signals";
       const text = ru
-        ? `На «Всё хорошо» ${n % 10 === 1 && n % 100 !== 11 ? "влияет" : "влияют"} ${n} ${word} дома. Настроить в Hauflo: объект → Аварии → «Сигналы дома».`
-        : `${n} house ${word} ${n === 1 ? "affects" : "affect"} «All good». Set them up in Hauflo: site → Alarms → «House signals».`;
+        ? `На «Всё хорошо» ${n % 10 === 1 && n % 100 !== 11 ? "влияет" : "влияют"} ${n} ${word} объекта. Настроить в Hauflo: объект → Аварии → «Что считаем аварией».`
+        : `${n} site ${word} ${n === 1 ? "affects" : "affect"} “All good”. Set them up in Hauflo: site → Alarms → “What counts as an alarm”.`;
       if (!this._sig) {
         this._sig = document.createElement("a");
         this._sig.dataset.signals = "";
@@ -13499,6 +15143,76 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       this._kind.style.marginTop = "16px";
       this._form.after(this._kind);
     }
+    /** Р54: «Фото из набора» under «Фото комнаты (URL)» — shown only when the agent offers pictures for the room's area
+     * (an old agent, an error or an ordinary room: hidden, the URL field stays). */
+    _renderPhoto() {
+      const h = this._hass;
+      const c = this._config;
+      const area = typeof c.area === "string" ? c.area : "";
+      const w = ROOM_PHOTO_ED[userLang(h)] || ROOM_PHOTO_ED.en;
+      if (area && this._photoArea !== area) {
+        this._photoArea = area;
+        this._photoOpts = null;
+        Promise.resolve()
+          .then(() => h.callWS({ type: "hauflo/room_picture_options", area_id: area }))
+          .then((r) => (Array.isArray(r) ? r : []).filter((o) => o && typeof o.label === "string" && o.label && (o.url === null || o.url === "" || (typeof o.url === "string" && cssUrl(o.url) === o.url))))
+          .catch(() => [])
+          .then((list) => this._photoArea === area && ((this._photoOpts = list), this._renderPhoto()));
+      }
+      const opts = area ? this._photoOpts || [] : [];
+      const cur = roomPic(h, c);
+      // What is set now: one of the set, «Без фото», or one's own (none of the set — the list shows nothing picked).
+      const hit = opts.find((o) => o.url && o.url === cur);
+      const pick = this._photoOwn ? "own" : hit ? hit.url : cur ? "" : "none";
+      const key = opts.length ? JSON.stringify([userLang(h), opts, pick, this._photoErr || ""]) : "";
+      if (this._photoKey === key) return;
+      this._photoKey = key;
+      this._photo?.remove();
+      this._photo = null;
+      if (!key) return;
+      const box = (this._photo = document.createElement("div"));
+      box.style.marginTop = "16px";
+      const form = document.createElement("ha-form");
+      const options = [...opts.map((o) => ({ value: o.url || "none", label: o.label })), ...(opts.some((o) => !o.url) ? [] : [{ value: "none", label: w.none }]), { value: "own", label: w.own }];
+      form.hass = h;
+      form.computeLabel = () => w.label;
+      form.schema = [{ name: "photo_set", selector: { select: { mode: "dropdown", options } } }];
+      form.data = { photo_set: pick || undefined };
+      form.addEventListener("value-changed", async (ev) => {
+        ev.stopPropagation();
+        const v = ev.detail.value?.photo_set;
+        this._photoErr = "";
+        this._photoOwn = v === "own";
+        if (!v || v === "own") return this._renderPhoto();
+        const url = v === "none" ? null : v;
+        try {
+          await h.callWS({ type: "hauflo/area_picture", area_id: area, picture: url });
+        } catch (e) {
+          this._photoErr = w.fail;
+          this._photoKey = "";
+          return this._renderPhoto();
+        }
+        ROOM_PIC.set(area, url);
+        roomPicRedraw(area);
+        const next = { ...this._config };
+        if (url) next.picture = url;
+        else delete next.picture;
+        this._config = next;
+        this.dispatchEvent(new CustomEvent("config-changed", { detail: { config: next }, bubbles: true, composed: true }));
+        this._render();
+      });
+      box.appendChild(form);
+      const note = this._photoErr || (this._photoOwn ? w.hint : "");
+      if (note) {
+        const n = document.createElement("div");
+        n.className = "hf-ed-note";
+        n.style.margin = "8px 0 0";
+        if (this._photoErr) n.style.color = "var(--error-color)";
+        n.textContent = note;
+        box.appendChild(n);
+      }
+      this._form.after(box);
+    }
     /** One folded block per tile: name · scale · faults, kept across hass updates (typing keeps its focus). */
     _renderRows() {
       const lang = userLang(this._hass);
@@ -13512,6 +15226,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       const list = this._config.entities || [];
       const ids = list.map(idOf).filter(Boolean);
       for (const [id, box] of this._rowMap) if (!ids.includes(id)) (box.remove(), this._rowMap.delete(id));
+      this._askSignals(() => this._renderRows());
       const save = (id, row) => {
         const clean = Object.fromEntries(Object.entries(row).filter(([k, v]) => k !== "entity" && v !== undefined && v !== "" && !(Array.isArray(v) && !v.length) && !(k === "scale" && v === "auto")));
         if (clean.scale !== "speeds") delete clean.speeds;
@@ -13558,6 +15273,18 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
         const fb = box.querySelector("[data-f]");
         fb.style.display = extra.length ? "" : "none";
         fb.textContent = ru ? `Добавить аварии этого устройства (${extra.length})` : `Add this device's faults (${extra.length})`;
+        // «Авария когда» with why (Р9/Р19) of each of the row's fault sensors (the row's own signal — a devices card's
+        // sensor — has its line in the composition list above, _renderComp).
+        let sb = box.querySelector("[data-sigs]");
+        if (!sb) {
+          sb = document.createElement("div");
+          sb.dataset.sigs = "";
+          box.appendChild(sb);
+        }
+        const kept = new Map([...sb.children].map((c) => [c.dataset.sig, c]));
+        const sigs = [...new Set(rowAlarms(row))].map((x) => alarmChoice(this._hass, x, kept.get(x), () => this._renderRows(), nameOf(this._hass.states[x], x))).filter(Boolean);
+        for (const c of [...sb.children]) if (!sigs.includes(c)) c.remove();
+        sigs.forEach((c, j) => sb.children[j] !== c && sb.insertBefore(c, sb.children[j] || null));
         const form = box.querySelector("ha-form");
         form.hass = this._hass;
         form.schema = localize(ROW_FORM(id, row), lang);
@@ -13616,6 +15343,8 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
     // The whole page in a picker preview is too much.
     const auto = window.customCards.find((c) => c.type === "hauflo-automations");
     if (auto) Object.defineProperty(auto, "preview", { value: false });
+    // «Анализ» — HA's sidebar panel (0.33 Р26), never a card of the picker; after the cards: it draws hauflo-insights.
+    if (!reg.get("hauflo-analysis-panel")) reg.define("hauflo-analysis-panel", AnalysisPanel);
   };
   define();
 })();
@@ -13656,6 +15385,10 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       this._wro = new ResizeObserver(() => {
         clearTimeout(this._wt);
         this._wt = setTimeout(() => this._repack(), 250);
+      });
+      this.addEventListener("hauflo-order", () => {
+        clearTimeout(this._ot);
+        this._ot = setTimeout(() => this._config && this._reorder(), 30);
       });
     }
     static getStubConfig() {
@@ -13700,6 +15433,37 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
     _target(el) {
       return el.localName === "hui-card" ? el : el.firstElementChild;
     }
+    /** The cards by slot: a card with a rank (a room tile in the client's order, `_hfRank` on its cell — orderAfter) takes
+     * the place of another ranked one, by rank; the rest keep their places. */
+    _els() {
+      const els = this._kids.map((k) => k.el);
+      return HaufloLayout._seq(els).map((i) => els[i]);
+    }
+    /** Slot → index of the cell put there (ranked cells among the ranked cells' slots, by rank, then as they came). */
+    static _seq(cells) {
+      return hfRankSeq(cells);
+    }
+    /** A tile's rank changed (the client's «Порядок»): the cards put by it — packed again by their heights as they are. */
+    _reorder() {
+      const p = this._packed;
+      const key = HaufloLayout._seq(this._kids.map((k) => k.el)).join();
+      if (!p) return this._place();
+      if (p.seq === key) return;
+      // Mid-measure: once it's done.
+      if (this._ro) return void (this._ot = setTimeout(() => this._reorder(), 200));
+      const l = (this._config.layouts || []).find((x) => x && typeof x.media === "string" && window.matchMedia(x.media).matches);
+      if (!l || l.media !== p.media) return this._place();
+      const els = this._els();
+      const h = els.map((el) => (!el.hidden && el.style.display !== "none" ? el.offsetHeight : 0));
+      const cols = this._pack(p.gen, h, p.max);
+      if (cols.length !== p.cols.length) {
+        this._packed = null;
+        return this._place();
+      }
+      p.cols = cols;
+      p.seq = key;
+      this._show(cols, l);
+    }
     set hass(h) {
       this._hass = h;
       for (const { el } of this._kids) {
@@ -13732,7 +15496,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       if (!p || this._ro || !this.clientWidth || Math.abs(this.clientWidth - p.w) < 1) return;
       const l = (this._config.layouts || []).find((x) => x && typeof x.media === "string" && window.matchMedia(x.media).matches);
       if (!l || l.media !== p.media) return;
-      const els = this._kids.map((k) => k.el);
+      const els = this._els();
       const h = els.map((el) => (!el.hidden && el.style.display !== "none" ? el.offsetHeight : 0));
       const cols = this._pack(p.gen, h, p.max);
       p.w = this.clientWidth;
@@ -13749,7 +15513,8 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       const l = layouts.find((x) => window.matchMedia(x.media).matches);
       const sr = this.shadowRoot;
       if (!sr.firstChild) sr.innerHTML = `<style>${css}</style><div></div>`;
-      const els = this._kids.map((k) => k.el);
+      const els = this._els();
+      const seq = HaufloLayout._seq(this._kids.map((k) => k.el)).join();
       let cols = null;
       let gen = null; // the generator's cards (in a column of the layout): the packed ones
       if (l && Array.isArray(l.columns)) {
@@ -13766,7 +15531,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       this._stopMeasure();
       const pack = this._config.pack === "short" && cols && cols.length > 1;
       if (!pack) return this._show(cols, l);
-      if (this._packed && this._packed.media === l.media && this._packed.n === els.length) return this._show(this._packed.cols, l);
+      if (this._packed && this._packed.media === l.media && this._packed.n === els.length && this._packed.seq === seq) return this._show(this._packed.cols, l);
       // Measured where they'll stand: the generator's columns (same count, same width) until the real heights are in.
       this._show(cols, l, true);
       this._measure(l, gen, Number(l.max) > 0 ? Number(l.max) : cols.length, cols.length, 0);
@@ -13783,7 +15548,8 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       }
     }
     _measure(l, gen, max, n, round) {
-      const els = this._kids.map((k) => k.el);
+      const els = this._els();
+      const seq = HaufloLayout._seq(this._kids.map((k) => k.el)).join();
       const shown = (el) => !el.hidden && el.style.display !== "none";
       const ready = () => els.every((el, i) => !gen.has(i) || !shown(el) || el.offsetHeight > 0);
       const start = performance.now();
@@ -13797,7 +15563,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
           this._show(cols, l, true);
           return this._measure(l, gen, max, cols.length, round + 1);
         }
-        this._packed = { media: l.media, n: els.length, max, gen, w: this.clientWidth, cols };
+        this._packed = { media: l.media, n: els.length, max, gen, w: this.clientWidth, cols, seq };
         this._show(cols, l);
       };
       const check = () => {
@@ -13883,7 +15649,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
     }
     _show(cols, l, measuring = false) {
       const host = this.shadowRoot.lastElementChild;
-      const els = this._kids.map((k) => k.el);
+      const els = this._els();
       if (cols && cols.length > 1) {
         host.className = "cols";
         const w = this._config.card_w === true ? "var(--hf-card-w,400px)" : "1fr";
@@ -13901,7 +15667,7 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
       } else if (l && Number(l.per_row) > 1) {
         host.className = "rows";
         host.style.gridTemplateColumns = `repeat(${Math.min(12, Math.round(Number(l.per_row)))},minmax(0,1fr))`;
-        host.replaceChildren(...els);
+        if (els.length !== host.children.length || els.some((e, x) => e !== host.children[x])) host.replaceChildren(...els);
       } else {
         host.className = "one";
         host.style.gridTemplateColumns = "";
@@ -13936,7 +15702,9 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
 (() => {
   if (!HF_FIRST) return;
   const TAG = "hauflo-section";
-  const sheetCss = (cols) => {
+  /** `cols`: each cell's [column, row, rows] when packed; `ord`: each cell's place when the client's order moves cells
+   * (rows and HA's own flow — the packed ones are placed by `cols`); edit mode: HA's own order, so dragging stays HA's. */
+  const sheetCss = (cols, ord) => {
     const g = "var(--ha-view-sections-column-gap,32px)";
     let s = `:host([hf-measure]) .container:not(.edit-mode){visibility:hidden}
 :host([hf-cols]) .container:not(.edit-mode){grid-template-columns:repeat(var(--hf-n),minmax(0,var(--hf-w)))!important;grid-auto-rows:1px!important;grid-auto-flow:row!important;row-gap:0!important;column-gap:${g}!important;justify-content:center}
@@ -13946,7 +15714,21 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
     (cols || []).forEach(([c, r, h], i) => {
       s += `\n:host([hf-cols]) .container:not(.edit-mode)>.card:nth-child(${i + 1}){grid-column:${c + 1}/span 1!important;grid-row:${r + 1}/span ${Math.max(1, h)}!important}`;
     });
+    // fix5 п.1 (acceptance fix4, phone 390: order 2,3,4,1,5… seen 2,5,…,12,3,4,1): every cell gets its slot once any moved —
+    // a cell left without one is `order:0` and stands before all the moved ones.
+    (ord || []).forEach((k, i) => {
+      s += `\n.container:not(.edit-mode)>.card:nth-child(${i + 1}){order:${k}}`;
+    });
     return s;
+  };
+  /** Slot → index of the cell put there (= HaufloLayout._seq: the room tiles by the client's order, `_hfRank`). */
+  const seqOf = (els) => hfRankSeq(els);
+  /** Index → its slot (`ord` of sheetCss), when any cell moved. */
+  const ordOf = (seq) => {
+    if (seq.every((x, i) => x === i)) return [];
+    const ord = new Array(seq.length);
+    seq.forEach((x, s) => (ord[x] = s));
+    return ord;
   };
   const define = () => {
     const reg = window.customElements;
@@ -13968,6 +15750,11 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
         this._hfWro = new ResizeObserver(() => {
           clearTimeout(this._hfWt);
           this._hfWt = setTimeout(() => this._hfRepack(), 250);
+        });
+        // A room tile's rank changed (orderAfter): the cells put by it.
+        this.addEventListener("hauflo-order", () => {
+          clearTimeout(this._hfOt);
+          this._hfOt = setTimeout(() => this._hfPlace(), 30);
         });
       }
       static getStubConfig() {
@@ -14037,9 +15824,11 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
         const edit = !!(this.lovelace?.editMode && !this.isStrategy);
         const l = edit ? null : this._hfLayouts().find((x) => window.matchMedia(x.media).matches);
         const els = this._hfCards();
+        const seq = seqOf(els);
         if (!l || !els.length) {
           this._hfRo.disconnect();
           this.removeAttribute("hf-measure");
+          this._hfSheet.replaceSync(sheetCss([], ordOf(seq)));
           return this._hfMode(null);
         }
         if (Number(l.per_row) > 1) {
@@ -14047,12 +15836,24 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
           this.removeAttribute("hf-measure");
           // The sheet holds the rows rule too (no packed cells): empty until a packing filled it, the rows were HA's.
           this._hfPacked = null;
-          this._hfSheet.replaceSync(sheetCss([]));
+          this._hfSheet.replaceSync(sheetCss([], ordOf(seq)));
           return this._hfMode("rows", Math.min(12, Math.round(Number(l.per_row))));
         }
         const max = Math.max(1, Math.round(Number(l.max) || 1));
         const p = this._hfPacked;
-        if (p && p.key === this._hfKey && p.media === l.media && p.n === els.length) return this._hfRows();
+        if (p && p.key === this._hfKey && p.media === l.media && p.n === els.length) {
+          if (p.seq.join() === seq.join()) return this._hfRows();
+          // The client's order changed: packed again by the heights as they are (same columns, same width) — no measuring.
+          if (!this.hasAttribute("hf-measure")) {
+            const h = els.map((el) => (el.offsetParent !== null ? el.offsetHeight : 0));
+            const at = this._hfPackSeq(h, max, seq);
+            if (Math.max(1, ...at.map((k) => k + 1)) === p.cn) {
+              Object.assign(p, { at, seq });
+              return this._hfRows();
+            }
+          }
+          this._hfPacked = null;
+        }
         // A hass update mid-measure (every few hundred ms in a busy house) must not start the measurement over.
         const mk = `${this._hfKey}|${l.media}|${els.length}`;
         if (this.hasAttribute("hf-measure") && this._hfMeasuring === mk) return;
@@ -14073,10 +15874,11 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
         const done = () => {
           this._hfRo.disconnect();
           const h = els.map((el) => (shown(el) ? el.offsetHeight : 0));
-          const at = this._hfPack(h, max);
+          const seq = seqOf(els);
+          const at = this._hfPackSeq(h, max, seq);
           const cn = Math.max(1, ...at.map((k) => k + 1));
           if (cn !== n && round < 1) return this._hfMeasure(l, max, cn, round + 1);
-          this._hfPacked = { key: this._hfKey, media: l.media, n: els.length, w: this.clientWidth, cn, at, max };
+          this._hfPacked = { key: this._hfKey, media: l.media, n: els.length, w: this.clientWidth, cn, at, max, seq };
           this._hfMeasuring = null;
           this.removeAttribute("hf-measure");
           this._hfRows();
@@ -14106,7 +15908,15 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
         }
         return at;
       }
-      /** The rows of the frozen columns by the cards' current heights (a card opened: only the ones under it move). */
+      /** `_hfPack` over the cells in their slots (`seq`): each cell's column, by its own index. */
+      _hfPackSeq(h, max, seq) {
+        const to = this._hfPack(seq.map((i) => h[i]), max);
+        const at = new Array(h.length);
+        seq.forEach((i, s) => (at[i] = to[s]));
+        return at;
+      }
+      /** The rows of the frozen columns by the cards' current heights (a card opened: only the ones under it move); down a
+       * column in the cells' slots (the client's order). */
       _hfRows() {
         const p = this._hfPacked;
         const els = this._hfCards();
@@ -14114,13 +15924,13 @@ ${line ? `<div style="margin-top:34px;font:500 20px Onest,sans-serif;color:${ton
         this._hfMode("cols", p.cn);
         const gap = parseFloat(getComputedStyle(this.shadowRoot.querySelector(".container")).getPropertyValue("--row-gap")) || 8;
         const y = new Array(p.cn).fill(0);
-        const cells = els.map((el, i) => {
-          const h = el.offsetParent !== null ? Math.ceil(el.offsetHeight) : 0;
+        const cells = new Array(els.length);
+        for (const i of p.seq) {
+          const h = els[i].offsetParent !== null ? Math.ceil(els[i].offsetHeight) : 0;
           const c = Math.min(p.at[i], p.cn - 1);
-          const cell = [c, y[c], h];
+          cells[i] = [c, y[c], h];
           if (h > 0) y[c] += h + gap;
-          return cell;
-        });
+        }
         this._hfSheet.replaceSync(sheetCss(cells));
         this._hfRo.disconnect();
         this._hfRo = new ResizeObserver(() => this._hfHeights());
