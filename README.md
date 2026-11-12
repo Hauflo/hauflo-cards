@@ -18,6 +18,8 @@ Dashboard cards for Home Assistant in the Hauflo «Atelier» style: rooms, light
 | `mdi:play-circle-outline` | Media and weather | `hauflo-media` `hauflo-weather` |
 | `mdi:chart-line` | Sensors and automations | `hauflo-graph` `hauflo-auto` `hauflo-status` `hauflo-entity` `hauflo-devices` `hauflo-area` `hauflo-title` |
 
+Compatibility (kept for dashboards made by hand; Hauflo itself puts the recommended ones): `hauflo-entity` → use `hauflo-lights` / `hauflo-devices`; `hauflo-auto` → use `hauflo-automations`. All other cards are recommended.
+
 Every card is in Home Assistant's card picker with a preview and a visual editor; texts follow the user's language (English, Russian). Icons: `mdi:*` and Hauflo's own `hauflo:*` set.
 
 ## Install
@@ -32,6 +34,6 @@ The [Hauflo agent](https://github.com/Hauflo/hauflo-agent) ships the same cards 
 
 ## Versions
 
-Version 1.0.7. Each release says which agent it needs at least (`agent_min`); a card configuration that worked keeps working in later versions.
+Version 1.0.8. Each release says which agent it needs at least (`agent_min`); a card configuration that worked keeps working in later versions.
 
 Licence: see [LICENSE](LICENSE). Font: Onest, SIL Open Font License 1.1.

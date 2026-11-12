@@ -18,6 +18,8 @@
 | `mdi:play-circle-outline` | Медиа и погода | `hauflo-media` `hauflo-weather` |
 | `mdi:chart-line` | Датчики и автоматизации | `hauflo-graph` `hauflo-auto` `hauflo-status` `hauflo-entity` `hauflo-devices` `hauflo-area` `hauflo-title` |
 
+Для совместимости (оставлены для панелей, собранных вручную; сам Hauflo ставит рекомендованные): `hauflo-entity` → берите `hauflo-lights` / `hauflo-devices`; `hauflo-auto` → берите `hauflo-automations`. Все остальные карточки — рекомендуемые.
+
 Все карточки — в выборе карточек Home Assistant, с превью и визуальным редактором; тексты — на языке пользователя (русский, английский). Иконки: `mdi:*` и свой набор Hauflo `hauflo:*`.
 
 ## Установка
@@ -32,6 +34,6 @@
 
 ## Версии
 
-Версия 1.0.7. В каждом выпуске указан минимальный агент (`agent_min`); настройка карточки, которая работала, работает и в следующих версиях.
+Версия 1.0.8. В каждом выпуске указан минимальный агент (`agent_min`); настройка карточки, которая работала, работает и в следующих версиях.
 
 Лицензия: [LICENSE](LICENSE). Шрифт: Onest, SIL Open Font License 1.1.
